@@ -294,7 +294,7 @@ body {
 	justify-content: space-between;
 }
 .sales__cards--sale_one{
-	background-image: url(assets/images/sells1.png);
+	background-image: url(assets/images/sells1.png) 0 0 / 100% no-repeat;
 }
 .sales__cards--sale_two{
 	background-image: url(assets/images/sells2.png);
