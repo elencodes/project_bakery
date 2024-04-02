@@ -303,7 +303,9 @@ body {
 	background-image: url("assets/images/sells3.png");
 }
 .sales__cards--sale_four{
-	background-image: url("assets/images/sells4.png");
+	background-image: url("assets/images/sells4.png") 0 0 / 100% no-repeat;
+  width:16.875rem;
+	height:24.8125rem ;
 }
 .sales__cards--sale_one,.sales__cards--sale_two,.sales__cards--sale_three,
 .sales__cards--sale_four{
