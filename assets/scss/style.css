@@ -215,6 +215,11 @@ template {
 }
 @font-face {
   font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "ProximaNova";
   src: url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2");
   font-weight: 400;
 }
@@ -247,5 +252,30 @@ body {
 }
 
 /*------Header------*/
+.header {
+  width: 100%;
+}
+
+.header__banner {
+  background-color: #D4E9F9;
+}
+
+.header-banner__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 33.625rem; /*--538px в макете / 16px (по умолчанию в браузере)--*/
+  margin: 0 auto;
+  padding: 0.5625rem 0; /*--9px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.header-banner__text {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  text-transform: uppercase;
+  color: #292929;
+}
+
 /*------Main------*/
 /*------Footer------*/
