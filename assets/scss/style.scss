@@ -159,6 +159,53 @@ body {
 
 /*------Main------*/
 
-
+.sales{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 73.125rem; 
+	margin: 0 auto;
+}
+.sales__h2{
+	display: flex;
+	justify-content: center;
+	align-items: start;
+}
+.sales__cards{
+	display: flex;
+	justify-content: space-between;
+}
+.sales__cards--sale_one{
+	background-image: url("assets/images/sells1.png");
+}
+.sales__cards--sale_two{
+	background-image: url("assets/images/sells2.png");
+}
+.sales__cards--sale_three{
+	background-image: url("assets/images/sells3.png");
+}
+.sales__cards--sale_four{
+	background-image: url("assets/images/sells4.png") ;
+}
+.sales__cards--sale_one,.sales__cards--sale_two,.sales__cards--sale_three,
+.sales__cards--sale_four{
+	display: flex;
+	flex-direction: column;
+	width:16.875rem;
+	height:24.8125rem ;
+	align-items: center;
+	justify-content: end;
+}
+.sales__cards--h3,.sales__cards--p{
+	color: white;
+}
+.sales__cards--h3{
+	font-size: 1rem;
+	border: 1px solid;
+}
+.sales__cards--p{
+	font-size:1.125rem;
+	border: 1px solid;
+}
 
 /*------Footer------*/
