@@ -105,7 +105,7 @@ template {display: none;}
 $mainFont: 'ProximaNova', sans-serif;
 $secondaryFont: 'Montserrat', sans-serif;
 $mainColor: #292929;
-$sellsblockColor: #FFFFFF;
+$salessblockColor: #FFFFFF;
 
 /*Объявление миксинов*/
 
@@ -197,15 +197,13 @@ body {
 	justify-content: end;
 }
 .sales__cards--h3,.sales__cards--p{
-	color: white;
+	color: $salesblockColor;
 }
 .sales__cards--h3{
 	font-size: 1rem;
-	border: 1px solid;
 }
 .sales__cards--p{
 	font-size:1.125rem;
-	border: 1px solid;
 }
 
 /*------Footer------*/
