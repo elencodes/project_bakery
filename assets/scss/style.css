@@ -277,6 +277,93 @@ body {
   color: #292929;
 }
 
+.header__inner {
+  background-color: #F7EBE5;
+}
+
+.header__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
+  margin: 0 auto;
+  padding: 1rem 0; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.header-top__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 43.5rem; /*--696px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.header-top__link {
+  color: #292929;
+}
+
+.header-top__text {
+  font-family: "ProximaNovaCond", sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.header-top__phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 8.4375rem; /*--135px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.header-top__basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem; /*--160px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.nav__container {
+  display: flex;
+  justify-content: end;
+  padding: 1.125rem 0; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70.125rem; /*--1122px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.nav__link {
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.nav-link__stock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem; /*--80px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.nav__logo {
+  width: 7.75rem; /*--124px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.header-top__link--hover:hover,
+.nav__link--hover:hover {
+  text-decoration: underline;
+  text-decoration-color: #E7426A;
+  transition: color 0.1s linear;
+}
+
+.header-top__link--active:active,
+.nav__link--active:active {
+  color: #E7426A;
+  transition: color 0.1s linear;
+}
+
 /*------Main------*/
 /*-------------SALES BLOCK------------*/
 .sales {
@@ -456,4 +543,4 @@ body {
   font-weight: bold;
 }
 
-/*------Footer------*//*# sourceMappingURL=style.css.map */
+/*------Footer------*/
