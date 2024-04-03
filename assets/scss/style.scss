@@ -213,7 +213,6 @@ body {
 	margin: 0 auto;
 	margin-top: 7.875rem;
   }
-  
   .holidays_h2 {
 	display: flex;
 	justify-content: center;
@@ -223,6 +222,7 @@ body {
   
   .holiday_items {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
   }
   
@@ -232,6 +232,8 @@ body {
   .holiday_item_4 {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-self: center;
   }
   
   .holiday_img_1-1 {
