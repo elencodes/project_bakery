@@ -335,11 +335,6 @@ body {
   font-size: 1.125rem;
 }
 
-.sales__h2 {
-  margin-bottom: 3.0625rem;
-  margin-top: 5.875rem;
-}
-
 .holidays {
   display: flex;
   flex-direction: column;
