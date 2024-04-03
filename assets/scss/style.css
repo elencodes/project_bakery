@@ -319,11 +319,15 @@ body {
   flex-direction: column;
   width: 16.875rem;
   height: 24.8125rem;
+  background-repeat: no-repeat;
   align-items: center;
   justify-content: end;
+  background-size: cover;
 }
 
 .sales__cards--h3, .sales__cards--p {
+  font-family: Montserrat;
+  font-weight: 500;
   color: #FFFFFF;
 }
 
@@ -333,6 +337,14 @@ body {
 
 .sales__cards--p {
   font-size: 1.125rem;
+}
+
+.sales__h2 {
+  margin-bottom: 3.0625rem;
+  margin-top: 5.875rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.875rem;
 }
 
 .holidays {
