@@ -7,6 +7,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -85,8 +87,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -334,24 +335,32 @@ body {
   font-size: 1.125rem;
 }
 
+.sales__h2 {
+  margin-bottom: 3.0625rem;
+  margin-top: 5.875rem;
+}
+
 .holidays {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	max-width: 73.125rem;
-	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 73.125rem;
+  margin: 0 auto;
   margin-top: 7.875rem;
 }
+
 .holidays_h2 {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 2.93rem;
   font-size: 1.875rem;
 }
+
 .holiday_items {
   display: flex;
   justify-content: space-between;
 }
+
 .holiday_item_1,
 .holiday_item_2,
 .holiday_item_3,
@@ -359,45 +368,54 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .holiday_img_1-1 {
   width: 3.25rem;
   height: 5.07rem;
   margin-left: 5.06rem;
   position: absolute;
 }
+
 .holiday_img_1-2 {
   width: 4.8rem;
   height: 3.66rem;
   align-self: center;
 }
+
 .holiday_img_2 {
   width: 3.85rem;
   height: 2.96rem;
   align-self: center;
 }
+
 .holiday_img_3 {
   width: 3.62rem;
   height: 2.81rem;
   align-self: center;
 }
+
 .holiday_img_4 {
   width: 3.23rem;
   height: 2.47rem;
   align-self: center;
 }
+
 .holiday_img_5 {
   width: 3.85rem;
   height: 2.96rem;
   align-self: center;
 }
+
 .holiday_img_6 {
   width: 3.62rem;
   height: 2.81rem;
   align-self: center;
 }
+
 .holiday_text {
   display: flex;
   width: 10.62rem;
   text-align: center;
 }
+
 /*------Footer------*//*# sourceMappingURL=style.css.map */
