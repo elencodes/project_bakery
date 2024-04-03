@@ -365,9 +365,12 @@ body {
 .holiday_item_1,
 .holiday_item_2,
 .holiday_item_3,
-.holiday_item_4 {
+.holiday_item_4,
+.holiday_item_5,
+.holiday_item_6 {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .holiday_img_1-1 {
