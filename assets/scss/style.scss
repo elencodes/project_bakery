@@ -243,6 +243,89 @@ body {
 	transition: color .1s linear;
 }
 
+/*------HEADER CONTENT-----*/
+
+.container__content {
+	width: 100%;
+	height: 29.6875rem; /*--475px в макете / 16px (по умолчанию в браузере)--*/
+	background: url("../images/header-background.png") center no-repeat fixed;
+	background-size: cover;
+}
+
+.header__container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 90rem; /*--1440px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.header__image {
+	max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
+	height: auto;
+	margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
+	object-fit: cover;
+}
+
+.header__box {
+	margin-left: 4rem; /*--32px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.header__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header__logoname {
+	font-family: $secondaryFont;
+	font-size: 1.375rem; /*--22px в макете / 16px (по умолчанию в браузере)--*/
+	text-transform: uppercase;
+}
+
+.header-logoname__subtitle {
+	font-family: $secondaryFont;
+	font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+	margin-bottom: 1.5rem; /*--24px в макете / 16px (по умолчанию в браузере)--*/
+	width: 9.875rem; /*--158px в макете / 16px (по умолчанию в браузере)--*/
+	position: relative;
+}
+
+.header-logoname__subtitle::before {
+	content: "";
+	width: 1.8125rem; /*--29px в макете / 16px (по умолчанию в браузере)--*/
+	height: 0.0625rem; /*--1px в макете / 16px (по умолчанию в браузере)--*/
+	background-color: $mainColor;
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+
+.header-logoname__subtitle::after {
+	content: "";
+	width: 1.8125rem; /*--29px в макете / 16px (по умолчанию в браузере)--*/
+	height: 0.0625rem; /*--1px в макете / 16px (по умолчанию в браузере)--*/
+	background-color: $mainColor;
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+
+.header__title {
+	font-family: $secondaryFont;
+	font-size: 2.625rem; /*--42px в макете / 16px (по умолчанию в браузере)--*/
+	margin-bottom: 0.8125rem; /*--13px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.header__text {
+	font-family: $mainFont;
+	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+}
+
 
 /*------Main------*/
 
