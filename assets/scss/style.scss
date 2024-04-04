@@ -409,3 +409,83 @@ body {
 	font-weight: bold;
   }
 /*------Footer------*/
+/* блок карточки гарантии вкуса**/
+/* позиционирование карточек**/
+.garant__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center; 
+    column-gap: 1.875rem;
+    margin: 0.625rem;
+    padding-bottom: 6.25rem;
+}
+/* контент карточек гарантии вкуса**/
+.garant__cards_content{
+    width: 16.875rem;
+    display:flex;
+    margin: 1rem;
+    padding: 0rem;
+    flex-direction: column;
+    position:relative;
+    img{
+        width: 100%;
+		padding-bottom: 1rem;
+    }
+}
+.garant__cards_content:hover{
+	transform: scale(1.15);
+	cursor: pointer;
+}
+/* общие заголовки блока гарантии вкуса**/
+.garanties{
+    background-color: #f7f7f7;
+    h2{
+        font-family: "Montserrat";
+        font-size: 1.875rem;
+        font-weight: 600;
+        text-align: center;
+		padding-top: 1rem;
+    }
+    h5{
+        font-family: "ProximaNova";
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+    p{
+        font-family: "ProximaNova";
+        font-size: 0.875rem;
+        font-weight: 400;
+        padding-top: 0;
+        text-align: center;
+    }
+    h6{
+        font-family: "ProximaNova";
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding-top: 0;
+        text-align: center;
+		padding-top: 1rem;
+    }
+	margin-top: 3rem;
+	padding-bottom: 1rem;
+}
+/* ссылки на странице гарантии вкуса и качества**/
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    a{
+        text-decoration: none;
+        font-family: "ProximaNova";
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #292929;
+    }
+}
+.main__link:hover,
+.garant__link:hover
+{
+    color: rgb(214, 214, 234);
+}
