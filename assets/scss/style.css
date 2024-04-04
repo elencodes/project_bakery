@@ -704,4 +704,59 @@ body {
 
 .insta_menu li:last-child {
   margin-right: 0;
+}
+
+/* блок карточки мы позаботились**/
+/* позиционирование карточек**/
+.we-care__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
+  margin: 0.625rem;
+}
+
+/* контент карточек**/
+.we-care__cards_content {
+  width: 16.875rem;
+  display: flex;
+  margin: 0rem;
+  padding: 0rem;
+  flex-direction: column;
+  position: relative;
+}
+.we-care__cards_content img {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.we-care__cards_content:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* общие заголовки блока мы позаботились**/
+.we-care {
+  margin-top: 5rem;
+}
+.we-care h2 {
+  font-family: "Montserrat";
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.we-care h5 {
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.we-care p {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding-top: 0;
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
