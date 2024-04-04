@@ -291,22 +291,23 @@ body {
 	justify-content: end;
 	background-size:cover;
 	border-radius: 0.3125rem;
+	transition: 0.2s; 
 }
 .sales__cards--sale_one:hover{
-	width: 17rem;
-    height: 26rem;
+	transform: scale(1.09);
+	cursor: pointer;
 }
 .sales__cards--sale_two:hover{
-	width: 17rem;
-    height: 26rem;
+	transform: scale(1.09);
+	cursor: pointer;
 }
 .sales__cards--sale_three:hover{
-	width: 17rem;
-    height: 26rem;
+	transform: scale(1.09);
+	cursor: pointer;
 }
 .sales__cards--sale_four:hover{
-	width: 17rem;
-    height: 26rem;
+	transform: scale(1.09);
+	cursor: pointer;
 }
 .sales__cards--h3,.sales__cards--p{
 	color: $salesblockColor;

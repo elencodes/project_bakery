@@ -7,6 +7,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -85,8 +87,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -415,26 +416,27 @@ body {
   justify-content: end;
   background-size: cover;
   border-radius: 0.3125rem;
+  transition: 0.2s;
 }
 
 .sales__cards--sale_one:hover {
-  width: 17rem;
-  height: 26rem;
+  transform: scale(1.09);
+  cursor: pointer;
 }
 
 .sales__cards--sale_two:hover {
-  width: 17rem;
-  height: 26rem;
+  transform: scale(1.09);
+  cursor: pointer;
 }
 
 .sales__cards--sale_three:hover {
-  width: 17rem;
-  height: 26rem;
+  transform: scale(1.09);
+  cursor: pointer;
 }
 
 .sales__cards--sale_four:hover {
-  width: 17rem;
-  height: 26rem;
+  transform: scale(1.09);
+  cursor: pointer;
 }
 
 .sales__cards--h3, .sales__cards--p {
@@ -550,8 +552,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 1.875rem;
-       column-gap: 1.875rem;
+  column-gap: 1.875rem;
   margin: 0.625rem;
   padding-bottom: 6.25rem;
 }
@@ -637,8 +638,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -677,8 +677,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -713,8 +712,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
 }
 
