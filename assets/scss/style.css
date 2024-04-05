@@ -781,6 +781,10 @@ body {
   font-weight: 600;
 }
 
+.popular-box__cards--price-line_button-text:hover {
+  color: #E7426A;
+}
+
 .popular-box__cards--price-line-price {
   font-family: "Montserrat";
   font-size: 1.125rem;
