@@ -7,8 +7,6 @@
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -87,7 +85,8 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -398,7 +397,8 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__box {
@@ -872,7 +872,8 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  column-gap: 1.875rem;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
   margin: 0.625rem;
   padding-bottom: 6.25rem;
 }
@@ -958,7 +959,8 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -997,7 +999,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1032,7 +1035,8 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   margin: 0.625rem;
 }
 
@@ -1105,8 +1109,11 @@ body {
 .footer__profit--items {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+}
+
+.footer__profit--item {
+  margin-top: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .footer__profit--icon1 {
@@ -1124,9 +1131,15 @@ body {
 .footer__profit-text {
   text-align: center;
   width: 8.75rem; /*--140px в макете / 16px (по умолчанию в браузере)--*/
-  font-weight: 400;
   font-size: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
-  color: #292929;
+  color: rgb(41, 41, 41);
+  line-height: 110%;
+}
+
+.footer__add-info {
+  width: 23.125rem;
+  height: 3.75rem; /*--60px в макете / 16px (по умолчанию в браузере)--*/
+  margin-top: 1.75rem; /*--28px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .footer__add-info--text {
@@ -1148,6 +1161,11 @@ body {
   line-height: 1.187rem; /*--19px в макете / 16px (по умолчанию в браузере)--*/
   text-align: left;
   text-transform: uppercase;
+}
+
+.footer__list {
+  width: 10.75rem; /*--172px в макете / 16px (по умолчанию в браузере)--*/
+  margin-top: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .footer__list--link {
