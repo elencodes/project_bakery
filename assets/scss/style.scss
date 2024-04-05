@@ -138,6 +138,18 @@ body {
 	margin: 0 auto;
 }
 
+.big-button{
+	width:18.3125rem;
+	height:3.25rem;
+	border:0.0625rem solid #E7426A;
+	border-radius:0.1875rem;
+	background-color:#F7F7F7;
+	color: #E7426A;
+}
+.big-button:hover{
+	color:#F7F7F7;
+	background-color:#E7426A;
+}
 /*------Header------*/
 
 .header {
@@ -212,7 +224,7 @@ body {
 .nav__container {
 	display: flex;
 	justify-content: end;
-	padding: 1.125rem 0; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+	padding: 1.125rem 0;/*--18px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .nav {
@@ -428,6 +440,7 @@ body {
 	max-width: 73.125rem;
 	margin: 0 auto;
 	margin-top: 7.875rem;
+	margin-bottom: 6.75rem;
 }
 .holidays_h2 {
 	display: flex;
@@ -542,7 +555,7 @@ body {
 	width: 100%;
 	max-width: 73.125rem;
 	margin: 0 auto;
-	margin-top: 6.75rem;
+	margin-bottom:5.3125rem;
 }
 
 .popular-box__h2 {
@@ -667,7 +680,33 @@ body {
 	margin-top: 0.75rem;
 	background-color: #FFFFFF;
 }
-/*------Footer------*/
+.popular-box__button{
+	display: flex;
+	justify-content: center;
+	margin-top: 2.1875rem; 
+	font-family:"Montserrat";
+	font-size:0.875rem ;
+	font-weight: 600;
+}
+/*-------------BOXES PAGE------------*/
+.boxes__nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2.5625rem;
+	margin-bottom: 1.3125rem;
+	margin-left: 0.3rem;
+}
+.boxes__nav--link{
+	@include mainFont;
+	color: #8a8a8c;
+	margin-right: 0.25rem;
+}
+.active_page{
+	color: #4E9DD3;
+}
+
+
 /* блок карточки гарантии вкуса**/
 /* позиционирование карточек**/
 .garant__cards{
