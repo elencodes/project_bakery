@@ -694,3 +694,101 @@ body {
     margin-top: 5rem;
 }
 
+/*------Footer------*/
+.footer {
+	width: 100%;
+	background-color: rgb(235, 237, 238);
+  }
+  .footer__container {
+	height: 19.875rem; /*--318px в макете / 16px (по умолчанию в браузере)--*/
+	display: flex;
+	align-items: center;
+  }
+  
+  .footer__wrap-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  
+  .footer__ptofit {
+	display: flex;
+	flex-direction: row;
+  }
+  .footer__profit--items {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .footer__profit--icon1 {
+	width: 2.8rem; /*--44.95px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .footer__profit--icon2 {
+	width: 3.104rem; /*--49.66px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .footer__profit--icon2 {
+	width: 1.779rem; /*--28.46px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  
+  .footer__profit-text {
+	text-align: center;
+	width: 8.75rem; /*--140px в макете / 16px (по умолчанию в браузере)--*/
+	font-weight: 400;
+	font-size: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
+	color: #292929;
+  }
+  
+  .footer__add-info--text {
+	color: rgb(41, 41, 41);
+	font-size: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
+	font-weight: 400;
+	line-height: 0.937rem; /*--15px в макете / 16px (по умолчанию в браузере)--*/
+	text-align: left;
+  }
+  
+  .footer__nav {
+	display: flex;
+  }
+  
+  .footer__header {
+	height: 1.187rem; /*--19px в макете / 16px (по умолчанию в браузере)--*/
+	
+	font-weight: 600;
+	font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+	line-height: 1.187rem; /*--19px в макете / 16px (по умолчанию в браузере)--*/
+	text-align: left;
+	text-transform: uppercase;
+  }
+  
+  .footer__list--link {
+	text-align: left;
+	color: rgb(41, 41, 41);
+	line-height: 1.06rem; /*--17px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  
+  .footer__contacts {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .footer__header-contacts {
+	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+	line-height: 1.375rem; /*--22px в макете / 16px (по умолчанию в браузере)--*/
+	color: rgb(41, 41, 41);
+	text-align: right;
+  }
+  
+  .footer-text {
+	text-align: right;
+	color: rgb(41, 41, 41);
+  }
+  .footer__apps {
+	display: flex;
+	justify-content: space-between;
+  }
+  .footer__apps-item {
+	width: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
+  }
+
