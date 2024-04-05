@@ -532,6 +532,8 @@ body {
 .holiday_text:active {
 	color: #E7426A;
 	transition: color .1s linear;
+
+
 }
 /*-------------POPULAR-BOX BLOCK------------*/
 .popular-box {
@@ -540,6 +542,7 @@ body {
 	width: 100%;
 	max-width: 73.125rem;
 	margin: 0 auto;
+	margin-top: 6.75rem;
 }
 
 .popular-box__h2 {
