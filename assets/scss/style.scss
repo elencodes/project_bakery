@@ -792,3 +792,130 @@ body {
 	width: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
   }
 
+//   блок Навигационные карточки
+
+.navigation_cards{
+	width: 73.125rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+
+.navigation_cards__one,.navigation_cards__second,.navigation_cards__third,.navigation_cards__forth,.navigation_cards__fifth,.navigation_cards__sixth{
+	margin-top: 1.5625rem;/*--25 px в макете / 16px (по умолчанию в браузере)--*/
+	display: flex;
+	background-size: 35.625rem ;
+	width:35.625rem; /*--570 px в макете / 16px (по умолчанию в браузере)--*/
+	height:16.25rem ;  /*--18px в макете / 16px (по умолчанию в браузере)--*/
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-family: "ProximaNova", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	transition: 0.2s;
+	
+	
+	
+}
+
+
+
+.navigation_cards__one{
+	background-image: url("/assets/images/card1.png");
+	
+}
+
+.navigation_cards__second{
+	background-image: url("/assets/images/card2.png");
+
+}
+
+.navigation_cards__third{
+	background-image: url("/assets/images/card3.png");
+}
+
+.navigation_cards__forth{
+	background-image: url("/assets/images/card4.png");
+	
+
+}
+.navigation_cards__fifth{
+	background-image: url("/assets/images/card5.png");
+}
+
+.navigation_cards__sixth{
+	background-image: url("/assets/images/card6.png");
+}
+
+
+.navigation_cards__img{
+	width: 6.25rem;
+	height: 6.25rem;
+	margin-top: -0.2rem;
+	
+}
+
+
+.navigation_cards__vector{
+	
+	margin-top: 0.5rem;
+	margin-left: 0.3rem;
+	width: 1rem;
+	height: 0.631875rem;
+}
+
+.navigation_cards__title{
+	
+	margin-bottom:0.625rem ;
+	margin-top: 1.25rem;
+	font-family: "Montserrat",Times,serif;
+	font-size: 1.25rem ;
+
+}
+
+
+.navigation_cards__one:hover{
+	
+	transform: scale(1.05);
+	cursor: pointer;
+	
+}
+.navigation_cards__second:hover{
+	
+	transform: scale(1.05);
+	cursor: pointer;
+	
+}
+
+.navigation_cards__third:hover{
+	
+	transform: scale(1.05);
+	cursor: pointer;
+	
+}
+
+.navigation_cards__forth:hover{
+	
+	transform: scale(1.05);
+	cursor: pointer;
+	
+}
+
+.navigation_cards__fifth:hover{
+	
+	transform: scale(1.05);
+	cursor: pointer;
+	
+}
+
+.navigation_cards__sixth:hover{
+	
+	transform: scale(1.05);
+	cursor: pointer;
+	
+}
+.navigation_cards__title:hover{
+	text-decoration: underline;
+}
