@@ -851,8 +851,18 @@ body {
   margin-right: 0.25rem;
 }
 
+.boxes__nav--link:hover {
+  text-decoration: underline;
+  text-decoration-color: #E7426A;
+  transition: color 0.1s linear;
+}
+
 .active_page {
   color: #4E9DD3;
+}
+
+.active_page:hover {
+  text-decoration-color: #E7426A;
 }
 
 /* блок карточки гарантии вкуса**/
