@@ -571,15 +571,16 @@ body {
   display: flex;
   flex-direction: column;
   width: 10.62rem;
-  border: 1px solid black;
   justify-content: end;
+  transition: 0.2s;
 }
 
 .holiday_img_1 {
   width: 6.25rem;
   height: 7.06rem;
-  align-self: center;
+  margin-left: 3.2rem;
   margin-bottom: 0.179rem;
+  transition: 0.2s;
 }
 
 .holiday_img_2 {
@@ -587,6 +588,7 @@ body {
   height: 2.96rem;
   align-self: center;
   margin-bottom: 0.394rem;
+  transition: 0.2s;
 }
 
 .holiday_img_3 {
@@ -594,6 +596,7 @@ body {
   height: 2.81rem;
   align-self: center;
   margin-bottom: 0.623rem;
+  transition: 0.2s;
 }
 
 .holiday_img_4 {
@@ -601,6 +604,7 @@ body {
   height: 2.47rem;
   align-self: center;
   margin-bottom: 0.687rem;
+  transition: 0.2s;
 }
 
 .holiday_img_5 {
@@ -608,6 +612,7 @@ body {
   height: 2.96rem;
   align-self: center;
   margin-bottom: 1.03rem;
+  transition: 0.2s;
 }
 
 .holiday_img_6 {
@@ -615,6 +620,7 @@ body {
   height: 2.81rem;
   align-self: center;
   margin-bottom: 1.39rem;
+  transition: 0.2s;
 }
 
 .holiday_text {
@@ -624,6 +630,47 @@ body {
   font-size: 14px;
   justify-content: center;
   font-weight: bold;
+}
+
+.holiday_img_1:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.holiday_img_2:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.holiday_img_3:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.holiday_img_4:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.holiday_img_5:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.holiday_img_6:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.holiday_text:hover {
+  text-decoration: underline;
+  text-decoration-color: #E7426A;
+  transition: color 0.1s linear;
+}
+
+.holiday_text:active {
+  color: #E7426A;
+  transition: color 0.1s linear;
 }
 
 /*------Footer------*/

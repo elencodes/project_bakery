@@ -419,79 +419,111 @@ body {
 	max-width: 73.125rem;
 	margin: 0 auto;
 	margin-top: 7.875rem;
-  }
-  .holidays_h2 {
+}
+.holidays_h2 {
 	display: flex;
 	justify-content: center;
 	font-size: 1.875rem;
-  }
-  
-  .holiday_items {
+}
+.holiday_items {
 	display: flex;
 	justify-content: space-between;
-  }
-  
-  .holiday_item_1,
-  .holiday_item_2,
-  .holiday_item_3,
-  .holiday_item_4,
-  .holiday_item_5,
-  .holiday_item_6 {
+}
+.holiday_item_1,
+.holiday_item_2,
+.holiday_item_3,
+.holiday_item_4,
+.holiday_item_5,
+.holiday_item_6 {
 	display: flex;
 	flex-direction: column;
 	width: 10.62rem;
-	border: 1px solid black;
 	justify-content: end;
-  }
-  .holiday_img_1 {
+	transition: 0.2s;
+}
+.holiday_img_1 {
 	width: 6.25rem;
 	height: 7.06rem;
-	align-self: center;
+	margin-left: 3.2rem;
 	margin-bottom: 0.179rem;
-  }
-  .holiday_img_2 {
+	transition: 0.2s;
+}
+.holiday_img_2 {
 	width: 3.85rem;
 	height: 2.96rem;
 	align-self: center;
 	margin-bottom: 0.394rem;
-  }
-  
-  .holiday_img_3 {
+	transition: 0.2s;
+}
+.holiday_img_3 {
 	width: 3.62rem;
 	height: 2.81rem;
 	align-self: center;
 	margin-bottom: 0.623rem;
-  }
-  
-  .holiday_img_4 {
+	transition: 0.2s;
+}
+.holiday_img_4 {
 	width: 3.23rem;
 	height: 2.47rem;
 	align-self: center;
 	margin-bottom: 0.687rem;
-  }
-  
-  .holiday_img_5 {
+	transition: 0.2s;
+}
+.holiday_img_5 {
 	width: 3.85rem;
 	height: 2.96rem;
 	align-self: center;
 	margin-bottom: 1.03rem;
-  }
-  
-  .holiday_img_6 {
+	transition: 0.2s;
+}
+.holiday_img_6 {
 	width: 3.62rem;
 	height: 2.81rem;
 	align-self: center;
 	margin-bottom: 1.39rem;
-  }
-  
-  .holiday_text {
+	transition: 0.2s;
+}
+.holiday_text {
 	display: flex;
 	width: 10.62rem;
 	text-align: center;
 	font-size: 14px;
 	justify-content: center;
 	font-weight: bold;
-  }
+}
+.holiday_img_1:hover {
+	transform: scale(1.09);
+	cursor: pointer;
+}
+.holiday_img_2:hover {
+	transform: scale(1.09);
+	cursor: pointer;
+}
+.holiday_img_3:hover {
+	transform: scale(1.09);
+	cursor: pointer;
+}
+.holiday_img_4:hover {
+	transform: scale(1.09);
+	cursor: pointer;
+}
+.holiday_img_5:hover {
+	transform: scale(1.09);
+	cursor: pointer;
+}
+.holiday_img_6:hover {
+	transform: scale(1.09);
+	cursor: pointer;
+}
+.holiday_text:hover {
+	text-decoration: underline;
+    text-decoration-color: #E7426A;
+    transition: color .1s linear;
+}
+.holiday_text:active {
+	color: #E7426A;
+	transition: color .1s linear;
+}
 /*------Footer------*/
 /* блок карточки гарантии вкуса**/
 /* позиционирование карточек**/
