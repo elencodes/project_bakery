@@ -7,6 +7,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -85,8 +87,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -383,8 +384,7 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header__box {
@@ -673,6 +673,136 @@ body {
   transition: color 0.1s linear;
 }
 
+/*-------------POPULAR-BOX BLOCK------------*/
+.popular-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+
+.popular-box__h2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 2.625rem;
+  font-family: "Montserrat";
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.popular-box__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three {
+  margin-bottom: 2.1875rem;
+}
+
+.popular-box__cards--cards_one, .popular-box__cards--cards_two,
+.popular-box__cards--cards_four, .popular-box__cards--cards_five {
+  margin-right: 1.875rem;
+}
+
+.popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three,
+.popular-box__cards--cards_four, .popular-box__cards--cards_five, .popular-box__cards--cards_six {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #EDEDF0;
+  background-color: #FFFFFF;
+  width: 23.125rem;
+  height: 28.6875rem;
+  border-radius: 0.3125rem;
+  transition: 0.2s;
+}
+
+.popular-box__cards--cards_one:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.popular-box__cards--cards_two:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.popular-box__cards--cards_three:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.popular-box__cards--cards_four:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.popular-box__cards--cards_five:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.popular-box__cards--cards_six:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.popular-box__image {
+  width: 23rem;
+  height: 18.75rem;
+}
+
+.popular-box__cards--h4 {
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 0.85rem;
+  margin-bottom: 0.875rem;
+}
+
+.popular-box__cards--p {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  color: #292929;
+}
+
+.popular-box__cards--price-line {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #EDEDF0;
+}
+
+.popular-box__cards--price-line_button-text {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.popular-box__cards--price-line-price {
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #E7426A;
+  margin-top: 0.9rem;
+  margin-left: 1.3125rem;
+}
+
+.also-margin {
+  margin-bottom: 1.4rem;
+}
+
+.popular-box__cards--p, .popular-box__cards--h4 {
+  margin-left: 1.3125rem;
+}
+
+.popular-box__cards--price-line_button {
+  margin-right: 1.5625rem;
+  margin-top: 0.75rem;
+  background-color: #FFFFFF;
+}
+
 /*------Footer------*/
 /* блок карточки гарантии вкуса**/
 /* позиционирование карточек**/
@@ -681,8 +811,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 1.875rem;
-       column-gap: 1.875rem;
+  column-gap: 1.875rem;
   margin: 0.625rem;
   padding-bottom: 6.25rem;
 }
@@ -768,8 +897,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -808,8 +936,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -844,8 +971,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
 }
 

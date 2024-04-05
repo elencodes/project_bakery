@@ -115,7 +115,16 @@ $salesblockColor: #FFFFFF;
 	font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
 	color: $mainColor;
 }
-
+@mixin mainH2{
+	font-family:"Montserrat";
+	font-size:1.875rem ;
+	font-weight: 600;
+}
+@mixin mainH4{
+	font-family: "Montserrat";
+	font-size: 1.125rem;
+	font-weight: 600;
+}
 /*------Body------*/
 
 body {
@@ -523,6 +532,135 @@ body {
 .holiday_text:active {
 	color: #E7426A;
 	transition: color .1s linear;
+}
+/*-------------POPULAR-BOX BLOCK------------*/
+.popular-box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 73.125rem;
+	margin: 0 auto;
+}
+
+.popular-box__h2 {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	margin-bottom: 2.625rem;
+	font-family: "Montserrat";
+	font-size: 1.875rem;
+	font-weight: 600;
+}
+
+.popular-box__cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three {
+	margin-bottom: 2.1875rem;
+}
+
+.popular-box__cards--cards_one, .popular-box__cards--cards_two,
+.popular-box__cards--cards_four, .popular-box__cards--cards_five {
+	margin-right: 1.875rem;
+}
+
+.popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three,
+.popular-box__cards--cards_four, .popular-box__cards--cards_five, .popular-box__cards--cards_six {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #EDEDF0;
+	background-color: #FFFFFF;
+	width: 23.125rem;
+	height: 28.6875rem;
+	border-radius: 0.3125rem;
+	transition: 0.2s;
+}
+
+.popular-box__cards--cards_one:hover {
+	transform: scale(1.07);
+	cursor: pointer;
+}
+
+.popular-box__cards--cards_two:hover {
+	transform: scale(1.07);
+	cursor: pointer;
+}
+
+.popular-box__cards--cards_three:hover {
+	transform: scale(1.07);
+	cursor: pointer;
+}
+
+.popular-box__cards--cards_four:hover {
+	transform: scale(1.07);
+	cursor: pointer;
+}
+
+.popular-box__cards--cards_five:hover {
+	transform: scale(1.07);
+	cursor: pointer;
+}
+
+.popular-box__cards--cards_six:hover {
+	transform: scale(1.07);
+	cursor: pointer;
+}
+
+.popular-box__image {
+	width: 23rem;
+	height: 18.75rem;
+}
+
+.popular-box__cards--h4 {
+	font-family: "Montserrat";
+	font-size: 1.125rem;
+	font-weight: 600;
+	margin-top: 0.85rem;
+	margin-bottom: 0.875rem;
+}
+
+.popular-box__cards--p {
+	font-family: "ProximaNova", sans-serif;
+	font-weight: 400;
+	font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+	color: #292929;
+}
+
+.popular-box__cards--price-line {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #EDEDF0;
+}
+
+.popular-box__cards--price-line_button-text {
+	font-family: "Montserrat";
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.popular-box__cards--price-line-price {
+	font-family: "Montserrat";
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #E7426A;
+	margin-top: 0.9rem;
+	margin-left: 1.3125rem;
+}
+
+.also-margin {
+	margin-bottom: 1.4rem;
+}
+
+.popular-box__cards--p, .popular-box__cards--h4 {
+	margin-left: 1.3125rem;
+}
+
+.popular-box__cards--price-line_button {
+	margin-right: 1.5625rem;
+	margin-top: 0.75rem;
+	background-color: #FFFFFF;
 }
 /*------Footer------*/
 /* блок карточки гарантии вкуса**/
