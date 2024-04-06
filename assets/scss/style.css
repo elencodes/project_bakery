@@ -7,8 +7,6 @@
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -87,7 +85,8 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -409,7 +408,8 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__box {
@@ -954,7 +954,8 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  column-gap: 1.875rem;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
   margin: 0.625rem;
   padding-bottom: 6.25rem;
 }
@@ -1041,7 +1042,8 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
   transition: 0.2s;
@@ -1081,7 +1083,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1116,7 +1119,8 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   margin: 0.625rem;
 }
 
@@ -1333,6 +1337,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   transition: 0.2s;
+  color: #292929;
 }
 
 .navigation_cards__one {
@@ -1365,6 +1370,10 @@ body {
   margin-top: -0.2rem;
 }
 
+.nav_img3, .nav_img2 {
+  margin-top: -1.5rem;
+}
+
 .navigation_cards__vector {
   margin-top: 0.5rem;
   margin-left: 0.3rem;
@@ -1377,40 +1386,20 @@ body {
   margin-top: 1.25rem;
   font-family: "Montserrat", Times, serif;
   font-size: 1.25rem;
+  color: #292929;
 }
 
-.navigation_cards__one:hover {
+.navigation_cards__link--hover:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-
-.navigation_cards__second:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.navigation_cards__third:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.navigation_cards__forth:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.navigation_cards__fifth:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.navigation_cards__sixth:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.navigation_cards__title:hover {
+.navigation_cards__link--hover:hover h3 {
   text-decoration: underline;
+}
+
+.navigation_cards__link--active:active h3 {
+  color: #E7426A;
+  transition: color 0.1s linear;
 }
 
 /*форма отзывов на свадебной странице**/
@@ -1419,7 +1408,8 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   justify-items: flex-start;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1438,7 +1428,8 @@ body {
 .contact {
   display: flex;
   flex-direction: row;
-  column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
   margin-bottom: 1rem;
 }
 .contact input {
@@ -1818,4 +1809,4 @@ body {
   color: #F7F7F7;
   background-color: #E7426A;
   transition: background 0.1s linear, color 0.1s linear;
-}
+}/*# sourceMappingURL=style.css.map */

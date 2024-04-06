@@ -1151,6 +1151,7 @@ body {
 	font-size: 1rem;
 	font-weight: 400;
 	transition: 0.2s;
+	color: $mainColor;
 	
 	
 	
@@ -1193,6 +1194,10 @@ body {
 	
 }
 
+.nav_img3,.nav_img2{
+	margin-top: -1.5rem;
+}
+
 
 .navigation_cards__vector{
 	
@@ -1208,52 +1213,27 @@ body {
 	margin-top: 1.25rem;
 	font-family: "Montserrat",Times,serif;
 	font-size: 1.25rem ;
+	color: $mainColor;
 
 }
 
 
-.navigation_cards__one:hover{
+.navigation_cards__link--hover:hover{
 	
 	transform: scale(1.05);
 	cursor: pointer;
-	
-}
-.navigation_cards__second:hover{
-	
-	transform: scale(1.05);
-	cursor: pointer;
+
+	h3{
+		text-decoration: underline;
+	}
 	
 }
 
-.navigation_cards__third:hover{
-	
-	transform: scale(1.05);
-	cursor: pointer;
-	
-}
-
-.navigation_cards__forth:hover{
-	
-	transform: scale(1.05);
-	cursor: pointer;
-	
-}
-
-.navigation_cards__fifth:hover{
-	
-	transform: scale(1.05);
-	cursor: pointer;
-	
-}
-
-.navigation_cards__sixth:hover{
-	
-	transform: scale(1.05);
-	cursor: pointer;
-	
-}
-.navigation_cards__title:hover{
-	text-decoration: underline;
+.navigation_cards__link--active:active{
+	h3{
+		color: #E7426A;
+	    transition: color .1s linear;
+	}
 }
 
 /*форма отзывов на свадебной странице**/
