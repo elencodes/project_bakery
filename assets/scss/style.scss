@@ -1170,3 +1170,89 @@ body {
 .navigation_cards__title:hover{
 	text-decoration: underline;
 }
+
+/*форма отзывов на свадебной странице**/
+.feedback-form{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    justify-items: flex-start; 
+    column-gap: 0.9375rem;
+    margin: 0.625rem;
+	height: 38.125rem;
+	background-color: #f1f1f1;
+	height: 65vh;
+	margin-top: 5rem;
+}
+.feedback-form__content{
+	h2{
+		font-family: "Montserrat";
+        font-size: 1.875rem;
+        font-weight: 600;
+        text-align: center;
+		padding-top: 1rem;
+	}	
+}
+.contact
+{
+	display: flex;
+	flex-direction: row;
+	column-gap: 2.5rem;
+	margin-bottom: 1rem;
+	input{
+		width: 21vw;
+		height:5vh;
+		font-family: "ProximaNova";
+        font-size: 0.875rem;
+        font-weight: 400;
+        padding-top: 0;
+		margin-top:1rem;
+	}
+	label{
+		width: 20vw;
+		font-family: "ProximaNova";
+        font-size: 0.875rem;
+        font-weight: 400;
+        padding-top: 0;
+		margin-top:1rem;
+	}
+}
+.your_idea{
+	input{
+		width: 45vw;
+		height: 15vh;
+	}
+}
+.feedback-form__content-form{
+	label{
+		display: block;
+	}
+	input{
+		vertical-align: middle;
+
+	}
+}
+.button_feedback__form{
+	width: 15.875rem;
+	height: 3.125rem;
+	background-color: white;
+	border: solid 0.0625rem #E7426A;
+	color: #E7426A;
+	font-weight: 600;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.button_feedback__form:hover{
+	color:white;
+	background-color:  #E7426A;
+}
+.feedback-form{
+	p{
+        font-family: "ProximaNova";
+        font-size: 0.875rem;
+        font-weight: 400;
+        padding-top: 0;
+		margin-top:0.75rem;
+    }
+}
