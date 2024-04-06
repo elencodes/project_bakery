@@ -7,6 +7,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -85,8 +87,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -404,8 +405,7 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header__box {
@@ -950,8 +950,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 1.875rem;
-       column-gap: 1.875rem;
+  column-gap: 1.875rem;
   margin: 0.625rem;
   padding-bottom: 6.25rem;
 }
@@ -1038,8 +1037,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
   transition: 0.2s;
@@ -1079,8 +1077,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1115,8 +1112,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
 }
 
@@ -1419,8 +1415,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   justify-items: flex-start;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1439,8 +1434,7 @@ body {
 .contact {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+  column-gap: 2.5rem;
   margin-bottom: 1rem;
 }
 .contact input {
@@ -1614,4 +1608,168 @@ body {
 
 .contacts_nav--link-active_page {
   text-decoration-color: #E7426A;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*-----Catalog Page-----*/
+.catalog__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5625rem; /*--41px в макете / 16px (по умолчанию в браузере)--*/
+  margin-bottom: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
+  margin-left: 0.3rem; /*--4.8px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.catalog__nav--link {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  color: #292929;
+  color: #8a8a8c;
+  margin-right: 0.25rem; /*--4px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.catalog__nav--link:hover {
+  text-decoration: underline;
+  text-decoration-color: #E7426A;
+  transition: color 0.1s linear;
+}
+
+.active__page {
+  color: #4E9DD3;
+}
+
+.active__page:hover {
+  text-decoration-color: #E7426A;
+}
+
+.catalog-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
+  margin: 0 auto;
+  margin-bottom: 5.3125rem; /*--85px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.catalog-box__h2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 2.625rem; /*-42px в макете / 16px (по умолчанию в браузере)--*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem; /*-30px в макете / 16px (по умолчанию в браузере)--*/
+  font-weight: 600;
+}
+
+.catalog__container {
+  width: 100%;
+  height: 24.0625rem; /*--385px в макете / 16px (по умолчанию в браузере)--*/
+  background: url("../images/catalog/catalog-pic.png") center no-repeat;
+  background-size: contain;
+  margin-bottom: 2.625rem; /*-42px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.catalog__box {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  max-width: 67.5rem; /*--1080px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.catalog__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 29.375rem; /*--470px в макете / 16px (по умолчанию в браузере)--*/
+  padding-top: 5.9375rem; /*--95px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.catalog__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
+  margin-bottom: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.catalog__text {
+  font-family: "ProximaNova", sans-serif;
+  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.catalog-box__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.catalog-box__button--small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.1875rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.small-button {
+  width: 14.375rem; /*--230px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.small-button--transparent {
+  background-color: transparent;
+}
+
+.catalog {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 48rem; /*--768px в макете / 16px (по умолчанию в браузере)--*/
+  margin: 0 auto;
+}
+
+.catalog__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-cards__item {
+  display: flex;
+  flex-direction: column;
+  width: 23.125rem; /*--370px в макете / 16px (по умолчанию в браузере)--*/
+  height: 21.25rem; /*--340px в макете / 16px (по умолчанию в браузере)--*/
+  align-items: center;
+  justify-content: end;
+  border-radius: 0.3125rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
+  transition: 0.2s;
+}
+
+.catalog-cards__item--bctubes {
+  background: url("../images/catalog/catalog-tubes.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.catalog-cards__item--bceclairs {
+  background: url("../images/catalog/catalog-eclairs.png") center no-repeat;
+  background-size: contain;
+}
+
+.catalog-cards__item--bctubes:hover,
+.catalog-cards__item--bceclairs:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.catalog-cards__h3 {
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding-bottom: 2.75rem; /*--44px в макете / 16px (по умолчанию в браузере)--*/
+}
