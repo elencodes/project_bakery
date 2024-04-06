@@ -733,6 +733,7 @@ body {
     padding: 0rem;
     flex-direction: column;
     position:relative;
+	transition: 0.2s;
     img{
         width: 100%;
 		padding-bottom: 1rem;
@@ -807,14 +808,15 @@ body {
     column-gap: 1.25rem;
     row-gap: 1.25rem;
     margin: 0.625rem;
+	transition: 0.2s;
     img{
         width: 10.625rem;
         height: 10.625rem;
     }
 }
 .inst_card:hover{
-    width: 12.5rem;
-    height: 12.5rem;
+	transform:scale(1.15);
+	cursor:pointer;
 }
 /* общее блок инстаграмм**/
 .instagram{
@@ -882,6 +884,7 @@ body {
     padding: 0rem;
     flex-direction: column;
     position:relative;
+	transition: 0.2s;
     img{
         width: 100%;
 		padding-bottom: 1rem;
@@ -906,11 +909,13 @@ body {
         font-weight: 600;
     }
     p{
-        font-family: "Montserrat";
-        font-size: 0.875rem;
         font-weight: 400;
         padding-top: 0;
 		margin-top:1rem;
+		font-family: "ProximaNova";
+        font-size: 0.875rem;
+        font-weight: 400;
+        padding-top: 0;
     }
     margin-top: 5rem;
 }
