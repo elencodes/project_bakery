@@ -141,14 +141,22 @@ body {
 .big-button{
 	width:18.3125rem;
 	height:3.25rem;
-	border:0.0625rem solid #E7426A;
+	border:0.0625rem solid #4E9DD3;
 	border-radius:0.1875rem;
 	background-color:#F7F7F7;
-	color: #E7426A;
+	color: #000000;
 }
+
 .big-button:hover{
+	color: #E7426A;
+	border-color: #E7426A;
+	transition: border-color .1s linear, color .1s linear;
+}
+
+.big-button:active{
 	color:#F7F7F7;
 	background-color:#E7426A;
+	transition: background .1s linear, color .1s linear;
 }
 /*------Header------*/
 
