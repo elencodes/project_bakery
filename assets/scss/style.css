@@ -1730,6 +1730,11 @@ body {
 }
 
 .catalog__boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   color: #292929;
 }
 
@@ -1795,6 +1800,11 @@ body {
 }
 
 .catalog-box__all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   color: #292929;
 }
 
