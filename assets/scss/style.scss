@@ -1548,6 +1548,22 @@ body {
 	background-color: transparent;
 }
 
+.catalog__boxes {
+	color: $mainColor;
+}
+
+.catalog__boxes:hover{
+	color: #E7426A;
+	border-color: #E7426A;
+	transition: border-color .1s linear, color .1s linear;
+}
+
+.catalog__boxes:active{
+	color:#F7F7F7;
+	background-color:#E7426A;
+	transition: background .1s linear, color .1s linear;
+}
+
 .catalog {
 	display: flex;
 	width: 100%;
@@ -1593,4 +1609,20 @@ body {
 	@include mainH4;
 	color: $secondaryColor;
 	padding-bottom: 2.75rem; /*--44px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.catalog-box__all {
+	color: $mainColor;
+}
+
+.catalog-box__all:hover{
+	color: #E7426A;
+	border-color: #E7426A;
+	transition: border-color .1s linear, color .1s linear;
+}
+
+.catalog-box__all:active{
+	color:#F7F7F7;
+	background-color:#E7426A;
+	transition: background .1s linear, color .1s linear;
 }
