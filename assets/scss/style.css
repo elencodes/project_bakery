@@ -7,6 +7,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -85,8 +87,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -404,8 +405,7 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header__box {
@@ -490,7 +490,8 @@ body {
 
 .sales__cards {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sales__cards--sale_one {
@@ -517,9 +518,14 @@ body {
   height: 24.8125rem;
   align-items: center;
   justify-content: end;
+  margin-bottom: 1.875rem;
   background-size: cover;
   border-radius: 0.3125rem;
   transition: 0.2s;
+}
+
+.sales__cards--sale_one, .sales__cards--sale_two, .sales__cards--sale_three {
+  margin-right: 1.875rem;
 }
 
 .sales__cards--sale_one:hover {
@@ -776,10 +782,7 @@ body {
 .popular-box__cards {
   display: flex;
   flex-wrap: wrap;
-}
-
-.popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three {
-  margin-bottom: 2.1875rem;
+  justify-content: center;
 }
 
 .popular-box__cards--cards_one, .popular-box__cards--cards_two,
@@ -791,6 +794,7 @@ body {
 .popular-box__cards--cards_four, .popular-box__cards--cards_five, .popular-box__cards--cards_six {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2.1875rem;
   border: 1px solid #EDEDF0;
   background-color: #FFFFFF;
   width: 23.125rem;
@@ -855,6 +859,21 @@ body {
   border-top: 1px solid #EDEDF0;
 }
 
+.popular-box__cards--price-line_button {
+  display: flex;
+  width: 6.375rem;
+  height: 1.58rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin-top: 0.7125rem;
+  margin-right: 1.5625rem;
+}
+
+.box-button__text {
+  margin-top: 0.3rem;
+}
+
 .popular-box__cards--price-line_button-text {
   font-family: "Montserrat";
   font-size: 0.875rem;
@@ -870,8 +889,9 @@ body {
   font-size: 1.125rem;
   font-weight: 600;
   color: #E7426A;
-  margin-top: 0.9rem;
+  margin-top: 1rem;
   margin-left: 1.3125rem;
+  background-color: #FFFFFF;
 }
 
 .also-margin {
@@ -880,12 +900,6 @@ body {
 
 .popular-box__cards--p, .popular-box__cards--h4 {
   margin-left: 1.3125rem;
-}
-
-.popular-box__cards--price-line_button {
-  margin-right: 1.5625rem;
-  margin-top: 0.75rem;
-  background-color: #FFFFFF;
 }
 
 .popular-box__button {
@@ -937,8 +951,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 1.875rem;
-       column-gap: 1.875rem;
+  column-gap: 1.875rem;
   margin: 0.625rem;
   padding-bottom: 6.25rem;
 }
@@ -1025,8 +1038,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
   transition: 0.2s;
@@ -1066,8 +1078,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1102,8 +1113,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
 }
 
@@ -1406,8 +1416,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   justify-items: flex-start;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1426,8 +1435,7 @@ body {
 .contact {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+  column-gap: 2.5rem;
   margin-bottom: 1rem;
 }
 .contact input {
