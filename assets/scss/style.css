@@ -1104,6 +1104,8 @@ body {
 .footer__ptofit {
   display: flex;
   flex-direction: row;
+  width: 23.125rem; /*--370px в макете / 16px (по умолчанию в браузере)--*/
+  justify-content: space-around;
 }
 
 .footer__profit--items {
@@ -1113,7 +1115,7 @@ body {
 }
 
 .footer__profit--item {
-  margin-top: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+  margin-top: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .footer__profit--icon1 {
@@ -1130,14 +1132,13 @@ body {
 
 .footer__profit-text {
   text-align: center;
-  width: 8.75rem; /*--140px в макете / 16px (по умолчанию в браузере)--*/
   font-size: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
   color: rgb(41, 41, 41);
   line-height: 110%;
 }
 
 .footer__add-info {
-  width: 23.125rem;
+  width: 23.125rem; /*--370px в макете / 16px (по умолчанию в браузере)--*/
   height: 3.75rem; /*--60px в макете / 16px (по умолчанию в браузере)--*/
   margin-top: 1.75rem; /*--28px в макете / 16px (по умолчанию в браузере)--*/
 }
@@ -1152,6 +1153,7 @@ body {
 
 .footer__nav {
   display: flex;
+  margin-left: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .footer__header {
@@ -1165,7 +1167,11 @@ body {
 
 .footer__list {
   width: 10.75rem; /*--172px в макете / 16px (по умолчанию в браузере)--*/
-  margin-top: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  margin-top: 1.312rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.footer__list-item {
+  padding-bottom: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .footer__list--link {
@@ -1177,6 +1183,9 @@ body {
 .footer__contacts {
   display: flex;
   flex-direction: column;
+  height: 9.625rem; /*--154px в макете / 16px (по умолчанию в браузере)--*/
+  margin-left: 3.75rem; /*--60px в макете / 16px (по умолчанию в браузере)--*/
+  justify-content: space-between;
 }
 
 .footer__header-contacts {
@@ -1189,6 +1198,7 @@ body {
 .footer-text {
   text-align: right;
   color: rgb(41, 41, 41);
+  padding-top: 0.312rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .footer__apps {
