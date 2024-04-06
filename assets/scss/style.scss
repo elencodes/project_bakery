@@ -105,7 +105,7 @@ template {display: none;}
 $mainFont: 'ProximaNova', sans-serif;
 $secondaryFont: 'Montserrat', sans-serif;
 $mainColor: #292929;
-$salesblockColor: #FFFFFF;
+$secondaryColor: #FFFFFF;
 
 /*Объявление миксинов*/
 
@@ -427,7 +427,7 @@ body {
 	cursor: pointer;
 }
 .sales__cards--h3,.sales__cards--p{
-	color: $salesblockColor;
+	color: $secondaryColor;
 	font-family:Montserrat;
 	font-weight: 600;
 }
@@ -1587,6 +1587,6 @@ body {
 
 .catalog-cards__h3 {
 	@include mainH4;
-	color: $salesblockColor;
+	color: $secondaryColor;
 	padding-bottom: 2.75rem; /*--44px в макете / 16px (по умолчанию в браузере)--*/
 }
