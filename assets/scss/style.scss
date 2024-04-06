@@ -924,29 +924,36 @@ body {
 .footer {
 	width: 100%;
 	background-color: rgb(235, 237, 238);
+	margin-top: 4.625rem;/*--74px в макете / 16px (по умолчанию в браузере)--*/
   }
   .footer__container {
 	height: 19.875rem; /*--318px в макете / 16px (по умолчанию в браузере)--*/
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
   }
   
   .footer__wrap-box {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex-wrap: wrap;
   }
   
   .footer__ptofit {
 	display: flex;
 	flex-direction: row;
 	width: 23.125rem;/*--370px в макете / 16px (по умолчанию в браузере)--*/
-	justify-content: space-around
+	justify-content: space-around;
+	flex-wrap: wrap;
   }
+
   .footer__profit--items {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	flex-wrap: wrap;
 	
   }
   .footer__profit--item {
@@ -989,6 +996,7 @@ body {
   .footer__nav {
 	display: flex;
 	margin-left: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
+	flex-wrap: wrap;
   }
   
   .footer__header {
@@ -1021,6 +1029,7 @@ body {
 	height: 9.625rem;/*--154px в макете / 16px (по умолчанию в браузере)--*/
 	margin-left: 3.75rem;/*--60px в макете / 16px (по умолчанию в браузере)--*/
 	justify-content: space-between;
+	flex-wrap: wrap;
   }
   
   .footer__header-contacts {
@@ -1038,9 +1047,21 @@ body {
   .footer__apps {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
   }
   .footer__apps-item {
 	width: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
+  }
+
+  .footer__link--hover:hover{
+	text-decoration: underline;
+	text-decoration-color: #E7426A;
+	transition: color .1s linear;
+  }
+  
+  .footer__link--active:active {
+	color: #E7426A;
+	transition: color .1s linear;
   }
 
 //   блок Навигационные карточки
