@@ -342,6 +342,10 @@ body {
   width: 10rem; /*--160px в макете / 16px (по умолчанию в браузере)--*/
 }
 
+.nav__inner {
+  background-color: #FFFFFF;
+}
+
 .nav__container {
   display: flex;
   justify-content: end;
