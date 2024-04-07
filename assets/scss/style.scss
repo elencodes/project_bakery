@@ -1325,8 +1325,9 @@ body {
   
   .wedding__content {
 	display: flex;
-	width: 100%;
-  //   flex-wrap: wrap;
+	width: 100%;	
+    flex-wrap: wrap;
+	justify-content: space-between;
 	
   }
   .wedding__content-image {
@@ -1618,7 +1619,7 @@ body {
 }
 
 /*-- wedding QA --*/
-.weddinf-qa {
+.wedding-qa {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
