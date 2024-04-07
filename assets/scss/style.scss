@@ -281,7 +281,7 @@ body {
 .container__content {
 	width: 100%;
 	height: 29.6875rem; /*--475px в макете / 16px (по умолчанию в браузере)--*/
-	background: url("../images/header-background.png") center no-repeat fixed;
+	background: url("../images/header-background.png") center no-repeat;
 	background-size: cover;
 }
 
