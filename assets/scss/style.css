@@ -1155,6 +1155,7 @@ body {
   padding: 0rem;
   flex-direction: column;
   position: relative;
+  margin-bottom: 5rem;
 }
 .we-care__cards_content img {
   width: 100%;
@@ -1437,8 +1438,17 @@ body {
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
-  height: 65vh;
+  height: 67vh;
   margin-top: 5rem;
+}
+.feedback-form a {
+  color: #4E9DD3;
+}
+
+.privacy_policy {
+  font-family: "ProximaNova";
+  font-size: 0.6875rem; /* 11px в макете**/
+  width: 50vw;
 }
 
 .feedback-form__content h2 {
@@ -1447,25 +1457,36 @@ body {
   font-weight: 600;
   text-align: center;
   padding-top: 1rem;
+  text-align: left;
 }
 
-.contact {
+.feedback-form-text {
+  width: 35vw;
+  text-align: left;
+}
+.feedback-form-text p {
+  font-family: "ProximaNova";
+  font-size: 1.125rem;
+}
+
+.contact_feedback-form {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
   margin-bottom: 1rem;
 }
-.contact input {
+.contact_feedback-form input {
   width: 21vw;
   height: 5vh;
-  font-family: "ProximaNova";
+  font-family: "Proxima Nova";
   font-size: 0.875rem;
   font-weight: 400;
   padding-top: 0;
   margin-top: 1rem;
+  padding-left: 0.625rem;
 }
-.contact label {
+.contact_feedback-form label {
   width: 20vw;
   font-family: "ProximaNova";
   font-size: 0.875rem;
@@ -1474,9 +1495,17 @@ body {
   margin-top: 1rem;
 }
 
+.your_idea {
+  margin-bottom: 2rem;
+}
 .your_idea input {
   width: 45vw;
-  height: 15vh;
+  height: 12vh;
+  margin-top: 1rem;
+}
+.your_idea label {
+  font-family: "ProximaNova";
+  font-size: 0.875rem;
 }
 
 .feedback-form__content-form label {
@@ -1487,19 +1516,24 @@ body {
 }
 
 .button_feedback__form {
-  width: 15.875rem;
-  height: 3.125rem;
-  background-color: white;
-  border: solid 0.0625rem #E7426A;
-  color: #E7426A;
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  width: 18.3125rem;
+  height: 3.25rem;
+  border: 0.0625rem solid #4E9DD3;
+  border-radius: 0.1875rem;
+  background-color: #F7F7F7;
+  color: #000000;
 }
 
 .button_feedback__form:hover {
-  color: white;
+  color: #E7426A;
+  border-color: #E7426A;
+  transition: border-color 0.1s linear, color 0.1s linear;
+}
+
+.button_feedback__form:active {
+  color: #F7F7F7;
   background-color: #E7426A;
+  transition: background 0.1s linear, color 0.1s linear;
 }
 
 .feedback-form p {
