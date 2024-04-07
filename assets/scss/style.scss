@@ -1296,9 +1296,8 @@ body {
 /* Свадебное предложение */
 .wedding__block {
 	width: 100%;
-	background-color: #F7F7F7;
+	// background-color: #F7F7F7;
 	margin-top: 2.125rem; /*--34px в макете / 16px (по умолчанию в браузере)--*/
-	
   }
   .wedding__nav {
 	display: flex;
@@ -1459,6 +1458,7 @@ body {
 	  align-items: center;
 	  height: 3.0625rem;/*--49px в макете / 16px (по умолчанию в браузере)--*/
 	  border-top: 1px solid #EDEDF0;
+	  margin-bottom: 1rem;
 	  
   }
   .wedding-kits__cards--price{
