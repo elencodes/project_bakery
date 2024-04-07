@@ -1226,7 +1226,6 @@ body {
 .footer {
   width: 100%;
   background-color: rgb(235, 237, 238);
-  margin-top: 4.625rem; /*--74px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .footer__container {
