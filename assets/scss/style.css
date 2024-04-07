@@ -594,6 +594,7 @@ body {
 .holiday_items {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .holiday_item_1,
@@ -1586,7 +1587,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 41.31rem;
-  background-color: #EDEDF0;
+  background-color: #F7F7F7;
 }
 
 .contacts_items {
@@ -1607,12 +1608,14 @@ body {
 
 .contacts_item_1 {
   display: flex;
-  margin-top: 5.125rem;
+  width: 23.68rem;
+  height: 27.125rem;
+  margin-top: 1.5rem;
+  margin-bottom: 9.06rem;
 }
 
 .contacts_item_2 {
   display: flex;
-  margin-top: 6.56rem;
 }
 
 .contacts_header_2 {
@@ -1620,12 +1623,16 @@ body {
   font-size: 1.875rem;
   font-weight: 600;
   display: flex;
+  font-size: 2.625rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.875rem;
 }
 
 .contacts_header_4 {
   font-family: "Montserrat";
   font-size: 1.125rem;
   font-weight: 600;
+  margin-bottom: 0.312rem;
 }
 
 .contacts_text_block_1 {
@@ -1644,6 +1651,33 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 5.125rem;
+}
+
+.contacts_text_part_1 {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  color: #292929;
+  line-height: 1.462rem;
+  font-size: 1.125rem;
+}
+
+.contacts_text_part_2 {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  color: #292929;
+  line-height: 1.462rem;
+  font-size: 1.125rem;
+}
+
+.contacts_text_part_3 {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  color: #292929;
+  line-height: 1.462rem;
+  font-size: 1.125rem;
 }
 
 .contacts_nav--link,

@@ -465,6 +465,7 @@ body {
 .holiday_items {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .holiday_item_1,
 .holiday_item_2,
@@ -1422,7 +1423,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 41.31rem;
-	background-color: #EDEDF0;
+	background-color:#F7F7F7;
 }
 .contacts_items {
 	display: flex;
@@ -1440,18 +1441,24 @@ body {
 }
 .contacts_item_1 {
 	display: flex;
-	margin-top: 5.125rem;
+	width: 23.68rem;
+	height: 27.125rem;
+	margin-top: 1.5rem;
+	margin-bottom: 9.06rem;
 }
 .contacts_item_2 {
 	display: flex;
-	margin-top: 6.56rem;
 }
 .contacts_header_2 {
 	@include mainH2;
 	display: flex;
+    font-size: 2.625rem;
+    line-height: 3.2rem;
+	margin-bottom: 1.875rem;
 }
 .contacts_header_4 {
 	@include mainH4;
+	margin-bottom: 0.312rem;
 }
 .contacts_text_block_1 {
 	display: flex;
@@ -1467,6 +1474,21 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 5.125rem;
+}
+.contacts_text_part_1 {
+	@include mainFont;
+	line-height: 1.462rem;
+	font-size: 1.125rem;
+}
+.contacts_text_part_2 {
+	@include mainFont;
+    line-height: 1.462rem;
+    font-size: 1.125rem;
+}
+.contacts_text_part_3 {
+	@include mainFont;
+	line-height: 1.462rem;
+	font-size: 1.125rem;
 }
 .contacts_nav--link,
 .contacts_nav--link-active_page {
@@ -1493,25 +1515,25 @@ body {
 	margin-top: 2.5625rem;
 	margin-bottom: 1.3125rem;
 	margin-left: 0.3rem;
-  }
-  .contacts_nav--link{
+}
+.contacts_nav--link{
 	@include mainFont;
 	color: #8a8a8c;
 	margin-right: 0.25rem;
-  }
-  .contacts_nav--link:hover{
+}
+.contacts_nav--link:hover{
 	text-decoration: underline;
 	text-decoration-color: #E7426A;
 	transition: color .1s linear;
-  }
-  .contacts_nav--link-active_page{
+}
+.contacts_nav--link-active_page{
 	color: #4E9DD3;
-  }
-  .contacts_nav--link-active_page{
+}
+.contacts_nav--link-active_page{
 	text-decoration-color: #E7426A;
-  }
+}
 
-  /*-----Catalog Page-----*/
+/*-----Catalog Page-----*/
 
 .catalog__nav{
 	display: flex;
