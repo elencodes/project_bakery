@@ -7,6 +7,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -85,8 +87,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -408,8 +409,7 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header__box {
@@ -1070,8 +1070,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
   transition: 0.2s;
@@ -1115,8 +1114,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1169,8 +1167,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   flex-wrap: wrap;
 }
@@ -1672,12 +1669,10 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   justify-items: flex-start;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
-  height: 67vh;
   margin-top: 5rem;
 }
 .feedback-form a {
@@ -1685,9 +1680,9 @@ body {
 }
 
 .privacy_policy {
+  width: 44.5rem; /* 712px */
   font-family: "ProximaNova";
   font-size: 0.6875rem; /* 11px в макете**/
-  width: 50vw;
 }
 
 .feedback-form__content h2 {
@@ -1695,12 +1690,12 @@ body {
   font-size: 1.875rem;
   font-weight: 600;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 6.25rem;
   text-align: left;
 }
 
 .feedback-form-text {
-  width: 35vw;
+  width: 29.25rem; /* 468px в макете**/
   text-align: left;
 }
 .feedback-form-text p {
@@ -1711,13 +1706,12 @@ body {
 .contact_feedback-form {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+  column-gap: 2.5rem;
   margin-bottom: 1rem;
 }
 .contact_feedback-form input {
-  width: 21vw;
-  height: 5vh;
+  width: 21rem; /* 336px */
+  height: 3.125rem; /* 50px */
   font-family: "Proxima Nova";
   font-size: 0.875rem;
   font-weight: 400;
@@ -1738,7 +1732,7 @@ body {
   margin-bottom: 2rem;
 }
 .your_idea input {
-  width: 45vw;
+  width: 44.5rem; /* 712px */
   height: 12vh;
   margin-top: 1rem;
 }
@@ -2212,4 +2206,4 @@ body {
   color: #F7F7F7;
   background-color: #E7426A;
   transition: background 0.1s linear, color 0.1s linear;
-}/*# sourceMappingURL=style.css.map */
+}

@@ -1504,16 +1504,15 @@ body {
     margin: 0.625rem;
 	height: 38.125rem;
 	background-color: #f1f1f1;
-	height: 67vh;
 	margin-top: 5rem;
 	a{
 		color:#4E9DD3;
 	}
 }
 .privacy_policy{
+	width: 44.5rem; /* 712px */
 	font-family: 'ProximaNova';
 	font-size: 0.6875rem; /* 11px в макете**/
-	width: 50vw;
 }
 .feedback-form__content{
 	h2{
@@ -1521,12 +1520,12 @@ body {
         font-size: 1.875rem;
         font-weight: 600;
         text-align: center;
-		padding-top: 1rem;
+		padding-top: 6.25rem;
 		text-align: left;
 	}	
 }
 .feedback-form-text{
-	width: 35vw;
+	width: 29.25rem;  /* 468px в макете**/
 	text-align: left;
 	p{
 		font-family: 'ProximaNova';
@@ -1540,8 +1539,8 @@ body {
 	column-gap: 2.5rem;
 	margin-bottom: 1rem;
 	input{
-		width: 21vw;
-		height:5vh;
+		width: 21rem; /* 336px */
+		height: 3.125rem; /* 50px */
 		font-family: "Proxima Nova";
         font-size: 0.875rem;
         font-weight: 400;
@@ -1560,7 +1559,7 @@ body {
 }
 .your_idea{
 	input{
-		width: 45vw;
+		width: 44.5rem; /* 712px */
 		height: 12vh;
 		margin-top: 1rem;
 	}
