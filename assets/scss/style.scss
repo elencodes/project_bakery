@@ -1293,6 +1293,204 @@ body {
 	}
 }
 
+/* Свадебное предложение */
+.wedding__block {
+	width: 100%;
+	background-color: #F7F7F7;
+	margin-top: 2.125rem; /*--34px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .wedding__nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+   
+  }
+  .wedding__nav--link {
+	line-height: 1.0325rem;/*--17px в макете / 16px (по умолчанию в браузере)--*/
+	margin-right: 0.25rem; /*--4px в макете / 16px (по умолчанию в браузере)--*/
+	text-align: left;
+  }
+  .wedding__link--hover:hover {
+	text-decoration: underline;
+	text-decoration-color: #e7426a;
+	transition: color 0.1s linear;
+  }
+  .active__page {
+	color: #4e9dd3;
+  }
+  
+  .active__page:hover {
+	text-decoration-color: #e7426a;
+  }
+  
+  .wedding__content {
+	display: flex;
+	width: 100%;
+  //   flex-wrap: wrap;
+	
+  }
+  .wedding__content-image {
+	height: 33.1875rem;/*--531px в макете / 16px (по умолчанию в браузере)--*/
+	width: auto;
+	
+  }
+  .wedding-box {
+	background: url(../images/wedding_offer/back-color.png
+	) right 5% bottom 90% / auto no-repeat;
+	
+  }
+  .wedding__title--h1 {
+	color: rgb(41, 41, 41);
+	font-family: Montserrat;
+	font-size: 2.625rem; /*--42px в макете / 16px (по умолчанию в браузере)--*/
+	font-weight: 600;
+	line-height: 3.187rem;/*--51px в макете / 16px (по умолчанию в браузере)--*/
+	text-align: center;
+	margin-top: 5.4375rem;
+  }
+  .wedding__text-box {
+	  margin-top: 0.8125rem;
+  
+  }
+  .wedding__text {
+	  
+	  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+	  line-height: 1.375rem;
+	  text-align: center;
+	  
+  }
+  .wedding__button {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  margin-top: 2.5rem; 
+	  font-family: $secondaryFont;
+	  font-size: 0.875rem ;
+	  font-weight: 600;
+	  
+  }
+  .wedding__button--small {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  align-items: center;
+	  margin-top: 2.1875rem; 
+	  gap: 0.625rem;/*--10px в макете / 16px (по умолчанию в браузере)--*/
+	  font-family: $secondaryFont;
+	  font-size: 0.875rem ;
+	  font-weight: 600;
+	  
+  }
+  .wedding__text-main {
+	  width: 41.875rem;/*--670 в макете / 16px (по умолчанию в браузере)--*/
+	  height: 19rem;/*--114 в макете / 16px (по умолчанию в браузере)--*/
+	  font-size: 1rem;/*--16px в макете / 16px (по умолчанию в браузере)--*/
+	  line-height: 1.1875rem;/*--19px в макете / 16px (по умолчанию в браузере)--*/
+	  line-height: 19px;
+	  margin-top: 2.5625rem;/*--41px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  /*-- wedding kits --*/
+  .wedding-kits {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	  max-width: 73.125rem;
+	  margin: 0 auto;
+	  margin-bottom:5.3125rem;
+  }
+  .wedding-kits__h2 {	
+		  display: flex;
+		  justify-content: center;
+		  align-items: start;
+		  margin-bottom: 2.625rem;
+		  font-family: "Montserrat";
+		  font-size: 1.875rem;
+		  font-weight: 600;
+	  
+  }
+  .wedding-kits__cards {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  gap: 1.875rem;/*--30px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .wedding-kits__cards--item {
+	  display: flex;
+	  flex-direction: column;
+	  // margin-bottom: 2.1875rem;
+	  border: 1px solid #EDEDF0;
+	  background-color: #FFFFFF;
+	  width: 23.125rem;/*--370 в макете / 16px (по умолчанию в браузере)--*/
+	  height: 28.6875rem;/*--459 в макете / 16px (по умолчанию в браузере)--*/
+	  border-radius: 0.3125rem;
+	  transition: 0.2s;
+  }
+  .wedding-kits__cards--item:hover {
+	  transform: scale(1.07);
+	  cursor: pointer;
+  }
+  .wedding-kits__image {
+	  width: 23.125rem;/*--370 в макете / 16px (по умолчанию в браузере)--*/
+	  height: 18.75rem;/*--300 в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .wedding-kits__cards--h4 {
+	  font-family: "Montserrat";
+	  font-size: 1.125rem;/*--18px в макете / 16px (по умолчанию в браузере)--*/
+	  font-weight: 600;
+	  margin-top: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
+	  margin-bottom: 0.875rem;/*--14px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .wedding-kits__cards--p {
+	  font-family: "ProximaNova", sans-serif;
+	  font-weight: 400;
+	  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+	  color: #292929;
+	  margin-bottom: 0.875rem;/*--14px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .wedding-kits__cards--h4, .wedding-kits__cards--p {
+	  margin-left: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .wedding-kits__cards--price-line {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  height: 3.0625rem;/*--49px в макете / 16px (по умолчанию в браузере)--*/
+	  border-top: 1px solid #EDEDF0;
+	  
+  }
+  .wedding-kits__cards--price{
+	  font-family: "Montserrat";
+	  font-size: 1.125rem;
+	  font-weight: 600;
+	  color: #E7426A;
+	  margin-top: 1rem;
+	  margin-left: 1.3125rem;
+	  background-color: #FFFFFF;
+  }
+  .wedding-kits__cards--price-line_button {
+	  display: flex;
+	  width:6.375rem;
+	  height:1.58rem;
+	  justify-content: space-between;
+	  align-items: center;
+	  background-color: #FFFFFF;
+	  margin-top:0.7125rem;
+	  margin-right:1.5625rem;
+	  
+  }
+  .box-button__text{
+	  margin-top: 0.3rem;
+  }
+  .wedding-kits__cards--price-line_button-text {
+	  font-family: "Montserrat";
+	  font-size: 0.875rem;
+	  font-weight: 600;
+  }
+  .wedding-kits__cards--price-line_button-text:hover {
+	  color: #E7426A;
+  }
+
+
 /*форма отзывов на свадебной странице**/
 .feedback-form{
     display: flex;
@@ -1418,6 +1616,58 @@ body {
 	color: #E7426A;
 	transition: color .1s linear;
 }
+
+/*-- wedding QA --*/
+.weddinf-qa {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 73.125rem;
+	margin-top: 5.0625rem;
+	margin-bottom:5.3125rem;
+}
+.wedding-qa__h2 {	
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	margin-bottom: 2.625rem;
+	font-family: "Montserrat";
+	font-size: 1.875rem;
+	font-weight: 600;
+
+}
+.wedding-qa__content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.wedding-qa__content--item {
+	background:#FFFFFF;
+	width: 23.125rem;/*--370 в макете / 16px (по умолчанию в браузере)--*/
+}
+.wedding-qa__content--line {
+	border-bottom:1px solid #EDEDF0;
+}
+.wedding-qa__content--h4 {
+	font-family: "Montserrat";
+	font-size: 1.125rem;/*--18px в макете / 16px (по умолчанию в браузере)--*/
+	font-weight: 600;
+	margin: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
+	
+}
+
+.wedding-qa__content--p {
+	font-family: "ProximaNova", sans-serif;
+	font-weight: 400;
+	font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+	color: #292929;
+	margin: 1.25rem 1.375rem 1.8125rem 1.3125rem;/*--20px 22 px 29px 21px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+
+
+
 /*-----Contacts-----*/
 .contacts_container {
 	display: flex;
