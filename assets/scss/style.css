@@ -1632,7 +1632,7 @@ body {
   font-family: "Montserrat";
   font-size: 1.125rem;
   font-weight: 600;
-  margin-bottom: 0.312rem;
+  margin-bottom: 1.125rem;
 }
 
 .contacts_text_block_1 {
@@ -1678,6 +1678,16 @@ body {
   color: #292929;
   line-height: 1.462rem;
   font-size: 1.125rem;
+}
+
+.contacts_text_margin_2 {
+  display: flex;
+  margin-bottom: 1.125rem;
+}
+
+.contacts_text_margin_3 {
+  display: flex;
+  margin-bottom: 1.125rem;
 }
 
 .contacts_nav--link,

@@ -1458,7 +1458,7 @@ body {
 }
 .contacts_header_4 {
 	@include mainH4;
-	margin-bottom: 0.312rem;
+	margin-bottom: 1.125rem;
 }
 .contacts_text_block_1 {
 	display: flex;
@@ -1489,6 +1489,14 @@ body {
 	@include mainFont;
 	line-height: 1.462rem;
 	font-size: 1.125rem;
+}
+.contacts_text_margin_2 {
+	display: flex;
+	margin-bottom: 1.125rem;
+}
+.contacts_text_margin_3 {
+	display: flex;
+	margin-bottom: 1.125rem;
 }
 .contacts_nav--link,
 .contacts_nav--link-active_page {
