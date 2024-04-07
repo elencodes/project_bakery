@@ -1,173 +1,59 @@
-/*------Normalize------*/
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
 
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-*, *:before, *:after{ 
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus, :active{outline: none;}
-a:focus, a:active{outline: none;}
-
-nav,main,footer,header,aside{display: block;}
-
-html, body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1.15;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;  
-}
-
-input::-ms-clear{display:none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a{background-color: transparent;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul, li{list-style-type: none;}
-img{vertical-align: top;}
-
-h1,h2, h3, h4, h5, h6{font-size: inherit;font-weight: 400;}
-hr{box-sizing: content-box;height: 0;overflow: visible;}
-pre{font-family: monospace, monospace;font-size: 1em;}
-abbr[title]{border-bottom: none;text-decoration: underline;text-decoration: underline dotted; /* 2 */}
-b,strong{font-weight: bolder;}
-code,kbd,samp{font-family: monospace, monospace;font-size: 1em;}
-small{font-size: 80%;}
-sub,sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}
-sub{bottom: -0.25em;}
-sup{top: -0.5em;}
-img{border-style: none;}
-button,input,optgroup,select,textarea {font-family: inherit;font-size: 100%;line-height: 1.15;margin: 0;}
-button,select {text-transform: none;}
-button,[type="button"],[type="reset"],[type="submit"] {-webkit-appearance: button;}
-button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {border-style: none;padding: 0;}
-button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {outline: 1px dotted ButtonText;}
-fieldset{padding: 0.35em 0.75em 0.625em;}
-legend {box-sizing: border-box;color: inherit;display: table;max-width: 100%;padding: 0;white-space: normal;}
-progress{vertical-align: baseline;}
-textarea {overflow: auto;}
-[type="checkbox"],[type="radio"] {box-sizing: border-box;padding: 0;}
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {height: auto;}
-[type="search"] {-webkit-appearance: textfield ; outline-offset: -2px;}
-[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
-::-webkit-file-upload-button{-webkit-appearance: button;font: inherit;}
-details{display: block;}
-summary{display: list-item;}
-template {display: none;}
-[hidden] {display: none;}
-
-/*------Fonts------*/
-
+// Fonts
 @font-face {
 	font-family: 'Montserrat';
 	src: url("../fonts/Montserrat-SemiBold.woff") format('woff'), url("../fonts/Montserrat-SemiBold.woff2") format('woff2');
 	font-weight: 600;
 }
-
 @font-face {
 	font-family: 'ProximaNova';
 	src: url("../fonts/ProximaNova-Light.woff") format('woff'), url("../fonts/ProximaNova-Light.woff2") format('woff2');
 	font-weight: 300;
 }
-
 @font-face {
 	font-family: 'ProximaNova';
 	src: url("../fonts/ProximaNova-Regular.woff") format('woff'), url("../fonts/ProximaNova-Regular.woff2") format('woff2');
 	font-weight: 400;
 }
-
 @font-face {
 	font-family: 'ProximaNova';
 	src: url("../fonts/ProximaNova-Semibold.woff") format('woff'), url("../fonts/ProximaNova-Semibold.woff2") format('woff2');
 	font-weight: 600;
 }
-
 @font-face {
 	font-family: 'ProximaNovaCond';
 	src: url("../fonts/ProximaNovaCond-Regular.woff") format('woff'), url("../fonts/ProximaNovaCond-Regular.woff2") format('woff2');
 	font-weight: 400;
 }
-
-/*------Sass - переменные и миксины - позже разъединить файлы!!!!------*/
-
-/*Объявление переменных*/
-
-$mainFont: 'ProximaNova', sans-serif;
-$secondaryFont: 'Montserrat', sans-serif;
-$mainColor: #292929;
-$secondaryColor: #FFFFFF;
-
-/*Объявление миксинов*/
-
-@mixin mainFont {
-	font-family: 'ProximaNova', sans-serif;
-	font-weight: 400;
-	font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
-	color: $mainColor;
-}
-@mixin mainH2{
-	font-family:"Montserrat";
-	font-size:1.875rem ;
-	font-weight: 600;
-}
-@mixin mainH4{
-	font-family: "Montserrat";
-	font-size: 1.125rem;
-	font-weight: 600;
-}
-/*------Body------*/
-
+//----Body
 body {
 	@include mainFont;
 	background-color: #F7F7F7;
 }
-
 .container {
 	width: 100%;
 	max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
 	margin: 0 auto;
 }
-
 .big-button{
-	width:18.3125rem;
-	height:3.25rem;
-	border:0.0625rem solid #4E9DD3;
-	border-radius:0.1875rem;
-	background-color:#F7F7F7;
-	color: #000000;
+	@include bigButton;
 }
-
 .big-button:hover{
-	color: #E7426A;
-	border-color: #E7426A;
-	transition: border-color .1s linear, color .1s linear;
+	@include buttonHover;
 }
-
 .big-button:active{
-	color:#F7F7F7;
-	background-color:#E7426A;
-	transition: background .1s linear, color .1s linear;
+	@include buttonActive;
 }
-/*------Header------*/
-
+//----Header
 .header {
 	width: 100%;
 }
-
 .header__banner {
 	background-color: #D4E9F9;
 }
-
 .header-banner__inner {
 	display: flex;
 	justify-content: space-between;
@@ -176,19 +62,16 @@ body {
 	margin: 0 auto;
 	padding: 0.5625rem 0; /*--9px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .header-banner__text {
-	font-family: 'ProximaNova', sans-serif;
+	font-family: $mainFont;
 	font-weight: 300;
 	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
 	text-transform: uppercase;
 	color: $mainColor;
 }
-
 .header__inner {
 	background-color: #F7EBE5;
 }
-
 .header__top {
 	display: flex;
 	flex-wrap: wrap;
@@ -198,47 +81,39 @@ body {
 	margin: 0 auto;
 	padding: 1rem 0; /*--16px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .header-top__nav {
 	display: flex;
 	justify-content: space-between;
 	width: 43.5rem; /*--696px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .header-top__link {
 	color: $mainColor;
 }
-
 .header-top__text {
 	font-family: 'ProximaNovaCond', sans-serif;
 	font-weight: 300;
 	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .header-top__phone {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 8.4375rem; /*--135px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .header-top__basket {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 10rem; /*--160px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .nav__inner {
-	background-color: #FFFFFF;
+	background-color: $secondaryColor;
 }
-
 .nav__container {
 	display: flex;
 	justify-content: end;
 	padding: 1.125rem 0;/*--18px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -246,45 +121,37 @@ body {
 	align-items: center;
 	width: 70.125rem; /*--1122px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .nav__link {
 	text-transform: uppercase;
 	color: $mainColor;
 }
-
 .nav-link__stock {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 5rem; /*--80px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .nav__logo {
 	width: 7.75rem; /*--124px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .header-top__link--hover:hover,
 .nav__link--hover:hover{
 	text-decoration: underline;
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 	transition: color .1s linear;
 }
-
 .header-top__link--active:active,
 .nav__link--active:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
 }
-
-/*------HEADER CONTENT-----*/
-
+//----Header Content
 .container__content {
 	width: 100%;
 	height: 29.6875rem; /*--475px в макете / 16px (по умолчанию в браузере)--*/
 	background: url("../images/header-background.png") center no-repeat;
 	background-size: cover;
 }
-
 .header__container {
 	display: flex;
 	flex-wrap: wrap;
@@ -292,18 +159,15 @@ body {
 	margin: 0 auto;
 	max-width: 90rem; /*--1440px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .header__image {
 	max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
 	height: auto;
 	margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
 	object-fit: cover;
 }
-
 .header__box {
 	margin-left: 4rem; /*--32px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .header__content {
 	display: flex;
 	flex-direction: column;
@@ -313,13 +177,11 @@ body {
 	width: 100%;
 	margin: 0 auto;
 }
-
 .header__logoname {
 	font-family: $secondaryFont;
 	font-size: 1.375rem; /*--22px в макете / 16px (по умолчанию в браузере)--*/
 	text-transform: uppercase;
 }
-
 .header-logoname__subtitle {
 	font-family: $secondaryFont;
 	font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
@@ -327,7 +189,6 @@ body {
 	width: 9.875rem; /*--158px в макете / 16px (по умолчанию в браузере)--*/
 	position: relative;
 }
-
 .header-logoname__subtitle::before {
 	content: "";
 	width: 1.8125rem; /*--29px в макете / 16px (по умолчанию в браузере)--*/
@@ -337,7 +198,6 @@ body {
 	left: 0;
 	top: 50%;
 }
-
 .header-logoname__subtitle::after {
 	content: "";
 	width: 1.8125rem; /*--29px в макете / 16px (по умолчанию в браузере)--*/
@@ -347,23 +207,17 @@ body {
 	right: 0;
 	top: 50%;
 }
-
 .header__title {
 	font-family: $secondaryFont;
 	font-size: 2.625rem; /*--42px в макете / 16px (по умолчанию в браузере)--*/
 	margin-bottom: 0.8125rem; /*--13px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .header__text {
 	font-family: $mainFont;
 	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
 }
-
-
-/*------Main------*/
-
-
-/*-------------SALES BLOCK------------*/
+//----Main
+//----SALES BLOCK
 .sales{
 	display: flex;
 	flex-direction: column;
@@ -446,8 +300,7 @@ body {
 .for-margin{
     margin-bottom: 3.125rem;
 }
-
-/*-------------HOLYDAYS BLOCK------------*/
+//----HOLYDAYS BLOCK
 .holidays {
 	display: flex;
 	flex-direction: column;
@@ -556,59 +409,59 @@ body {
 }
 .holiday_item_1:hover {
     text-decoration: underline;
-    text-decoration-color: #E7426A;
+    text-decoration-color: $accentColor;
     transition: color .1s linear;
 }
 .holiday_item_2:hover {
     text-decoration: underline;
-    text-decoration-color: #E7426A;
+    text-decoration-color: $accentColor;
     transition: color .1s linear;
 }
 .holiday_item_3:hover {
     text-decoration: underline;
-    text-decoration-color: #E7426A;
+    text-decoration-color: $accentColor;
     transition: color .1s linear;
 }
 .holiday_item_4:hover {
     text-decoration: underline;
-    text-decoration-color: #E7426A;
+    text-decoration-color: $accentColor;
     transition: color .1s linear;
 }
 .holiday_item_5:hover {
     text-decoration: underline;
-    text-decoration-color: #E7426A;
+    text-decoration-color: $accentColor;
     transition: color .1s linear;
 }
 .holiday_item_6:hover {
     text-decoration: underline;
-    text-decoration-color: #E7426A;
+    text-decoration-color: $accentColor;
     transition: color .1s linear;
 }
 .holiday_item_1:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
 }
 .holiday_item_2:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
 }
 .holiday_item_3:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
 }
 .holiday_item_4:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
 }
 .holiday_item_5:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
 }
 .holiday_item_6:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
 }
-/*-------------POPULAR-BOX BLOCK------------*/
+//----POPULAR-BOX BLOCK
 .popular-box {
 	display: flex;
 	flex-direction: column;
@@ -617,91 +470,77 @@ body {
 	margin: 0 auto;
 	margin-bottom:5.3125rem;
 }
-
 .popular-box__h2 {
 	display: flex;
 	justify-content: center;
 	align-items: start;
 	margin-bottom: 2.625rem;
-	font-family: "Montserrat";
+	font-family: $secondaryFont;
 	font-size: 1.875rem;
 	font-weight: 600;
 }
-
 .popular-box__cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
 .popular-box__cards--cards_one, .popular-box__cards--cards_two,
 .popular-box__cards--cards_four, .popular-box__cards--cards_five {
 	margin-right: 1.875rem;
 }
-
 .popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three,
 .popular-box__cards--cards_four, .popular-box__cards--cards_five, .popular-box__cards--cards_six {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 2.1875rem;
 	border: 1px solid #EDEDF0;
-	background-color: #FFFFFF;
+	background-color: $secondaryColor;
 	width: 23.125rem;
 	height: 28.6875rem;
 	border-radius: 0.3125rem;
 	transition: 0.2s;
 }
-
 .popular-box__cards--cards_one:hover {
 	transform: scale(1.07);
 	cursor: pointer;
 }
-
 .popular-box__cards--cards_two:hover {
 	transform: scale(1.07);
 	cursor: pointer;
 }
-
 .popular-box__cards--cards_three:hover {
 	transform: scale(1.07);
 	cursor: pointer;
 }
-
 .popular-box__cards--cards_four:hover {
 	transform: scale(1.07);
 	cursor: pointer;
 }
-
 .popular-box__cards--cards_five:hover {
 	transform: scale(1.07);
 	cursor: pointer;
 }
-
 .popular-box__cards--cards_six:hover {
 	transform: scale(1.07);
 	cursor: pointer;
 }
-
 .popular-box__image {
 	width: 23.125rem;
 	height: 18.75rem;
 }
-
 .popular-box__cards--h4 {
-	font-family: "Montserrat";
+	font-family: $secondaryFont;
 	font-size: 1.125rem;
 	font-weight: 600;
 	margin-top: 0.85rem;
 	margin-bottom: 0.875rem;
 }
-
 .popular-box__cards--p {
-	font-family: "ProximaNova", sans-serif;
+	font-family: $mainFont;
 	font-weight: 400;
 	font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
-	color: #292929;
+	color: $mainColor;
 }
-
 .popular-box__cards--price-line {
 	display: flex;
 	justify-content: space-between;
@@ -713,7 +552,7 @@ body {
 	height:1.58rem;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #FFFFFF;
+	background-color: $secondaryColor;
 	margin-top:0.7125rem;
 	margin-right:1.5625rem;
 }
@@ -721,39 +560,36 @@ body {
 	margin-top: 0.3rem;
 }
 .popular-box__cards--price-line_button-text {
-	font-family: "Montserrat";
+	font-family: $secondaryFont;
 	font-size: 0.875rem;
 	font-weight: 600;
 }
 .popular-box__cards--price-line_button-text:hover{
-	color: #E7426A;
+	color: $accentColor;
 }
 .popular-box__cards--price-line-price {
-	font-family: "Montserrat";
+	font-family: $secondaryFont;
 	font-size: 1.125rem;
 	font-weight: 600;
-	color: #E7426A;
+	color: $accentColor;
 	margin-top: 1rem;
 	margin-left: 1.3125rem;
-	background-color: #FFFFFF;
+	background-color: $secondaryColor;
 }
-
 .also-margin {
 	margin-bottom: 1.4rem;
 }
-
 .popular-box__cards--p, .popular-box__cards--h4 {
 	margin-left: 1.3125rem;
 }
-
 .popular-box__button{
 	display: flex;
 	justify-content: center;
-	font-family:"Montserrat";
+	font-family:$secondaryFont;
 	font-size:0.875rem ;
 	font-weight: 600;
 }
-/*-------------BOXES PAGE------------*/
+//------BOXES PAGE----
 .boxes__nav{
 	display: flex;
 	justify-content: center;
@@ -769,18 +605,17 @@ body {
 }
 .boxes__nav--link:hover{
 	text-decoration: underline;
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 	transition: color .1s linear;
 }
 .active_page{
 	color: #4E9DD3;
 }
 .active_page:hover{
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 }
-
-/* блок карточки гарантии вкуса**/
-/* общие заголовки блока гарантии вкуса**/
+// блок карточки гарантии вкуса/
+// общие заголовки блока гарантии вкуса/
 .garanties{
 	display: flex;
 	flex-direction: column;
@@ -789,26 +624,26 @@ body {
 	align-items: center;
 	
     h2{
-        font-family: "Montserrat";
+        font-family: $secondaryFont;
         font-size: 1.875rem;
         font-weight: 600;
         text-align: center;
 		padding-top: 1rem;
     }
     h5{
-        font-family: "ProximaNova";
+        font-family: $mainFont;
         font-size: 1.125rem;
         font-weight: 600;
     }
     p{
-        font-family: "ProximaNova";
+        font-family: $mainFont;
         font-size: 0.875rem;
         font-weight: 600;
         padding-top: 0;
         text-align: center;
     }
     h6{
-        font-family: "ProximaNova";
+        font-family: $mainFont;
         font-size: 1.125rem;
         font-weight: 400;
         padding-top: 0;
@@ -821,7 +656,7 @@ body {
 	margin-top: 3rem;
 	padding-bottom: 1rem;
 }
-/* позиционирование карточек**/
+// позиционирование карточек/
 .garant__cards{
     display: flex;
     flex-direction: row;
@@ -831,7 +666,7 @@ body {
     margin: 0.625rem;
     padding-bottom: 6.25rem;
 }
-/* контент карточек гарантии вкуса**/
+// контент карточек гарантии вкуса/
 .garant__cards_content{
     width: 16.875rem;
     display:flex;
@@ -853,7 +688,7 @@ body {
 	transform: scale(1.15);
 	cursor: pointer;
 }
-/* ссылки на странице гарантии вкуса и качества**/
+// ссылки на странице гарантии вкуса и качества/
 .nav_links{
     display: flex;
     flex-direction: row;
@@ -864,31 +699,29 @@ body {
     }
 }
 .main__link{
-	font-family: "ProximaNova";
+	font-family: $mainFont;
 	font-size: 0.875rem;
 	font-weight: 400;
-	color: #292929;
+	color: $mainColor;
 }
 .garant__link{
 	color:#4E9DD3;
-	font-family: "ProximaNova";
+	font-family: $mainFont;
     font-size: 0.875rem;
     font-weight: 400;
 }
-
 .main__link:hover,
 .garant__link:hover{
 	text-decoration: underline;
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 	transition: color .1s linear;
 }
-
 .main__link:active,
 .garant__link:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
 }
-/* карточки инстаграм**/
+// карточки инстаграм/
 .instagram__gallery2
 {
     display: flex;
@@ -910,10 +743,10 @@ body {
 	transform:scale(1.15);
 	cursor:pointer;
 }
-/* общее блок инстаграмм**/
+// общее блок инстаграмм/
 .instagram{
     h2{
-        font-family: "Montserrat";
+        font-family: $secondaryFont;
         font-size: 1.875rem;
         font-weight: 600;
         text-align: center;
@@ -925,7 +758,7 @@ body {
 	}
 
 }
-/*блок с голубой полосай инстаграмм**/
+// блок с голубой полосай инстаграмм/
 .insta_menu{
     display: flex;
     flex-flow: row wrap;
@@ -936,7 +769,7 @@ body {
     background-color:#D4E9F9;
     margin-left:0.625rem;
     margin-right: 0.625rem;
-    font-family: "ProximaNova";
+    font-family: $mainFont;
     font-size: 1rem;
     font-weight: 400;
     row-gap: 2rem;
@@ -948,8 +781,6 @@ body {
 	}
 	
 }
-
-
 .insta_menu_nav {
     /**flex-grow: 1;**/
     justify-content: flex-end;
@@ -977,16 +808,14 @@ body {
     list-style: none;
 	flex-wrap: wrap;
   }
-
 .insta_menu li {
     margin-right: 1.25rem;
   }
 .insta_menu li:last-child {
     margin-right: 0;
   }
-
-/* блок карточки мы позаботились**/
-/* позиционирование карточек**/
+// блок карточки мы позаботились/
+// позиционирование карточек/
 .we-care__cards{
     display: flex;
     flex-direction: row;
@@ -996,7 +825,7 @@ body {
     margin: 0.625rem;
 	flex-wrap: wrap;
 }
-/* контент карточек**/
+// контент карточек/
 .we-care__cards_content{
     width: 16.875rem;
     display:flex;
@@ -1014,17 +843,17 @@ body {
 	transform: scale(1.05);
 	cursor: pointer;
 }
-/* общие заголовки блока мы позаботились**/
+// общие заголовки блока мы позаботились/
 .we-care{
     h2{
-        font-family: "Montserrat";
+        font-family: $secondaryFont;
         font-size: 1.875rem;
         font-weight: 600;
         text-align: center;
 		margin-bottom: 2rem;
     }
     h5{
-        font-family: "Montserrat";
+        font-family: $secondaryFont;
         font-size: 1.125rem;
         font-weight: 600;
     }
@@ -1032,7 +861,7 @@ body {
         font-weight: 400;
         padding-top: 0;
 		margin-top:1rem;
-		font-family: "ProximaNova";
+		font-family: $mainFont;
         font-size: 0.875rem;
         font-weight: 400;
         padding-top: 0;
@@ -1040,12 +869,10 @@ body {
     margin-top: 5rem;
 	margin-bottom: 5rem;
 }
-
-/*------Footer------*/
+//----Footer
 .footer {
 	width: 100%;
 	background-color: rgb(235, 237, 238);
-	
   }
   .footer__container {
 	height: 19.875rem; /*--318px в макете / 16px (по умолчанию в браузере)--*/
@@ -1054,14 +881,12 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
   }
-  
   .footer__wrap-box {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
   }
-  
   .footer__ptofit {
 	display: flex;
 	flex-direction: row;
@@ -1069,18 +894,15 @@ body {
 	justify-content: space-around;
 	flex-wrap: wrap;
   }
-
   .footer__profit--items {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
-	
   }
   .footer__profit--item {
 	margin-top: 0.875rem;/*--14px в макете / 16px (по умолчанию в браузере)--*/
   }
-  
   .footer__profit--icon1 {
 	width: 2.8rem; /*--44.95px в макете / 16px (по умолчанию в браузере)--*/
   }
@@ -1090,7 +912,6 @@ body {
   .footer__profit--icon2 {
 	width: 1.779rem; /*--28.46px в макете / 16px (по умолчанию в браузере)--*/
   }
-  
   .footer__profit-text {
 	text-align: center;
 	// width: 8.75rem; /*--140px в макете / 16px (по умолчанию в браузере)--*/
@@ -1098,14 +919,11 @@ body {
 	color: rgb(41, 41, 41);
 	line-height: 110%;
   }
-
   .footer__add-info {
 	width: 23.125rem;/*--370px в макете / 16px (по умолчанию в браузере)--*/
 	height: 3.75rem; /*--60px в макете / 16px (по умолчанию в браузере)--*/
 	margin-top: 1.75rem;/*--28px в макете / 16px (по умолчанию в браузере)--*/
   }
-
-  
   .footer__add-info--text {
 	color: rgb(41, 41, 41);
 	font-size: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
@@ -1113,13 +931,11 @@ body {
 	line-height: 0.937rem; /*--15px в макете / 16px (по умолчанию в браузере)--*/
 	text-align: left;
   }
-  
   .footer__nav {
 	display: flex;
 	margin-left: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
 	flex-wrap: wrap;
   }
-  
   .footer__header {
 	height: 1.187rem; /*--19px в макете / 16px (по умолчанию в браузере)--*/	
 	font-weight: 600;
@@ -1128,16 +944,13 @@ body {
 	text-align: left;
 	text-transform: uppercase;
   }
-  
   .footer__list {
 	width: 10.75rem;/*--172px в макете / 16px (по умолчанию в браузере)--*/
 	margin-top: 1.312rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
   }
-
   .footer__list-item {
 	padding-bottom: 1.125rem;/*--18px в макете / 16px (по умолчанию в браузере)--*/
   }
-  
   .footer__list--link {	
 	text-align: left;
 	color: rgb(41, 41, 41);
@@ -1159,7 +972,6 @@ body {
 	color: rgb(41, 41, 41);
 	text-align: right;
   }
-  
   .footer-text {
 	text-align: right;
 	color: rgb(41, 41, 41);
@@ -1173,28 +985,22 @@ body {
   .footer__apps-item {
 	width: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
   }
-
   .footer__link--hover:hover{
 	text-decoration: underline;
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 	transition: color .1s linear;
   }
-  
   .footer__link--active:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
   }
-
-//   блок Навигационные карточки
-
+//  блок Навигационные карточки
 .navigation_cards{
 	width: 73.125rem;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	
 }
-
 .navigation_cards__one,.navigation_cards__second,.navigation_cards__third,.navigation_cards__forth,.navigation_cards__fifth,.navigation_cards__sixth{
 	margin-top: 1.5625rem;/*--25 px в макете / 16px (по умолчанию в браузере)--*/
 	display: flex;
@@ -1204,96 +1010,65 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	font-family: "ProximaNova", sans-serif;
+	font-family: $mainFont;
 	font-size: 1rem;
 	font-weight: 400;
 	transition: 0.2s;
 	color: $mainColor;
-	
-	
-	
 }
-
-
-
 .navigation_cards__one{
 	background-image: url("/assets/images/card1.png");
-	
 }
-
 .navigation_cards__second{
 	background-image: url("/assets/images/card2.png");
-
 }
-
 .navigation_cards__third{
 	background-image: url("/assets/images/card3.png");
 }
-
 .navigation_cards__forth{
 	background-image: url("/assets/images/card4.png");
-	
-
 }
 .navigation_cards__fifth{
 	background-image: url("/assets/images/card5.png");
 }
-
 .navigation_cards__sixth{
 	background-image: url("/assets/images/card6.png");
 }
-
-
 .navigation_cards__img{
 	width: 6.25rem;
 	height: 6.25rem;
 	margin-top: -0.2rem;
-	
 }
-
 .nav_img3,.nav_img2{
 	margin-top: -1.5rem;
 }
-
-
 .navigation_cards__vector{
-	
 	margin-top: 0.5rem;
 	margin-left: 0.3rem;
 	width: 1rem;
 	height: 0.631875rem;
 }
-
 .navigation_cards__title{
-	
 	margin-bottom:0.625rem ;
 	margin-top: 1.25rem;
-	font-family: "Montserrat",Times,serif;
+	font-family: $secondaryFont;
 	font-size: 1.25rem ;
 	color: $mainColor;
-
 }
-
-
 .navigation_cards__link--hover:hover{
-	
 	transform: scale(1.05);
 	cursor: pointer;
-
 	h3{
 		text-decoration: underline;
 	}
-	
 }
-
 .navigation_cards__link--active:active{
 	h3{
-		color: #E7426A;
+		color: $accentColor;
 	    transition: color .1s linear;
 	}
 }
-
-/* Свадебное предложение */
+// Свадебное предложение /
 .wedding__block {
 	width: 100%;
 	// background-color: #F7F7F7;
@@ -1303,7 +1078,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-   
   }
   .wedding__nav--link {
 	line-height: 1.0325rem;/*--17px в макете / 16px (по умолчанию в браузере)--*/
@@ -1312,33 +1086,28 @@ body {
   }
   .wedding__link--hover:hover {
 	text-decoration: underline;
-	text-decoration-color: #e7426a;
+	text-decoration-color: $accentColor;
 	transition: color 0.1s linear;
   }
   .active__page {
 	color: #4e9dd3;
   }
-  
   .active__page:hover {
-	text-decoration-color: #e7426a;
+	text-decoration-color: $accentColor;
   }
-  
   .wedding__content {
 	display: flex;
 	width: 100%;	
     flex-wrap: wrap;
 	justify-content: space-between;
-	
   }
   .wedding__content-image {
 	height: 33.1875rem;/*--531px в макете / 16px (по умолчанию в браузере)--*/
 	width: auto;
-	
   }
   .wedding-box {
 	background: url(../images/wedding_offer/back-color.png
 	) right 5% bottom 90% / auto no-repeat;
-	
   }
   .wedding__title--h1 {
 	color: rgb(41, 41, 41);
@@ -1351,14 +1120,11 @@ body {
   }
   .wedding__text-box {
 	  margin-top: 0.8125rem;
-  
   }
   .wedding__text {
-	  
 	  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
 	  line-height: 1.375rem;
 	  text-align: center;
-	  
   }
   .wedding__button {
 	  display: flex;
@@ -1368,7 +1134,6 @@ body {
 	  font-family: $secondaryFont;
 	  font-size: 0.875rem ;
 	  font-weight: 600;
-	  
   }
   .wedding__button--small {
 	  display: flex;
@@ -1380,7 +1145,6 @@ body {
 	  font-family: $secondaryFont;
 	  font-size: 0.875rem ;
 	  font-weight: 600;
-	  
   }
   .wedding__text-main {
 	  width: 41.875rem;/*--670 в макете / 16px (по умолчанию в браузере)--*/
@@ -1390,7 +1154,7 @@ body {
 	  line-height: 19px;
 	  margin-top: 2.5625rem;/*--41px в макете / 16px (по умолчанию в браузере)--*/
   }
-  /*-- wedding kits --*/
+  //-- wedding kits --/
   .wedding-kits {
 	  display: flex;
 	  flex-direction: column;
@@ -1404,10 +1168,9 @@ body {
 		  justify-content: center;
 		  align-items: start;
 		  margin-bottom: 2.625rem;
-		  font-family: "Montserrat";
+		  font-family: $secondaryFont;
 		  font-size: 1.875rem;
 		  font-weight: 600;
-	  
   }
   .wedding-kits__cards {
 	  display: flex;
@@ -1420,7 +1183,7 @@ body {
 	  flex-direction: column;
 	  // margin-bottom: 2.1875rem;
 	  border: 1px solid #EDEDF0;
-	  background-color: #FFFFFF;
+	  background-color: $secondaryColor;
 	  width: 23.125rem;/*--370 в макете / 16px (по умолчанию в браузере)--*/
 	  height: 28.6875rem;
 	  border-radius: 0.3125rem;/*--5px в макете / 16px (по умолчанию в браузере)--*/
@@ -1436,17 +1199,17 @@ body {
 	  height: 18.75rem;/*--300 в макете / 16px (по умолчанию в браузере)--*/
   }
   .wedding-kits__cards--h4 {
-	  font-family: "Montserrat";
+	  font-family: $secondaryFont;
 	  font-size: 1.125rem;/*--18px в макете / 16px (по умолчанию в браузере)--*/
 	  font-weight: 600;
 	  margin-top: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
 	  margin-bottom: 0.875rem;/*--14px в макете / 16px (по умолчанию в браузере)--*/
   }
   .wedding-kits__cards--p {
-	  font-family: "ProximaNova", sans-serif;
+	  font-family: $mainFont;
 	  font-weight: 400;
 	  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
-	  color: #292929;
+	  color: $mainColor;
 	  margin-bottom: 0.875rem;/*--14px в макете / 16px (по умолчанию в браузере)--*/
   }
   .wedding-kits__cards--h4, .wedding-kits__cards--p {
@@ -1459,16 +1222,15 @@ body {
 	  height: 3.0625rem;/*--49px в макете / 16px (по умолчанию в браузере)--*/
 	  border-top: 1px solid #EDEDF0;
 	  margin-bottom: 1rem;
-	  
   }
   .wedding-kits__cards--price{
-	  font-family: "Montserrat";
+	  font-family: $secondaryFont;
 	  font-size: 1.125rem;
 	  font-weight: 600;
-	  color: #E7426A;
+	  color: $accentColor;
 	  margin-top: 1rem;
 	  margin-left: 1.3125rem;
-	  background-color: #FFFFFF;
+	  background-color: $secondaryColor;
   }
   .wedding-kits__cards--price-line_button {
 	  display: flex;
@@ -1476,7 +1238,7 @@ body {
 	  height:1.58rem;
 	  justify-content: space-between;
 	  align-items: center;
-	  background-color: #FFFFFF;
+	  background-color: $secondaryColor;
 	  margin-top:0.7125rem;
 	  margin-right:1.5625rem;
 	  
@@ -1485,16 +1247,14 @@ body {
 	  margin-top: 0.3rem;
   }
   .wedding-kits__cards--price-line_button-text {
-	  font-family: "Montserrat";
+	  font-family: $secondaryFont;
 	  font-size: 0.875rem;
 	  font-weight: 600;
   }
   .wedding-kits__cards--price-line_button-text:hover {
-	  color: #E7426A;
+	  color: $accentColor;
   }
-
-
-/*форма отзывов на свадебной странице**/
+//форма отзывов на свадебной странице**/
 .feedback-form{
     display: flex;
     flex-direction: row;
@@ -1511,12 +1271,12 @@ body {
 }
 .privacy_policy{
 	width: 44.5rem; /* 712px */
-	font-family: 'ProximaNova';
+	font-family: $mainFont;
 	font-size: 0.6875rem; /* 11px в макете**/
 }
 .feedback-form__content{
 	h2{
-		font-family: "Montserrat";
+		font-family: $secondaryFont;
         font-size: 1.875rem;
         font-weight: 600;
         text-align: center;
@@ -1528,7 +1288,7 @@ body {
 	width: 29.25rem;  /* 468px в макете**/
 	text-align: left;
 	p{
-		font-family: 'ProximaNova';
+		font-family: $mainFont;
 		font-size: 1.125rem;
 	}
 }
@@ -1541,7 +1301,7 @@ body {
 	input{
 		width: 21rem; /* 336px */
 		height: 3.125rem; /* 50px */
-		font-family: "Proxima Nova";
+		font-family: $mainFont;
         font-size: 0.875rem;
         font-weight: 400;
         padding-top: 0;
@@ -1550,7 +1310,7 @@ body {
 	}
 	label{
 		width: 20vw;
-		font-family: "ProximaNova";
+		font-family: $mainFont;
         font-size: 0.875rem;
         font-weight: 400;
         padding-top: 0;
@@ -1565,7 +1325,7 @@ body {
 	}
 	margin-bottom: 2rem;
 	label{
-		font-family: "ProximaNova";
+		font-family: $mainFont;
         font-size: 0.875rem;
 	}
 }
@@ -1586,39 +1346,34 @@ body {
 	background-color:#F7F7F7;
 	color: #000000;
 }
-
 .button_feedback__form:hover{
-	color: #E7426A;
-	border-color: #E7426A;
+	color: $accentColor;
+	border-color: $accentColor;
 	transition: border-color .1s linear, color .1s linear;
 }
-
 .button_feedback__form:active{
 	color:#F7F7F7;
-	background-color:#E7426A;
+	background-color:$accentColor;
 	transition: background .1s linear, color .1s linear;
 }
 .feedback-form{
 	p{
-        font-family: "ProximaNova";
+        font-family: $mainFont;
         font-size: 0.875rem;
         font-weight: 400;
         padding-top: 0;
 		margin-top:0.75rem;
     }
 }
-
 .privacy_policy_link:hover{
 	text-decoration: underline;
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 	transition: color .1s linear;
 }
-
 .privacy_policy_link:active {
-	color: #E7426A;
+	color: $accentColor;
 	transition: color .1s linear;
 }
-
 /*-- wedding QA --*/
 .wedding-qa {
 	display: flex;
@@ -1633,7 +1388,7 @@ body {
 	justify-content: center;
 	align-items: start;
 	margin-bottom: 2.625rem;
-	font-family: "Montserrat";
+	font-family: $secondaryFont;
 	font-size: 1.875rem;
 	font-weight: 600;
 
@@ -1645,7 +1400,7 @@ body {
 	align-items: flex-start;
 }
 .wedding-qa__content--item {
-	background:#FFFFFF;
+	background:$secondaryColor;
 	width: 23.125rem;/*--370 в макете / 16px (по умолчанию в браузере)--*/
 	border-radius: 0.3125rem;/*--5px в макете / 16px (по умолчанию в браузере)--*/
 }
@@ -1653,25 +1408,20 @@ body {
 	border-bottom:1px solid #EDEDF0;
 }
 .wedding-qa__content--h4 {
-	font-family: "Montserrat";
+	font-family: $secondaryFont;
 	font-size: 1.125rem;/*--18px в макете / 16px (по умолчанию в браузере)--*/
 	font-weight: 600;
 	margin: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
 	
 }
-
 .wedding-qa__content--p {
-	font-family: "ProximaNova", sans-serif;
+	font-family: $mainFont;
 	font-weight: 400;
 	font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
-	color: #292929;
+	color: $mainColor;
 	margin: 1.25rem 1.375rem 1.8125rem 1.3125rem;/*--20px 22 px 29px 21px в макете / 16px (по умолчанию в браузере)--*/
 }
-
-
-
-
-/*-----Contacts-----*/
+//---Contacts/
 .contacts_container {
 	display: flex;
 	flex-direction: column;
@@ -1760,14 +1510,14 @@ body {
 }
 .contacts_nav--link:hover{
 	text-decoration: underline;
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 	transition: color .1s linear;
 }
 .contacts_nav--link-active_page{
 	color: #4E9DD3;
 }
 .contacts_nav--link-active_page:hover{
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 }
 .contacts_nav{
 	display: flex;
@@ -1784,18 +1534,16 @@ body {
 }
 .contacts_nav--link:hover{
 	text-decoration: underline;
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 	transition: color .1s linear;
 }
 .contacts_nav--link-active_page{
 	color: #4E9DD3;
 }
 .contacts_nav--link-active_page{
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 }
-
-/*-----Catalog Page-----*/
-
+//----Catalog Page/
 .catalog__nav{
 	display: flex;
 	justify-content: center;
@@ -1804,27 +1552,22 @@ body {
 	margin-bottom: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
 	margin-left: 0.3rem; /*--4.8px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .catalog__nav--link{
 	@include mainFont;
 	color: #8a8a8c;
 	margin-right: 0.25rem; /*--4px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .catalog__nav--link:hover{
 	text-decoration: underline;
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 	transition: color .1s linear;
 }
-
 .active__page{
 	color: #4E9DD3;
 }
-
 .active__page:hover{
-	text-decoration-color: #E7426A;
+	text-decoration-color: $accentColor;
 }
-
 .catalog-box {
 	display: flex;
 	flex-direction: column;
@@ -1833,7 +1576,6 @@ body {
 	margin: 0 auto;
 	margin-bottom:5.3125rem; /*--85px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .catalog-box__h2 {
 	display: flex;
 	justify-content: center;
@@ -1843,7 +1585,6 @@ body {
 	font-size: 1.875rem; /*-30px в макете / 16px (по умолчанию в браузере)--*/
 	font-weight: 600;
 }
-
 .catalog__container {
 	width: 100%;
 	height: 24.0625rem; /*--385px в макете / 16px (по умолчанию в браузере)--*/
@@ -1851,14 +1592,12 @@ body {
 	background-size: contain;
 	margin-bottom: 2.625rem; /*-42px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .catalog__box {
 	display: flex;
 	justify-content: end;
 	align-items: center;
 	max-width: 67.5rem; /*--1080px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .catalog__content {
 	display: flex;
 	flex-direction: column;
@@ -1867,18 +1606,15 @@ body {
 	max-width: 29.375rem; /*--470px в макете / 16px (по умолчанию в браузере)--*/
 	padding-top: 5.9375rem; /*--95px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .catalog__title {
 	font-family: $secondaryFont;
 	font-size: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
 	margin-bottom: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .catalog__text {
 	font-family: $mainFont;
 	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .catalog-box__button{
 	display: flex;
 	justify-content: center;
@@ -1887,7 +1623,6 @@ body {
 	font-size: 0.875rem ;
 	font-weight: 600;
 }
-
 .catalog-box__button--small {
 	display: flex;
 	flex-wrap: wrap;
@@ -1898,15 +1633,12 @@ body {
 	font-size: 0.875rem ;
 	font-weight: 600;
 }
-
 .small-button {
 	width: 14.375rem; /*--230px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .small-button--transparent {
 	background-color: transparent;
 }
-
 .catalog__boxes {
 	display: flex;
 	justify-content: center;
@@ -1915,19 +1647,16 @@ body {
 	height: 100%;
 	color: $mainColor;
 }
-
 .catalog__boxes:hover{
-	color: #E7426A;
-	border-color: #E7426A;
+	color: $accentColor;
+	border-color: $accentColor;
 	transition: border-color .1s linear, color .1s linear;
 }
-
 .catalog__boxes:active{
 	color:#F7F7F7;
-	background-color:#E7426A;
+	background-color:$accentColor;
 	transition: background .1s linear, color .1s linear;
 }
-
 .catalog {
 	display: flex;
 	width: 100%;
@@ -1936,12 +1665,10 @@ body {
 	max-width: 48rem; /*--768px в макете / 16px (по умолчанию в браузере)--*/
 	margin: 0 auto;
 }
-
 .catalog__cards{
 	display: flex;
 	justify-content: space-between;
 }
-
 .catalog-cards__item {
 	display: flex;
 	flex-direction: column;
@@ -1952,29 +1679,24 @@ body {
 	border-radius: 0.3125rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
 	transition: 0.2s; 
 }
-
 .catalog-cards__item--bctubes {
 	background: url("../images/catalog/catalog-tubes.jpg") center no-repeat;
 	background-size: contain;
 }
-
 .catalog-cards__item--bceclairs {
 	background: url("../images/catalog/catalog-eclairs.png") center no-repeat;
 	background-size: contain;
 }
-
 .catalog-cards__item--bctubes:hover,
 .catalog-cards__item--bceclairs:hover {
 	transform: scale(1.09);
 	cursor: pointer;
 }
-
 .catalog-cards__h3 {
 	@include mainH4;
 	color: $secondaryColor;
 	padding-bottom: 2.75rem; /*--44px в макете / 16px (по умолчанию в браузере)--*/
 }
-
 .catalog-box__all {
 	display: flex;
 	justify-content: center;
@@ -1983,15 +1705,13 @@ body {
 	height: 100%;
 	color: $mainColor;
 }
-
 .catalog-box__all:hover{
-	color: #E7426A;
-	border-color: #E7426A;
+	color: $accentColor;
+	border-color: $accentColor;
 	transition: border-color .1s linear, color .1s linear;
 }
-
 .catalog-box__all:active{
 	color:#F7F7F7;
-	background-color:#E7426A;
+	background-color:$accentColor;
 	transition: background .1s linear, color .1s linear;
 }

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*------Normalize------*/
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +6,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -85,8 +86,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -206,7 +206,6 @@ template {
   display: none;
 }
 
-/*------Fonts------*/
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
@@ -232,10 +231,6 @@ template {
   src: url("../fonts/ProximaNovaCond-Regular.woff") format("woff"), url("../fonts/ProximaNovaCond-Regular.woff2") format("woff2");
   font-weight: 400;
 }
-/*------Sass - переменные и миксины - позже разъединить файлы!!!!------*/
-/*Объявление переменных*/
-/*Объявление миксинов*/
-/*------Body------*/
 body {
   font-family: "ProximaNova", sans-serif;
   font-weight: 400;
@@ -271,7 +266,6 @@ body {
   transition: background 0.1s linear, color 0.1s linear;
 }
 
-/*------Header------*/
 .header {
   width: 100%;
 }
@@ -388,7 +382,6 @@ body {
   transition: color 0.1s linear;
 }
 
-/*------HEADER CONTENT-----*/
 .container__content {
   width: 100%;
   height: 29.6875rem; /*--475px в макете / 16px (по умолчанию в браузере)--*/
@@ -408,8 +401,7 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header__box {
@@ -471,8 +463,6 @@ body {
   font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
 }
 
-/*------Main------*/
-/*-------------SALES BLOCK------------*/
 .sales {
   display: flex;
   flex-direction: column;
@@ -572,7 +562,6 @@ body {
   margin-bottom: 3.125rem;
 }
 
-/*-------------HOLYDAYS BLOCK------------*/
 .holidays {
   display: flex;
   flex-direction: column;
@@ -584,7 +573,7 @@ body {
 }
 
 .holidays_h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
   display: flex;
@@ -764,7 +753,6 @@ body {
   transition: color 0.1s linear;
 }
 
-/*-------------POPULAR-BOX BLOCK------------*/
 .popular-box {
   display: flex;
   flex-direction: column;
@@ -779,7 +767,7 @@ body {
   justify-content: center;
   align-items: start;
   margin-bottom: 2.625rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -844,7 +832,7 @@ body {
 }
 
 .popular-box__cards--h4 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
   margin-top: 0.85rem;
@@ -880,7 +868,7 @@ body {
 }
 
 .popular-box__cards--price-line_button-text {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
 }
@@ -890,7 +878,7 @@ body {
 }
 
 .popular-box__cards--price-line-price {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
   color: #E7426A;
@@ -910,12 +898,11 @@ body {
 .popular-box__button {
   display: flex;
   justify-content: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
 }
 
-/*-------------BOXES PAGE------------*/
 .boxes__nav {
   display: flex;
   justify-content: center;
@@ -948,8 +935,6 @@ body {
   text-decoration-color: #E7426A;
 }
 
-/* блок карточки гарантии вкуса**/
-/* общие заголовки блока гарантии вкуса**/
 .garanties {
   display: flex;
   flex-direction: column;
@@ -960,26 +945,26 @@ body {
   padding-bottom: 1rem;
 }
 .garanties h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
   text-align: center;
   padding-top: 1rem;
 }
 .garanties h5 {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
 }
 .garanties p {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   padding-top: 0;
   text-align: center;
 }
 .garanties h6 {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   padding-top: 0;
@@ -990,7 +975,6 @@ body {
   text-align: center;
 }
 
-/* позиционирование карточек**/
 .garant__cards {
   display: flex;
   flex-direction: row;
@@ -1001,7 +985,6 @@ body {
   padding-bottom: 6.25rem;
 }
 
-/* контент карточек гарантии вкуса**/
 .garant__cards_content {
   width: 16.875rem;
   display: flex;
@@ -1024,7 +1007,6 @@ body {
   cursor: pointer;
 }
 
-/* ссылки на странице гарантии вкуса и качества**/
 .nav_links {
   display: flex;
   flex-direction: row;
@@ -1036,7 +1018,7 @@ body {
 }
 
 .main__link {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   color: #292929;
@@ -1044,7 +1026,7 @@ body {
 
 .garant__link {
   color: #4E9DD3;
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
 }
@@ -1062,7 +1044,6 @@ body {
   transition: color 0.1s linear;
 }
 
-/* карточки инстаграм**/
 .instagram__gallery2 {
   display: flex;
   flex-direction: row;
@@ -1070,8 +1051,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -1086,12 +1066,11 @@ body {
   cursor: pointer;
 }
 
-/* общее блок инстаграмм**/
 .instagram {
   margin-top: 5rem;
 }
 .instagram h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
   text-align: center;
@@ -1100,7 +1079,6 @@ body {
   margin-left: 1rem;
 }
 
-/*блок с голубой полосай инстаграмм**/
 .insta_menu {
   display: flex;
   flex-flow: row wrap;
@@ -1111,12 +1089,11 @@ body {
   background-color: #D4E9F9;
   margin-left: 0.625rem;
   margin-right: 0.625rem;
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1162,20 +1139,16 @@ body {
   margin-right: 0;
 }
 
-/* блок карточки мы позаботились**/
-/* позиционирование карточек**/
 .we-care__cards {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   flex-wrap: wrap;
 }
 
-/* контент карточек**/
 .we-care__cards_content {
   width: 16.875rem;
   display: flex;
@@ -1195,20 +1168,19 @@ body {
   cursor: pointer;
 }
 
-/* общие заголовки блока мы позаботились**/
 .we-care {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 .we-care h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
 }
 .we-care h5 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
 }
@@ -1216,13 +1188,12 @@ body {
   font-weight: 400;
   padding-top: 0;
   margin-top: 1rem;
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   padding-top: 0;
 }
 
-/*------Footer------*/
 .footer {
   width: 100%;
   background-color: rgb(235, 237, 238);
@@ -1435,7 +1406,7 @@ body {
 .navigation_cards__title {
   margin-bottom: 0.625rem;
   margin-top: 1.25rem;
-  font-family: "Montserrat", Times, serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   color: #292929;
 }
@@ -1453,7 +1424,6 @@ body {
   transition: color 0.1s linear;
 }
 
-/* Свадебное предложение */
 .wedding__block {
   width: 100%;
   margin-top: 2.125rem; /*--34px в макете / 16px (по умолчанию в браузере)--*/
@@ -1473,7 +1443,7 @@ body {
 
 .wedding__link--hover:hover {
   text-decoration: underline;
-  text-decoration-color: #e7426a;
+  text-decoration-color: #E7426A;
   transition: color 0.1s linear;
 }
 
@@ -1482,7 +1452,7 @@ body {
 }
 
 .active__page:hover {
-  text-decoration-color: #e7426a;
+  text-decoration-color: #E7426A;
 }
 
 .wedding__content {
@@ -1552,7 +1522,6 @@ body {
   margin-top: 2.5625rem; /*--41px в макете / 16px (по умолчанию в браузере)--*/
 }
 
-/*-- wedding kits --*/
 .wedding-kits {
   display: flex;
   flex-direction: column;
@@ -1567,7 +1536,7 @@ body {
   justify-content: center;
   align-items: start;
   margin-bottom: 2.625rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -1602,7 +1571,7 @@ body {
 }
 
 .wedding-kits__cards--h4 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
   font-weight: 600;
   margin-top: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
@@ -1631,7 +1600,7 @@ body {
 }
 
 .wedding-kits__cards--price {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
   color: #E7426A;
@@ -1656,7 +1625,7 @@ body {
 }
 
 .wedding-kits__cards--price-line_button-text {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
 }
@@ -1665,14 +1634,12 @@ body {
   color: #E7426A;
 }
 
-/*форма отзывов на свадебной странице**/
 .feedback-form {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   justify-items: flex-start;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1684,12 +1651,12 @@ body {
 
 .privacy_policy {
   width: 44.5rem; /* 712px */
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 0.6875rem; /* 11px в макете**/
 }
 
 .feedback-form__content h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
   text-align: center;
@@ -1702,21 +1669,20 @@ body {
   text-align: left;
 }
 .feedback-form-text p {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 1.125rem;
 }
 
 .contact_feedback-form {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+  column-gap: 2.5rem;
   margin-bottom: 1rem;
 }
 .contact_feedback-form input {
   width: 21rem; /* 336px */
   height: 3.125rem; /* 50px */
-  font-family: "Proxima Nova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   padding-top: 0;
@@ -1725,7 +1691,7 @@ body {
 }
 .contact_feedback-form label {
   width: 20vw;
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   padding-top: 0;
@@ -1741,7 +1707,7 @@ body {
   margin-top: 1rem;
 }
 .your_idea label {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 0.875rem;
 }
 
@@ -1774,7 +1740,7 @@ body {
 }
 
 .feedback-form p {
-  font-family: "ProximaNova";
+  font-family: "ProximaNova", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   padding-top: 0;
@@ -1807,7 +1773,7 @@ body {
   justify-content: center;
   align-items: start;
   margin-bottom: 2.625rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -1830,7 +1796,7 @@ body {
 }
 
 .wedding-qa__content--h4 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
   font-weight: 600;
   margin: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
@@ -1844,7 +1810,6 @@ body {
   margin: 1.25rem 1.375rem 1.8125rem 1.3125rem; /*--20px 22 px 29px 21px в макете / 16px (по умолчанию в браузере)--*/
 }
 
-/*-----Contacts-----*/
 .contacts_container {
   display: flex;
   flex-direction: column;
@@ -1881,7 +1846,7 @@ body {
 }
 
 .contacts_header_2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
   display: flex;
@@ -1891,7 +1856,7 @@ body {
 }
 
 .contacts_header_4 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 1.125rem;
@@ -2006,7 +1971,6 @@ body {
   text-decoration-color: #E7426A;
 }
 
-/*-----Catalog Page-----*/
 .catalog__nav {
   display: flex;
   justify-content: center;
@@ -2184,7 +2148,7 @@ body {
 }
 
 .catalog-cards__h3 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
   color: #FFFFFF;
@@ -2210,4 +2174,4 @@ body {
   color: #F7F7F7;
   background-color: #E7426A;
   transition: background 0.1s linear, color 0.1s linear;
-}/*# sourceMappingURL=style.css.map */
+}
