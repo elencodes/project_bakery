@@ -1587,8 +1587,8 @@ body {
   border: 1px solid #EDEDF0;
   background-color: #FFFFFF;
   width: 23.125rem; /*--370 в макете / 16px (по умолчанию в браузере)--*/
-  height: 28.6875rem; /*--459 в макете / 16px (по умолчанию в браузере)--*/
-  border-radius: 0.3125rem;
+  height: 28.6875rem;
+  border-radius: 0.3125rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
   transition: 0.2s;
   justify-content: space-between;
 }
@@ -1824,6 +1824,7 @@ body {
 .wedding-qa__content--item {
   background: #FFFFFF;
   width: 23.125rem; /*--370 в макете / 16px (по умолчанию в браузере)--*/
+  border-radius: 0.3125rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
 }
 
 .wedding-qa__content--line {
