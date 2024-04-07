@@ -687,36 +687,11 @@ body {
   cursor: pointer;
 }
 
-.holiday_item_1:hover {
-  text-decoration: underline;
-  text-decoration-color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holiday_item_2:hover {
-  text-decoration: underline;
-  text-decoration-color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holiday_item_3:hover {
-  text-decoration: underline;
-  text-decoration-color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holiday_item_4:hover {
-  text-decoration: underline;
-  text-decoration-color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holiday_item_5:hover {
-  text-decoration: underline;
-  text-decoration-color: #E7426A;
-  transition: color 0.1s linear;
-}
-
+.holiday_item_1:hover,
+.holiday_item_2:hover,
+.holiday_item_3:hover,
+.holiday_item_4:hover,
+.holiday_item_5:hover,
 .holiday_item_6:hover {
   text-decoration: underline;
   text-decoration-color: #E7426A;

@@ -33,3 +33,12 @@
 	background-color:$accentColor;
 	transition: background .1s linear, color .1s linear;
 }
+@mixin linkHover {
+	text-decoration: underline;
+	text-decoration-color: $accentColor;
+	transition: color .1s linear;
+}
+@mixin linkActive {
+	color: $accentColor;
+	transition: color .1s linear;
+}

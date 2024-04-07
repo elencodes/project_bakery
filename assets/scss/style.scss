@@ -136,14 +136,11 @@ body {
 }
 .header-top__link--hover:hover,
 .nav__link--hover:hover{
-	text-decoration: underline;
-	text-decoration-color: $accentColor;
-	transition: color .1s linear;
+	@include linkHover;
 }
 .header-top__link--active:active,
 .nav__link--active:active {
-	color: $accentColor;
-	transition: color .1s linear;
+	@include linkActive;
 }
 //----Header Content
 .container__content {
@@ -407,59 +404,21 @@ body {
 	transform: scale(1.09);
 	cursor: pointer;
 }
-.holiday_item_1:hover {
-    text-decoration: underline;
-    text-decoration-color: $accentColor;
-    transition: color .1s linear;
-}
-.holiday_item_2:hover {
-    text-decoration: underline;
-    text-decoration-color: $accentColor;
-    transition: color .1s linear;
-}
-.holiday_item_3:hover {
-    text-decoration: underline;
-    text-decoration-color: $accentColor;
-    transition: color .1s linear;
-}
-.holiday_item_4:hover {
-    text-decoration: underline;
-    text-decoration-color: $accentColor;
-    transition: color .1s linear;
-}
-.holiday_item_5:hover {
-    text-decoration: underline;
-    text-decoration-color: $accentColor;
-    transition: color .1s linear;
-}
+.holiday_item_1:hover,
+.holiday_item_2:hover,
+.holiday_item_3:hover,
+.holiday_item_4:hover,
+.holiday_item_5:hover,
 .holiday_item_6:hover {
-    text-decoration: underline;
-    text-decoration-color: $accentColor;
-    transition: color .1s linear;
+	@include linkHover;
 }
-.holiday_item_1:active {
-	color: $accentColor;
-	transition: color .1s linear;
-}
-.holiday_item_2:active {
-	color: $accentColor;
-	transition: color .1s linear;
-}
-.holiday_item_3:active {
-	color: $accentColor;
-	transition: color .1s linear;
-}
-.holiday_item_4:active {
-	color: $accentColor;
-	transition: color .1s linear;
-}
-.holiday_item_5:active {
-	color: $accentColor;
-	transition: color .1s linear;
-}
+.holiday_item_1:active,
+.holiday_item_2:active,
+.holiday_item_3:active,
+.holiday_item_4:active,
+.holiday_item_5:active,
 .holiday_item_6:active {
-	color: $accentColor;
-	transition: color .1s linear;
+	@include linkActive;
 }
 //----POPULAR-BOX BLOCK
 .popular-box {
@@ -604,9 +563,7 @@ body {
 	margin-right: 0.25rem;
 }
 .boxes__nav--link:hover{
-	text-decoration: underline;
-	text-decoration-color: $accentColor;
-	transition: color .1s linear;
+	@include linkHover;
 }
 .active_page{
 	color: #4E9DD3;
@@ -712,14 +669,11 @@ body {
 }
 .main__link:hover,
 .garant__link:hover{
-	text-decoration: underline;
-	text-decoration-color: $accentColor;
-	transition: color .1s linear;
+	@include linkHover;
 }
 .main__link:active,
 .garant__link:active {
-	color: $accentColor;
-	transition: color .1s linear;
+	@include linkActive;
 }
 // карточки инстаграм/
 .instagram__gallery2
@@ -986,13 +940,10 @@ body {
 	width: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
   }
   .footer__link--hover:hover{
-	text-decoration: underline;
-	text-decoration-color: $accentColor;
-	transition: color .1s linear;
+	@include linkHover;
   }
   .footer__link--active:active {
-	color: $accentColor;
-	transition: color .1s linear;
+	@include linkActive;
   }
 //  блок Навигационные карточки
 .navigation_cards{
@@ -1085,9 +1036,7 @@ body {
 	text-align: left;
   }
   .wedding__link--hover:hover {
-	text-decoration: underline;
-	text-decoration-color: $accentColor;
-	transition: color 0.1s linear;
+	@include linkHover;
   }
   .active__page {
 	color: #4e9dd3;
@@ -1366,13 +1315,10 @@ body {
     }
 }
 .privacy_policy_link:hover{
-	text-decoration: underline;
-	text-decoration-color: $accentColor;
-	transition: color .1s linear;
+	@include linkHover;
 }
 .privacy_policy_link:active {
-	color: $accentColor;
-	transition: color .1s linear;
+	@include linkActive;
 }
 /*-- wedding QA --*/
 .wedding-qa {
@@ -1509,14 +1455,9 @@ body {
 	justify-items: center;
 }
 .contacts_nav--link:hover{
-	text-decoration: underline;
-	text-decoration-color: $accentColor;
-	transition: color .1s linear;
+	@include linkHover;
 }
-.contacts_nav--link-active_page{
-	color: #4E9DD3;
-}
-.contacts_nav--link-active_page:hover{
+.active_page:hover{
 	text-decoration-color: $accentColor;
 }
 .contacts_nav{
@@ -1533,15 +1474,7 @@ body {
 	margin-right: 0.25rem;
 }
 .contacts_nav--link:hover{
-	text-decoration: underline;
-	text-decoration-color: $accentColor;
-	transition: color .1s linear;
-}
-.contacts_nav--link-active_page{
-	color: #4E9DD3;
-}
-.contacts_nav--link-active_page{
-	text-decoration-color: $accentColor;
+	@include linkHover;
 }
 //----Catalog Page/
 .catalog__nav{
@@ -1558,9 +1491,7 @@ body {
 	margin-right: 0.25rem; /*--4px в макете / 16px (по умолчанию в браузере)--*/
 }
 .catalog__nav--link:hover{
-	text-decoration: underline;
-	text-decoration-color: $accentColor;
-	transition: color .1s linear;
+	@include linkHover;
 }
 .active__page{
 	color: #4E9DD3;
@@ -1648,14 +1579,10 @@ body {
 	color: $mainColor;
 }
 .catalog__boxes:hover{
-	color: $accentColor;
-	border-color: $accentColor;
-	transition: border-color .1s linear, color .1s linear;
+	@include buttonHover;
 }
 .catalog__boxes:active{
-	color:#F7F7F7;
-	background-color:$accentColor;
-	transition: background .1s linear, color .1s linear;
+	@include buttonActive;
 }
 .catalog {
 	display: flex;
@@ -1706,12 +1633,8 @@ body {
 	color: $mainColor;
 }
 .catalog-box__all:hover{
-	color: $accentColor;
-	border-color: $accentColor;
-	transition: border-color .1s linear, color .1s linear;
+	@include buttonHover;
 }
 .catalog-box__all:active{
-	color:#F7F7F7;
-	background-color:$accentColor;
-	transition: background .1s linear, color .1s linear;
+	@include buttonActive;
 }
