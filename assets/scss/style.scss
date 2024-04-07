@@ -1425,6 +1425,7 @@ body {
 	  height: 28.6875rem;/*--459 в макете / 16px (по умолчанию в браузере)--*/
 	  border-radius: 0.3125rem;
 	  transition: 0.2s;
+	  justify-content: space-between;
   }
   .wedding-kits__cards--item:hover {
 	  transform: scale(1.07);
