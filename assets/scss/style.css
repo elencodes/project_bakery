@@ -698,31 +698,11 @@ body {
   transition: color 0.1s linear;
 }
 
-.holiday_item_1:active {
-  color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holiday_item_2:active {
-  color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holiday_item_3:active {
-  color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holiday_item_4:active {
-  color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holiday_item_5:active {
-  color: #E7426A;
-  transition: color 0.1s linear;
-}
-
+.holiday_item_1:active,
+.holiday_item_2:active,
+.holiday_item_3:active,
+.holiday_item_4:active,
+.holiday_item_5:active,
 .holiday_item_6:active {
   color: #E7426A;
   transition: color 0.1s linear;
@@ -1392,6 +1372,8 @@ body {
 }
 .navigation_cards__link--hover:hover h3 {
   text-decoration: underline;
+  text-decoration-color: #E7426A;
+  transition: color 0.1s linear;
 }
 
 .navigation_cards__link--active:active h3 {
@@ -1906,11 +1888,7 @@ body {
   transition: color 0.1s linear;
 }
 
-.contacts_nav--link-active_page {
-  color: #4E9DD3;
-}
-
-.contacts_nav--link-active_page:hover {
+.active_page:hover {
   text-decoration-color: #E7426A;
 }
 
@@ -1936,14 +1914,6 @@ body {
   text-decoration: underline;
   text-decoration-color: #E7426A;
   transition: color 0.1s linear;
-}
-
-.contacts_nav--link-active_page {
-  color: #4E9DD3;
-}
-
-.contacts_nav--link-active_page {
-  text-decoration-color: #E7426A;
 }
 
 .catalog__nav {

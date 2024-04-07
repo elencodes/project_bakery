@@ -1010,13 +1010,12 @@ body {
 	transform: scale(1.05);
 	cursor: pointer;
 	h3{
-		text-decoration: underline;
+		@include linkHover;
 	}
 }
 .navigation_cards__link--active:active{
 	h3{
-		color: $accentColor;
-	    transition: color .1s linear;
+		@include linkActive;
 	}
 }
 // Свадебное предложение /
