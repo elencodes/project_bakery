@@ -565,7 +565,7 @@ body {
   align-items: start;
   margin-top: 5.875rem;
   margin-bottom: 3.0625rem;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -628,7 +628,7 @@ body {
 
 .sales__cards--h3, .sales__cards--p {
   color: #FFFFFF;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
@@ -1422,7 +1422,7 @@ body {
 
 .wedding__title--h1 {
   color: rgb(41, 41, 41);
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.625rem; /*--42px в макете / 16px (по умолчанию в браузере)--*/
   font-weight: 600;
   line-height: 3.187rem; /*--51px в макете / 16px (по умолчанию в браузере)--*/
