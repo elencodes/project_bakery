@@ -638,110 +638,6 @@ body {
 .active_page:hover{
 	text-decoration-color: $accentColor;
 }
-// блок карточки гарантии вкуса/
-// общие заголовки блока гарантии вкуса/
-.garanties{
-	display: flex;
-	flex-direction: column;
-    background-color: #f7f7f7;
-	justify-content: center;
-	align-items: center;
-	
-    h2{
-        font-family: $secondaryFont;
-        font-size: 1.875rem;
-        font-weight: 600;
-        text-align: center;
-		padding-top: 1rem;
-    }
-    h5{
-        font-family: $mainFont;
-        font-size: 1.125rem;
-        font-weight: 600;
-    }
-    p{
-        font-family: $mainFont;
-        font-size: 0.875rem;
-        font-weight: 600;
-        padding-top: 0;
-        text-align: center;
-    }
-    h6{
-        font-family: $mainFont;
-        font-size: 1.125rem;
-        font-weight: 400;
-        padding-top: 0;
-        text-align: center;
-		margin-top: 1.625rem;/*26 в макете**/
-		margin-bottom: 2rem;/*в макете 14 px но очень большое текстовое поле**/
-		width: 41rem;
-		text-align: center;
-    }
-	margin-top: 3rem;
-	padding-bottom: 1rem;
-}
-// позиционирование карточек/
-.garant__cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-	flex-wrap:wrap;
-    justify-items: center; 
-    margin: 0.625rem;
-    padding-bottom: 6.25rem;
-}
-// контент карточек гарантии вкуса/
-.garant__cards_content{
-    width: 16.875rem;
-    display:flex;
-    margin: 1rem;
-    padding: 0rem;
-    flex-direction: column;
-    position:relative;
-	transition: 0.2s;
-	height: 35vh;
-    img{
-        width: 100%;
-		height: 16.875rem;
-		padding-bottom: 1rem;
-		transition: 0.2s;
-    }
-	
-}
-.garant__cards_content:hover{
-	transform: scale(1.15);
-	cursor: pointer;
-}
-// ссылки на странице гарантии вкуса и качества/
-.nav_links{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center;
-    a{
-        text-decoration: none;
-    }
-}
-.main__link{
-	font-family: $mainFont;
-	font-size: 0.875rem;
-	font-weight: 400;
-	color: $mainColor;
-}
-.garant__link{
-	color:#4E9DD3;
-	font-family: $mainFont;
-    font-size: 0.875rem;
-    font-weight: 400;
-}
-.main__link:hover,
-.garant__link:hover{
-	@include linkHover;
-}
-.main__link:active,
-.garant__link:active {
-	@include linkActive;
-}
 // карточки инстаграм/
 .instagram__gallery2
 {
@@ -1012,7 +908,110 @@ body {
   .footer__link--active:active {
 	@include linkActive;
   }
-
+// блок карточки гарантии вкуса/
+// общие заголовки блока гарантии вкуса/
+.garanties{
+	display: flex;
+	flex-direction: column;
+    background-color: #f7f7f7;
+	justify-content: center;
+	align-items: center;
+	
+    h2{
+        font-family: $secondaryFont;
+        font-size: 1.875rem;
+        font-weight: 600;
+        text-align: center;
+		padding-top: 1rem;
+    }
+    h5{
+        font-family: $mainFont;
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+    p{
+        font-family: $mainFont;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding-top: 0;
+        text-align: center;
+    }
+    h6{
+        font-family: $mainFont;
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding-top: 0;
+        text-align: center;
+		margin-top: 1.625rem;/*26 в макете**/
+		margin-bottom: 2rem;/*в макете 14 px но очень большое текстовое поле**/
+		width: 41rem;
+		text-align: center;
+    }
+	margin-top: 3rem;
+	padding-bottom: 1rem;
+}
+// позиционирование карточек/
+.garant__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	flex-wrap:wrap;
+    justify-items: center; 
+    margin: 0.625rem;
+    padding-bottom: 6.25rem;
+}
+// контент карточек гарантии вкуса/
+.garant__cards_content{
+    width: 16.875rem;
+    display:flex;
+    margin: 1rem;
+    padding: 0rem;
+    flex-direction: column;
+    position:relative;
+	transition: 0.2s;
+	height: 35vh;
+    img{
+        width: 100%;
+		height: 16.875rem;
+		padding-bottom: 1rem;
+		transition: 0.2s;
+    }
+	
+}
+.garant__cards_content:hover{
+	transform: scale(1.15);
+	cursor: pointer;
+}
+// ссылки на странице гарантии вкуса и качества/
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    a{
+        text-decoration: none;
+    }
+}
+.main__link{
+	font-family: $mainFont;
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: $mainColor;
+}
+.garant__link{
+	color:#4E9DD3;
+	font-family: $mainFont;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.main__link:hover,
+.garant__link:hover{
+	@include linkHover;
+}
+.main__link:active,
+.garant__link:active {
+	@include linkActive;
+}
 // Свадебное предложение /
 .wedding__block {
 	width: 100%;
