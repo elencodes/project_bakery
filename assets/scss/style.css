@@ -485,7 +485,7 @@ body {
 .sales__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .sales__cards--sale_one {
@@ -516,10 +516,6 @@ body {
   background-size: cover;
   border-radius: 0.3125rem;
   transition: 0.2s;
-}
-
-.sales__cards--sale_one, .sales__cards--sale_two, .sales__cards--sale_three {
-  margin-right: 1.875rem;
 }
 
 .sales__cards--sale_one:hover {
@@ -2119,4 +2115,4 @@ body {
   color: #F7F7F7;
   background-color: #E7426A;
   transition: background 0.1s linear, color 0.1s linear;
-}
+}/*# sourceMappingURL=style.css.map */
