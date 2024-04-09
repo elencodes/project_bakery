@@ -295,16 +295,14 @@ body {
 	max-width: 73.125rem; 
 	margin: 0 auto;
 	margin-bottom:5.3125rem;
+	margin-top:5.875rem ;
 }
 .sales__h2{
+	@include mainH2;
 	display: flex;
 	justify-content: center;
 	align-items: start;
-	margin-top:5.875rem ;
 	margin-bottom:3.0625rem ;
-	font-family:$secondaryFont;
-	font-size:1.875rem ;
-	font-weight: 600;
 }
 .sales__cards{
 	display: flex;
@@ -331,7 +329,6 @@ body {
     height: 24.8125rem;
 	align-items: center;
 	justify-content: end;
-	margin-bottom:1.875rem;
 	background-size:cover;
 	border-radius: 0.3125rem;
 	transition: 0.2s; 
@@ -368,6 +365,7 @@ body {
 .for-margin{
     margin-bottom: 3.125rem;
 }
+
 //----HOLYDAYS BLOCK
 .holidays {
 	display: flex;
@@ -614,6 +612,20 @@ body {
 	font-family:$secondaryFont;
 	font-size:0.875rem ;
 	font-weight: 600;
+}
+
+
+//---Sales Block Adaptive---/
+@media (max-width:26.9375em) {
+	.container{
+		width: 21.875rem;
+	}
+	.sales{
+		width: 100%;
+		max-width: 26.9375rem; 
+		margin-bottom:3.75rem;
+		margin-top: 2.375rem;
+	}
 }
 //------BOXES PAGE----
 .boxes__nav{
@@ -1632,8 +1644,44 @@ body {
 	@include buttonActive;
 }
 
-
-
+//---Sales Block Adaptive---/
+@media (max-width:26.9375em) {
+	.container{
+		width: 21.875rem;
+	}
+	.sales{
+		width: 100%;
+		max-width: 26.9375rem; 
+		margin-bottom:3.75rem;
+		margin-top: 2.375rem;
+	}
+	.sales__h2{
+		@include mainH4;
+		margin-bottom:1.0625rem ;
+	}
+	.sales__cards{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.sales__cards--sale_two{
+		display: none;
+	}
+	.sales__cards--sale_three{
+		display: none;
+	}
+	.sales__cards--sale_four{
+		display: none;
+	}
+	.sales__cards--sale_one{
+	width: 18rem;
+    height: 26.375rem;
+    }
+    .sales__cards--h3{
+	font-size: 0.8125rem;
+	margin-bottom: 0.6rem;
+    }
+}
 //---Holidays Block Adaptive---/
 @media (max-width:26.9375em) {
 	div .holiday_item_4,
