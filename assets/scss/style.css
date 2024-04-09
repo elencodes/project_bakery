@@ -2401,4 +2401,7 @@ body {
     padding-bottom: 1.625rem;
     font-size: 1.25rem;
   }
+  .header__image {
+    display: none;
+  }
 }
