@@ -936,17 +936,6 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 26.9375em) {
-  .container {
-    width: 21.875rem;
-  }
-  .sales {
-    width: 100%;
-    max-width: 26.9375rem;
-    margin-bottom: 3.75rem;
-    margin-top: 2.375rem;
-  }
-}
 .boxes__nav {
   display: flex;
   justify-content: center;
@@ -2178,6 +2167,78 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+}
+@media (max-width: 26.9375em) {
+  .container {
+    width: 21.875rem;
+  }
+  .popular-box {
+    width: 100%;
+    max-width: 26.9375rem;
+    margin-bottom: 3.125rem;
+    margin-top: 2.0625rem;
+  }
+  .popular-box__h2 {
+    margin-bottom: 1.1875rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  .popular-box__cards {
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
+  }
+  .popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three,
+  .popular-box__cards--cards_four, .popular-box__cards--cards_five, .popular-box__cards--cards_six {
+    width: 8.75rem;
+    height: 13.4375rem;
+  }
+  .popular-box__image {
+    width: 7.75rem;
+    height: 6.125rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .popular-box__cards--h4 {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .popular-box__cards--p {
+    font-size: 0.625rem; /*--10px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .popular-box__cards--price-line_button {
+    width: 0.5rem;
+    height: 0.75rem;
+    margin-top: 0.5rem;
+    margin-right: 0.6875rem;
+  }
+  .box-button__text {
+    display: none;
+  }
+  .box-button__img {
+    width: 50%;
+  }
+  .popular-box__cards--price-line-price {
+    font-size: 0.875rem;
+    margin-top: 0.65rem;
+    margin-left: 0.75rem;
+  }
+  .also-margin {
+    margin-bottom: 0.6rem;
+  }
+  .popular-box__cards--p, .popular-box__cards--h4 {
+    margin-left: 0.75rem;
+    margin-right: 0.5rem;
+  }
+  .popular-box__button {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
   }
 }
 /* Адаптив под мобильную версию Instagram**/
