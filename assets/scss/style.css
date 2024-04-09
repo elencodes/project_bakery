@@ -2167,6 +2167,22 @@ body {
     width: 5.9375rem;
     height: 5.9375rem;
   }
+  .instagram__gallery2 :nth-child(1),
+  .instagram__gallery2 :nth-child(2),
+  .instagram__gallery2 :nth-child(3),
+  .instagram__gallery2 :nth-child(7) {
+    order: -1;
+  }
+  .instagram__gallery2 :nth-child(6) {
+    order: 1;
+  }
+  .instagram__gallery2 :nth-child(5),
+  .instagram__gallery2 :nth-child(9) {
+    order: 2;
+  }
+  .instagram__gallery2 :nth-child(10) {
+    order: 3;
+  }
 }
 /* Адаптив по мобильную версию Мы позаботились**/
 @media (max-width: 26.9375em) {
