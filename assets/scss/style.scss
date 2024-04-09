@@ -1630,6 +1630,7 @@ body {
 }
 
 //---Sales Block Adaptive---/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em) {
 	.container{
 		width: 21.875rem;
@@ -1669,6 +1670,7 @@ body {
 }
 
 //---Holidays Block Adaptive---/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em) {
 	div .holiday_item_4,
 	div .holiday_item_5,
@@ -1689,6 +1691,7 @@ body {
 }
 
 //---Popular-box Block Adaptive---/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em) {
 	.container{
 		width: 21.875rem;
@@ -1760,6 +1763,7 @@ body {
 	}
 }
 /* Адаптив под мобильную версию Instagram**/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em){
 	.container{
 		width: 21.875rem;
@@ -1809,6 +1813,7 @@ body {
 }
 
 /* Адаптив по мобильную версию Мы позаботились**/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em){
 	.container{
 		width: 21.875rem;
@@ -1844,5 +1849,84 @@ body {
 		margin-top: 2rem;
 		margin-bottom: 1.5rem;
 		row-gap:0.8rem;
+	}
+}
+
+//----Catalog Page Adaptive---/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+@media (max-width:26.9375em){
+	.container{
+		width: 25.875rem; // 414px
+	}
+	.catalog__nav {
+		justify-content: left;
+		margin-top: 1rem; // 16px
+		margin-bottom: 1.125rem; // 18px
+		margin-left: 0;
+	}
+	.catalog__nav--link {
+		font-size: 0.75rem; //12px
+	}
+	.catalog-box {
+		width: 25.875rem; // 414px
+		margin-bottom: 3.125rem; //50px
+	}
+	.catalog-box__h2 {
+		margin-bottom: 1.125rem; // 18px
+		font-size: 1.5rem; // 24px
+	}
+	.catalog__container {
+		margin-bottom: 1rem; //16px
+		height: 18rem; // 288px
+		background: url("../images/catalog/catalog-pic.png") center no-repeat;
+		background-size: cover;
+		border-radius: 0.3125rem;
+	}
+	.catalog__content {
+		align-items: flex-end;
+		max-width: 14rem; // 155px
+		padding-top: 1.2rem; // 24px
+		margin-right: 1.5rem; // 24pх
+	}
+	.catalog__title {
+		margin-bottom: 0.75rem; // 12px
+		font-size: 1.375rem; // 22px
+	}
+	.catalog__text {
+		font-size: 0.875rem; // 14pх
+	}
+	.catalog-box__button {
+		margin-top: 2rem; // 32px
+		font-size: 0.875rem; // 14pх
+	}
+	.catalog-box__button--small  {
+		height: 7rem; //112px
+		margin-top: 1rem; // 16pх
+		font-size: 1rem; // 16pх
+	}
+	.small-button {
+		width: 14rem; // 155px
+		height: 3rem; //48px
+	}
+	.catalog {
+		width: 25.875rem; // 414px
+	}
+	.catalog-cards__item {
+		width: 12.375rem; //--198px
+		height: 18rem; // 288px
+		text-align: center;
+	}
+	.catalog-cards__item--bctubes {
+		background-size: cover;
+	}
+	.catalog-cards__item--bceclairs {
+		background-size: cover;
+	}
+	.catalog-cards__h3 {
+		padding-bottom: 1.2rem; // 24px
+	}
+	.catalog-cards__h3--adaptive {
+		padding-bottom: 1.625rem; // 26px
+		font-size: 1.25rem; // 20px
 	}
 }
