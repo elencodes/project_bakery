@@ -1653,3 +1653,74 @@ body {
 		align-items: flex-end;
 }
 }
+
+/* Адаптив под мобильную версию Instagram**/
+@media (max-width:26.9375em){
+	.container{
+		width: 21.875rem;
+	}
+	.instagram{
+		justify-self: center;
+		h2{
+			font-size: 1.125rem; /* 18 px***/
+			margin-bottom: 0.7rem;
+		}
+		margin-top: 2rem;
+		margin-bottom: 1.5rem;
+		row-gap:0.8rem;
+	}
+	.instagram__gallery2{
+		/*div:nth-child(n+10){
+			display:none;}**/
+		div:nth-child(4),
+		div:nth-child(11),
+		div:nth-child(12){
+			display:none;
+		}
+		img{
+			width: 5.9375rem;
+			height: 5.9375rem;
+		}
+		column-gap: 0.7rem;
+    	row-gap: 0.7rem;
+	}
+}
+
+/* Адаптив по мобильную версию Мы позаботились**/
+@media (max-width:26.9375em){
+	.container{
+		width: 21.875rem;
+	}
+	.we-care__cards_content{
+		width: 8.75rem;/*140px**/
+		display:flex;
+		margin: 0rem;
+		padding: 0rem;
+		flex-direction: column;
+		position:relative;
+		img{
+			width: 100%;
+			padding-bottom: 0.2rem;
+		}
+		h5{
+			font-size: 0.75rem; /* 12 px***/
+		}
+		p{
+			font-size: 0.625rem; /* 10 px***/
+			margin-top: 0rem;
+			margin-bottom: 1rem;
+		}
+		row-gap:0.5rem;
+		column-gap: 0.5rem;
+	}
+	.we-care{
+		justify-self: center;
+		h2{
+			font-size: 1.125rem; /* 18 px***/
+			margin-bottom: 0.7rem;
+		}
+		margin-top: 2rem;
+		margin-bottom: 1.5rem;
+		row-gap:0.8rem;
+	}
+}

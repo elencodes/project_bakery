@@ -2135,4 +2135,75 @@ body {
     flex-direction: column;
     align-items: flex-end;
   }
+}
+/* Адаптив под мобильную версию Instagram**/
+@media (max-width: 26.9375em) {
+  .container {
+    width: 21.875rem;
+  }
+  .instagram {
+    justify-self: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    row-gap: 0.8rem;
+  }
+  .instagram h2 {
+    font-size: 1.125rem; /* 18 px***/
+    margin-bottom: 0.7rem;
+  }
+  .instagram__gallery2 {
+    /*div:nth-child(n+10){
+    	display:none;}**/
+    -moz-column-gap: 0.7rem;
+         column-gap: 0.7rem;
+    row-gap: 0.7rem;
+  }
+  .instagram__gallery2 div:nth-child(4),
+  .instagram__gallery2 div:nth-child(11),
+  .instagram__gallery2 div:nth-child(12) {
+    display: none;
+  }
+  .instagram__gallery2 img {
+    width: 5.9375rem;
+    height: 5.9375rem;
+  }
+}
+/* Адаптив по мобильную версию Мы позаботились**/
+@media (max-width: 26.9375em) {
+  .container {
+    width: 21.875rem;
+  }
+  .we-care__cards_content {
+    width: 8.75rem; /*140px**/
+    display: flex;
+    margin: 0rem;
+    padding: 0rem;
+    flex-direction: column;
+    position: relative;
+    row-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+  .we-care__cards_content img {
+    width: 100%;
+    padding-bottom: 0.2rem;
+  }
+  .we-care__cards_content h5 {
+    font-size: 0.75rem; /* 12 px***/
+  }
+  .we-care__cards_content p {
+    font-size: 0.625rem; /* 10 px***/
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .we-care {
+    justify-self: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    row-gap: 0.8rem;
+  }
+  .we-care h2 {
+    font-size: 1.125rem; /* 18 px***/
+    margin-bottom: 0.7rem;
+  }
 }/*# sourceMappingURL=style.css.map */
