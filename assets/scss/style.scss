@@ -794,6 +794,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	
   }
   .footer__wrap-box {
 	display: flex;
@@ -813,6 +814,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
+	width: 6.125rem;
   }
   .footer__profit--item {
 	margin-top: 0.875rem;/*--14px в макете / 16px (по умолчанию в браузере)--*/
@@ -1932,4 +1934,29 @@ body {
 	.header__image {
 		display: none;
 	}
+}
+
+
+/* Адаптив по мобильную версию Footer**/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+@media (max-width:26.9375em) {
+	.footer__container {
+		max-width: 25.875rem;/*--394px в макете / 16px (по умолчанию в браузере)--*/
+		max-height: 24.625rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
+		justify-content: center;
+		padding-top: 2.0625rem;
+	}
+	.footer__ptofit {
+		flex-direction: column;
+	}
+
+	.footer__profit--items {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.footer__list-wrap {
+		display: none;
+	}
+
 }

@@ -6,8 +6,6 @@
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -86,7 +84,8 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -401,7 +400,8 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__box {
@@ -975,7 +975,8 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -1017,7 +1018,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1068,7 +1070,8 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   margin: 0.625rem;
   flex-wrap: wrap;
 }
@@ -1151,6 +1154,7 @@ body {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  width: 6.125rem;
 }
 
 .footer__profit--item {
@@ -1587,7 +1591,8 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   justify-items: flex-start;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1624,7 +1629,8 @@ body {
 .contact_feedback-form {
   display: flex;
   flex-direction: row;
-  column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
   margin-bottom: 1rem;
 }
 .contact_feedback-form input {
@@ -2259,7 +2265,8 @@ body {
   .instagram__gallery2 {
     /*div:nth-child(n+10){
     	display:none;}**/
-    column-gap: 0.7rem;
+    -moz-column-gap: 0.7rem;
+         column-gap: 0.7rem;
     row-gap: 0.7rem;
   }
   .instagram__gallery2 div:nth-child(4),
@@ -2301,7 +2308,8 @@ body {
     flex-direction: column;
     position: relative;
     row-gap: 0.5rem;
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
   .we-care__cards_content img {
     width: 100%;
@@ -2405,3 +2413,22 @@ body {
     display: none;
   }
 }
+/* Адаптив по мобильную версию Footer**/
+@media (max-width: 26.9375em) {
+  .footer__container {
+    max-width: 25.875rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
+    max-height: 24.625rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
+    justify-content: center;
+    padding-top: 2.0625rem;
+  }
+  .footer__ptofit {
+    flex-direction: column;
+  }
+  .footer__profit--items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__list-wrap {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
