@@ -2005,26 +2005,37 @@ color: black;
 		max-height: 24.625rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
 		justify-content: center;
 		padding-top: 2.0625rem;
-	}
+		
 	.footer__ptofit {
 		flex-direction: column;
+		align-items: center;
+		
 	}
 
 	.footer__profit--items {
 		flex-direction: row;
 		justify-content: space-between;
 		width: 15.75rem;/*--252px в макете / 16px (по умолчанию в браузере)--*/
+		margin-bottom: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
 	}
 	.footer__profit--item {
 		width: 11.6875rem;/*--187px в макете / 16px (по умолчанию в браузере)--*/
 	}
-	.footer__profit-tex {
+	.footer__profit-text {
 		text-align: left;
 	}
-
-	.footer__list-wrap {
+	
+	.footer__list-wrap, .fullscreen__text, .break__fullscreen {
 		display: none;
 	}
+
+	.footer__add-info--text {
+		width: 10.8125rem;/*--173px в макете / 16px (по умолчанию в браузере)--*/
+		font-size: 0.625rem;/*--10px в макете / 16px (по умолчанию в браузере)--*/
+		line-height: 0.75rem;/*--12px в макете / 16px (по умолчанию в браузере)--*/
+	}
+
+}
 
 }
 /* Адаптив по мобильную версию Гарантии вкуса и качества**/
@@ -2078,6 +2089,63 @@ color: black;
 	}
 
 }
+
+/* Адаптив под мобильную версию Свадебное предложение**/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+@media (max-width:26.9375em) {
+	.container{
+		width: 25.875rem; // 414px
+	}
+	.nav__inner, .wedding-qa, .footer {
+		display: none;
+	}
+	/*.wedding__content {
+		flex-direction: column;
+	}*/
+	.wedding__title--h1 {
+		font-size: 1.5rem;//24px
+		width: 17rem;//272px
+	}
+	.wedding__text-box {
+		width: 16.5625rem;//265 px
+	}
+	.wedding__text-main {
+		width: 18rem; //288px
+	}
+
+	.wedding__button {
+		flex-direction: column;
+	}
+
+	.wedding-kits__h2 {
+		font-size: 1.125rem;//18px
+		margin-bottom: 1rem;
+	}
+	.wedding-kits__cards--item {
+		width: 8.75rem; // 140px
+		height: 16.1875rem;// 259px
+	}
+
+	.wedding-kits__image {
+		width: 7.75rem; //124px
+		height: 6.5rem; // 104px
+	}
+	.wedding-kits__cards--h4 {
+		font-size: 0.75rem;//12px
+	}
+	.wedding-kits__cards--p {
+		font-size: 0.625rem; //10px
+	}
+	.wedding-kits__cards--price {
+		font-size: 0.875rem;//14px
+	}
+
+
+
+}
+
+
+
 /* Адаптив по мобильную версию Форма ОС на свадебной странице**/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em){
