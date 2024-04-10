@@ -464,7 +464,7 @@ body {
 }
 
 .navigation_cards {
-  width: 73.125rem;
+  max-width: 73.125rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2169,6 +2169,27 @@ body {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media (max-width: 26.9375em) {
+  .container {
+    width: 25.875rem;
+  }
+  .navigation_cards__img {
+    display: none;
+  }
+  .navigation_cards__one, .navigation_cards__second, .navigation_cards__third, .navigation_cards__forth, .navigation_cards__fifth, .navigation_cards__sixth {
+    height: 2.25rem;
+    background-image: none;
+  }
+  .navigation_cards__one p, .navigation_cards__second p, .navigation_cards__third p, .navigation_cards__forth p, .navigation_cards__fifth p, .navigation_cards__sixth p {
+    display: none;
+  }
+  .navigation_cards__one h3, .navigation_cards__second h3, .navigation_cards__third h3, .navigation_cards__forth h3, .navigation_cards__fifth h3, .navigation_cards__sixth h3 {
+    border-bottom: 2px solid #d6d6d6;
+    padding-bottom: 1.091875rem;
+    font-size: 0.875rem;
+    width: 18rem;
   }
 }
 @media (max-width: 26.9375em) {

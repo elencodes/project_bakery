@@ -216,7 +216,7 @@ body {
 //----Main
 //  блок Навигационные карточки
 .navigation_cards{
-	width: 73.125rem;
+	max-width: 73.125rem;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -1674,6 +1674,39 @@ color: black;
 		height: 100%;
 		object-fit: cover;
 	}
+}
+
+//---Navigation cards Block Adaptive---/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+@media (max-width:26.9375em) {
+	.container{
+		width: 25.875rem; // 414px
+		
+	}
+	.navigation_cards__img{
+		display: none;
+	}
+
+	.navigation_cards__one,.navigation_cards__second,.navigation_cards__third,.navigation_cards__forth,.navigation_cards__fifth,.navigation_cards__sixth{
+		
+		height:2.25rem ;
+		background-image: none;
+		p{
+			display: none;
+		}
+
+		h3{
+			border-bottom:  2px solid   #d6d6d6;
+			padding-bottom: 1.091875rem;   //17.47px
+			font-size: 0.875rem;   //14px
+			width: 18rem;  //288px
+			
+		}
+		
+	}
+
+
+	
 }
 
 //---Sales Block Adaptive---/
