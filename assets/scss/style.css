@@ -6,6 +6,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -84,8 +86,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -400,8 +401,7 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header__box {
@@ -986,8 +986,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -1029,8 +1028,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1085,8 +1083,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   flex-wrap: wrap;
 }
@@ -1606,8 +1603,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   justify-items: flex-start;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1644,8 +1640,7 @@ body {
 .contact_feedback-form {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+  column-gap: 2.5rem;
   margin-bottom: 1rem;
 }
 .contact_feedback-form input {
@@ -2134,6 +2129,43 @@ body {
 }
 
 @media (max-width: 26.9375em) {
+  .container__content {
+    height: 40rem;
+    margin: 0 0 2rem 0;
+    background: none;
+  }
+  .header__container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .header__box {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+  .header__content {
+    width: 20rem;
+  }
+  .header-logoname__subtitle {
+    margin-bottom: 2.8125rem;
+  }
+  .header__title {
+    font-size: 1.75rem;
+  }
+  .header__text {
+    font-size: 1rem;
+  }
+  .header__image--box {
+    overflow: hidden;
+    background: url("../images/header-background.png") no-repeat;
+    background-size: cover;
+  }
+  .header__image--box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 26.9375em) {
   .container {
     width: 25.875rem;
   }
@@ -2295,8 +2327,7 @@ body {
     margin-bottom: 0.7rem;
   }
   .instagram__gallery2 {
-    -moz-column-gap: 0.7rem;
-         column-gap: 0.7rem;
+    column-gap: 0.7rem;
     row-gap: 0.7rem;
   }
   .instagram__gallery2 div:nth-child(4),
@@ -2338,8 +2369,7 @@ body {
     flex-direction: column;
     position: relative;
     row-gap: 0.5rem;
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
   .we-care__cards_content img {
     width: 100%;
@@ -2543,4 +2573,4 @@ body {
   .feedback-form .feedback-form-text p:nth-child(1) {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}

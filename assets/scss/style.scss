@@ -1636,6 +1636,46 @@ color: black;
 	@include buttonActive;
 }
 
+//----Header Content Mobile Adaptive
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+@media (max-width:26.9375em) {
+	.container__content {
+		height: 40rem; //640px/
+		margin: 0 0 2rem 0;
+		background: none;
+	}
+	.header__container {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+	.header__box {
+		margin-top: 5rem; //80px/
+		margin-left: 0;
+	}
+	.header__content {
+		width: 20rem; // 320px/
+	}
+	.header-logoname__subtitle {
+		margin-bottom: 2.8125rem; //45px/
+	}
+	.header__title {
+		font-size: 1.75rem; //28px/
+	}
+	.header__text {
+		font-size: 1rem; //16px/
+	}
+	.header__image--box {
+		overflow: hidden;
+		background: url("../images/header-background.png") no-repeat;
+		background-size: cover;
+	}
+	.header__image--box img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
 //---Sales Block Adaptive---/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em) {
