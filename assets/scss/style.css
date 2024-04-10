@@ -2568,7 +2568,7 @@ body {
   .container {
     width: 25.875rem;
   }
-  .nav__inner, .wedding-qa, .footer {
+  .wedding-qa, .wedding__footer {
     display: none;
   }
   /*.wedding__content {
