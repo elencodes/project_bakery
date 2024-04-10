@@ -713,6 +713,10 @@ body {
 	p{
 		margin-left: 1rem;
 	}
+	img{
+		width: 3.75rem;
+		height: 3.75rem;
+	}
   }
 .insta_menu ul {
     display: flex;
@@ -1781,8 +1785,6 @@ body {
 		row-gap:0.8rem;
 	}
 	.instagram__gallery2{
-		/*div:nth-child(n+10){
-			display:none;}**/
 		div:nth-child(4),
 		div:nth-child(11),
 		div:nth-child(12){
@@ -1964,6 +1966,57 @@ body {
 
 	.footer__list-wrap {
 		display: none;
+	}
+
+}
+/* Адаптив по мобильную версию Гарантии вкуса и качества**/
+//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+@media (max-width:26.9375em){
+	.garanties{
+		h2{
+			font-size: 1.125rem;/* 18px**/
+			padding-top: 0rem;
+			text-align: center;
+			margin-top: 1rem;
+		}
+		h6{
+			font-size: 0.875rem;/* 14px**/
+			margin-top: 0.75rem;/*12 в макете**/
+			margin-bottom: 0.75rem;/*в макете 14 px но очень большое текстовое поле**/
+			width: 16.5rem;
+			align-items: center;
+		}
+		p{
+			font-size: 0.75rem;
+		}
+		margin-top:0.5rem;
+	}
+	.garant__cards{
+		margin: 0.625rem;
+		padding-bottom: 0;
+	}	
+	.garant__cards_content{
+		width: 9rem;
+		padding: 0rem;
+		margin-bottom: 1rem;
+		height: 12.5rem;
+		img{
+			width: 9rem;
+			height: 9rem;
+			padding-bottom: 1rem;
+		}
+	}
+	.nav_links{
+		align-self: self-start;
+		font-size: 0.5625rem;
+	}
+	.main__link{
+		font-size: 0.5625rem;/*9px в макете**/
+		text-align: left;
+	}
+	.garant__link{
+		font-size: 0.5625rem;/*9px в макете**/
+		text-align: left;
 	}
 
 }
