@@ -2489,4 +2489,30 @@ body {
     font-size: 0.5625rem; /*9px в макете**/
     text-align: left;
   }
+}
+/* Адаптив по мобильную версию Форма ОС на свадебной странице**/
+@media (max-width: 26.9375em) {
+  .container-feedback-form {
+    max-width: 25.875rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
+    max-height: 48.125rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
+    justify-content: center;
+  }
+  .feedback-form {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 2rem;
+  }
+  .feedback-form h2 {
+    font-size: 1.125rem; /* 18px**/
+    padding-top: 0rem;
+    text-align: center;
+    margin-top: 1rem;
+    width: 20rem;
+  }
+  .feedback-form .feedback-form-text p:nth-child(1) {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
