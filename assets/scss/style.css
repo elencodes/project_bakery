@@ -6,6 +6,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -84,8 +86,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -400,8 +401,7 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header__box {
@@ -975,8 +975,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -1018,8 +1017,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1074,8 +1072,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   flex-wrap: wrap;
 }
@@ -1595,8 +1592,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   justify-items: flex-start;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1633,8 +1629,7 @@ body {
 .contact_feedback-form {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+  column-gap: 2.5rem;
   margin-bottom: 1rem;
 }
 .contact_feedback-form input {
@@ -2124,7 +2119,7 @@ body {
 
 @media (max-width: 26.9375em) {
   .container {
-    width: 21.875rem;
+    width: 25.875rem;
   }
   .sales {
     width: 100%;
@@ -2181,13 +2176,16 @@ body {
 }
 @media (max-width: 26.9375em) {
   .container {
-    width: 21.875rem;
+    width: 25.875rem;
   }
   .popular-box {
     width: 100%;
-    max-width: 26.9375rem;
     margin-bottom: 3.125rem;
     margin-top: 2.0625rem;
+  }
+  .boxes-page {
+    margin-bottom: 2.5rem;
+    margin-top: 0rem;
   }
   .popular-box__h2 {
     margin-bottom: 1.1875rem;
@@ -2197,58 +2195,72 @@ body {
   }
   .popular-box__cards {
     margin-bottom: 1.5rem;
-    gap: 0.5rem;
+    gap: 0.7rem;
   }
   .popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three,
   .popular-box__cards--cards_four, .popular-box__cards--cards_five, .popular-box__cards--cards_six {
-    width: 8.75rem;
-    height: 13.4375rem;
+    width: 11rem;
+    height: 15rem;
   }
   .popular-box__image {
-    width: 7.75rem;
-    height: 6.125rem;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
+    width: 9.3rem;
+    height: 7.2rem;
+    margin: 0.79rem;
   }
   .popular-box__cards--h4 {
     font-size: 0.75rem;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
     margin-bottom: 0.5rem;
   }
   .popular-box__cards--p {
     font-size: 0.625rem; /*--10px в макете / 16px (по умолчанию в браузере)--*/
   }
   .popular-box__cards--price-line_button {
-    width: 0.5rem;
-    height: 0.75rem;
+    width: 0.8rem;
+    height: 0.9rem;
     margin-top: 0.5rem;
-    margin-right: 0.6875rem;
+    margin-right: 1.2rem;
   }
   .box-button__text {
     display: none;
   }
-  .box-button__img {
-    width: 50%;
+  .boximage {
+    width: 100%;
+    height: 100%;
   }
   .popular-box__cards--price-line-price {
     font-size: 0.875rem;
-    margin-top: 0.65rem;
+    margin-top: 0.48rem;
     margin-left: 0.75rem;
   }
   .also-margin {
     margin-bottom: 0.6rem;
   }
   .popular-box__cards--p, .popular-box__cards--h4 {
-    margin-left: 0.75rem;
+    margin-left: 0.8rem;
     margin-right: 0.5rem;
   }
-  .popular-box__button {
+  .big-button {
+    width: 13.625rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
+  }
+  .boxes__button {
+    display: none;
+  }
+  .boxes__nav {
     display: flex;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.875rem;
-    font-weight: 600;
+    justify-content: left;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    margin-left: 1.68rem;
+  }
+  .boxes__nav--link {
+    font-size: 0.5625rem;
+    margin-right: 0.25rem;
+  }
+  .gfa-for-phone-vers {
+    display: none;
   }
 }
 /* Адаптив под мобильную версию Instagram**/
@@ -2267,8 +2279,7 @@ body {
     margin-bottom: 0.7rem;
   }
   .instagram__gallery2 {
-    -moz-column-gap: 0.7rem;
-         column-gap: 0.7rem;
+    column-gap: 0.7rem;
     row-gap: 0.7rem;
   }
   .instagram__gallery2 div:nth-child(4),
@@ -2310,8 +2321,7 @@ body {
     flex-direction: column;
     position: relative;
     row-gap: 0.5rem;
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
   .we-care__cards_content img {
     width: 100%;
