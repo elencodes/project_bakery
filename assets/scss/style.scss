@@ -1046,12 +1046,21 @@ color: black;
 	width: 100%;	
     flex-wrap: wrap;
 	justify-content: space-between;
+	
+  
   }
   .wedding__content-image {
 	height: 33.1875rem;/*--531px в макете / 16px (по умолчанию в браузере)--*/
 	width: auto;
   }
+
+  .image__mobail-only {
+	display: none;
+  }
+
   .wedding-box {
+	display: flex;
+	flex-direction: column;
 	background: url(../images/wedding_offer/back-color.png
 	) right 5% bottom 90% / auto no-repeat;
   }
@@ -1092,9 +1101,12 @@ color: black;
 	  font-size: 0.875rem ;
 	  font-weight: 600;
   }
-  .wedding__text-main {
+  .wedding__text-main--box {
 	  width: 41.875rem;/*--670 в макете / 16px (по умолчанию в браузере)--*/
 	  height: 19rem;/*--114 в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .wedding__text-main {
+	  
 	  font-size: 1rem;/*--16px в макете / 16px (по умолчанию в браузере)--*/
 	  line-height: 1.1875rem;/*--19px в макете / 16px (по умолчанию в браузере)--*/
 	  line-height: 19px;
@@ -2128,30 +2140,68 @@ color: black;
 @media (max-width:26.9375em) {
 	.container{
 		width: 25.875rem; // 414px
+		
 	}
-	.wedding-qa, .wedding__footer {
+	.wedding-qa, .wedding__footer, .break__fullscreen {
 		display: none;
 	}
-	/*.wedding__content {
-		flex-direction: column;
-	}*/
+	.wedding__nav {
+		justify-content: flex-start;
+		margin-left: 1rem;
+	}
+
+	.wedding__content {
+		justify-content: center;
+		width: 25.875rem; // 414px
+		
+	}
+	.wedding-box {
+		width: 100%;
+		align-items: center;
+		
+	}
+	.wedding__content-image {
+		display: none;
+	}
+	.image__mobail-only {
+		display: block;
+		height: 19.5rem;
+		margin-top: 0;
+	}
 	.wedding__title--h1 {
 		font-size: 1.5rem;//24px
-		width: 17rem;//272px
+		line-height: 1.8125rem;//29px
+		width: 17rem;//272px		
+		margin-top: 2.6875rem;//43px
 	}
 	.wedding__text-box {
-		width: 16.5625rem;//265 px
+		width: 14.5625rem;//265 px
+	}
+	.wedding__text {
+		font-size: 0.875rem;//14px
+		line-height: 1.0625rem;//14px
+	}
+	.wedding__text-main--box {
+		width: 100%; //288px
+		height: auto;		
 	}
 	.wedding__text-main {
-		width: 18rem; //288px
+		font-size: 0.875rem;//14px
+		line-height: 1.0625rem;//14px
+		margin: 1rem 1rem 0 1rem;//29px
+		
+		
 	}
+
 
 	.wedding__button {
 		flex-direction: column;
+		margin-bottom: 0.8rem;
 	}
 
 	.wedding-kits__h2 {
 		font-size: 1.125rem;//18px
+		margin-top: 2.6875rem;//43px
 		margin-bottom: 1rem;
 	}
 	.wedding-kits__cards--item {

@@ -1434,7 +1434,13 @@ body {
   width: auto;
 }
 
+.image__mobail-only {
+  display: none;
+}
+
 .wedding-box {
+  display: flex;
+  flex-direction: column;
   background: url(../images/wedding_offer/back-color.png) right 5% bottom 90%/auto no-repeat;
 }
 
@@ -1480,9 +1486,12 @@ body {
   font-weight: 600;
 }
 
-.wedding__text-main {
+.wedding__text-main--box {
   width: 41.875rem; /*--670 в макете / 16px (по умолчанию в браузере)--*/
   height: 19rem; /*--114 в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.wedding__text-main {
   font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
   line-height: 1.1875rem; /*--19px в макете / 16px (по умолчанию в браузере)--*/
   line-height: 19px;
@@ -2589,27 +2598,58 @@ body {
   .container {
     width: 25.875rem;
   }
-  .wedding-qa, .wedding__footer {
+  .wedding-qa, .wedding__footer, .break__fullscreen {
     display: none;
   }
-  /*.wedding__content {
-  	flex-direction: column;
-  }*/
+  .wedding__nav {
+    justify-content: flex-start;
+    margin-left: 1rem;
+  }
+  .wedding__content {
+    justify-content: center;
+    width: 25.875rem;
+  }
+  .wedding-box {
+    width: 100%;
+    align-items: center;
+  }
+  .wedding__content-image {
+    display: none;
+  }
+  .image__mobail-only {
+    display: block;
+    height: 19.5rem;
+    margin-top: 0;
+  }
   .wedding__title--h1 {
     font-size: 1.5rem;
+    line-height: 1.8125rem;
     width: 17rem;
+    margin-top: 2.6875rem;
   }
   .wedding__text-box {
-    width: 16.5625rem;
+    width: 14.5625rem;
+  }
+  .wedding__text {
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+  }
+  .wedding__text-main--box {
+    width: 100%;
+    height: auto;
   }
   .wedding__text-main {
-    width: 18rem;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    margin: 1rem 1rem 0 1rem;
   }
   .wedding__button {
     flex-direction: column;
+    margin-bottom: 0.8rem;
   }
   .wedding-kits__h2 {
     font-size: 1.125rem;
+    margin-top: 2.6875rem;
     margin-bottom: 1rem;
   }
   .wedding-kits__cards--item {
