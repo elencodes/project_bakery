@@ -668,137 +668,95 @@ body {
   flex-wrap: wrap;
 }
 
-.holiday_img-line {
+.holiday_item_1,
+.holiday_item_2,
+.holiday_item_3,
+.holiday_item_4,
+.holiday_item_5,
+.holiday_item_6 {
   display: flex;
-  align-items: center;
-  width: 100%;
-  border: 1px solid lightblue;
-}
-
-.holy-img {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.623rem;
+  flex-direction: column;
+  width: 10.62rem;
+  justify-content: end;
+  color: black;
   transition: 0.2s;
 }
 
 .holiday_img_1 {
-  display: flex;
-  margin-right: 5.25rem;
-  padding-left: 2rem;
+  width: 6.25rem;
+  height: 7.06rem;
+  margin-left: 3.2rem;
+  margin-bottom: 0.179rem;
+  transition: 0.2s;
 }
 
 .holiday_img_2 {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 7rem;
+  width: 3.85rem;
+  height: 2.96rem;
+  align-self: center;
+  margin-bottom: 0.394rem;
+  transition: 0.2s;
 }
 
 .holiday_img_3 {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 8rem;
+  width: 3.62rem;
+  height: 2.81rem;
+  align-self: center;
+  margin-bottom: 0.623rem;
+  transition: 0.2s;
 }
 
 .holiday_img_4 {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 8rem;
+  width: 3.23rem;
+  height: 2.47rem;
+  align-self: center;
+  margin-bottom: 0.687rem;
+  transition: 0.2s;
 }
 
 .holiday_img_5 {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 8rem;
+  width: 3.85rem;
+  height: 2.96rem;
+  align-self: center;
+  margin-bottom: 1.03rem;
+  transition: 0.2s;
 }
 
 .holiday_img_6 {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 5rem;
+  width: 3.62rem;
+  height: 2.81rem;
+  align-self: center;
+  margin-bottom: 1.39rem;
+  transition: 0.2s;
 }
 
-.holiday_text-line {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  border: 1px solid lightpink;
+.holiday_item_1:hover,
+.holiday_item_2:hover,
+.holiday_item_3:hover,
+.holiday_item_4:hover,
+.holiday_item_5:hover,
+.holiday_item_6:hover {
+  text-decoration: underline;
+  text-decoration-color: #E7426A;
+  transition: color 0.1s linear;
+  transform: scale(1.09);
+  cursor: pointer;
 }
 
-.holy-text {
-  display: flex;
-  width: 10.62rem;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
+.holiday_item_1:active,
+.holiday_item_2:active,
+.holiday_item_3:active,
+.holiday_item_4:active,
+.holiday_item_5:active,
+.holiday_item_6:active {
+  color: #E7426A;
+  transition: color 0.1s linear;
 }
 
 .holiday_text {
   color: black;
-}
-
-.holiday_text_block_1 {
-  display: flex;
-  margin-right: 5rem;
-  padding-left: 2rem;
-}
-
-.holiday_text_block_2 {
-  display: flex;
-  margin-right: 7rem;
-}
-
-.holiday_text_block_3 {
-  display: flex;
-  margin-right: 8rem;
-}
-
-.holiday_text_block_4 {
-  display: flex;
-  margin-right: 8rem;
-}
-
-.holiday_text_block_5 {
-  display: flex;
-  margin-right: 8rem;
-}
-
-.holiday_text_block_6 {
-  display: flex;
-  margin-right: 5rem;
-}
-
-.holy-img:hover {
-  transform: scale(1.09);
-  cursor: pointer;
-}
-
-.holy-text:hover {
-  transform: scale(1.09);
-  cursor: pointer;
-}
-
-.holy-img :hover {
-  text-decoration: underline;
-  text-decoration-color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holy-text:hover {
-  text-decoration: underline;
-  text-decoration-color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holy-img:active {
-  color: #E7426A;
-  transition: color 0.1s linear;
-}
-
-.holy-text:active {
-  color: #E7426A;
-  transition: color 0.1s linear;
+  font-weight: 600;
+  font-size: 0.875rem;
 }
 
 .popular-box {
