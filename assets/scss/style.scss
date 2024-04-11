@@ -383,6 +383,7 @@ body {
 .holiday_items {
 	display: flex;
 	justify-content: space-between;
+	align-items: end;
 	flex-wrap: wrap;
 }
 .holiday_item_1,
@@ -394,7 +395,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 10.62rem;
-    justify-content: end;
+    align-content: center;
     color: black;
     transition: 0.2s;
 }
@@ -459,10 +460,14 @@ body {
     @include linkActive;
 }
 .holiday_text {
-color: black;
-font-weight: 600;
-font-size: 0.875rem;
-font-family: $secondaryFont;
+	display: flex;
+	width: 10.62rem;
+	text-align: center;
+	justify-content: center;
+    color: black;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: $secondaryFont;
 }
 //----POPULAR-BOX BLOCK
 .popular-box {
@@ -1779,17 +1784,63 @@ font-family: $secondaryFont;
 	div .holiday_item_6 {
 		display: none;
 	}
-	div .holiday_items {
+	.holidays_h2 {
+		font-size: 1.375rem; // 22px/
+		margin-bottom: 1.125rem; //18px/
+	}
+	.holidays {
+		margin-bottom: 3.75rem; // 60px/
+	}
+	.holiday_items {
+		display: flex;
 		flex-direction: column;
-		align-content: center;
-		align-self: center;
-		width: 17em;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		height: 20rem; //320px/
+	}
+	.holiday_item_1,
+	.holiday_item_2,
+	.holiday_item_3 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.holiday_item_1 {
+		align-items: flex-end;
+	}
+	.holiday_img_1,
+	.holiday_img_2,
+	.holiday_img_3  {
+		margin: 0;
+	}
+	.holiday_img_1 {
+		width: 7.1rem; //124px/
+		height: 8.1rem; //134px/
+		margin-left: 0.325rem;
+		align-self: flex-end;
+	}
+	.holiday_img_2,
+	.holiday_img_3 {
+		width: auto;
+		height: auto;
+	}
+	.holiday__text-container--1 {
+		padding-bottom: 12px;
+	}
+	.holiday__text-container--2 {
+		padding-left: 1.25rem; // 20px/
+	}
+	.holiday__text-container--3 {
+		padding-left: 1.5rem; // 24px/
 	}
 	.holiday_text {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-end;
-}
+		align-items: center;
+	}
 }
 
 //---Popular-box Block and Boxes Block Adaptive---/
