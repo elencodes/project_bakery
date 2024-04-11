@@ -462,7 +462,7 @@ body {
 color: black;
 font-weight: 600;
 font-size: 0.875rem;
-@include $secondaryFont;
+font-family: $secondaryFont;
 }
 //----POPULAR-BOX BLOCK
 .popular-box {
@@ -2072,9 +2072,6 @@ font-size: 0.875rem;
 	.catalog-cards__h3--adaptive {
 		padding-bottom: 1.625rem; // 26px
 		font-size: 1.25rem; // 20px
-	}
-	.header__image {
-		display: none;
 	}
 }
 
