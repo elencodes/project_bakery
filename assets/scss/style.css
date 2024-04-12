@@ -2161,6 +2161,22 @@ body {
     margin-top: 0.7rem;
   }
 }
+/*--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-*/
+@media (max-width: 64.0625em) {
+  .header__box {
+    margin-left: 0.25rem;
+    width: 26.875rem;
+  }
+  .header__image--box img {
+    max-width: 75%;
+    height: 75%;
+    object-fit: cover;
+  }
+  .header-top__phone,
+  .header__top-icons {
+    display: none;
+  }
+}
 @media (max-width: 64.0625em) {
   .container {
     max-width: 55.625rem;

@@ -1713,6 +1713,24 @@ body {
 	}
 }
 
+//----Header Content Tablet-Desktop Adaptive
+/*--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-*/
+@media (max-width: 64.0625em){
+	.header__box {
+		margin-left: 0.25rem; //4px/
+		width: 26.875rem; //430px/
+	}
+	.header__image--box img {
+		max-width: 75%;
+		height: 75%;
+		object-fit: cover;
+	}
+	.header-top__phone,
+	.header__top-icons {
+		display: none;
+	}
+}
+
 //--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
 
 //--Sales Block--/
@@ -1732,6 +1750,7 @@ body {
 }
 
 }
+
 //----Header Content Tablet-Desktop Adaptive
 /*--Адаптив для экранов от 769px (769px/16px=48.0625em)-*/
 @media (min-width: 48.0625em){
