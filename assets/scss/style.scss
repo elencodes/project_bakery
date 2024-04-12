@@ -1672,6 +1672,8 @@ body {
 	@include buttonActive;
 }
 
+
+
 //---Tablet Adaptive---/
 
 //--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
@@ -1770,7 +1772,12 @@ body {
 
 //----Header Content Mobile Adaptive
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
-@media (max-width:26.9375em) {
+@media (max-width:26.9375em)  {
+	.header__top,
+	.nav__inner,
+	.nav__container {
+		display: none;
+	}
 	.container__content {
 		height: 40rem; //640px/
 		margin: 0 0 2rem 0;
@@ -1781,7 +1788,7 @@ body {
 		justify-content: center;
 	}
 	.header__box {
-		margin-top: 5rem; //80px/
+		margin-top: 8.5rem; //136px/
 		margin-left: 0;
 	}
 	.header__content {
@@ -1799,12 +1806,146 @@ body {
 	.header__image--box {
 		overflow: hidden;
 		background: url("../images/header-background.png") no-repeat;
-		background-size: cover;
+		background-size: contain;
 	}
 	.header__image--box img {
-		width: 100%;
+		max-width: 95%;
 		height: 100%;
 		object-fit: cover;
+	}
+//----Header Mobile Menu Adaptive
+	.header__mobile-menu {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		height: 4.5rem; //72px/
+		z-index: 5;
+		background-color: #F7EBE5;
+	}
+	.header__mobile-menu--fixed {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 50;
+	}
+	#check-menu {
+		display: none;
+	}
+	.header__burger-label {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+	}
+	.header__burger-line {
+		position: absolute;
+		top: 1.75rem; //28px/
+		left: 1.125rem; //18px/
+		width: 1.5rem; //20px/
+		height: 0.125rem; //2px/
+		background-color: #000000;
+		transition: .7s all;
+	}
+	.header__burger-line--2,
+	.header__burger-line--3 {
+		top: 2.25rem; //36px/
+	}
+	.header__burger-line--4 {
+		top: 2.75rem; //44px/
+	}
+	.header__burger-menu {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		bottom: 0;
+		left: 0;
+		max-height: 0;
+		font-size: 0;
+		background-color: #F7EBE5;
+		transform: translateY(100%);
+		overflow: hidden;
+		transition: .6s all;
+	}
+	.header__burger-menu a {
+		display: flex;
+		justify-content: center;
+	}
+	.nav__link,
+	.header-top__link {
+		display: block;
+		width: 100%;
+		padding: 1.125rem; //18px/
+		text-decoration: none;
+		border-top: 0.0625rem solid #DFD4CF; //1px/
+	}
+	.nav__link--mobile {
+		border-bottom: 0.0625rem solid #DFD4CF; //1px/
+	}
+	.header-top__link--icons {
+		display: inline;
+	}
+	.nav-link__stock--mobile {
+		display: block;
+		margin: 0 auto;
+	}
+	.header__link-mobile--wedding {
+		padding-top: 2rem; //32px/
+	}
+	.header__link-mobile--wedding,
+	.header-top__link--mobile {
+		padding-bottom: 0.3125rem; //5px/
+	}
+	.header__link-mobile--contacts {
+		padding-bottom: 2rem; //32px/
+	}
+	.header-top__link--mobile,
+	.header-top__link--icons,
+	.nav__link-stock--mobile, {
+		border-top: none;
+	}
+	.header-top__image--mobile {
+		margin-right: 0.75rem; //12px/
+	}
+	.header__top-icons--mobile {
+		display: flex;
+		position: absolute;
+		bottom: 1.875rem; //48px/
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.header__mobile-logo {
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.header__mobile-basket {
+		position: absolute;
+		right: 2rem; //18px/
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	#check-menu:checked ~ .header__burger-menu {
+		max-height: 43.75rem; //700px/
+		font-size: 0.875rem; //14px/
+	}
+	#check-menu:checked ~ .header__burger-line--1 {
+		display: none;
+	}
+	#check-menu:checked ~ .header__burger-line--2 {
+		transform: rotate(45deg);
+	}
+	#check-menu:checked ~ .header__burger-line--3 {
+		transform: rotate(-45deg);
+	}
+	#check-menu:checked ~ .header__burger-line--4 {
+		display: none;
 	}
 }
 
