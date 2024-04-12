@@ -1683,6 +1683,14 @@ body {
 }
 }
 
+//--Адаптив для экранов до 821px (821px/16px=51.3135em)-*/
+@media (max-width: 51.3125em) {
+	div .holiday_item_5,
+	div .holiday_item_6 {
+		display: none;
+}
+}
+
 //---Contacts Page---/
 @media (max-width: 48.0625em) {
 	.contacts_items {
