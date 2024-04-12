@@ -1768,8 +1768,11 @@ body {
 	.nav__container {
 		display: none;
 	}
+	.container__image-tablet {
+		width: 35.875rem; //94px/
+	}
 	.container__content {
-		height: 40rem; //832px/
+		height: 45rem; //720px/
 		margin: 0 0 2rem 0;
 		background: none;
 	}
