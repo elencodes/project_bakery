@@ -833,6 +833,9 @@ body {
 	line-height: 0.937rem; /*--15px в макете / 16px (по умолчанию в браузере)--*/
 	text-align: left;
   }
+  .footer__apps-mobile, .footer__add-info--mobile-block{
+	display: none;
+  }
   .footer__nav {
 	display: flex;
 	margin-left: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
@@ -2132,10 +2135,12 @@ body {
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em) {
 	.footer__container {
-		max-width: 25.875rem;/*--394px в макете / 16px (по умолчанию в браузере)--*/
-		max-height: 24.625rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
+		max-width: 25.875rem;/*--414px в макете / 16px (по умолчанию в браузере)--*/
+		height: 24.625rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
 		justify-content: center;
 		padding-top: 2.0625rem;
+	}
+		
 		
 	.footer__ptofit {
 		flex-direction: column;
@@ -2156,8 +2161,12 @@ body {
 		text-align: left;
 	}
 	
-	.footer__list-wrap, .fullscreen__text, .break__fullscreen {
+	.footer__list-wrap, .fullscreen__text, .break__fullscreen, .footer__contacts {
 		display: none;
+	}
+	.footer__add-info {
+		display:flex;
+		justify-content: space-between;
 	}
 
 	.footer__add-info--text {
@@ -2165,10 +2174,29 @@ body {
 		font-size: 0.625rem;/*--10px в макете / 16px (по умолчанию в браузере)--*/
 		line-height: 0.75rem;/*--12px в макете / 16px (по умолчанию в браузере)--*/
 	}
+	.footer__header-contacts {
+		font-size: 0.75rem;
+	
+	}
+	.footer-text{
+		font-size: 0.625rem;
+	}
+	.footer__add-info--mobile-block{
+		display: block;
+	}
+
+	.footer__apps-mobile {
+		display: flex;
+		justify-content: center;
+		gap: 0.625rem;//10px
+		margin-top: 0.6rem;//27px
+		margin-bottom: 2rem;
+		
+	}
 
 }
 
-}
+
 /* Адаптив по мобильную версию Гарантии вкуса и качества**/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em){
@@ -2228,14 +2256,13 @@ body {
 		width: 25.875rem; // 414px
 		
 	}
-	.wedding-qa, .wedding__footer, .break__fullscreen {
+	.wedding-qa, .wedding__footer, .break__fullscreen, .box-button__text, .wedding__content-image {
 		display: none;
 	}
 	.wedding__nav {
 		justify-content: flex-start;
 		margin-left: 1rem;
 	}
-
 	.wedding__content {
 		justify-content: center;
 		width: 25.875rem; // 414px
@@ -2245,14 +2272,11 @@ body {
 		width: 100%;
 		align-items: center;
 		
-	}
-	.wedding__content-image {
-		display: none;
-	}
+	}	
 	.image__mobail-only {
 		display: block;
-		height: 19.5rem;
-		margin-top: 0;
+		height: 19.5rem;//312px
+		margin-top: 0.75rem;//12px
 	}
 	.wedding__title--h1 {
 		font-size: 1.5rem;//24px
@@ -2265,52 +2289,72 @@ body {
 	}
 	.wedding__text {
 		font-size: 0.875rem;//14px
-		line-height: 1.0625rem;//14px
+		line-height: 1.0625rem;//17px
 	}
 	.wedding__text-main--box {
-		width: 100%; //288px
+		width: 100%; 
 		height: auto;		
 	}
 	.wedding__text-main {
 		font-size: 0.875rem;//14px
-		line-height: 1.0625rem;//14px
-		margin: 1rem 1rem 0 1rem;//29px
-		
-		
+		line-height: 1.0625rem;//17px
+		margin: 1rem 1rem 0 1rem;
 	}
-
-
 	.wedding__button {
 		flex-direction: column;
-		margin-bottom: 0.8rem;
+		margin-bottom: 0.75rem;//12px
 	}
-
 	.wedding-kits__h2 {
 		font-size: 1.125rem;//18px
 		margin-top: 2.6875rem;//43px
 		margin-bottom: 1rem;
 	}
+	.wedding-kits__cards {
+		gap: 0.5rem;//8px
+	}
 	.wedding-kits__cards--item {
 		width: 8.75rem; // 140px
 		height: 16.1875rem;// 259px
 	}
-
+	.wedding-kits__card--wrap{
+		height: 13.9375rem;//223px
+	}
+	.wedding__mobile-img--box {
+		background: url(../images/wedding_offer/wedding-back-mob.png) center no-repeat;
+	}
+	.wedding-kits__image--box {
+		display: flex;
+		justify-content: center;
+	}
 	.wedding-kits__image {
 		width: 7.75rem; //124px
 		height: 6.5rem; // 104px
+		margin-top: 0.5625rem;//9px
 	}
 	.wedding-kits__cards--h4 {
 		font-size: 0.75rem;//12px
+		margin: 0.5625rem 0.75rem;//9px 12px
+		
 	}
 	.wedding-kits__cards--p {
 		font-size: 0.625rem; //10px
+		margin: 0 0.75rem 0.5625rem 0.75rem;//9px 12px
 	}
 	.wedding-kits__cards--price {
 		font-size: 0.875rem;//14px
+		margin: 0.5rem auto 0 0.75rem;// 8px 11px 12px
 	}
-
-
-
+	.wedding-kits__cards--price-line {
+		width: 8.75rem; // 140px
+		height: 2.25rem;// 36px
+		margin-bottom: 0.6875rem;//11px
+	}
+	.wedding-kits__cards--price-line_button {
+		width:0.8rem;
+		height:0.9rem;
+		margin-top:0.5rem;
+		margin-right: 1.2rem;
+	}
 }
 
 

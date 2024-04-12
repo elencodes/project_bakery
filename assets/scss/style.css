@@ -1174,6 +1174,10 @@ body {
   text-align: left;
 }
 
+.footer__apps-mobile, .footer__add-info--mobile-block {
+  display: none;
+}
+
 .footer__nav {
   display: flex;
   margin-left: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
@@ -2580,34 +2584,54 @@ body {
 /* Адаптив по мобильную версию Footer**/
 @media (max-width: 26.9375em) {
   .footer__container {
-    max-width: 25.875rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
-    max-height: 24.625rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
+    max-width: 25.875rem; /*--414px в макете / 16px (по умолчанию в браузере)--*/
+    height: 24.625rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
     justify-content: center;
     padding-top: 2.0625rem;
   }
-  .footer__container .footer__ptofit {
+  .footer__ptofit {
     flex-direction: column;
     align-items: center;
   }
-  .footer__container .footer__profit--items {
+  .footer__profit--items {
     flex-direction: row;
     justify-content: space-between;
     width: 15.75rem; /*--252px в макете / 16px (по умолчанию в браузере)--*/
     margin-bottom: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
   }
-  .footer__container .footer__profit--item {
+  .footer__profit--item {
     width: 11.6875rem; /*--187px в макете / 16px (по умолчанию в браузере)--*/
   }
-  .footer__container .footer__profit-text {
+  .footer__profit-text {
     text-align: left;
   }
-  .footer__container .footer__list-wrap, .footer__container .fullscreen__text, .footer__container .break__fullscreen {
+  .footer__list-wrap, .fullscreen__text, .break__fullscreen, .footer__contacts {
     display: none;
   }
-  .footer__container .footer__add-info--text {
+  .footer__add-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__add-info--text {
     width: 10.8125rem; /*--173px в макете / 16px (по умолчанию в браузере)--*/
     font-size: 0.625rem; /*--10px в макете / 16px (по умолчанию в браузере)--*/
     line-height: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
+  }
+  .footer__header-contacts {
+    font-size: 0.75rem;
+  }
+  .footer-text {
+    font-size: 0.625rem;
+  }
+  .footer__add-info--mobile-block {
+    display: block;
+  }
+  .footer__apps-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
   }
 }
 /* Адаптив по мобильную версию Гарантии вкуса и качества**/
@@ -2664,7 +2688,7 @@ body {
   .container {
     width: 25.875rem;
   }
-  .wedding-qa, .wedding__footer, .break__fullscreen {
+  .wedding-qa, .wedding__footer, .break__fullscreen, .box-button__text, .wedding__content-image {
     display: none;
   }
   .wedding__nav {
@@ -2679,13 +2703,10 @@ body {
     width: 100%;
     align-items: center;
   }
-  .wedding__content-image {
-    display: none;
-  }
   .image__mobail-only {
     display: block;
     height: 19.5rem;
-    margin-top: 0;
+    margin-top: 0.75rem;
   }
   .wedding__title--h1 {
     font-size: 1.5rem;
@@ -2711,29 +2732,57 @@ body {
   }
   .wedding__button {
     flex-direction: column;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.75rem;
   }
   .wedding-kits__h2 {
     font-size: 1.125rem;
     margin-top: 2.6875rem;
     margin-bottom: 1rem;
   }
+  .wedding-kits__cards {
+    gap: 0.5rem;
+  }
   .wedding-kits__cards--item {
     width: 8.75rem;
     height: 16.1875rem;
   }
+  .wedding-kits__card--wrap {
+    height: 13.9375rem;
+  }
+  .wedding__mobile-img--box {
+    background: url(../images/wedding_offer/wedding-back-mob.png) center no-repeat;
+  }
+  .wedding-kits__image--box {
+    display: flex;
+    justify-content: center;
+  }
   .wedding-kits__image {
     width: 7.75rem;
     height: 6.5rem;
+    margin-top: 0.5625rem;
   }
   .wedding-kits__cards--h4 {
     font-size: 0.75rem;
+    margin: 0.5625rem 0.75rem;
   }
   .wedding-kits__cards--p {
     font-size: 0.625rem;
+    margin: 0 0.75rem 0.5625rem 0.75rem;
   }
   .wedding-kits__cards--price {
     font-size: 0.875rem;
+    margin: 0.5rem auto 0 0.75rem;
+  }
+  .wedding-kits__cards--price-line {
+    width: 8.75rem;
+    height: 2.25rem;
+    margin-bottom: 0.6875rem;
+  }
+  .wedding-kits__cards--price-line_button {
+    width: 0.8rem;
+    height: 0.9rem;
+    margin-top: 0.5rem;
+    margin-right: 1.2rem;
   }
 }
 /* Адаптив по мобильную версию Форма ОС на свадебной странице**/
