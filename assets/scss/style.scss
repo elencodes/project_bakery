@@ -1224,6 +1224,8 @@ body {
     justify-items: flex-start;
 	flex-wrap: wrap; 
 	column-gap: 0.9375rem;
+	max-width: 88.375rem;
+	height: 38.125rem;
    /* column-gap: 0.9375rem;
     margin: 0.625rem;
 	height: 38.125rem;
@@ -1233,9 +1235,12 @@ body {
 		color:#4E9DD3;
 	}
 	
+	
 }
 
 .feedback-form__content{
+	max-width: 40rem;
+	
 	h2{
 		font-family: $secondaryFont;
         font-size: 1.875rem;
@@ -1272,7 +1277,7 @@ body {
 		padding-left: 0.625rem;
 	}
 	label{
-		width: 20vw;
+		width: 20.0625vw;
 		font-family: $mainFont;
         font-size: 0.875rem;
         font-weight: 400;
@@ -1282,11 +1287,12 @@ body {
 }
 .your_idea{
 	input{
-		width: 44.5rem; /* 712px */
+		width: 44rem; /* 712px */
 		height: 12vh;
 		margin-top: 1rem;
 	}
 	margin-bottom: 2rem;
+	margin-top: 1rem;
 	label{
 		font-family: $mainFont;
         font-size: 0.875rem;
@@ -2365,7 +2371,7 @@ body {
 		max-width: 26.9375rem;/*--394px в макете / 16px (по умолчанию в браузере)--*/
 		justify-content: center;
 		min-width: 20rem;
-		width: 25rem;
+		width: 23.4375rem;
 		background-color: #f1f1f1;
 		margin-bottom: 2rem;
 		height: 45.25rem;
@@ -2395,7 +2401,7 @@ body {
 			margin-bottom: 5.25rem;/* 84px**/
 		}
 		img{
-			width: 20rem;/*320 px**/
+			width: 23.4375rem;/*320 px**/
 			height: auto;
 			object-fit: cover;
 			
@@ -2403,7 +2409,7 @@ body {
 		.button_feedback__form{
 			width: 11.875rem;/*190 px**/
 			height: 2.5rem;/*40 px**/
-			margin-left: 4.0625rem;
+			margin-left: 6rem;
 			
 		}
 	}
@@ -2428,13 +2434,16 @@ body {
 	.button_feedback__form--form--button{
 		margin-top:-200px;
 	}
+	.button_feedback__form {
+		margin: 0;
+	}
 	.contact_feedback-form
 	{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 1rem;
 	input{
-		width: 18rem; /* 228px */
+		width: 22rem; /* 228px */
 		height: 2.5rem; /* 40px */
         font-size: 1rem;/* 40px */
         font-weight: 400;
@@ -2454,7 +2463,7 @@ body {
 	}
 	.your_idea{
 		input{
-			width: 18rem; /* 288px */
+			width: 22rem; /* 288px */
 			height: 6.875rem;/* 110px */
 			margin-top: 1rem;
 			margin-left:1rem;
