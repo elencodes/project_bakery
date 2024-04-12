@@ -274,6 +274,10 @@ body {
   background-color: #D4E9F9;
 }
 
+.header__mobile-menu {
+  display: none;
+}
+
 .header-banner__inner {
   display: flex;
   justify-content: space-between;
