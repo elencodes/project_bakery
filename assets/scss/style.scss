@@ -1673,6 +1673,26 @@ body {
 }
 
 //---Tablet Adaptive---/
+//--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
+
+//--Sales Block--/
+@media (max-width: 64.0625em) {
+	.container{
+		max-width: 55.625rem;
+	}
+	.sales__cards{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 2rem;
+}
+.sales__cards--sale_one,.sales__cards--sale_two,.sales__cards--sale_three,.sales__cards--sale_four{
+	width: 18rem;
+    height: 25rem;
+}
+
+}
+
 //--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 
 //---Holidays Block---/
@@ -1791,7 +1811,7 @@ body {
 	}
 	.sales{
 		width: 100%;
-		max-width: 26.9375rem; 
+		max-width: 25.875rem; 
 		margin-bottom:3.75rem;
 		margin-top: 2.375rem;
 	}
