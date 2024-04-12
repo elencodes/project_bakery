@@ -1732,7 +1732,18 @@ body {
 }
 
 }
-
+//----Header Content Tablet-Desktop Adaptive
+/*--Адаптив для экранов от 769px (769px/16px=48.0625em)-*/
+@media (min-width: 48.0625em){
+	.header__image--box {
+		max-width: 50%;
+	}
+	.header__image--box img {
+		max-width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
 //----Header Content Tablet Adaptive
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 @media (max-width: 48.0625em) {
