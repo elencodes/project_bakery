@@ -259,7 +259,7 @@ body {
 	height: 6.25rem;
 	margin-top: -0.2rem;
 }
-.nav_img3,.nav_img2{
+.navigation_cards__img2,.navigation_cards__img3{
 	margin-top: -1.5rem;
 }
 .navigation_cards__vector{
@@ -1673,6 +1673,44 @@ body {
 }
 
 //---Tablet Adaptive---/
+
+//--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
+
+//--Navigation cards Block--/
+
+@media(max-width:64.0625em){  //1025px
+	.container{
+		max-width: 38.75rem; // 620px
+		
+		
+		
+	}
+
+	.navigation_cards{
+		justify-content: center;
+	}
+
+
+	.navigation_cards__one,.navigation_cards__second,.navigation_cards__third,.navigation_cards__forth,.navigation_cards__fifth,.navigation_cards__sixth{
+		
+		background-size: cover;
+		width:38.75rem; 
+		height:17.8rem ;  
+		font-size: 1.3rem;
+	
+		h3{
+			font-size: 1.6rem;
+			margin-top: 0.7rem;
+		}
+	}
+
+
+	.navigation_cards__vector{
+		margin-top: 0.7rem;
+		
+	}
+}
+
 //--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
 
 //--Sales Block--/
@@ -1798,6 +1836,50 @@ body {
 		}
 		
 	}
+
+
+	.navigation_cards__one{
+		img{
+			margin-left: 9.12rem;
+			margin-top: 0.27rem;
+		}
+	}
+
+	.navigation_cards__second{
+		img{
+			margin-left: 7.2rem;
+			margin-top: 0.27rem;
+		}
+	}
+
+	.navigation_cards__third{
+		img{
+			margin-left: 0.4rem;
+			margin-top: 0.27rem;
+		}
+	}
+
+	.navigation_cards__forth{
+		img{
+			margin-left: 4.5rem;
+			margin-top: 0.27rem;
+		}
+	}
+
+	.navigation_cards__fifth{
+		img{
+			margin-left: 4.7rem;
+			margin-top: 0.27rem;
+		}
+	}
+
+	.navigation_cards__sixth{
+		img{
+			margin-left: 7.7rem;
+			margin-top: 0.27rem;
+		}
+	}
+
 
 
 	
