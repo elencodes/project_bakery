@@ -2819,10 +2819,10 @@ body {
 	}
 
 }
-//--Адаптив для экранов до 821px (821px/16px=51.31rem)-/
+//--Адаптив для экранов до 821px (821px/16px=51.3125rem)-/821px
 
 //--Footer-/
-@media (max-width: 51.31em) {
+@media (max-width: 51.3125em) {
 	.footer__list-wrap{
 		display: none;
 	}
@@ -2964,6 +2964,52 @@ body {
 	}
 
 }
+//--Адаптив для экранов до 821px (821px/16px=51.3125rem)-/821px
+
+//--Footer-/
+@media (max-width: 51.3125em) {
+	.wedding__block {
+		max-width: 51.3125rem;
+		
+	}
+	.wedding__nav {
+		justify-content: start;
+		margin-left: 4rem;
+	}
+	.wedding__content {
+		justify-content: center;
+	}
+	.wedding__title--h1 {
+		margin-top: 2rem;
+	}
+	.wedding-kits {
+		max-width: 51.3125rem;
+		margin-left: 2rem;
+	}
+	.wedding-qa__content {
+		justify-content: center;
+		gap: 1rem;
+	}
+	.wedding-qa__content--item {
+		width: 17.5rem;
+	}
+}
+/*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
+@media (max-width: 48.0625em){
+	.wedding__block {
+		max-width: 48.0625rem;
+		margin-top : 8.5rem;
+	}
+	.wedding__nav {
+		margin-left: 3rem;
+	}
+	.wedding-qa__content--item {
+		width: 16.5rem;
+	}
+	.wedding-kits {
+		width: 100vw;
+	}
+}
 
 /* Адаптив под мобильную версию Свадебное предложение**/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
@@ -3025,13 +3071,18 @@ body {
 		flex-direction: column;
 		margin-bottom: 0.75rem;//12px
 	}
+	.wedding-kits {
+		max-width: 26.9375rem;
+		margin: 0 auto 2.875rem auto;
+		
+	}
 	.wedding-kits__h2 {
 		font-size: 1.125rem;//18px
 		margin-top: 2.6875rem;//43px
 		margin-bottom: 1rem;
 	}
 	.wedding-kits__cards {
-		gap: 0.5rem;//8px
+		gap: 1rem;//8px
 	}
 	.wedding-kits__cards--item {
 		width: 8.75rem; // 140px
