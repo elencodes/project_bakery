@@ -3222,7 +3222,7 @@ body {
 /* Адаптив по мобильную версию Гарантии вкуса и качества**/
 @media (max-width: 26.9375em) {
   .garanties {
-    margin-top: 8.5rem;
+    margin-top: 6.5rem;
   }
   .garanties h2 {
     font-size: 1.125rem; /* 18px**/
@@ -3533,7 +3533,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 8.5rem;
+    margin-top: 6.5rem;
     margin-bottom: 2.3rem;
     margin-left: 1.5rem;
   }
@@ -3691,4 +3691,4 @@ body {
     padding-bottom: 1.625rem;
     font-size: 1rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
