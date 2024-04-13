@@ -3621,7 +3621,7 @@ body {
   }
   .catalog__nav {
     justify-content: left;
-    margin-top: 8.5rem;
+    margin-top: 6.5rem;
     margin-bottom: 1.125rem;
     margin-left: 0;
   }
@@ -3633,7 +3633,7 @@ body {
     margin-bottom: 3.125rem;
   }
   .catalog-box__h2 {
-    margin-bottom: 1.125rem;
+    margin-bottom: 1.5rem;
     font-size: 1.125rem;
   }
   .catalog__container {
@@ -3651,6 +3651,7 @@ body {
   }
   .catalog__title {
     margin-bottom: 0.75rem;
+    width: 9.375rem;
     font-size: 1.125rem;
   }
   .catalog__text {
