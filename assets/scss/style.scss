@@ -2819,6 +2819,18 @@ body {
 	}
 
 }
+//--Адаптив для экранов до 821px (821px/16px=51.31rem)-/
+
+//--Footer-/
+@media (max-width: 51.31em) {
+	.footer__list-wrap{
+		display: none;
+	}
+	.footer__contacts {
+		height: 12rem//192px;
+	}
+
+}
 
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 //--Footer-/
