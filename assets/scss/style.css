@@ -6,6 +6,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -84,8 +86,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -404,8 +405,7 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header__box {
@@ -955,8 +955,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -998,8 +997,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1054,8 +1052,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   flex-wrap: wrap;
 }
@@ -1589,8 +1586,7 @@ body {
   justify-content: space-between;
   justify-items: flex-start;
   flex-wrap: wrap;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1599,8 +1595,7 @@ body {
 .container-feedback-form img {
   max-width: 38.125rem;
   height: 38.125rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .feedback-form {
@@ -1609,8 +1604,7 @@ body {
   justify-content: flex-start;
   justify-items: flex-start;
   flex-wrap: wrap;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   max-width: 88.375rem;
   height: 38.125rem;
 }
@@ -1643,8 +1637,7 @@ body {
 .contact_feedback-form {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+  column-gap: 2.5rem;
   margin-bottom: 0rem;
 }
 .contact_feedback-form input {
@@ -2173,8 +2166,7 @@ body {
   .header__image--box img {
     max-width: 75%;
     height: 75%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .header-top__phone,
   .header__top-icons {
@@ -2182,6 +2174,9 @@ body {
   }
 }
 @media (max-width: 64.0625em) {
+  .sales {
+    width: 55.625rem;
+  }
   .sales__cards {
     display: flex;
     flex-wrap: wrap;
@@ -2193,6 +2188,12 @@ body {
     height: 25rem;
   }
 }
+/*--Адаптив для экранов от 769px (769px/16px=48.0625em) boxes block-*/
+@media (max-width: 48.0625em) {
+  .boxes__nav {
+    margin-top: 8.5rem;
+  }
+}
 /*--Адаптив для экранов от 769px (769px/16px=48.0625em)-*/
 @media (min-width: 48.0625em) {
   .header__image--box {
@@ -2201,8 +2202,7 @@ body {
   .header__image--box img {
     max-width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
@@ -2248,8 +2248,7 @@ body {
   .header__image--box img {
     max-width: 95%;
     height: 95%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .header__mobile-menu {
     position: relative;
@@ -2463,8 +2462,7 @@ body {
   }
   .feedback-form img {
     width: 50vw;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .button_feedback__form {
     margin-left: 0;
@@ -2508,8 +2506,7 @@ body {
   .feedback-form img {
     width: 100vw;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     margin-left: 1.5rem;
   }
   .feedback-form .button_feedback__form {
@@ -2611,8 +2608,7 @@ body {
   .header__image--box img {
     max-width: 95%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .header__mobile-menu {
     position: relative;
@@ -2973,7 +2969,7 @@ body {
   .boxes__nav {
     display: flex;
     justify-content: left;
-    margin-top: 8.5rem;
+    margin-top: 6.5rem;
     margin-bottom: 0.75rem;
     margin-left: 1.68rem;
   }
@@ -3001,8 +2997,7 @@ body {
     margin-bottom: 0.7rem;
   }
   .instagram__gallery2 {
-    -moz-column-gap: 0.7rem;
-         column-gap: 0.7rem;
+    column-gap: 0.7rem;
     row-gap: 0.7rem;
   }
   .instagram__gallery2 div:nth-child(4),
@@ -3070,8 +3065,7 @@ body {
     flex-direction: column;
     position: relative;
     row-gap: 0.5rem;
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
   .we-care__cards_content img {
     width: 100%;
@@ -3414,8 +3408,7 @@ body {
   .feedback-form img {
     width: 23.4375rem; /*320 px**/
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .feedback-form .button_feedback__form {
     width: 11.875rem; /*190 px**/

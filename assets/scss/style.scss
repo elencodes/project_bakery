@@ -1679,10 +1679,6 @@ body {
 //--Navigation cards Block--/
 
 @media(max-width:64.0625em){  //1025px
-		
-		
-		
-
 	.navigation_cards{
 		justify-content: center;
 	}
@@ -1730,6 +1726,9 @@ body {
 
 //--Sales Block--/
 @media (max-width: 64.0625em) {
+	.sales{
+		width:55.625rem;
+	}
 	.sales__cards{
 		display: flex;
 		flex-wrap: wrap;
@@ -1740,7 +1739,12 @@ body {
 	width: 18rem;
     height: 25rem;
 }
-
+}
+/*--Адаптив для экранов от 769px (769px/16px=48.0625em) boxes block-*/
+@media (max-width: 48.0625em){
+	.boxes__nav{
+		margin-top: 8.5rem;	
+	}
 }
 
 //----Header Content Tablet-Desktop Adaptive
@@ -1894,7 +1898,7 @@ body {
 	}
 	.header-top__link--mobile,
 	.header-top__link--icons,
-	.nav__link-stock--mobile, {
+	.nav__link-stock--mobile {
 		border-top: none;
 	}
 	.header-top__image--mobile {
@@ -2282,7 +2286,7 @@ body {
 	}
 	.header-top__link--mobile,
 	.header-top__link--icons,
-	.nav__link-stock--mobile, {
+	.nav__link-stock--mobile{
 		border-top: none;
 	}
 	.header-top__image--mobile {
@@ -2586,7 +2590,7 @@ body {
 	.boxes__nav{
 	display: flex;
 	justify-content: left;
-	margin-top: 8.5rem;
+	margin-top: 6.5rem;
 	margin-bottom: 0.75rem;
 	margin-left: 1.68rem;
 }
