@@ -1143,6 +1143,10 @@ body {
 	  width: 23.125rem;/*--370 в макете / 16px (по умолчанию в браузере)--*/
 	  height: 18.75rem;/*--300 в макете / 16px (по умолчанию в браузере)--*/
   }
+  .wedding-kits__card--wrap {
+	width: 23.125rem;//370px
+	height: 25.5rem;//408
+  }
   .wedding-kits__cards--h4 {
 	  font-family: $secondaryFont;
 	  font-size: 1.125rem;/*--18px в макете / 16px (по умолчанию в браузере)--*/
@@ -1164,7 +1168,7 @@ body {
 	  display: flex;
 	  justify-content: space-between;
 	  align-items: center;
-	  height: 3.0625rem;/*--49px в макете / 16px (по умолчанию в браузере)--*/
+	  height: 3.1875rem;/*--51px в макете / 16px (по умолчанию в браузере)--*/
 	  border-top: 1px solid #EDEDF0;
 	  margin-bottom: 1rem;
   }
@@ -2803,9 +2807,9 @@ body {
 @media (max-width:26.9375em) {
 	.footer__container {
 		max-width: 25.875rem;/*--414px в макете / 16px (по умолчанию в браузере)--*/
-		height: 24.625rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
+		height: 27.5rem; //--440px 
 		justify-content: center;
-		padding-top: 2.0625rem;
+		padding-top: 2.0625rem;//33px
 	}
 		
 		
@@ -2818,7 +2822,7 @@ body {
 	.footer__profit--items {
 		flex-direction: row;
 		justify-content: space-between;
-		width: 15.75rem;/*--252px в макете / 16px (по умолчанию в браузере)--*/
+		width: 17rem;//--272px 
 		margin-bottom: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
 	}
 	.footer__profit--item {
@@ -2856,8 +2860,8 @@ body {
 		display: flex;
 		justify-content: center;
 		gap: 0.625rem;//10px
-		margin-top: 0.6rem;//27px
-		margin-bottom: 2rem;
+		margin-top:1.6875rem;//27px
+		margin-bottom: 3.3125rem;//53px
 		
 	}
 
@@ -2924,6 +2928,11 @@ body {
 		width: 25.875rem; // 414px
 		
 	}
+	.wedding__block {
+		width: 100%;
+		margin-top: 8.5rem;//136px
+	}
+
 	.wedding-qa, .wedding__footer, .break__fullscreen, .box-button__text, .wedding__content-image {
 		display: none;
 	}
@@ -2988,6 +2997,10 @@ body {
 		height: 13.9375rem;//223px
 	}
 	.wedding__mobile-img--box {
+		width: 100%;
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;	
 		background: url(../images/wedding_offer/wedding-back-mob.png) center no-repeat;
 	}
 	.wedding-kits__image--box {

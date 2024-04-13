@@ -6,8 +6,6 @@
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -86,7 +84,8 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -405,7 +404,8 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__box {
@@ -955,7 +955,8 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -997,7 +998,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1052,7 +1054,8 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   margin: 0.625rem;
   flex-wrap: wrap;
 }
@@ -1516,6 +1519,11 @@ body {
   height: 18.75rem; /*--300 в макете / 16px (по умолчанию в браузере)--*/
 }
 
+.wedding-kits__card--wrap {
+  width: 23.125rem;
+  height: 25.5rem;
+}
+
 .wedding-kits__cards--h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
@@ -1540,7 +1548,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.0625rem; /*--49px в макете / 16px (по умолчанию в браузере)--*/
+  height: 3.1875rem; /*--51px в макете / 16px (по умолчанию в браузере)--*/
   border-top: 1px solid #EDEDF0;
   margin-bottom: 1rem;
 }
@@ -1586,7 +1594,8 @@ body {
   justify-content: space-between;
   justify-items: flex-start;
   flex-wrap: wrap;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1595,7 +1604,8 @@ body {
 .container-feedback-form img {
   max-width: 38.125rem;
   height: 38.125rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .feedback-form {
@@ -1604,7 +1614,8 @@ body {
   justify-content: flex-start;
   justify-items: flex-start;
   flex-wrap: wrap;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   max-width: 88.375rem;
   height: 38.125rem;
 }
@@ -1637,7 +1648,8 @@ body {
 .contact_feedback-form {
   display: flex;
   flex-direction: row;
-  column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
   margin-bottom: 0rem;
 }
 .contact_feedback-form input {
@@ -2166,7 +2178,8 @@ body {
   .header__image--box img {
     max-width: 75%;
     height: 75%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .header-top__phone,
   .header__top-icons {
@@ -2202,7 +2215,8 @@ body {
   .header__image--box img {
     max-width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
@@ -2248,7 +2262,8 @@ body {
   .header__image--box img {
     max-width: 95%;
     height: 95%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .header__mobile-menu {
     position: relative;
@@ -2462,7 +2477,8 @@ body {
   }
   .feedback-form img {
     width: 50vw;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .button_feedback__form {
     margin-left: 0;
@@ -2506,7 +2522,8 @@ body {
   .feedback-form img {
     width: 100vw;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin-left: 1.5rem;
   }
   .feedback-form .button_feedback__form {
@@ -2608,7 +2625,8 @@ body {
   .header__image--box img {
     max-width: 95%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .header__mobile-menu {
     position: relative;
@@ -2997,7 +3015,8 @@ body {
     margin-bottom: 0.7rem;
   }
   .instagram__gallery2 {
-    column-gap: 0.7rem;
+    -moz-column-gap: 0.7rem;
+         column-gap: 0.7rem;
     row-gap: 0.7rem;
   }
   .instagram__gallery2 div:nth-child(4),
@@ -3065,7 +3084,8 @@ body {
     flex-direction: column;
     position: relative;
     row-gap: 0.5rem;
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
   .we-care__cards_content img {
     width: 100%;
@@ -3170,7 +3190,7 @@ body {
 @media (max-width: 26.9375em) {
   .footer__container {
     max-width: 25.875rem; /*--414px в макете / 16px (по умолчанию в браузере)--*/
-    height: 24.625rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
+    height: 27.5rem;
     justify-content: center;
     padding-top: 2.0625rem;
   }
@@ -3181,7 +3201,7 @@ body {
   .footer__profit--items {
     flex-direction: row;
     justify-content: space-between;
-    width: 15.75rem; /*--252px в макете / 16px (по умолчанию в браузере)--*/
+    width: 17rem;
     margin-bottom: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
   }
   .footer__profit--item {
@@ -3215,8 +3235,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 0.625rem;
-    margin-top: 0.6rem;
-    margin-bottom: 2rem;
+    margin-top: 1.6875rem;
+    margin-bottom: 3.3125rem;
   }
 }
 /* Адаптив по мобильную версию Гарантии вкуса и качества**/
@@ -3273,6 +3293,10 @@ body {
 @media (max-width: 26.9375em) {
   .container {
     width: 25.875rem;
+  }
+  .wedding__block {
+    width: 100%;
+    margin-top: 8.5rem;
   }
   .wedding-qa, .wedding__footer, .break__fullscreen, .box-button__text, .wedding__content-image {
     display: none;
@@ -3336,6 +3360,10 @@ body {
     height: 13.9375rem;
   }
   .wedding__mobile-img--box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: url(../images/wedding_offer/wedding-back-mob.png) center no-repeat;
   }
   .wedding-kits__image--box {
@@ -3408,7 +3436,8 @@ body {
   .feedback-form img {
     width: 23.4375rem; /*320 px**/
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .feedback-form .button_feedback__form {
     width: 11.875rem; /*190 px**/
@@ -3692,4 +3721,4 @@ body {
     padding-bottom: 1.625rem;
     font-size: 1rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */
