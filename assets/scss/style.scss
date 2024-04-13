@@ -1973,11 +1973,13 @@ body {
 		font-size: 1.25rem;
 	}
 }
-
 /* Адаптив планшет Форма ОС на свадебной странице**/
 
+//--Адаптив для экранов от 770px (48.125em) до 1199px (74ю9375)-/
+
+
 //--Адаптив для экранов до 769px (48.0625em)-/
-@media (max-width:48.0625em){
+@media (min-width:27em) and (max-width:48.0625em){
 	.container-feedback-form{
 		max-width: 48.0625rem;
 		justify-content: center;

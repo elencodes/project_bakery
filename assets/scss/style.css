@@ -2415,7 +2415,7 @@ body {
   }
 }
 /* Адаптив планшет Форма ОС на свадебной странице**/
-@media (max-width: 48.0625em) {
+@media (min-width: 27em) and (max-width: 48.0625em) {
   .container-feedback-form {
     max-width: 48.0625rem;
     justify-content: center;
