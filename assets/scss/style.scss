@@ -2979,8 +2979,11 @@ body {
 	.wedding__content {
 		justify-content: center;
 	}
+	.wedding__content-image {
+		height: 30rem;
+	}
 	.wedding__title--h1 {
-		margin-top: 2rem;
+		margin-top: 0;
 	}
 	.wedding-kits {
 		max-width: 51.3125rem;
@@ -3003,8 +3006,14 @@ body {
 	.wedding__nav {
 		margin-left: 3rem;
 	}
+	.wedding__content-image {
+		height: 28rem;
+	}
 	.wedding-qa__content--item {
 		width: 16.5rem;
+	}
+	.wedding__title--h1 {
+		margin-top: 0;
 	}
 	.wedding-kits {
 		width: 100vw;
