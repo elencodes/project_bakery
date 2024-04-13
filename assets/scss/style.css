@@ -920,7 +920,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5625rem;
+  margin-top: 8.5rem;
   margin-bottom: 1.3125rem;
   margin-left: 0.3rem;
 }
@@ -2400,7 +2400,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 8.5rem;
     margin-bottom: 2.3rem;
     margin-left: 1.5rem;
   }
@@ -2809,7 +2809,7 @@ body {
   .boxes__nav {
     display: flex;
     justify-content: left;
-    margin-top: 0.75rem;
+    margin-top: 8.5rem;
     margin-bottom: 0.75rem;
     margin-left: 1.68rem;
   }
@@ -2936,7 +2936,7 @@ body {
   }
   .catalog__nav {
     justify-content: left;
-    margin-top: 1rem;
+    margin-top: 8.5rem;
     margin-bottom: 1.125rem;
     margin-left: 0;
   }
@@ -3062,7 +3062,7 @@ body {
 /* Адаптив по мобильную версию Гарантии вкуса и качества**/
 @media (max-width: 26.9375em) {
   .garanties {
-    margin-top: 0.5rem;
+    margin-top: 8.5rem;
   }
   .garanties h2 {
     font-size: 1.125rem; /* 18px**/
@@ -3372,7 +3372,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 8.5rem;
     margin-bottom: 2.3rem;
     margin-left: 1.5rem;
   }
@@ -3384,7 +3384,7 @@ body {
   }
   .catalog__nav {
     justify-content: left;
-    margin-top: 1rem;
+    margin-top: 8.5rem;
     margin-bottom: 1.125rem;
     margin-left: 0;
   }
@@ -3460,7 +3460,7 @@ body {
   }
   .catalog__nav {
     justify-content: left;
-    margin-top: 1rem;
+    margin-top: 8.5rem;
     margin-bottom: 1.125rem;
     margin-left: 0;
   }
