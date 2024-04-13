@@ -2588,10 +2588,37 @@ body {
     margin-bottom: 0rem;
   }
   .garant__cards {
-    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+    row-gap: 2rem;
   }
   .garant__cards_content {
-    height: 30wv;
+    height: 32vw;
+    margin-bottom: 4rem;
+  }
+}
+/*адаптив для планшета гарантии качечства (размер 432 px 820px)**/
+@media (min-width: 27em) and (max-width: 51.25em) {
+  .garant__cards_content {
+    height: 20vh;
+    margin-bottom: 2.5rem;
+  }
+  .garant__cards {
+    padding-bottom: 3rem;
+  }
+  .garanties {
+    margin-top: 8.5rem;
+    margin-bottom: 0rem;
+  }
+}
+/*адаптив для планшета гарантии качечства (размер 912 px 1200px)**/
+@media (min-width: 57em) and (max-width: 75em) {
+  .garanties {
+    margin-top: 8.5rem;
+    margin-bottom: 0rem;
+  }
+  .garant__cards_content {
+    height: 20vh;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 26.9375em) {
@@ -3842,5 +3869,19 @@ body {
   }
   .we-care p {
     padding-bottom: 1rem;
+  }
+}
+/*адаптив для планшета гарантии качечства (размер 432 px 820px)**/
+@media (min-width: 27em) and (max-width: 51.25em) {
+  .garant__cards_content {
+    height: 20vh;
+    margin-bottom: 2.5rem;
+  }
+  .garant__cards {
+    padding-bottom: 3rem;
+  }
+  .garanties {
+    margin-top: 8.5rem;
+    margin-bottom: 0rem;
   }
 }/*# sourceMappingURL=style.css.map */

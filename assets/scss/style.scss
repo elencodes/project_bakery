@@ -1990,7 +1990,7 @@ body {
 }
 /* Адаптив планшет Форма ОС на свадебной странице**/
 
-//--Адаптив для экранов от 770px (48.125em) до 1199px (74ю9375)-/
+//--Адаптив для экранов от 770px (48.125em) до 1199px (74.9375)-/
 @media (min-width:48.125em) and (max-width:74.937em){
 	.container-feedback-form{
 		max-width: 74.937rem;
@@ -2152,13 +2152,41 @@ body {
 	.garanties{
 		margin-top:8.5rem;
 		margin-bottom: 0rem;
+		
 	}
 	.garant__cards{
-		padding-bottom: 2rem;
+		margin-bottom: 4rem;
+		row-gap:2rem;
 	}
 	.garant__cards_content{
-		height: 30wv;
+		height: 32vw;
+		margin-bottom: 4rem;
+		
 	}
+}
+/*адаптив для планшета гарантии качечства (размер 432 px 820px)**/
+@media (min-width:27em) and (max-width:51.25em){
+	.garant__cards_content{
+		height: 20vh;
+		margin-bottom: 2.5rem;
+	}
+	.garant__cards{
+		padding-bottom: 3rem;
+	}
+	.garanties{
+		margin-top:8.5rem;
+		margin-bottom: 0rem;
+	}
+}
+/*адаптив для планшета гарантии качечства (размер 912 px 1200px)**/
+@media (min-width:57em) and (max-width:75em){
+	.garanties{
+		margin-top:8.5rem;
+		margin-bottom: 0rem;
+	}
+	.garant__cards_content{
+		height: 20vh;
+	padding-bottom: 0;}
 }
 
 //----Header Content Mobile Adaptive
@@ -3506,5 +3534,20 @@ body {
 		p{
 			padding-bottom: 1rem;
 		}
+	}
+}
+
+/*адаптив для планшета гарантии качечства (размер 432 px 820px)**/
+@media (min-width:27em) and (max-width:51.25em){
+	.garant__cards_content{
+		height: 20vh;
+		margin-bottom: 2.5rem;
+	}
+	.garant__cards{
+		padding-bottom: 3rem;
+	}
+	.garanties{
+		margin-top:8.5rem;
+		margin-bottom: 0rem;
 	}
 }
