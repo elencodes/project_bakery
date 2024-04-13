@@ -2415,6 +2415,44 @@ body {
   }
 }
 /* Адаптив планшет Форма ОС на свадебной странице**/
+@media (min-width: 48.125em) and (max-width: 74.937em) {
+  .container-feedback-form {
+    max-width: 74.937rem;
+    justify-content: center;
+    min-width: 48.125rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact_feedback-form {
+    flex-wrap: wrap;
+  }
+  .your_idea {
+    margin-bottom: 1rem;
+  }
+  .your_idea input {
+    width: 50vw;
+    height: 6.875rem;
+  }
+  .your_idea label {
+    font-size: 0.875rem;
+    margin-left: 1rem;
+  }
+  .feedback-form__content {
+    flex-wrap: wrap;
+  }
+  .feedback-form__content h2 {
+    padding-top: 0;
+  }
+  .privacy_policy {
+    width: 70vw;
+    margin-left: 36rem;
+    margin-top: -5rem;
+    font-size: 0.625rem;
+  }
+  .feedback-form img {
+    width: 60vw;
+  }
+}
 @media (min-width: 27em) and (max-width: 48.0625em) {
   .container-feedback-form {
     max-width: 48.0625rem;
@@ -2437,6 +2475,7 @@ body {
     justify-items: center;
     margin-top: 0;
     background-color: none;
+    flex-wrap: wrap;
   }
   .feedback-form h2 {
     font-size: 1.125rem; /* 18px**/
