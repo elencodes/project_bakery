@@ -2455,7 +2455,7 @@ body {
     margin-bottom: 1rem;
   }
   .your_idea input {
-    width: 50vw;
+    width: 43vw;
     height: 6.875rem;
   }
   .your_idea label {
@@ -2474,7 +2474,7 @@ body {
     display: none;
   }
   .privacy_policy {
-    width: 50%;
+    width: 43vw;
     margin-top: 0;
     font-size: 0.625rem;
     margin-left: 0rem;
@@ -2500,7 +2500,7 @@ body {
     justify-content: center;
     min-width: 27rem;
     width: 100vw;
-    height: 60rem;
+    height: 55rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -2532,7 +2532,6 @@ body {
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
-    margin-left: 1.5rem;
   }
   .feedback-form .button_feedback__form {
     width: 11.875rem; /*190 px**/
@@ -3525,7 +3524,7 @@ body {
     max-width: 26.9375rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
     justify-content: center;
     min-width: 20rem;
-    width: 23.4375rem;
+    width: 100vw;
     background-color: #f1f1f1;
     margin-bottom: 2rem;
     height: 45.25rem;
@@ -3554,10 +3553,11 @@ body {
     margin-bottom: 5.25rem; /* 84px**/
   }
   .feedback-form img {
-    width: 23.4375rem; /*320 px**/
+    width: 25rem; /*320 px**/
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+    margin-left: 1rem;
   }
   .feedback-form .button_feedback__form {
     width: 11.875rem; /*190 px**/
@@ -3579,9 +3579,11 @@ body {
     margin-top: 115px;
     margin-left: 1rem;
     justify-content: center;
+    margin-left: 5rem;
   }
   .button_feedback__form--form--button {
     margin-top: -200px;
+    width: 40vw;
   }
   .button_feedback__form {
     margin: 0;
@@ -3592,7 +3594,7 @@ body {
     margin-bottom: 1rem;
   }
   .contact_feedback-form input {
-    width: 22rem; /* 228px */
+    width: 25rem; /* 228px */
     height: 2.5rem; /* 40px */
     font-size: 1rem; /* 40px */
     font-weight: 400;
@@ -3613,7 +3615,7 @@ body {
     margin-bottom: 1rem;
   }
   .your_idea input {
-    width: 22rem; /* 288px */
+    width: 25rem; /* 288px */
     height: 6.875rem; /* 110px */
     margin-top: 1rem;
     margin-left: 1rem;
@@ -3848,7 +3850,7 @@ body {
     font-size: 1rem;
   }
 }
-/*адаптив для планщета блок забота**/
+/*адаптив для планшета блок забота**/
 @media (min-width: 27em) and (max-width: 57em) {
   .container__we-care {
     width: 40rem;

@@ -2010,7 +2010,7 @@ body {
 	}
 	.your_idea{
 		input{
-			width: 50vw; 
+			width: 43vw; 
 			height: 6.875rem;
 		}
 		margin-bottom: 1rem;
@@ -2031,7 +2031,7 @@ body {
 		flex-wrap: wrap;
 	}
 	.privacy_policy{
-		width:50%;
+		width:43vw;
 		margin-top:0;
 		font-size: 0.625rem;
 		
@@ -2052,14 +2052,15 @@ body {
 	}
 }
 
-//--Адаптив для экранов до 769px (48.0625em)-/
+
+//--Адаптив для экранов от 432 до 769px (48.0625em)-/
 @media (min-width:27em) and (max-width:48.0625em){
 	.container-feedback-form{
 		max-width: 48.0625rem;
 		justify-content: center;
 		min-width: 27rem;
 		width: 100vw;
-		height:60rem;
+		height:55rem;
 		display:flex;
 		justify-content: center;
 		align-items:flex-start;
@@ -2089,7 +2090,7 @@ body {
 			width: 100vw;
 			height: auto;
 			object-fit: cover;
-			margin-left:1.5rem;
+			
 			
 		}
 		.button_feedback__form{
@@ -3179,7 +3180,7 @@ body {
 		max-width: 26.9375rem;/*--394px в макете / 16px (по умолчанию в браузере)--*/
 		justify-content: center;
 		min-width: 20rem;
-		width: 23.4375rem;
+		width: 100vw;
 		background-color: #f1f1f1;
 		margin-bottom: 2rem;
 		height: 45.25rem;
@@ -3209,9 +3210,10 @@ body {
 			margin-bottom: 5.25rem;/* 84px**/
 		}
 		img{
-			width: 23.4375rem;/*320 px**/
+			width: 25rem;/*320 px**/
 			height: auto;
 			object-fit: cover;
+			margin-left: 1rem;
 			
 		}
 		.button_feedback__form{
@@ -3238,9 +3240,13 @@ body {
 		margin-top:115px;
 		margin-left: 1rem;
 		justify-content: center;
+		margin-left: 5rem;
+		
 	}
 	.button_feedback__form--form--button{
 		margin-top:-200px;
+		width: 40vw;
+		
 	}
 	.button_feedback__form {
 		margin: 0;
@@ -3251,7 +3257,7 @@ body {
 	flex-direction: column;
 	margin-bottom: 1rem;
 	input{
-		width: 22rem; /* 228px */
+		width: 25rem; /* 228px */
 		height: 2.5rem; /* 40px */
         font-size: 1rem;/* 40px */
         font-weight: 400;
@@ -3271,7 +3277,7 @@ body {
 	}
 	.your_idea{
 		input{
-			width: 22rem; /* 288px */
+			width: 25rem; /* 288px */
 			height: 6.875rem;/* 110px */
 			margin-top: 1rem;
 			margin-left:1rem;
@@ -3290,6 +3296,7 @@ body {
 
 
 }
+
 //---Contacts Mobile Adaptive---/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em) {
@@ -3515,7 +3522,7 @@ body {
 	}
 }
 
-/*адаптив для планщета блок забота**/
+/*адаптив для планшета блок забота**/
 @media (min-width:27em) and (max-width:57em){
 	.container__we-care{
 	width: 40rem;
