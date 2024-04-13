@@ -33,6 +33,12 @@ body {
 	@include mainFont;
 	background-color: #F7F7F7;
 }
+.page {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 .container {
 	width: 100%;
 	max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
@@ -776,6 +782,7 @@ body {
 .footer {
 	width: 100%;
 	background-color: rgb(235, 237, 238);
+	margin-top: auto;
   }
   .footer__container {
 	height: 19.875rem; /*--318px в макете / 16px (по умолчанию в браузере)--*/
@@ -2800,8 +2807,33 @@ body {
 		font-size: 1.25rem; // 20px
 	}
 }
+//--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
 
+//--Footer-/
+@media (max-width: 64.0625em){
+	.footer__container{
+	justify-content: center;
+	}
+	.footer__list-wrap--business{
+		display: none;
+	}
 
+}
+
+/*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
+//--Footer-/
+@media (max-width: 48.0625em) {
+	.footer__container{
+		max-width: 38.75rem; //--620px
+		justify-content: center;
+	}
+	.footer__list-wrap{
+		display: none;
+	}
+	.footer__contacts {
+		height: 12rem//192px;
+	}
+}
 /* Адаптив по мобильную версию Footer**/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em) {
