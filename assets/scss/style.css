@@ -6,8 +6,6 @@
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -86,7 +84,8 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -405,7 +404,8 @@ body {
   max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
   height: auto;
   margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__box {
@@ -955,7 +955,8 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
   row-gap: 1.25rem;
   margin: 0.625rem;
 }
@@ -997,7 +998,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   row-gap: 2rem;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1052,7 +1054,8 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   margin: 0.625rem;
   flex-wrap: wrap;
 }
@@ -1586,7 +1589,8 @@ body {
   justify-content: space-between;
   justify-items: flex-start;
   flex-wrap: wrap;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1595,7 +1599,8 @@ body {
 .container-feedback-form img {
   max-width: 38.125rem;
   height: 38.125rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .feedback-form {
@@ -1604,14 +1609,10 @@ body {
   justify-content: flex-start;
   justify-items: flex-start;
   flex-wrap: wrap;
-  column-gap: 0.9375rem;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   max-width: 88.375rem;
   height: 38.125rem;
-  /* column-gap: 0.9375rem;
-     margin: 0.625rem;
-  height: 38.125rem;
-  background-color: #f1f1f1;
-  margin-top: 5rem;**/
 }
 .feedback-form a {
   color: #4E9DD3;
@@ -1642,7 +1643,8 @@ body {
 .contact_feedback-form {
   display: flex;
   flex-direction: row;
-  column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
   margin-bottom: 0rem;
 }
 .contact_feedback-form input {
@@ -2171,7 +2173,8 @@ body {
   .header__image--box img {
     max-width: 75%;
     height: 75%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .header-top__phone,
   .header__top-icons {
@@ -2198,7 +2201,8 @@ body {
   .header__image--box img {
     max-width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
@@ -2244,7 +2248,8 @@ body {
   .header__image--box img {
     max-width: 95%;
     height: 95%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .header__mobile-menu {
     position: relative;
@@ -2409,6 +2414,106 @@ body {
     font-size: 1.25rem;
   }
 }
+/* Адаптив планшет Форма ОС на свадебной странице**/
+@media (max-width: 48.0625em) {
+  .container-feedback-form {
+    max-width: 48.0625rem;
+    justify-content: center;
+    min-width: 27rem;
+    width: 100vw;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+  .feedback-form {
+    max-width: 48.0625rem;
+    min-width: 27rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 0;
+    background-color: none;
+  }
+  .feedback-form h2 {
+    font-size: 1.125rem; /* 18px**/
+    text-align: center;
+    /*margin-top: 3rem;/* 49px**/
+    width: 20rem;
+    padding-top: 0;
+    margin-bottom: 5.25rem; /* 84px**/
+    margin-top: 2rem;
+  }
+  .feedback-form img {
+    width: 100vw;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: 1.5rem;
+  }
+  .feedback-form .button_feedback__form {
+    width: 11.875rem; /*190 px**/
+    height: 2.5rem; /*40 px**/
+    margin-left: 15rem;
+    margin-bottom: 1rem;
+  }
+  .feedback-form h2 {
+    margin-bottom: 1rem;
+  }
+  .feedback-form img:nth-child(1) {
+    order: 1;
+  }
+  .feedback-form div:nth-child(3) {
+    order: 2;
+  }
+  .feedback-form div:nth-child(4) {
+    order: 3;
+  }
+  .your_idea {
+    margin-bottom: 1rem;
+  }
+  .your_idea input {
+    width: 75vw;
+    height: 6.875rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .your_idea label {
+    font-size: 0.875rem;
+    margin-left: 1rem;
+  }
+  .privacy_policy {
+    margin-left: 6rem;
+    margin-top: 0;
+    width: 60vw;
+  }
+  .contact_feedback-form input {
+    width: 35vw; /* 228px */
+    height: 2.5rem; /* 40px */
+    font-size: 1rem; /* 40px */
+    font-weight: 400;
+    padding-top: 0;
+    margin-top: 0.5rem; /*6px**/
+    margin-left: 1rem;
+    padding-left: 0.625rem;
+  }
+}
+/* Адаптив планшет  Гарантии вкуса**/
+@media (max-width: 48.0625em) {
+  .garanties {
+    margin-top: 8.5rem;
+    margin-bottom: 0rem;
+  }
+  .garant__cards {
+    padding-bottom: 2rem;
+  }
+  .garant__cards_content {
+    height: 30wv;
+  }
+}
 @media (max-width: 26.9375em) {
   .header__top,
   .nav__inner,
@@ -2448,7 +2553,8 @@ body {
   .header__image--box img {
     max-width: 95%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .header__mobile-menu {
     position: relative;
@@ -2837,7 +2943,8 @@ body {
     margin-bottom: 0.7rem;
   }
   .instagram__gallery2 {
-    column-gap: 0.7rem;
+    -moz-column-gap: 0.7rem;
+         column-gap: 0.7rem;
     row-gap: 0.7rem;
   }
   .instagram__gallery2 div:nth-child(4),
@@ -2905,7 +3012,8 @@ body {
     flex-direction: column;
     position: relative;
     row-gap: 0.5rem;
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
   .we-care__cards_content img {
     width: 100%;
@@ -3102,6 +3210,7 @@ body {
   .main__link {
     font-size: 0.5625rem; /*9px в макете**/
     text-align: left;
+    margin-left: -10rem;
   }
   .garant__link {
     font-size: 0.5625rem; /*9px в макете**/
@@ -3247,7 +3356,8 @@ body {
   .feedback-form img {
     width: 23.4375rem; /*320 px**/
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .feedback-form .button_feedback__form {
     width: 11.875rem; /*190 px**/
@@ -3530,4 +3640,4 @@ body {
     padding-bottom: 1.625rem;
     font-size: 1rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */

@@ -1229,11 +1229,6 @@ body {
 	column-gap: 0.9375rem;
 	max-width: 88.375rem;
 	height: 38.125rem;
-   /* column-gap: 0.9375rem;
-    margin: 0.625rem;
-	height: 38.125rem;
-	background-color: #f1f1f1;
-	margin-top: 5rem;**/
 	a{
 		color:#4E9DD3;
 	}
@@ -1976,6 +1971,117 @@ body {
 	.contacts_nav--link,
 	.contacts_nav--link-active_page {
 		font-size: 1.25rem;
+	}
+}
+
+/* Адаптив планшет Форма ОС на свадебной странице**/
+
+//--Адаптив для экранов до 769px (48.0625em)-/
+@media (max-width:48.0625em){
+	.container-feedback-form{
+		max-width: 48.0625rem;
+		justify-content: center;
+		min-width: 27rem;
+		width: 100vw;
+		height:60rem;
+		display:flex;
+		justify-content: center;
+		align-items:flex-start;
+		margin-top: 0;
+	}
+	.feedback-form{
+		max-width: 48.0625rem;
+		min-width: 27rem;
+		height: auto;
+		display: flex;
+    	flex-direction: column;
+		justify-content:center;
+		justify-items: center;
+		margin-top: 0;
+		background-color: none;
+		
+		h2{
+			font-size: 1.125rem;/* 18px**/
+			text-align: center;
+			/*margin-top: 3rem;/* 49px**/
+			width: 20rem;
+			padding-top: 0;
+			margin-bottom: 5.25rem;/* 84px**/
+			margin-top: 2rem;
+		}
+		img{
+			width: 100vw;
+			height: auto;
+			object-fit: cover;
+			margin-left:1.5rem;
+			
+		}
+		.button_feedback__form{
+			width: 11.875rem;/*190 px**/
+			height: 2.5rem;/*40 px**/
+			margin-left: 15rem;
+			margin-bottom: 1rem;
+			
+		}
+}
+	.feedback-form{
+		h2{
+			margin-bottom: 1rem;
+		}
+		img:nth-child(1){
+			order:1;
+		}
+		div:nth-child(3){
+			order:2;
+		}
+		div:nth-child(4){
+			order:3;
+		}
+	}
+	.your_idea{
+		input{
+			width: 75vw; 
+			height: 6.875rem;
+			margin-top: 1rem;
+			margin-left:1rem;
+		}
+		margin-bottom: 1rem;
+		label{
+			font-size: 0.875rem;
+			margin-left:1rem;
+		}
+	}
+	.privacy_policy{
+		margin-left:6rem;
+		margin-top:0;
+		width: 60vw;
+	}
+	.contact_feedback-form{
+		input{
+			width: 35vw; /* 228px */
+			height: 2.5rem; /* 40px */
+			font-size: 1rem;/* 40px */
+			font-weight: 400;
+			padding-top: 0;
+			margin-top:0.5rem;/*6px**/
+			margin-left:1rem;
+			padding-left: 0.625rem;
+		}
+	}
+}
+/* Адаптив планшет  Гарантии вкуса**/
+
+//--Адаптив для экранов до 769px (48.0625em)-/
+@media (max-width:48.0625em){
+	.garanties{
+		margin-top:8.5rem;
+		margin-bottom: 0rem;
+	}
+	.garant__cards{
+		padding-bottom: 2rem;
+	}
+	.garant__cards_content{
+		height: 30wv;
 	}
 }
 
@@ -2737,6 +2843,7 @@ body {
 	.main__link{
 		font-size: 0.5625rem;/*9px в макете**/
 		text-align: left;
+		margin-left:-10rem;
 	}
 	.garant__link{
 		font-size: 0.5625rem;/*9px в макете**/
