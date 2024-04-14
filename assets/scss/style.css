@@ -498,27 +498,27 @@ body {
 }
 
 .navigation_cards__one {
-  background-image: url("assets/images/card1.png");
+  background-image: url("/assets/images/card1.png");
 }
 
 .navigation_cards__second {
-  background-image: url("assets/images/card2.png");
+  background-image: url("/assets/images/card2.png");
 }
 
 .navigation_cards__third {
-  background-image: url("assets/images/card3.png");
+  background-image: url("/assets/images/card3.png");
 }
 
 .navigation_cards__forth {
-  background-image: url("assets/images/card4.png");
+  background-image: url("/assets/images/card4.png");
 }
 
 .navigation_cards__fifth {
-  background-image: url("assets/images/card5.png");
+  background-image: url("/assets/images/card5.png");
 }
 
 .navigation_cards__sixth {
-  background-image: url("assets/images/card6.png");
+  background-image: url("/assets/images/card6.png");
 }
 
 .navigation_cards__img {
@@ -588,19 +588,19 @@ body {
 }
 
 .sales__cards--sale_one {
-  background-image: url("assets/images/sells1.png");
+  background-image: url("/assets/images/sells1.png");
 }
 
 .sales__cards--sale_two {
-  background-image: url("assets/images/sells2.png");
+  background-image: url("/assets/images/sells2.png");
 }
 
 .sales__cards--sale_three {
-  background-image: url("assets/images/sells3.png");
+  background-image: url("/assets/images/sells3.png");
 }
 
 .sales__cards--sale_four {
-  background-image: url("assets/images/sells4.png");
+  background-image: url("/assets/images/sells4.png");
 }
 
 .sales__cards--sale_one,
