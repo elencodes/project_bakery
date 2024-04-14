@@ -1911,21 +1911,6 @@ body {
 }
 }
 
-//--Адаптив для экранов 822px-1200px
-//---Contacts Page--/
-@media (min-width:822px) and (max-width:1200px){
-	.contacts_nav {
-		margin-top: 5rem;
-		margin-bottom: 5rem;
-	}
-	.contacts_container {
-		height: 50rem
-	}
-	.contacts_item_1 {
-		width: 26.68rem;
-		height: 30.125rem;
-	}
-}
 
 //--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 //---Contacts Page---/
@@ -3249,6 +3234,7 @@ body {
 		}
 	.contacts_item_2 {
 		width: 390px;
+		margin-left: 2.25rem;
 	}
 	.contacts_header_4 {
 		font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
