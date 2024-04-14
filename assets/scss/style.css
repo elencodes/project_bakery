@@ -2133,7 +2133,7 @@ body {
 }
 
 /*--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-*/
-@media (max-width: 64.0625em) {
+@media (max-width: 1025px) {
   .header__box {
     margin-left: 0.25rem;
     width: 26.875rem;
@@ -2148,7 +2148,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 64.0625em) {
+@media (max-width: 1025px) {
   .navigation_cards {
     justify-content: center;
   }
@@ -2166,7 +2166,7 @@ body {
     margin-top: 0.7rem;
   }
 }
-@media (max-width: 64.0625em) {
+@media (max-width: 1025px) {
   .sales {
     width: 55.625rem;
   }
@@ -2182,13 +2182,13 @@ body {
   }
 }
 /*--Адаптив для экранов от 769px (769px/16px=48.0625em) boxes block-*/
-@media (max-width: 48.0625em) {
+@media (max-width: 769px) {
   .boxes__nav {
     margin-top: 8.5rem;
   }
 }
 /*--Адаптив для экранов от 769px (769px/16px=48.0625em)-*/
-@media (min-width: 48.0625em) {
+@media (min-width: 769px) {
   .header__image--box {
     max-width: 50%;
   }
@@ -2199,7 +2199,7 @@ body {
   }
 }
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
-@media (max-width: 48.0625em) {
+@media (max-width: 769px) {
   .header__top,
   .nav__inner,
   .nav__container {
@@ -2377,19 +2377,19 @@ body {
     display: none;
   }
 }
-@media (max-width: 48.0625em) {
+@media (max-width: 769px) {
   div .holiday_item_5,
   div .holiday_item_6 {
     display: none;
   }
 }
-@media (max-width: 51.3125em) {
+@media (max-width: 821px) {
   div .holiday_item_5,
   div .holiday_item_6 {
     display: none;
   }
 }
-@media (max-width: 48.0625em) {
+@media (max-width: 769px) {
   .contacts_items {
     gap: 4.5rem;
   }
@@ -2407,7 +2407,7 @@ body {
   }
 }
 /* Адаптив планшет Форма ОС на свадебной странице**/
-@media (min-width: 48.125em) and (max-width: 74.937em) {
+@media (min-width: 770px) and (max-width: 1199px) {
   .container-feedback-form {
     max-width: 74.937rem;
     justify-content: center;
@@ -2463,7 +2463,7 @@ body {
     margin-bottom: 1rem;
   }
 }
-@media (min-width: 27em) and (max-width: 48.0625em) {
+@media (min-width: 432px) and (max-width: 769px) {
   .container-feedback-form {
     max-width: 48.0625rem;
     justify-content: center;
@@ -2549,7 +2549,7 @@ body {
   }
 }
 /* Адаптив планшет  Гарантии вкуса**/
-@media (max-width: 48.0625em) {
+@media (max-width: 769px) {
   .garanties {
     margin-top: 8.5rem;
     margin-bottom: 0rem;
@@ -2563,8 +2563,11 @@ body {
     margin-bottom: 4rem;
   }
 }
-/*адаптив для планшета гарантии качечства (размер 432 px 820px)**/
-@media (min-width: 27em) and (max-width: 51.25em) {
+/*адаптив для планшета гарантии качества (размер 432px 820px)**/
+@media (min-width: 432px) and (max-width: 820px) {
+  .garanties {
+    margin-bottom: 0rem;
+  }
   .garant__cards_content {
     height: 20vh;
     margin-bottom: 2.5rem;
@@ -2572,23 +2575,25 @@ body {
   .garant__cards {
     padding-bottom: 3rem;
   }
-  .garanties {
-    margin-top: 8.5rem;
-    margin-bottom: 0rem;
-  }
 }
-/*адаптив для планшета гарантии качечства (размер 912 px 1200px)**/
-@media (min-width: 57em) and (max-width: 75em) {
+/*адаптив для планшета гарантии качества (размер 912 px 1200px)**/
+@media (min-width: 912px) and (max-width: 1200px) {
   .garanties {
-    margin-top: 8.5rem;
     margin-bottom: 0rem;
   }
   .garant__cards_content {
     height: 20vh;
     padding-bottom: 0;
   }
+  .garanties h2 {
+    padding-top: 3rem;
+  }
+  .garanties h6 {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
 }
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .header__top,
   .nav__inner,
   .nav__container {
@@ -2763,7 +2768,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .container {
     width: 25.875rem;
   }
@@ -2808,7 +2813,7 @@ body {
     margin-top: 0.27rem;
   }
 }
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .container {
     width: 25.875rem;
   }
@@ -2847,7 +2852,7 @@ body {
     margin-bottom: 0.6rem;
   }
 }
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   div .holiday_item_4,
   div .holiday_item_5,
   div .holiday_item_6 {
@@ -2911,7 +2916,7 @@ body {
     align-items: center;
   }
 }
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .container {
     width: 25.875rem;
   }
@@ -3001,7 +3006,7 @@ body {
   }
 }
 /* Адаптив под мобильную версию Instagram**/
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .container {
     width: 21.875rem;
   }
@@ -3072,7 +3077,7 @@ body {
   }
 }
 /* Адаптив по мобильную версию Мы позаботились**/
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .container {
     width: 21.875rem;
   }
@@ -3109,7 +3114,7 @@ body {
     margin-bottom: 0.7rem;
   }
 }
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .container {
     width: 25.875rem;
   }
@@ -3185,7 +3190,7 @@ body {
     font-size: 1.25rem;
   }
 }
-@media (max-width: 64.0625em) {
+@media (max-width: 1025px) {
   .footer__container {
     justify-content: center;
   }
@@ -3193,7 +3198,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 51.3125em) {
+@media (max-width: 821px) {
   .footer__list-wrap {
     display: none;
   }
@@ -3202,7 +3207,7 @@ body {
   }
 }
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
-@media (max-width: 48.0625em) {
+@media (max-width: 769px) {
   .footer__container {
     max-width: 38.75rem;
     justify-content: center;
@@ -3215,7 +3220,7 @@ body {
   }
 }
 /* Адаптив по мобильную версию Footer**/
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .footer__container {
     max-width: 25.875rem; /*--414px в макете / 16px (по умолчанию в браузере)--*/
     height: 27.5rem;
@@ -3268,7 +3273,7 @@ body {
   }
 }
 /* Адаптив по мобильную версию Гарантии вкуса и качества**/
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .garanties {
     margin-top: 6.5rem;
   }
@@ -3317,7 +3322,7 @@ body {
     text-align: left;
   }
 }
-@media (max-width: 51.3125em) {
+@media (max-width: 821px) {
   .wedding__block {
     max-width: 51.3125rem;
   }
@@ -3346,8 +3351,9 @@ body {
     width: 17.5rem;
   }
 }
+/* Адаптив под Планшет Свадебное предложение**/
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
-@media (max-width: 48.0625em) {
+@media (max-width: 769px) {
   .wedding__block {
     max-width: 48.0625rem;
     margin-top: 8.5rem;
@@ -3369,7 +3375,7 @@ body {
   }
 }
 /* Адаптив под мобильную версию Свадебное предложение**/
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .container {
     width: 25.875rem;
   }
@@ -3484,7 +3490,7 @@ body {
   }
 }
 /* Адаптив по мобильную версию Форма ОС на свадебной странице**/
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .container-feedback-form {
     max-width: 26.9375rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
     justify-content: center;
@@ -3592,7 +3598,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .contacts_items {
     display: flex;
     flex-direction: column-reverse;
@@ -3660,7 +3666,7 @@ body {
   }
 }
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
-@media (max-width: 48.0625em) {
+@media (max-width: 769px) {
   .catalog-container {
     width: 25.875rem;
   }
@@ -3736,7 +3742,7 @@ body {
     font-size: 1.25rem;
   }
 }
-@media (max-width: 26.9375em) {
+@media (max-width: 431px) {
   .container {
     width: 25.875rem;
   }
@@ -3815,7 +3821,7 @@ body {
   }
 }
 /*адаптив для планшета блок забота**/
-@media (min-width: 27em) and (max-width: 57em) {
+@media (min-width: 432px) and (max-width: 912px) {
   .container__we-care {
     width: 40rem;
     max-width: 48.125;
@@ -3836,7 +3842,7 @@ body {
   }
 }
 /*адаптив для планшета гарантии качечства (размер 432 px 820px)**/
-@media (min-width: 27em) and (max-width: 51.25em) {
+@media (min-width: 432px) and (max-width: 820px) {
   .garant__cards_content {
     height: 20vh;
     margin-bottom: 2.5rem;
