@@ -2389,6 +2389,19 @@ body {
     display: none;
   }
 }
+@media (min-width: 822px) and (max-width: 1200px) {
+  .contacts_nav {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .contacts_container {
+    height: 50rem;
+  }
+  .contacts_item_1 {
+    width: 26.68rem;
+    height: 30.125rem;
+  }
+}
 @media (max-width: 769px) {
   .contacts_items {
     gap: 4.5rem;
@@ -2577,8 +2590,9 @@ body {
   }
 }
 /*адаптив для планшета гарантии качества (размер 912 px 1200px)**/
-@media (min-width: 912px) and (max-width: 1200px) {
+@media (min-width: 822px) and (max-width: 1200px) {
   .garanties {
+    margin-top: 6rem;
     margin-bottom: 0rem;
   }
   .garant__cards_content {
