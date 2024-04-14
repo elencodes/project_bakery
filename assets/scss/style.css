@@ -1314,16 +1314,15 @@ body {
 
 .main__link {
   font-family: "ProximaNova", sans-serif;
-  font-size: 0.875rem; /*14px*/
   font-weight: 400;
+  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
   color: #292929;
+  color: #8a8a8c;
+  margin-right: 0.25rem; /*4px*/
 }
 
 .garant__link {
   color: #4E9DD3;
-  font-family: "ProximaNova", sans-serif;
-  font-size: 0.875rem; /*14px*/
-  font-weight: 400;
 }
 
 .main__link:hover,
@@ -1354,6 +1353,17 @@ body {
   line-height: 1.0325rem; /*17px*/
   margin-right: 0.25rem; /*4px*/
   text-align: left;
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  color: #292929;
+  color: #8a8a8c;
+}
+
+.wedding__nav--link:hover {
+  text-decoration: underline;
+  text-decoration-color: #E7426A;
+  transition: color 0.1s linear;
 }
 
 .wedding__link--hover:hover {

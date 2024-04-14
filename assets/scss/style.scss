@@ -960,16 +960,12 @@ body {
 	}
 }
 .main__link{
-	font-family: $mainFont;
-	font-size: 0.875rem; /*14px*/
-	font-weight: 400;
-	color: $mainColor;
+	@include mainFont;
+	color: #8a8a8c;
+	margin-right: 0.25rem; /*4px*/
 }
 .garant__link{
 	color:#4E9DD3;
-	font-family: $mainFont;
-	font-size: 0.875rem; /*14px*/
-	font-weight: 400;
 }
 .main__link:hover,
 .garant__link:hover{
@@ -994,6 +990,12 @@ body {
 	line-height: 1.0325rem; /*17px*/
 	margin-right: 0.25rem; /*4px*/
 	text-align: left;
+	@include mainFont;
+	color: #8a8a8c;
+}
+
+.wedding__nav--link:hover {
+	@include linkHover;
 }
 .wedding__link--hover:hover {
 	@include linkHover;
