@@ -2278,7 +2278,7 @@ body {
     width: 1.5rem;
     height: 0.125rem;
     background-color: #000000;
-    transition: 0.7s all;
+    transition: 0.5s all;
   }
   .header__burger-line--2,
   .header__burger-line--3 {
@@ -2299,7 +2299,7 @@ body {
     background-color: #F7EBE5;
     transform: translateY(100%);
     overflow: hidden;
-    transition: 0.6s all;
+    transition: 0.5s all;
   }
   .header__burger-menu a {
     display: flex;
