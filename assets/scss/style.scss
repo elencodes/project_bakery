@@ -41,7 +41,7 @@ body {
 }
 .container {
 	width: 100%;
-	max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
+	max-width: 73.125rem; /*1170px*/
 	margin: 0 auto;
 }
 .big-button{
@@ -67,14 +67,14 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 33.625rem; /*--538px в макете / 16px (по умолчанию в браузере)--*/
+	max-width: 33.625rem; /*538px*/
 	margin: 0 auto;
-	padding: 0.5625rem 0; /*--9px в макете / 16px (по умолчанию в браузере)--*/
+	padding: 0.5625rem 0; /*9px*/
 }
 .header-banner__text {
 	font-family: $mainFont;
 	font-weight: 300;
-	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1.125rem; /*18px*/
 	text-transform: uppercase;
 	color: $mainColor;
 }
@@ -86,14 +86,14 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
+	max-width: 73.125rem; /*1170px*/
 	margin: 0 auto;
-	padding: 1rem 0; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+	padding: 1rem 0; /*16px*/
 }
 .header-top__nav {
 	display: flex;
 	justify-content: space-between;
-	width: 43.5rem; /*--696px в макете / 16px (по умолчанию в браузере)--*/
+	width: 43.5rem; /*696px*/
 }
 .header-top__link {
 	color: $mainColor;
@@ -101,19 +101,19 @@ body {
 .header-top__text {
 	font-family: 'ProximaNovaCond', sans-serif;
 	font-weight: 300;
-	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1.125rem; /*18px*/
 }
 .header-top__phone {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 8.4375rem; /*--135px в макете / 16px (по умолчанию в браузере)--*/
+	width: 8.4375rem; /*135px*/
 }
 .header-top__basket {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 10rem; /*--160px в макете / 16px (по умолчанию в браузере)--*/
+	width: 10rem; /*160px*/
 }
 .nav__inner {
 	background-color: $secondaryColor;
@@ -121,14 +121,14 @@ body {
 .nav__container {
 	display: flex;
 	justify-content: end;
-	padding: 1.125rem 0;/*--18px в макете / 16px (по умолчанию в браузере)--*/
+	padding: 1.125rem 0; /*18px*/
 }
 .nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	width: 70.125rem; /*--1122px в макете / 16px (по умолчанию в браузере)--*/
+	width: 70.125rem; /*1122px*/
 }
 .nav__link {
 	text-transform: uppercase;
@@ -138,10 +138,10 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 5rem; /*--80px в макете / 16px (по умолчанию в браузере)--*/
+	width: 5rem; /*80px*/
 }
 .nav__logo {
-	width: 7.75rem; /*--124px в макете / 16px (по умолчанию в браузере)--*/
+	width: 7.75rem; /*124px*/
 }
 .header-top__link--hover:hover,
 .nav__link--hover:hover{
@@ -154,7 +154,7 @@ body {
 //----Header Content
 .container__content {
 	width: 100%;
-	height: 29.6875rem; /*--475px в макете / 16px (по умолчанию в браузере)--*/
+	height: 29.6875rem; /*475px*/
 	background: url("../images/header-background.png") center no-repeat;
 	background-size: cover;
 }
@@ -163,16 +163,16 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	margin: 0 auto;
-	max-width: 90rem; /*--1440px в макете / 16px (по умолчанию в браузере)--*/
+	max-width: 90rem; /*1440px*/
 }
 .header__image {
-	max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
+	max-width: 40.9375rem; /*655px*/
 	height: auto;
-	margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
+	margin-top: 2.5rem; /*40px*/
 	object-fit: cover;
 }
 .header__box {
-	margin-left: 4rem; /*--32px в макете / 16px (по умолчанию в браузере)--*/
+	margin-left: 4rem; /*32px*/
 }
 .header__content {
 	display: flex;
@@ -185,20 +185,20 @@ body {
 }
 .header__logoname {
 	font-family: $secondaryFont;
-	font-size: 1.375rem; /*--22px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1.375rem; /*22px*/
 	text-transform: uppercase;
 }
 .header-logoname__subtitle {
 	font-family: $secondaryFont;
-	font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
-	margin-bottom: 1.5rem; /*--24px в макете / 16px (по умолчанию в браузере)--*/
-	width: 9.875rem; /*--158px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1rem; /*16px*/
+	margin-bottom: 1.5rem; /*24px*/
+	width: 9.875rem; /*158px*/
 	position: relative;
 }
 .header-logoname__subtitle::before {
 	content: "";
-	width: 1.8125rem; /*--29px в макете / 16px (по умолчанию в браузере)--*/
-	height: 0.0625rem; /*--1px в макете / 16px (по умолчанию в браузере)--*/
+	width: 1.8125rem; /*29px*/
+	height: 0.0625rem; /*1px*/
 	background-color: $mainColor;
 	position: absolute;
 	left: 0;
@@ -206,8 +206,8 @@ body {
 }
 .header-logoname__subtitle::after {
 	content: "";
-	width: 1.8125rem; /*--29px в макете / 16px (по умолчанию в браузере)--*/
-	height: 0.0625rem; /*--1px в макете / 16px (по умолчанию в браузере)--*/
+	width: 1.8125rem; /*29px*/
+	height: 0.0625rem; /*1px*/
 	background-color: $mainColor;
 	position: absolute;
 	right: 0;
@@ -215,27 +215,27 @@ body {
 }
 .header__title {
 	font-family: $secondaryFont;
-	font-size: 2.625rem; /*--42px в макете / 16px (по умолчанию в браузере)--*/
-	margin-bottom: 0.8125rem; /*--13px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 2.625rem; /*42px*/
+	margin-bottom: 0.8125rem; /*13px*/
 }
 .header__text {
 	font-family: $mainFont;
-	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1.125rem; /*18px*/
 }
 //----Main
 //  блок Навигационные карточки
 .navigation_cards{
-	max-width: 73.125rem;
+	max-width: 73.125rem; /*1170px*/
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 .navigation_cards__one,.navigation_cards__second,.navigation_cards__third,.navigation_cards__forth,.navigation_cards__fifth,.navigation_cards__sixth{
-	margin-top: 1.5625rem;/*--25 px в макете / 16px (по умолчанию в браузере)--*/
+	margin-top: 1.5625rem; /*25px*/
 	display: flex;
-	background-size: 35.625rem ;
-	width:35.625rem; /*--570 px в макете / 16px (по умолчанию в браузере)--*/
-	height:16.25rem ;  /*--18px в макете / 16px (по умолчанию в браузере)--*/
+	background-size: 35.625rem ; /*570px*/
+	width: 35.625rem; /*570px*/
+	height: 16.25rem ; /*260px*/
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -278,7 +278,7 @@ body {
 	height: 0.631875rem;
 }
 .navigation_cards__title{
-	margin-bottom:0.625rem ;
+	margin-bottom: 0.625rem ;
 	margin-top: 1.25rem;
 	font-family: $secondaryFont;
 	font-size: 1.25rem ;
@@ -301,17 +301,17 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-width: 73.125rem; 
+	max-width: 73.125rem; /*1170px*/
 	margin: 0 auto;
-	margin-bottom:5.3125rem;
-	margin-top:5.875rem ;
+	margin-bottom: 5.3125rem; /*85px*/
+	margin-top: 5.875rem ; /*94px*/
 }
 .sales__h2{
 	@include mainH2;
 	display: flex;
 	justify-content: center;
 	align-items: start;
-	margin-bottom:3.0625rem ;
+	margin-bottom: 3.0625rem ; /*49px*/
 }
 .sales__cards{
 	display: flex;
@@ -330,30 +330,23 @@ body {
 .sales__cards--sale_four{
 	background-image: url("/assets/images/sells4.png") ;
 }
-.sales__cards--sale_one,.sales__cards--sale_two,.sales__cards--sale_three,
+.sales__cards--sale_one,
+.sales__cards--sale_two,
+.sales__cards--sale_three,
 .sales__cards--sale_four{
 	display: flex;
 	flex-direction: column;
-	width: 16.875rem;
-    height: 24.8125rem;
+	width: 16.875rem; /*270px*/
+	height: 24.8125rem; /*397px*/
 	align-items: center;
 	justify-content: end;
-	background-size:cover;
-	border-radius: 0.3125rem;
+	background-size: cover;
+	border-radius: 0.3125rem; /*5px*/
 	transition: 0.2s; 
 }
-.sales__cards--sale_one:hover{
-	transform: scale(1.09);
-	cursor: pointer;
-}
-.sales__cards--sale_two:hover{
-	transform: scale(1.09);
-	cursor: pointer;
-}
-.sales__cards--sale_three:hover{
-	transform: scale(1.09);
-	cursor: pointer;
-}
+.sales__cards--sale_one:hover,
+.sales__cards--sale_two:hover,
+.sales__cards--sale_three:hover,
 .sales__cards--sale_four:hover{
 	transform: scale(1.09);
 	cursor: pointer;
@@ -364,15 +357,15 @@ body {
 	font-weight: 600;
 }
 .sales__cards--h3{
-	font-size: 1rem;
-	margin-bottom: 0.2rem;
+	font-size: 1rem; /*16px*/
+	margin-bottom: 0.2rem; /*3,2px*/
 }
 .sales__cards--p{
-	font-size:1.125rem;
-	margin-bottom: 0.11rem;
+	font-size: 1.125rem; /*18px*/
+	margin-bottom: 0.11rem; /*1,76px*/
 }
 .for-margin{
-    margin-bottom: 3.125rem;
+	margin-bottom: 3.125rem; /*50px*/
 }
 
 //----HOLIDAYS BLOCK
@@ -380,9 +373,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-width: 73.125rem;
+	max-width: 73.125rem; /*50px*/
 	margin: 0 auto;
-	margin-bottom: 6.75rem;
+	margin-bottom: 6.75rem; /*108px*/
 }
 .holidays_h2 {
 	@include mainH2;
@@ -401,54 +394,54 @@ body {
 .holiday_item_4,
 .holiday_item_5,
 .holiday_item_6 {
-    display: flex;
-    flex-direction: column;
-    width: 10.62rem;
-    align-content: center;
-    color: black;
-    transition: 0.2s;
+	display: flex;
+	flex-direction: column;
+	width: 10.62rem; /*50px*/
+	align-content: center;
+	color: black;
+	transition: 0.2s;
 }
 .holiday_img_1 {
-    width: 6.25rem;
-    height: 7.06rem;
-    margin-left: 3.2rem;
-    margin-bottom: 0.179rem;
-    transition: 0.2s;
+	width: 6.25rem; /*100px*/
+	height: 7.06rem; /*112,96px*/
+	margin-left: 3.2rem; /*51,2px*/
+	margin-bottom: 0.179rem; /*2,864px*/
+	transition: 0.2s;
 }
 .holiday_img_2 {
-    width: 3.85rem;
-    height: 2.96rem;
-    align-self: center;
-    margin-bottom: 0.394rem;
-    transition: 0.2s;
+	width: 3.85rem; /*61,6px*/
+	height: 2.96rem; /*47,36px*/
+	align-self: center;
+	margin-bottom: 0.394rem; /*6,304px*/
+	transition: 0.2s;
 }
 .holiday_img_3 {
-    width: 3.62rem;
-    height: 2.81rem;
-    align-self: center;
-    margin-bottom: 0.623rem;
-    transition: 0.2s;
+	width: 3.62rem; /*57,92px*/
+	height: 2.81rem; /*44,96px*/
+	align-self: center;
+	margin-bottom: 0.623rem; /*9,968px*/
+	transition: 0.2s;
 }
 .holiday_img_4 {
-    width: 3.23rem;
-    height: 2.47rem;
-    align-self: center;
-    margin-bottom: 0.687rem;
-    transition: 0.2s;
+	width: 3.23rem; /*51,68px*/
+	height: 2.47rem; /*39,52px*/
+	align-self: center;
+	margin-bottom: 0.687rem; /*11px*/
+	transition: 0.2s;
 }
 .holiday_img_5 {
-    width: 3.85rem;
-    height: 2.96rem;
-    align-self: center;
-    margin-bottom: 1.03rem;
-    transition: 0.2s;
+	width: 3.85rem; /*61,6px*/
+	height: 2.96rem; /*47,36px*/
+	align-self: center;
+	margin-bottom: 1.03rem; /*16,48px*/
+	transition: 0.2s;
 }
 .holiday_img_6 {
-    width: 3.62rem;
-    height: 2.81rem;
-    align-self: center;
-    margin-bottom: 1.39rem;
-    transition: 0.2s;
+	width: 3.62rem; /*57,92px*/
+	height: 2.81rem; /*44,96px*/
+	align-self: center;
+	margin-bottom: 1.39rem; /*22,24px*/
+	transition: 0.2s;
 }
 .holiday_item_1:hover,
 .holiday_item_2:hover,
@@ -456,9 +449,9 @@ body {
 .holiday_item_4:hover,
 .holiday_item_5:hover,
 .holiday_item_6:hover {
-    @include linkHover;
+	@include linkHover;
 	transform: scale(1.09);
-    cursor: pointer;
+	cursor: pointer;
 }
 .holiday_item_1:active,
 .holiday_item_2:active,
@@ -466,17 +459,17 @@ body {
 .holiday_item_4:active,
 .holiday_item_5:active,
 .holiday_item_6:active {
-    @include linkActive;
+	@include linkActive;
 }
 .holiday_text {
 	display: flex;
-	width: 10.62rem;
+	width: 10.62rem; /*169px*/
 	text-align: center;
 	justify-content: center;
-    color: black;
-    font-weight: 600;
-    font-size: 0.875rem;
-    font-family: $secondaryFont;
+	color: black;
+	font-weight: 600;
+	font-size: 0.875rem; /*14px*/
+	font-family: $secondaryFont;
 }
 //----POPULAR-BOX BLOCK
 .popular-box {
@@ -484,23 +477,23 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	max-width: 73.125rem;
+	max-width: 73.125rem; /*1170px*/
 	margin: 0 auto;
-	margin-bottom:5.3125rem;
+	margin-bottom: 5.3125rem; /*85px*/
 }
 .popular-box__h2 {
 	display: flex;
 	justify-content: center;
 	align-items: start;
-	margin-bottom: 2.625rem;
+	margin-bottom: 2.625rem; /*42px*/
 	@include mainH2;
 }
 .popular-box__cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap:1.875rem ;
-	margin-bottom: 2.1875rem;
+	gap: 1.875rem ; /*30px*/
+	margin-bottom: 2.1875rem; /*35px*/
 }
 .popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three,
 .popular-box__cards--cards_four, .popular-box__cards--cards_five, .popular-box__cards--cards_six {
@@ -508,50 +501,35 @@ body {
 	flex-direction: column;
 	border: 1px solid #EDEDF0;
 	background-color: $secondaryColor;
-	width: 23.125rem;
-	height: 28.6875rem;
-	border-radius: 0.3125rem;
+	width: 23.125rem; /*370px*/
+	height: 28.6875rem; /*459px*/
+	border-radius: 0.3125rem; /*5px*/
 	transition: 0.2s;
 }
-.popular-box__cards--cards_one:hover {
-	transform: scale(1.07);
-	cursor: pointer;
-}
-.popular-box__cards--cards_two:hover {
-	transform: scale(1.07);
-	cursor: pointer;
-}
-.popular-box__cards--cards_three:hover {
-	transform: scale(1.07);
-	cursor: pointer;
-}
-.popular-box__cards--cards_four:hover {
-	transform: scale(1.07);
-	cursor: pointer;
-}
-.popular-box__cards--cards_five:hover {
-	transform: scale(1.07);
-	cursor: pointer;
-}
+.popular-box__cards--cards_one:hover,
+.popular-box__cards--cards_two:hover,
+.popular-box__cards--cards_three:hover,
+.popular-box__cards--cards_four:hover,
+.popular-box__cards--cards_five:hover,
 .popular-box__cards--cards_six:hover {
 	transform: scale(1.07);
 	cursor: pointer;
 }
 .popular-box__image {
-	width: 23.125rem;
-	height: 18.75rem;
+	width: 23.125rem; /*370px*/
+	height: 18.75rem; /*300px*/
 }
 .popular-box__cards--h4 {
 	font-family: $secondaryFont;
-	font-size: 1.125rem;
+	font-size: 1.125rem; /*18px*/
 	font-weight: 600;
-	margin-top: 0.85rem;
-	margin-bottom: 0.875rem;
+	margin-top: 0.85rem; /*13,6px*/
+	margin-bottom: 0.875rem; /*14px*/
 }
 .popular-box__cards--p {
 	font-family: $mainFont;
 	font-weight: 400;
-	font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 0.875rem; /*14px*/
 	color: $mainColor;
 }
 .popular-box__cards--price-line {
@@ -560,21 +538,21 @@ body {
 	border-top: 1px solid #EDEDF0;
 }
 .popular-box__cards--price-line_button{
-    display: flex;
-	width:6.375rem;
-	height:1.58rem;
+	display: flex;
+	width: 6.375rem; /*102px*/
+	height: 1.58rem; /*25,28px*/
 	justify-content: space-between;
 	align-items: center;
 	background-color: $secondaryColor;
-	margin-top:0.7125rem;
-	margin-right:1.5625rem;
+	margin-top: 0.7125rem; /*11,4px*/
+	margin-right: 1.5625rem; /*25px*/
 }
 .box-button__text{
-	margin-top: 0.3rem;
+	margin-top: 0.3rem; /*4,8px*/
 }
 .popular-box__cards--price-line_button-text {
 	font-family: $secondaryFont;
-	font-size: 0.875rem;
+	font-size: 0.875rem; /*14px*/
 	font-weight: 600;
 }
 .popular-box__cards--price-line_button-text:hover{
@@ -582,24 +560,24 @@ body {
 }
 .popular-box__cards--price-line-price {
 	font-family: $secondaryFont;
-	font-size: 1.125rem;
+	font-size: 1.125rem; /*18px*/
 	font-weight: 600;
 	color: $accentColor;
-	margin-top: 1rem;
-	margin-left: 1.3125rem;
+	margin-top: 1rem; /*16px*/
+	margin-left: 1.3125rem; /*21px*/
 	background-color: $secondaryColor;
 }
 .also-margin {
-	margin-bottom: 1.4rem;
+	margin-bottom: 1.4rem; /*22,4px*/
 }
 .popular-box__cards--p, .popular-box__cards--h4 {
-	margin-left: 1.3125rem;
+	margin-left: 1.3125rem; /*21px*/
 }
 .popular-box__button{
 	display: flex;
 	justify-content: center;
 	font-family:$secondaryFont;
-	font-size:0.875rem ;
+	font-size: 0.875rem; /*14px*/
 	font-weight: 600;
 }
 
@@ -608,14 +586,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 2.5625rem;
-	margin-bottom: 1.3125rem;
-	margin-left: 0.3rem;
+	margin-top: 2.5625rem; /*41px*/
+	margin-bottom: 1.3125rem; /*21px*/
+	margin-left: 0.3rem; /*4,8px*/
 }
 .boxes__nav--link{
 	@include mainFont;
 	color: #8a8a8c;
-	margin-right: 0.25rem;
+	margin-right: 0.25rem; /*4px*/
 }
 .boxes__nav--link:hover{
 	@include linkHover;
@@ -627,22 +605,21 @@ body {
 	text-decoration-color: $accentColor;
 }
 // карточки инстаграм/
-.instagram__gallery2
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center; 
-    margin: 0;
-    column-gap: 1.25rem;
-    row-gap: 1.25rem;
-    margin: 0.625rem;
-    img{
-        width: 10.625rem;
-        height: 10.625rem;
-		transition: 0.2s;
-    }
+.instagram__gallery2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-items: center; 
+	margin: 0;
+	column-gap: 1.25rem; /*20px*/
+	row-gap: 1.25rem; /*20px*/
+	margin: 0.625rem; /*10px*/
+	img{
+	width: 10.625rem; /*170px*/
+	height: 10.625rem; /*170px*/
+	transition: 0.2s;
+	}
 }
 .inst_card:hover{
 	transform:scale(1.15);
@@ -650,103 +627,100 @@ body {
 }
 // общее блок инстаграмм/
 .instagram{
-    h2{
-        font-family: $secondaryFont;
-        font-size: 1.875rem;
-        font-weight: 600;
-        text-align: center;
-		
-    }
-    margin-top: 5rem;
-	.insta_icon{
-		margin-left: 1rem;
+	h2{
+		font-family: $secondaryFont;
+		font-size: 1.875rem; /*30px*/
+		font-weight: 600;
+		text-align: center;
 	}
-
+	margin-top: 5rem; /*80px*/
+.insta_icon{
+	margin-left: 1rem; /*16px*/
+	}
 }
-// блок с голубой полосай инстаграмм/
+// блок с голубой полосой инстаграмм/
 .insta_menu{
-    display: flex;
-    flex-flow: row wrap;
+	display: flex;
+	flex-flow: row wrap;
 	flex-wrap: wrap;
-    justify-content:space-between;
-    align-items: center;
-    height: 5rem;
-    background-color:#D4E9F9;
-    margin-left:0.625rem;
-    margin-right: 0.625rem;
-    font-family: $mainFont;
-    font-size: 1rem;
-    font-weight: 400;
-    row-gap: 2rem;
-    column-gap: 2rem;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	justify-content:space-between;
+	align-items: center;
+	height: 5rem; /*80px*/
+	background-color:#D4E9F9;
+	margin-left: 0.625rem; /*10px*/
+	margin-right: 0.625rem; /*10px*/
+	font-family: $mainFont;
+	font-size: 1rem; /*16px*/
+	font-weight: 400;
+	row-gap: 2rem; /*32px*/
+	column-gap: 2rem; /*32px*/
+	margin-top: 2rem; /*32px*/
+	margin-bottom: 2rem; /*32px*/
 	p{
-		font-size: 1.25rem;
+	font-size: 1.25rem; /*20px*/
 	}
-	
 }
 .insta_menu_nav {
-    /**flex-grow: 1;**/
-    justify-content: flex-end;
+	/**flex-grow: 1;**/
+	justify-content: flex-end;
 	align-items: flex-end;
-    padding: 1.875rem;
-    text-decoration: none;
+	padding: 1.875rem; /*30px*/
+	text-decoration: none;
 	flex-wrap: wrap;
-	.insta-data{
-		font-weight: 600;
+.insta-data{
+	font-weight: 600;
 	}
-  }
-  .instalogo{
+}
+.instalogo{
 	display: flex;
 	align-items: center;
-	row-gap: 1rem;
+	row-gap: 1rem; /*16px*/
 	p{
-		margin-left: 1rem;
+	margin-left: 1rem; /*16px*/
 	}
 	img{
-		width: 3.75rem;
-		height: 3.75rem;
+	width: 3.75rem; /*60px*/
+	height: 3.75rem; /*60px*/
 	}
-  }
+}
 .insta_menu ul {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	flex-wrap: wrap;
-  }
+}
 .insta_menu li {
-    margin-right: 1.25rem;
-  }
+	margin-right: 1.25rem; /*20px*/
+}
 .insta_menu li:last-child {
-    margin-right: 0;
-  }
+	margin-right: 0;
+}
 // блок карточки мы позаботились/
 // позиционирование карточек/
 .we-care__cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center; 
-    column-gap: 0.9375rem;
-    margin: 0.625rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-items: center; 
+	column-gap: 0.9375rem; /*15px*/
+	margin: 0.625rem; /*10px*/
 	flex-wrap: wrap;
 }
 // контент карточек/
 .we-care__cards_content{
-    width: 16.875rem;
-    display:flex;
-    margin: 0rem;
-    padding: 0rem;
-    flex-direction: column;
-    position:relative;
+	width: 16.875rem; /*270px*/
+	display: flex;
+	margin: 0rem;
+	padding: 0rem;
+	flex-direction: column;
+	position: relative;
 	transition: 0.2s;
-    img{
-        width: 100%;
-		padding-bottom: 1rem;
-    }
+	img{
+		width: 100%;
+		padding-bottom: 1rem; /*16px*/
+	}
 }
 .we-care__cards_content:hover{
 	transform: scale(1.05);
@@ -754,227 +728,222 @@ body {
 }
 // общие заголовки блока мы позаботились/
 .we-care{
-    h2{
-        font-family: $secondaryFont;
-        font-size: 1.875rem;
-        font-weight: 600;
-        text-align: center;
+	h2{
+		font-family: $secondaryFont;
+		font-size: 1.875rem; /*30px*/
+		font-weight: 600;
+		text-align: center;
 		margin-bottom: 2rem;
-    }
-    h5{
-        font-family: $secondaryFont;
-        font-size: 1.125rem;
-        font-weight: 600;
-    }
-    p{
-        font-weight: 400;
-        padding-top: 0;
-		margin-top:1rem;
+	}
+	h5{
+		font-family: $secondaryFont;
+		font-size: 1.125rem; /*18px*/
+		font-weight: 600;
+	}
+	p{
+		font-weight: 400;
+		padding-top: 0;
+		margin-top: 1rem; /*16px*/
 		font-family: $mainFont;
-        font-size: 0.875rem;
-        font-weight: 400;
-        padding-top: 0;
-    }
-    margin-top: 5rem;
-	margin-bottom: 5rem;
+		font-size: 0.875rem; /*14px*/
+		font-weight: 400;
+		padding-top: 0;
+	}
+	margin-top: 5rem; /*80px*/
+	margin-bottom: 5rem; /*80px*/
 }
-//----Footer
+//----Footer/
 .footer {
 	width: 100%;
 	background-color: rgb(235, 237, 238);
 	margin-top: auto;
-  }
-  .footer__container {
-	height: 19.875rem; /*--318px в макете / 16px (по умолчанию в браузере)--*/
+}
+.footer__container {
+	height: 19.875rem; /*318px*/
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	
-  }
-  .footer__wrap-box {
+}
+.footer__wrap-box {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
-  }
-  .footer__ptofit {
+}
+.footer__ptofit {
 	display: flex;
 	flex-direction: row;
-	width: 23.125rem;/*--370px в макете / 16px (по умолчанию в браузере)--*/
+	width: 23.125rem;/*370px*/
 	justify-content: space-around;
 	flex-wrap: wrap;
-  }
-  .footer__profit--items {
+}
+.footer__profit--items {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 6.375rem;/*--102px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__profit--item {
-	margin-top: 0.875rem;/*--14px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__profit--icon1 {
-	width: 2.8rem; /*--44.95px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__profit--icon2 {
-	width: 3.104rem; /*--49.66px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__profit--icon2 {
-	width: 1.779rem; /*--28.46px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__profit-text {
+	width: 6.375rem;/*102px*/
+}
+.footer__profit--item {
+	margin-top: 0.875rem;/*14px*/
+}
+.footer__profit--icon1 {
+	width: 2.8rem; /*44.95px*/
+}
+.footer__profit--icon2 {
+	width: 3.104rem; /*49.66px*/
+}
+.footer__profit--icon2 {
+	width: 1.779rem; /*28.46px*/
+}
+.footer__profit-text {
 	text-align: center;
-	// width: 8.75rem; /*--140px в макете / 16px (по умолчанию в браузере)--*/
-	font-size: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
+	// width: 8.75rem; /*140px*/
+	font-size: 0.75rem; /*12px*/
 	color: rgb(41, 41, 41);
 	line-height: 110%;
-  }
-  .footer__add-info {
-	width: 23.125rem;/*--370px в макете / 16px (по умолчанию в браузере)--*/
-	height: 3.75rem; /*--60px в макете / 16px (по умолчанию в браузере)--*/
-	margin-top: 1.75rem;/*--28px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__add-info--text {
+}
+.footer__add-info {
+	width: 23.125rem;/*370px*/
+	height: 3.75rem; /*60px*/
+	margin-top: 1.75rem;/*28px*/
+}
+.footer__add-info--text {
 	color: rgb(41, 41, 41);
-	font-size: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 0.75rem; /*12px*/
 	font-weight: 400;
-	line-height: 0.937rem; /*--15px в макете / 16px (по умолчанию в браузере)--*/
+	line-height: 0.937rem; /*15px*/
 	text-align: left;
-  }
-  .footer__apps-mobile, .footer__add-info--mobile-block{
+}
+.footer__apps-mobile, .footer__add-info--mobile-block{
 	display: none;
-  }
-  .footer__nav {
+}
+.footer__nav {
 	display: flex;
-	margin-left: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
+	margin-left: 1.875rem; /*30px*/
 	flex-wrap: wrap;
-  }
-  .footer__header {
-	height: 1.187rem; /*--19px в макете / 16px (по умолчанию в браузере)--*/	
+}
+.footer__header {
+	height: 1.187rem; /*19px*/
 	font-weight: 600;
-	font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
-	line-height: 1.187rem; /*--19px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1rem; /*16px*/
+	line-height: 1.187rem; /*19px*/
 	text-align: left;
 	text-transform: uppercase;
-  }
-  .footer__list {
-	width: 10.75rem;/*--172px в макете / 16px (по умолчанию в браузере)--*/
-	margin-top: 1.312rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__list-item {
-	padding-bottom: 1.125rem;/*--18px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__list--link {	
+}
+.footer__list {
+	width: 10.75rem;/*172px*/
+	margin-top: 1.312rem;/*21px*/
+}
+.footer__list-item {
+	padding-bottom: 1.125rem;/*18px*/
+}
+.footer__list--link {	
 	text-align: left;
 	color: rgb(41, 41, 41);
-	line-height: 1.06rem; /*--17px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  
-  .footer__contacts {
+	line-height: 1.06rem; /*17px*/
+}
+.footer__contacts {
 	display: flex;
 	flex-direction: column;
-	height: 9.625rem;/*--154px в макете / 16px (по умолчанию в браузере)--*/
-	margin-left: 3.75rem;/*--60px в макете / 16px (по умолчанию в браузере)--*/
+	height: 9.625rem;/*154px*/
+	margin-left: 3.75rem;/*60px*/
 	justify-content: space-between;
 	flex-wrap: wrap;
-  }
-  
-  .footer__header-contacts {
-	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
-	line-height: 1.375rem; /*--22px в макете / 16px (по умолчанию в браузере)--*/
+}
+.footer__header-contacts {
+	font-size: 1.125rem; /*18px*/
+	line-height: 1.375rem; /*22px*/
 	color: rgb(41, 41, 41);
 	text-align: right;
-  }
-  .footer-text {
+}
+.footer-text {
 	text-align: right;
 	color: rgb(41, 41, 41);
-	padding-top: 0.312rem;/*--5px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__apps {
+	padding-top: 0.312rem;/*5px*/
+}
+.footer__apps {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-  }
-  .footer__apps-item {
-	width: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .footer__link--hover:hover{
+}
+.footer__apps-item {
+	width: 2.5rem; /*40px*/
+}
+.footer__link--hover:hover{
 	@include linkHover;
-  }
-  .footer__link--active:active {
+}
+.footer__link--active:active {
 	@include linkActive;
-  }
+}
 // блок карточки гарантии вкуса/
 // общие заголовки блока гарантии вкуса/
 .garanties{
 	display: flex;
 	flex-direction: column;
-    background-color: #f7f7f7;
+	background-color: #f7f7f7;
 	justify-content: center;
 	align-items: center;
-	
-    h2{
-        font-family: $secondaryFont;
-        font-size: 1.875rem;
-        font-weight: 600;
-        text-align: center;
-		padding-top: 1rem;
-    }
-    h5{
-        font-family: $mainFont;
-        font-size: 1.125rem;
-        font-weight: 600;
-    }
-    p{
-        font-family: $mainFont;
-        font-size: 0.875rem;
-        font-weight: 600;
-        padding-top: 0;
-        text-align: center;
-    }
-    h6{
-        font-family: $mainFont;
-        font-size: 1.125rem;
-        font-weight: 400;
-        padding-top: 0;
-        text-align: center;
-		margin-top: 1.625rem;/*26 в макете**/
-		margin-bottom: 2rem;/*в макете 14 px но очень большое текстовое поле**/
-		width: 41rem;
-		text-align: center;
-    }
-	margin-top: 3rem;
-	padding-bottom: 1rem;
+		h2{
+			font-family: $secondaryFont;
+			font-size: 1.875rem; /*30px*/
+			font-weight: 600;
+			text-align: center;
+			padding-top: 1rem;
+		}
+		h5{
+			font-family: $mainFont;
+			font-size: 1.125rem; /*18px*/
+			font-weight: 600;
+		}
+		p{
+			font-family: $mainFont;
+			font-size: 0.875rem; /*14px*/
+			font-weight: 600;
+			padding-top: 0;
+			text-align: center;
+		}
+		h6{
+			font-family: $mainFont;
+			font-size: 1.125rem; /*18px*/
+			font-weight: 400;
+			padding-top: 0;
+			text-align: center;
+			margin-top: 1.625rem;/*26px*/
+			margin-bottom: 2rem;/*в макете 14 px но очень большое текстовое поле**/
+			width: 41rem; /*656px*/
+			text-align: center;
+		}
+	margin-top: 3rem; /*48px*/
+	padding-bottom: 1rem; /*16px*/
 }
 // позиционирование карточек/
 .garant__cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-	flex-wrap:wrap;
-    justify-items: center; 
-    margin: 0.625rem;
-    padding-bottom: 6.25rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	justify-items: center; 
+	margin: 0.625rem; /*10px*/
+	padding-bottom: 6.25rem; /*100px*/
 }
 // контент карточек гарантии вкуса/
 .garant__cards_content{
-    width: 16.875rem;
-    display:flex;
-    margin: 1rem;
-    padding: 0rem;
-    flex-direction: column;
-    position:relative;
+	width: 16.875rem; /*270px*/
+	display: flex;
+	margin: 1rem; /*16px*/
+	padding: 0rem;
+	flex-direction: column;
+	position: relative;
 	transition: 0.2s;
 	height: 35vh;
-    img{
-        width: 100%;
-		height: 16.875rem;
-		padding-bottom: 1rem;
+	img{
+		width: 100%;
+		height: 16.875rem; /*270px*/
+		padding-bottom: 1rem; /*16px*/
 		transition: 0.2s;
-    }
-	
+	}
 }
 .garant__cards_content:hover{
 	transform: scale(1.15);
@@ -982,25 +951,25 @@ body {
 }
 // ссылки на странице гарантии вкуса и качества/
 .nav_links{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center;
-    a{
-        text-decoration: none;
-    }
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-items: center;
+	a{
+		text-decoration: none;
+	}
 }
 .main__link{
 	font-family: $mainFont;
-	font-size: 0.875rem;
+	font-size: 0.875rem; /*14px*/
 	font-weight: 400;
 	color: $mainColor;
 }
 .garant__link{
 	color:#4E9DD3;
 	font-family: $mainFont;
-    font-size: 0.875rem;
-    font-weight: 400;
+	font-size: 0.875rem; /*14px*/
+	font-weight: 400;
 }
 .main__link:hover,
 .garant__link:hover{
@@ -1014,212 +983,206 @@ body {
 .wedding__block {
 	width: 100%;
 	// background-color: #F7F7F7;
-	margin-top: 2.125rem; /*--34px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .wedding__nav {
+	margin-top: 2.125rem; /*34px*/
+}
+.wedding__nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  }
-  .wedding__nav--link {
-	line-height: 1.0325rem;/*--17px в макете / 16px (по умолчанию в браузере)--*/
-	margin-right: 0.25rem; /*--4px в макете / 16px (по умолчанию в браузере)--*/
+}
+.wedding__nav--link {
+	line-height: 1.0325rem; /*17px*/
+	margin-right: 0.25rem; /*4px*/
 	text-align: left;
-  }
-  .wedding__link--hover:hover {
+}
+.wedding__link--hover:hover {
 	@include linkHover;
-  }
-  .active__page {
+}
+.active__page {
 	color: #4e9dd3;
-  }
-  .active__page:hover {
+}
+.active__page:hover {
 	text-decoration-color: $accentColor;
-  }
-  .wedding__content {
+}
+.wedding__content {
 	display: flex;
 	width: 100%;	
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	
-  
-  }
-  .wedding__content-image {
-	height: 33.1875rem;/*--531px в макете / 16px (по умолчанию в браузере)--*/
+}
+.wedding__content-image {
+	height: 33.1875rem; /*531px*/
 	width: auto;
-  }
-
-  .image__mobail-only {
+}
+.image__mobail-only {
 	display: none;
-  }
-
-  .wedding-box {
+}
+.wedding-box {
 	display: flex;
 	flex-direction: column;
-	background: url(../images/wedding_offer/back-color.png
-	) right 5% bottom 90% / auto no-repeat;
-  }
-  .wedding__title--h1 {
+	background: url(../images/wedding_offer/back-color.png) right 5% bottom 90% / auto no-repeat;
+}
+.wedding__title--h1 {
 	color: rgb(41, 41, 41);
 	font-family: $secondaryFont;
-	font-size: 2.625rem; /*--42px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 2.625rem; /*42px*/
 	font-weight: 600;
-	line-height: 3.187rem;/*--51px в макете / 16px (по умолчанию в браузере)--*/
+	line-height: 3.187rem;/*51px*/
 	text-align: center;
-	margin-top: 5.4375rem;
-  }
-  .wedding__text-box {
-	  margin-top: 0.8125rem;
-  }
-  .wedding__text {
-	  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
-	  line-height: 1.375rem;
-	  text-align: center;
-  }
-  .wedding__button {
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: center;
-	  margin-top: 2.5rem; 
-	  font-family: $secondaryFont;
-	  font-size: 0.875rem ;
-	  font-weight: 600;
-  }
-  .wedding__button--small {
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: center;
-	  align-items: center;
-	  margin-top: 2.1875rem; 
-	  gap: 0.625rem;/*--10px в макете / 16px (по умолчанию в браузере)--*/
-	  font-family: $secondaryFont;
-	  font-size: 0.875rem ;
-	  font-weight: 600;
-  }
-  .wedding__text-main--box {
-	  width: 41.875rem;/*--670 в макете / 16px (по умолчанию в браузере)--*/
-	  height: 19rem;/*--114 в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .wedding__text-main {
-	  
-	  font-size: 1rem;/*--16px в макете / 16px (по умолчанию в браузере)--*/
-	  line-height: 1.1875rem;/*--19px в макете / 16px (по умолчанию в браузере)--*/
-	  line-height: 19px;
-	  margin-top: 2.5625rem;/*--41px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  //-- wedding kits --/
-  .wedding-kits {
-	  display: flex;
-	  flex-direction: column;
-	  width: 100%;
-	  max-width: 73.125rem;
-	  margin: 0 auto;
-	  margin-bottom:5.3125rem;
-  }
-  .wedding-kits__h2 {	
-		  display: flex;
-		  justify-content: center;
-		  align-items: start;
-		  margin-bottom: 2.625rem;
-		  font-family: $secondaryFont;
-		  font-size: 1.875rem;
-		  font-weight: 600;
-  }
-  .wedding-kits__cards {
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: center;
-	  gap: 1.875rem;/*--30px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .wedding-kits__cards--item {
-	  display: flex;
-	  flex-direction: column;
-	  // margin-bottom: 2.1875rem;
-	  border: 1px solid #EDEDF0;
-	  background-color: $secondaryColor;
-	  width: 23.125rem;/*--370 в макете / 16px (по умолчанию в браузере)--*/
-	  height: 28.6875rem;
-	  border-radius: 0.3125rem;/*--5px в макете / 16px (по умолчанию в браузере)--*/
-	  transition: 0.2s;
-	  justify-content: space-between;
-  }
-  .wedding-kits__cards--item:hover {
-	  transform: scale(1.07);
-	  cursor: pointer;
-  }
-  .wedding-kits__image {
-	  width: 23.125rem;/*--370 в макете / 16px (по умолчанию в браузере)--*/
-	  height: 18.75rem;/*--300 в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .wedding-kits__card--wrap {
-	width: 23.125rem;//370px
-	height: 25.5rem;//408
-  }
-  .wedding-kits__cards--h4 {
-	  font-family: $secondaryFont;
-	  font-size: 1.125rem;/*--18px в макете / 16px (по умолчанию в браузере)--*/
-	  font-weight: 600;
-	  margin-top: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
-	  margin-bottom: 0.875rem;/*--14px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .wedding-kits__cards--p {
-	  font-family: $mainFont;
-	  font-weight: 400;
-	  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
-	  color: $mainColor;
-	  margin-bottom: 0.875rem;/*--14px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .wedding-kits__cards--h4, .wedding-kits__cards--p {
-	  margin-left: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
-  }
-  .wedding-kits__cards--price-line {
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  height: 3.1875rem;/*--51px в макете / 16px (по умолчанию в браузере)--*/
-	  border-top: 1px solid #EDEDF0;
-	  margin-bottom: 1rem;
-  }
-  .wedding-kits__cards--price{
-	  font-family: $secondaryFont;
-	  font-size: 1.125rem;
-	  font-weight: 600;
-	  color: $accentColor;
-	  margin-top: 1rem;
-	  margin-left: 1.3125rem;
-	  background-color: $secondaryColor;
-  }
-  .wedding-kits__cards--price-line_button {
-	  display: flex;
-	  width:6.375rem;
-	  height:1.58rem;
-	  justify-content: space-between;
-	  align-items: center;
-	  background-color: $secondaryColor;
-	  margin-top:0.7125rem;
-	  margin-right:1.5625rem;
-	  
-  }
-  .box-button__text{
-	  margin-top: 0.3rem;
-  }
-  .wedding-kits__cards--price-line_button-text {
-	  font-family: $secondaryFont;
-	  font-size: 0.875rem;
-	  font-weight: 600;
-  }
-  .wedding-kits__cards--price-line_button-text:hover {
-	  color: $accentColor;
-  }
+	margin-top: 5.4375rem; /*87px*/
+}
+.wedding__text-box {
+	margin-top: 0.8125rem;
+}
+.wedding__text {
+	font-size: 1.125rem; /*18px*/
+	line-height: 1.375rem; /*22px*/
+	text-align: center;
+}
+.wedding__button {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 2.5rem; 
+	font-family: $secondaryFont;
+	font-size: 0.875rem ;
+	font-weight: 600;
+}
+.wedding__button--small {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2.1875rem; 
+	gap: 0.625rem;/*--10px в макете / 16px (по умолчанию в браузере)--*/
+	font-family: $secondaryFont;
+	font-size: 0.875rem ;
+	font-weight: 600;
+}
+.wedding__text-main--box {
+	width: 41.875rem;/*--670 в макете / 16px (по умолчанию в браузере)--*/
+	height: 19rem;/*--114 в макете / 16px (по умолчанию в браузере)--*/
+}
+.wedding__text-main {
+	
+	font-size: 1rem;/*--16px в макете / 16px (по умолчанию в браузере)--*/
+	line-height: 1.1875rem;/*--19px в макете / 16px (по умолчанию в браузере)--*/
+	line-height: 19px;
+	margin-top: 2.5625rem;/*--41px в макете / 16px (по умолчанию в браузере)--*/
+}
+//-- wedding kits --/
+.wedding-kits {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 73.125rem;
+	margin: 0 auto;
+	margin-bottom:5.3125rem;
+}
+.wedding-kits__h2 {	
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		margin-bottom: 2.625rem;
+		font-family: $secondaryFont;
+		font-size: 1.875rem;
+		font-weight: 600;
+}
+.wedding-kits__cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.875rem;/*30px*/
+}
+.wedding-kits__cards--item {
+	display: flex;
+	flex-direction: column;
+	// margin-bottom: 2.1875rem;
+	border: 1px solid #EDEDF0;
+	background-color: $secondaryColor;
+	width: 23.125rem;/*370px*/
+	height: 28.6875rem;
+	border-radius: 0.3125rem;/*5px*/
+	transition: 0.2s;
+	justify-content: space-between;
+}
+.wedding-kits__cards--item:hover {
+	transform: scale(1.07);
+	cursor: pointer;
+}
+.wedding-kits__image {
+	width: 23.125rem;/*370px*/
+	height: 18.75rem;/*300px*/
+}
+.wedding-kits__card--wrap {
+	width: 23.125rem;/*370px*/
+	height: 25.5rem;/*408px*/
+}
+.wedding-kits__cards--h4 {
+	font-family: $secondaryFont;
+	font-size: 1.125rem;/*18px*/
+	font-weight: 600;
+	margin-top: 1.3125rem;/*21px*/
+	margin-bottom: 0.875rem;/*14px*/
+}
+.wedding-kits__cards--p {
+	font-family: $mainFont;
+	font-weight: 400;
+	font-size: 0.875rem; /*14px*/
+	color: $mainColor;
+	margin-bottom: 0.875rem;/*14px*/
+}
+.wedding-kits__cards--h4, .wedding-kits__cards--p {
+	margin-left: 1.3125rem;/*21px*/
+}
+.wedding-kits__cards--price-line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3.1875rem;/*--51px в макете / 16px (по умолчанию в браузере)--*/
+	border-top: 1px solid #EDEDF0;
+	margin-bottom: 1rem;
+}
+.wedding-kits__cards--price{
+	font-family: $secondaryFont;
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: $accentColor;
+	margin-top: 1rem;
+	margin-left: 1.3125rem;
+	background-color: $secondaryColor;
+}
+.wedding-kits__cards--price-line_button {
+	display: flex;
+	width:6.375rem;
+	height:1.58rem;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $secondaryColor;
+	margin-top:0.7125rem;
+	margin-right:1.5625rem;
+}
+.box-button__text{
+	margin-top: 0.3rem;
+}
+.wedding-kits__cards--price-line_button-text {
+	font-family: $secondaryFont;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+.wedding-kits__cards--price-line_button-text:hover {
+	color: $accentColor;
+}
 //форма отзывов на свадебной странице**/
 //форма отзывов на свадебной странице**/
 .container-feedback-form{
 	display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    justify-items: flex-start;
+	flex-direction: row;
+	justify-content:space-between;
+	justify-items: flex-start;
 	flex-wrap: wrap; 
-    column-gap: 0.9375rem;
-    margin: 0.625rem;
+	column-gap: 0.9375rem;
+	margin: 0.625rem;
 	height: 38.125rem;
 	background-color: #f1f1f1;
 	margin-top: 5rem;
@@ -1227,15 +1190,13 @@ body {
 		max-width: 38.125rem;
 		height: 38.125rem;
 		object-fit: cover;
-		
 	}
-	
 }
 .feedback-form{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    justify-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;
+	justify-items: flex-start;
 	flex-wrap: wrap; 
 	column-gap: 0.9375rem;
 	max-width: 88.375rem;
@@ -1243,34 +1204,28 @@ body {
 	a{
 		color:#4E9DD3;
 	}
-	
-	
 }
-
 .feedback-form__content{
 	max-width: 40rem;
-	
 	h2{
 		font-family: $secondaryFont;
-        font-size: 1.875rem;
-        font-weight: 600;
-        text-align: center;
+		font-size: 1.875rem;
+		font-weight: 600;
+		text-align: center;
 		padding-top: 6.25rem;
 		text-align: left;
 	}
-	
 	margin-bottom: 0;
 }
 .feedback-form-text{
-	width: 29.25rem;  /* 468px в макете**/
+	width: 29.25rem;  /* 468px**/
 	text-align: left;
 	p{
 		font-family: $mainFont;
 		font-size: 1.125rem;
 	}
 }
-.contact_feedback-form
-{
+.contact_feedback-form{
 	display: flex;
 	flex-direction: row;
 	column-gap: 2.5rem;
@@ -1279,24 +1234,24 @@ body {
 		width: 21rem; /* 336px */
 		height: 3.125rem; /* 50px */
 		font-family: $mainFont;
-        font-size: 0.875rem;
-        font-weight: 400;
-        padding-top: 0;
+		font-size: 0.875rem;
+		font-weight: 400;
+		padding-top: 0;
 		margin-top:1rem;
 		padding-left: 0.625rem;
 	}
 	label{
 		width: 20.0625vw;
 		font-family: $mainFont;
-        font-size: 0.875rem;
-        font-weight: 400;
-        padding-top: 0;
+		font-size: 0.875rem;
+		font-weight: 400;
+		padding-top: 0;
 		margin-top:1rem;
 	}
 }
 .your_idea{
 	input{
-		width: 44rem; /* 712px */
+		width: 44rem; /*712px */
 		height: 12vh;
 		margin-top: 1rem;
 	}
@@ -1304,7 +1259,7 @@ body {
 	margin-top: 1rem;
 	label{
 		font-family: $mainFont;
-        font-size: 0.875rem;
+		font-size: 0.875rem;
 	}
 }
 .feedback-form__content-form{
@@ -1313,7 +1268,6 @@ body {
 	}
 	input{
 		vertical-align: middle;
-
 	}
 }
 .button_feedback__form{
@@ -1324,7 +1278,6 @@ body {
 	background-color:#F7F7F7;
 	color: #000000;
 	margin-left:39rem;
-	
 }
 .button_feedback__form--form--button{
 	margin-top: -10rem;
@@ -1332,10 +1285,9 @@ body {
 .privacy_policy{
 	width: 44.5rem; /* 712px */
 	font-family: $mainFont;
-	font-size: 0.6875rem; /* 11px в макете**/
+	font-size: 0.6875rem; /* 11px*/
 	margin-left: 39rem;
 	margin-top: -5rem;
-	
 }
 .button_feedback__form:hover{
 	color: $accentColor;
@@ -1349,12 +1301,12 @@ body {
 }
 .feedback-form{
 	p{
-        font-family: $mainFont;
-        font-size: 0.875rem;
-        font-weight: 400;
-        padding-top: 0;
+		font-family: $mainFont;
+		font-size: 0.875rem;
+		font-weight: 400;
+		padding-top: 0;
 		margin-top:0.75rem;
-    }
+	}
 }
 .privacy_policy_link:hover{
 	@include linkHover;
@@ -1379,7 +1331,6 @@ body {
 	font-family: $secondaryFont;
 	font-size: 1.875rem;
 	font-weight: 600;
-
 }
 .wedding-qa__content {
 	display: flex;
@@ -1389,25 +1340,24 @@ body {
 }
 .wedding-qa__content--item {
 	background:$secondaryColor;
-	width: 23.125rem;/*--370 в макете / 16px (по умолчанию в браузере)--*/
-	border-radius: 0.3125rem;/*--5px в макете / 16px (по умолчанию в браузере)--*/
+	width: 23.125rem;/*370px*/
+	border-radius: 0.3125rem;/*5px*/
 }
 .wedding-qa__content--line {
 	border-bottom:1px solid #EDEDF0;
 }
 .wedding-qa__content--h4 {
 	font-family: $secondaryFont;
-	font-size: 1.125rem;/*--18px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1.125rem;/*18px*/
 	font-weight: 600;
-	margin: 1.3125rem;/*--21px в макете / 16px (по умолчанию в браузере)--*/
-	
+	margin: 1.3125rem;/*21px*/
 }
 .wedding-qa__content--p {
 	font-family: $mainFont;
 	font-weight: 400;
-	font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1rem; /*16px*/
 	color: $mainColor;
-	margin: 1.25rem 1.375rem 1.8125rem 1.3125rem;/*--20px 22 px 29px 21px в макете / 16px (по умолчанию в браузере)--*/
+	margin: 1.25rem 1.375rem 1.8125rem 1.3125rem;/*20px 22 px 29px 21px в макете*/
 }
 //---Contacts/
 .contacts_container {
@@ -1443,8 +1393,8 @@ body {
 .contacts_header_2 {
 	@include mainH2;
 	display: flex;
-    font-size: 2.625rem;
-    line-height: 3.2rem;
+	font-size: 2.625rem;
+	line-height: 3.2rem;
 	margin-bottom: 1.875rem;
 }
 .contacts_header_4 {
@@ -1473,8 +1423,8 @@ body {
 }
 .contacts_text_part_2 {
 	@include mainFont;
-    line-height: 1.462rem;
-    font-size: 1.125rem;
+	line-height: 1.462rem;
+	font-size: 1.125rem;
 }
 .contacts_text_part_3 {
 	@include mainFont;
@@ -1523,14 +1473,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 2.5625rem; /*--41px в макете / 16px (по умолчанию в браузере)--*/
-	margin-bottom: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
-	margin-left: 0.3rem; /*--4.8px в макете / 16px (по умолчанию в браузере)--*/
+	margin-top: 2.5625rem; /*41px*/
+	margin-bottom: 1.3125rem; /*21px*/
+	margin-left: 0.3rem; /*4.8px*/
 }
 .catalog__nav--link{
 	@include mainFont;
 	color: #8a8a8c;
-	margin-right: 0.25rem; /*--4px в макете / 16px (по умолчанию в браузере)--*/
+	margin-right: 0.25rem; /*4px*/
 }
 .catalog__nav--link:hover{
 	@include linkHover;
@@ -1545,48 +1495,48 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
+	max-width: 73.125rem; /*1170px*/
 	margin: 0 auto;
-	margin-bottom:5.3125rem; /*--85px в макете / 16px (по умолчанию в браузере)--*/
+	margin-bottom:5.3125rem; /*85px*/
 }
 .catalog-box__h2 {
 	display: flex;
 	justify-content: center;
 	align-items: start;
-	margin-bottom: 2.625rem; /*-42px в макете / 16px (по умолчанию в браузере)--*/
+	margin-bottom: 2.625rem; /*42px*/
 	font-family: $secondaryFont;
-	font-size: 1.875rem; /*-30px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1.875rem; /*30px*/
 	font-weight: 600;
 }
 .catalog__container {
 	width: 100%;
-	height: 24.0625rem; /*--385px в макете / 16px (по умолчанию в браузере)--*/
+	height: 24.0625rem; /*385px*/
 	background: url("../images/catalog/catalog-pic.png") center no-repeat;
 	background-size: contain;
-	margin-bottom: 2.625rem; /*-42px в макете / 16px (по умолчанию в браузере)--*/
+	margin-bottom: 2.625rem; /*42px*/
 }
 .catalog__box {
 	display: flex;
 	justify-content: end;
 	align-items: center;
-	max-width: 67.5rem; /*--1080px в макете / 16px (по умолчанию в браузере)--*/
+	max-width: 67.5rem; /*1080px*/
 }
 .catalog__content {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	width: 100%;
-	max-width: 29.375rem; /*--470px в макете / 16px (по умолчанию в браузере)--*/
-	padding-top: 5.9375rem; /*--95px в макете / 16px (по умолчанию в браузере)--*/
+	max-width: 29.375rem; /*470px*/
+	padding-top: 5.9375rem; /*95px*/
 }
 .catalog__title {
 	font-family: $secondaryFont;
-	font-size: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
-	margin-bottom: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1.875rem; /*30px*/
+	margin-bottom: 1rem; /*16px*/
 }
 .catalog__text {
 	font-family: $mainFont;
-	font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+	font-size: 1.125rem; /*18px*/
 }
 .catalog-box__button{
 	display: flex;
@@ -1607,7 +1557,7 @@ body {
 	font-weight: 600;
 }
 .small-button {
-	width: 14.375rem; /*--230px в макете / 16px (по умолчанию в браузере)--*/
+	width: 14.375rem; /*230px*/
 }
 .small-button--transparent {
 	background-color: transparent;
@@ -1631,7 +1581,7 @@ body {
 	width: 100%;
 	flex-direction: column;
 	justify-content: space-between;
-	max-width: 48rem; /*--768px в макете / 16px (по умолчанию в браузере)--*/
+	max-width: 48rem; /*768px*/
 	margin: 0 auto;
 }
 .catalog__cards{
@@ -1641,11 +1591,11 @@ body {
 .catalog-cards__item {
 	display: flex;
 	flex-direction: column;
-	width: 23.125rem; /*--370px в макете / 16px (по умолчанию в браузере)--*/
-   height: 21.25rem; /*--340px в макете / 16px (по умолчанию в браузере)--*/
+	width: 23.125rem; /*370px*/
+   height: 21.25rem; /*340px*/
 	align-items: center;
 	justify-content: end;
-	border-radius: 0.3125rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
+	border-radius: 0.3125rem; /*5px*/
 	transition: 0.2s; 
 }
 .catalog-cards__item--bctubes {
@@ -1664,7 +1614,7 @@ body {
 .catalog-cards__h3 {
 	@include mainH4;
 	color: $secondaryColor;
-	padding-bottom: 2.75rem; /*--44px в макете / 16px (по умолчанию в браузере)--*/
+	padding-bottom: 2.75rem; /*44px*/
 }
 .catalog-box__all {
 	display: flex;
@@ -1682,41 +1632,10 @@ body {
 }
 
 
-
 //---Tablet Adaptive---/
 
-//--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
-
-//--Navigation cards Block--/
-
-@media(max-width:64.0625em){  //1025px
-	.navigation_cards{
-		justify-content: center;
-	}
-
-
-	.navigation_cards__one,.navigation_cards__second,.navigation_cards__third,.navigation_cards__forth,.navigation_cards__fifth,.navigation_cards__sixth{
-		
-		background-size: cover;
-		width:38.75rem; 
-		height:17.8rem ;  
-		font-size: 1.3rem;
-	
-		h3{
-			font-size: 1.6rem;
-			margin-top: 0.7rem;
-		}
-	}
-
-
-	.navigation_cards__vector{
-		margin-top: 0.7rem;
-		
-	}
-}
-
-//----Header Content Tablet-Desktop Adaptive
 /*--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-*/
+//----Header Content Tablet-Desktop Adaptive
 @media (max-width: 64.0625em){
 	.header__box {
 		margin-left: 0.25rem; //4px/
@@ -1734,7 +1653,28 @@ body {
 }
 
 //--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
+//--Navigation cards Block--/
+@media(max-width:64.0625em){  //1025px
+	.navigation_cards{
+		justify-content: center;
+	}
+	.navigation_cards__one,.navigation_cards__second,.navigation_cards__third,.navigation_cards__forth,.navigation_cards__fifth,.navigation_cards__sixth{
+		
+		background-size: cover;
+		width:38.75rem; 
+		height:17.8rem ;  
+		font-size: 1.3rem;
+		h3{
+			font-size: 1.6rem;
+			margin-top: 0.7rem;
+		}
+	}
+	.navigation_cards__vector{
+		margin-top: 0.7rem;
+	}
+}
 
+//--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
 //--Sales Block--/
 @media (max-width: 64.0625em) {
 	.sales{
@@ -1748,7 +1688,7 @@ body {
 }
 .sales__cards--sale_one,.sales__cards--sale_two,.sales__cards--sale_three,.sales__cards--sale_four{
 	width: 18rem;
-    height: 25rem;
+	height: 25rem;
 }
 }
 /*--Адаптив для экранов от 769px (769px/16px=48.0625em) boxes block-*/
@@ -1953,7 +1893,6 @@ body {
 }
 
 //--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
-
 //---Holidays Block---/
 @media (max-width: 48.0625em) {
 	div .holiday_item_5,
@@ -1970,6 +1909,7 @@ body {
 }
 }
 
+//--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 //---Contacts Page---/
 @media (max-width: 48.0625em) {
 	.contacts_items {
@@ -1988,8 +1928,8 @@ body {
 		font-size: 1.25rem;
 	}
 }
-/* Адаптив планшет Форма ОС на свадебной странице**/
 
+/* Адаптив планшет Форма ОС на свадебной странице**/
 //--Адаптив для экранов от 770px (48.125em) до 1199px (74.9375)-/
 @media (min-width:48.125em) and (max-width:74.937em){
 	.container-feedback-form{
@@ -2052,7 +1992,6 @@ body {
 	}
 }
 
-
 //--Адаптив для экранов от 432 до 769px (48.0625em)-/
 @media (min-width:27em) and (max-width:48.0625em){
 	.container-feedback-form{
@@ -2071,7 +2010,7 @@ body {
 		min-width: 27rem;
 		height: auto;
 		display: flex;
-    	flex-direction: column;
+		flex-direction: column;
 		justify-content:center;
 		justify-items: center;
 		margin-top: 0;
@@ -2090,17 +2029,14 @@ body {
 			width: 100vw;
 			height: auto;
 			object-fit: cover;
-			
-			
 		}
 		.button_feedback__form{
 			width: 11.875rem;/*190 px**/
 			height: 2.5rem;/*40 px**/
 			margin-left: 15rem;
 			margin-bottom: 1rem;
-			
 		}
-}
+	}
 	.feedback-form{
 		h2{
 			margin-bottom: 1rem;
@@ -2146,14 +2082,13 @@ body {
 		}
 	}
 }
-/* Адаптив планшет  Гарантии вкуса**/
 
 //--Адаптив для экранов до 769px (48.0625em)-/
+/* Адаптив планшет  Гарантии вкуса**/
 @media (max-width:48.0625em){
 	.garanties{
 		margin-top:8.5rem;
 		margin-bottom: 0rem;
-		
 	}
 	.garant__cards{
 		margin-bottom: 4rem;
@@ -2162,9 +2097,9 @@ body {
 	.garant__cards_content{
 		height: 32vw;
 		margin-bottom: 4rem;
-		
 	}
 }
+
 /*адаптив для планшета гарантии качечства (размер 432 px 820px)**/
 @media (min-width:27em) and (max-width:51.25em){
 	.garant__cards_content{
@@ -2179,6 +2114,7 @@ body {
 		margin-bottom: 0rem;
 	}
 }
+
 /*адаптив для планшета гарантии качечства (размер 912 px 1200px)**/
 @media (min-width:57em) and (max-width:75em){
 	.garanties{
@@ -2374,12 +2310,10 @@ body {
 @media (max-width:26.9375em) {
 	.container{
 		width: 25.875rem; // 414px
-		
 	}
 	.navigation_cards__img{
 		display: none;
 	}
-
 	.navigation_cards__one,.navigation_cards__second,.navigation_cards__third,.navigation_cards__forth,.navigation_cards__fifth,.navigation_cards__sixth{
 		
 		height:2.25rem ;
@@ -2387,63 +2321,49 @@ body {
 		p{
 			display: none;
 		}
-
 		h3{
 			border-bottom:  2px solid   #d6d6d6;
 			padding-bottom: 1.091875rem;   //17.47px
 			font-size: 0.875rem;   //14px
 			width: 18rem;  //288px
-			
 		}
-		
 	}
-
-
 	.navigation_cards__one{
 		img{
 			margin-left: 9.12rem;
 			margin-top: 0.27rem;
 		}
 	}
-
 	.navigation_cards__second{
 		img{
 			margin-left: 7.2rem;
 			margin-top: 0.27rem;
 		}
 	}
-
 	.navigation_cards__third{
 		img{
 			margin-left: 0.4rem;
 			margin-top: 0.27rem;
 		}
 	}
-
 	.navigation_cards__forth{
 		img{
 			margin-left: 4.5rem;
 			margin-top: 0.27rem;
 		}
 	}
-
 	.navigation_cards__fifth{
 		img{
 			margin-left: 4.7rem;
 			margin-top: 0.27rem;
 		}
 	}
-
 	.navigation_cards__sixth{
 		img{
 			margin-left: 7.7rem;
 			margin-top: 0.27rem;
 		}
 	}
-
-
-
-	
 }
 
 //---Sales Block Adaptive---/
@@ -2478,16 +2398,16 @@ body {
 	}
 	.sales__cards--sale_one{
 	width: 18rem;
-    height: 26.375rem;
-    }
-    .sales__cards--h3{
+	height: 26.375rem;
+	}
+	.sales__cards--h3{
 	font-size: 0.8125rem;
 	margin-bottom: 0.6rem;
-    }
+	}
 }
 
-//---Holidays Block Adaptive---/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+//---Holidays Block Adaptive---/
 @media (max-width:26.9375em) {
 	div .holiday_item_4,
 	div .holiday_item_5,
@@ -2553,8 +2473,8 @@ body {
 	}
 }
 
-//---Popular-box Block and Boxes Block Adaptive---/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+//---Popular-box Block and Boxes Block Adaptive---/
 @media (max-width:26.9375em) {
 	.container{
 		width: 25.875rem;
@@ -2604,7 +2524,7 @@ body {
 		display: none;
 	}
 	.boximage{
-    width: 100%;
+	width: 100%;
 	height: 100%;
 	}
 	.popular-box__cards--price-line-price {
@@ -2633,17 +2553,17 @@ body {
 	margin-top: 6.5rem;
 	margin-bottom: 0.75rem;
 	margin-left: 1.68rem;
+	}
+	.boxes__nav--link{
+		font-size: 0.5625rem;
+		margin-right: 0.25rem;
+	}
+	.gfa-for-phone-vers{
+		display: none;
 }
-.boxes__nav--link{
-	font-size: 0.5625rem;
-	margin-right: 0.25rem;
 }
-.gfa-for-phone-vers{
-	display: none;
-}
-}
-/* Адаптив под мобильную версию Instagram**/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+/* Адаптив под мобильную версию Instagram**/
 @media (max-width:26.9375em){
 	.container{
 		width: 21.875rem;
@@ -2669,7 +2589,7 @@ body {
 			height: 5.9375rem;
 		}
 		column-gap: 0.7rem;
-    	row-gap: 0.7rem;
+		row-gap: 0.7rem;
 	}
 	.instagram__gallery2 :nth-child(1),
 	.instagram__gallery2 :nth-child(2),
@@ -2715,7 +2635,6 @@ body {
 			padding-top: 0.5rem;
 		}
 	}
-	
 }
 
 /* Адаптив по мобильную версию Мы позаботились**/
@@ -2758,8 +2677,8 @@ body {
 	}
 }
 
-//----Catalog Page Adaptive---/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+//----Catalog Page Adaptive---/
 @media (max-width:26.9375em){
 	.container{
 		width: 25.875rem; // 414px
@@ -2836,8 +2755,8 @@ body {
 		font-size: 1.25rem; // 20px
 	}
 }
-//--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
 
+//--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
 //--Footer-/
 @media (max-width: 64.0625em){
 	.footer__container{
@@ -2846,10 +2765,8 @@ body {
 	.footer__list-wrap--business{
 		display: none;
 	}
-
 }
 //--Адаптив для экранов до 821px (821px/16px=51.3125rem)-/821px
-
 //--Footer-/
 @media (max-width: 51.3125em) {
 	.footer__list-wrap{
@@ -2858,9 +2775,7 @@ body {
 	.footer__contacts {
 		height: 12rem//192px;
 	}
-
 }
-
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 //--Footer-/
 @media (max-width: 48.0625em) {
@@ -2884,14 +2799,10 @@ body {
 		justify-content: center;
 		padding-top: 2.0625rem;//33px
 	}
-		
-		
 	.footer__ptofit {
 		flex-direction: column;
 		align-items: center;
-		
 	}
-
 	.footer__profit--items {
 		flex-direction: row;
 		justify-content: space-between;
@@ -2904,7 +2815,6 @@ body {
 	.footer__profit-text {
 		text-align: left;
 	}
-	
 	.footer__list-wrap, .fullscreen__text, .break__fullscreen, .footer__contacts {
 		display: none;
 	}
@@ -2912,7 +2822,6 @@ body {
 		display:flex;
 		justify-content: space-between;
 	}
-
 	.footer__add-info--text {
 		width: 10.8125rem;/*--173px в макете / 16px (по умолчанию в браузере)--*/
 		font-size: 0.625rem;/*--10px в макете / 16px (по умолчанию в браузере)--*/
@@ -2920,7 +2829,6 @@ body {
 	}
 	.footer__header-contacts {
 		font-size: 0.75rem;
-	
 	}
 	.footer-text{
 		font-size: 0.625rem;
@@ -2928,7 +2836,6 @@ body {
 	.footer__add-info--mobile-block{
 		display: block;
 	}
-
 	.footer__apps-mobile {
 		display: flex;
 		justify-content: center;
@@ -2937,12 +2844,10 @@ body {
 		margin-bottom: 3.3125rem;//53px
 		
 	}
-
 }
 
-
-/* Адаптив по мобильную версию Гарантии вкуса и качества**/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
+/* Адаптив по мобильную версию Гарантии вкуса и качества**/
 @media (max-width:26.9375em){
 	.garanties{
 		h2{
@@ -2991,15 +2896,13 @@ body {
 		font-size: 0.5625rem;/*9px в макете**/
 		text-align: left;
 	}
-
 }
-//--Адаптив для экранов до 821px (821px/16px=51.3125rem)-/821px
 
+//--Адаптив для экранов до 821px (821px/16px=51.3125rem)-/821px
 //--Footer-/
 @media (max-width: 51.3125em) {
 	.wedding__block {
 		max-width: 51.3125rem;
-		
 	}
 	.wedding__nav {
 		justify-content: start;
@@ -3026,6 +2929,7 @@ body {
 		width: 17.5rem;
 	}
 }
+
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 @media (max-width: 48.0625em){
 	.wedding__block {
@@ -3054,13 +2958,11 @@ body {
 @media (max-width:26.9375em) {
 	.container{
 		width: 25.875rem; // 414px
-		
 	}
 	.wedding__block {
 		width: 100%;
 		margin-top: 8.5rem;//136px
 	}
-
 	.wedding-qa, .wedding__footer, .break__fullscreen, .box-button__text, .wedding__content-image {
 		display: none;
 	}
@@ -3133,8 +3035,8 @@ body {
 	.wedding__mobile-img--box {
 		width: 100%;
 		display: flex;
-    	flex-direction: column;
-    	align-items: center;	
+		flex-direction: column;
+		align-items: center;	
 		background: url(../images/wedding_offer/wedding-back-mob.png) center no-repeat;
 	}
 	.wedding-kits__image--box {
@@ -3172,7 +3074,6 @@ body {
 	}
 }
 
-
 /* Адаптив по мобильную версию Форма ОС на свадебной странице**/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:26.9375em){
@@ -3195,7 +3096,7 @@ body {
 		min-width: 20rem;
 		height: 45.25rem;
 		display: flex;
-    	flex-direction: column;
+		flex-direction: column;
 		justify-content:center;
 		justify-items: center;
 		margin-top: 0;
@@ -3220,7 +3121,6 @@ body {
 			width: 11.875rem;/*190 px**/
 			height: 2.5rem;/*40 px**/
 			margin-left: 6rem;
-			
 		}
 	}
 	.feedback-form{
@@ -3241,12 +3141,10 @@ body {
 		margin-left: 1rem;
 		justify-content: center;
 		margin-left: 5rem;
-		
 	}
 	.button_feedback__form--form--button{
 		margin-top:-200px;
 		width: 40vw;
-		
 	}
 	.button_feedback__form {
 		margin: 0;
@@ -3259,18 +3157,18 @@ body {
 	input{
 		width: 25rem; /* 228px */
 		height: 2.5rem; /* 40px */
-        font-size: 1rem;/* 40px */
-        font-weight: 400;
-        padding-top: 0;
+		font-size: 1rem;/* 40px */
+		font-weight: 400;
+		padding-top: 0;
 		margin-top:0.5rem;/*6px**/
 		margin-left:1rem;
 		padding-left: 0.625rem;
 	}
 	label{
 		width: 18rem;
-        font-size: 0.75rem;/* 12px**/
-        font-weight: 400;
-        padding-top: 0;
+		font-size: 0.75rem;/* 12px**/
+		font-weight: 400;
+		padding-top: 0;
 		margin-top:1rem;
 		margin-left:1rem;
 	}
@@ -3293,8 +3191,6 @@ body {
 			display:none;
 		}
 	}
-
-
 }
 
 //---Contacts Mobile Adaptive---/
@@ -3314,47 +3210,46 @@ body {
 		height: 59.5rem;
 		background-color:#F7F7F7;
 	}
-.contacts_header_2 {
-	justify-content: center;
-	font-size: 1.625rem; /*--26px в макете / 16px (по умолчанию в браузере)--*/
-}
-.contacts_item_1 {
-	width: 10.375rem; /*--166px в макете / 16px (по умолчанию в браузере)--*/
-	height: 11.875rem;/*--190px в макете / 16px (по умолчанию в браузере)--*/
-	margin-left: 6.25rem;
-	margin-right: 6.25rem;
-	margin-bottom: 2.812rem;
+	.contacts_header_2 {
+		justify-content: center;
+		font-size: 1.625rem; /*--26px в макете / 16px (по умолчанию в браузере)--*/
 	}
-.contacts_item_2 {
-	width: 390px;
-}
-.contacts_header_4 {
-	font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
-}
-.contacts_text_part_1 {
-	@include mainFont;
-	line-height: 1.462rem;
-	font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
-}
-.contacts_text_part_2 {
-	@include mainFont;
-    line-height: 1.462rem;
-    font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
-}
-.contacts_text_part_3 {
-	font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
-}
-.contacts_text_block_3 {
-	margin-bottom: 0.3rem;
-}
+	.contacts_item_1 {
+		width: 10.375rem; /*--166px в макете / 16px (по умолчанию в браузере)--*/
+		height: 11.875rem;/*--190px в макете / 16px (по умолчанию в браузере)--*/
+		margin-left: 6.25rem;
+		margin-right: 6.25rem;
+		margin-bottom: 2.812rem;
+		}
+	.contacts_item_2 {
+		width: 390px;
+	}
+	.contacts_header_4 {
+		font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+	}
+	.contacts_text_part_1 {
+		@include mainFont;
+		line-height: 1.462rem;
+		font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+	}
+	.contacts_text_part_2 {
+		@include mainFont;
+		line-height: 1.462rem;
+		font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+	}
+	.contacts_text_part_3 {
+		font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+	}
+	.contacts_text_block_3 {
+		margin-bottom: 0.3rem;
+	}
 .contacts_nav {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	margin-top: 6.5rem;
-	margin-bottom: 2.3rem;
-	margin-left: 1.5rem;
-	
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 6.5rem;
+		margin-bottom: 2.3rem;
+		margin-left: 1.5rem;
 }
 .contacts_nav--link,
 .contacts_nav--link-active_page {
@@ -3526,7 +3421,7 @@ body {
 @media (min-width:27em) and (max-width:57em){
 	.container__we-care{
 	width: 40rem;
-   	max-width: 48.125;
+	max-width: 48.125;
 	flex-wrap: wrap;
 	justify-items: center;
 	justify-self: center;

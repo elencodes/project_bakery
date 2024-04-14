@@ -6,6 +6,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -84,8 +86,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 b, strong {
@@ -247,7 +248,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
+  max-width: 73.125rem; /*1170px*/
   margin: 0 auto;
 }
 
@@ -288,15 +289,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 33.625rem; /*--538px в макете / 16px (по умолчанию в браузере)--*/
+  max-width: 33.625rem; /*538px*/
   margin: 0 auto;
-  padding: 0.5625rem 0; /*--9px в макете / 16px (по умолчанию в браузере)--*/
+  padding: 0.5625rem 0; /*9px*/
 }
 
 .header-banner__text {
   font-family: "ProximaNova", sans-serif;
   font-weight: 300;
-  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.125rem; /*18px*/
   text-transform: uppercase;
   color: #292929;
 }
@@ -310,15 +311,15 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
+  max-width: 73.125rem; /*1170px*/
   margin: 0 auto;
-  padding: 1rem 0; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+  padding: 1rem 0; /*16px*/
 }
 
 .header-top__nav {
   display: flex;
   justify-content: space-between;
-  width: 43.5rem; /*--696px в макете / 16px (по умолчанию в браузере)--*/
+  width: 43.5rem; /*696px*/
 }
 
 .header-top__link {
@@ -328,21 +329,21 @@ body {
 .header-top__text {
   font-family: "ProximaNovaCond", sans-serif;
   font-weight: 300;
-  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.125rem; /*18px*/
 }
 
 .header-top__phone {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 8.4375rem; /*--135px в макете / 16px (по умолчанию в браузере)--*/
+  width: 8.4375rem; /*135px*/
 }
 
 .header-top__basket {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 10rem; /*--160px в макете / 16px (по умолчанию в браузере)--*/
+  width: 10rem; /*160px*/
 }
 
 .nav__inner {
@@ -352,7 +353,7 @@ body {
 .nav__container {
   display: flex;
   justify-content: end;
-  padding: 1.125rem 0; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  padding: 1.125rem 0; /*18px*/
 }
 
 .nav {
@@ -360,7 +361,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 70.125rem; /*--1122px в макете / 16px (по умолчанию в браузере)--*/
+  width: 70.125rem; /*1122px*/
 }
 
 .nav__link {
@@ -372,11 +373,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 5rem; /*--80px в макете / 16px (по умолчанию в браузере)--*/
+  width: 5rem; /*80px*/
 }
 
 .nav__logo {
-  width: 7.75rem; /*--124px в макете / 16px (по умолчанию в браузере)--*/
+  width: 7.75rem; /*124px*/
 }
 
 .header-top__link--hover:hover,
@@ -394,7 +395,7 @@ body {
 
 .container__content {
   width: 100%;
-  height: 29.6875rem; /*--475px в макете / 16px (по умолчанию в браузере)--*/
+  height: 29.6875rem; /*475px*/
   background: url("../images/header-background.png") center no-repeat;
   background-size: cover;
 }
@@ -404,19 +405,18 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
-  max-width: 90rem; /*--1440px в макете / 16px (по умолчанию в браузере)--*/
+  max-width: 90rem; /*1440px*/
 }
 
 .header__image {
-  max-width: 40.9375rem; /*--655px в макете / 16px (по умолчанию в браузере)--*/
+  max-width: 40.9375rem; /*655px*/
   height: auto;
-  margin-top: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-top: 2.5rem; /*40px*/
+  object-fit: cover;
 }
 
 .header__box {
-  margin-left: 4rem; /*--32px в макете / 16px (по умолчанию в браузере)--*/
+  margin-left: 4rem; /*32px*/
 }
 
 .header__content {
@@ -431,22 +431,22 @@ body {
 
 .header__logoname {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.375rem; /*--22px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.375rem; /*22px*/
   text-transform: uppercase;
 }
 
 .header-logoname__subtitle {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
-  margin-bottom: 1.5rem; /*--24px в макете / 16px (по умолчанию в браузере)--*/
-  width: 9.875rem; /*--158px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1rem; /*16px*/
+  margin-bottom: 1.5rem; /*24px*/
+  width: 9.875rem; /*158px*/
   position: relative;
 }
 
 .header-logoname__subtitle::before {
   content: "";
-  width: 1.8125rem; /*--29px в макете / 16px (по умолчанию в браузере)--*/
-  height: 0.0625rem; /*--1px в макете / 16px (по умолчанию в браузере)--*/
+  width: 1.8125rem; /*29px*/
+  height: 0.0625rem; /*1px*/
   background-color: #292929;
   position: absolute;
   left: 0;
@@ -455,8 +455,8 @@ body {
 
 .header-logoname__subtitle::after {
   content: "";
-  width: 1.8125rem; /*--29px в макете / 16px (по умолчанию в браузере)--*/
-  height: 0.0625rem; /*--1px в макете / 16px (по умолчанию в браузере)--*/
+  width: 1.8125rem; /*29px*/
+  height: 0.0625rem; /*1px*/
   background-color: #292929;
   position: absolute;
   right: 0;
@@ -465,28 +465,28 @@ body {
 
 .header__title {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.625rem; /*--42px в макете / 16px (по умолчанию в браузере)--*/
-  margin-bottom: 0.8125rem; /*--13px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 2.625rem; /*42px*/
+  margin-bottom: 0.8125rem; /*13px*/
 }
 
 .header__text {
   font-family: "ProximaNova", sans-serif;
-  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.125rem; /*18px*/
 }
 
 .navigation_cards {
-  max-width: 73.125rem;
+  max-width: 73.125rem; /*1170px*/
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .navigation_cards__one, .navigation_cards__second, .navigation_cards__third, .navigation_cards__forth, .navigation_cards__fifth, .navigation_cards__sixth {
-  margin-top: 1.5625rem; /*--25 px в макете / 16px (по умолчанию в браузере)--*/
+  margin-top: 1.5625rem; /*25px*/
   display: flex;
-  background-size: 35.625rem;
-  width: 35.625rem; /*--570 px в макете / 16px (по умолчанию в браузере)--*/
-  height: 16.25rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  background-size: 35.625rem; /*570px*/
+  width: 35.625rem; /*570px*/
+  height: 16.25rem; /*260px*/
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -565,10 +565,10 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 73.125rem;
+  max-width: 73.125rem; /*1170px*/
   margin: 0 auto;
-  margin-bottom: 5.3125rem;
-  margin-top: 5.875rem;
+  margin-bottom: 5.3125rem; /*85px*/
+  margin-top: 5.875rem; /*94px*/
 }
 
 .sales__h2 {
@@ -578,7 +578,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: start;
-  margin-bottom: 3.0625rem;
+  margin-bottom: 3.0625rem; /*49px*/
 }
 
 .sales__cards {
@@ -603,34 +603,24 @@ body {
   background-image: url("/assets/images/sells4.png");
 }
 
-.sales__cards--sale_one, .sales__cards--sale_two, .sales__cards--sale_three,
+.sales__cards--sale_one,
+.sales__cards--sale_two,
+.sales__cards--sale_three,
 .sales__cards--sale_four {
   display: flex;
   flex-direction: column;
-  width: 16.875rem;
-  height: 24.8125rem;
+  width: 16.875rem; /*270px*/
+  height: 24.8125rem; /*397px*/
   align-items: center;
   justify-content: end;
   background-size: cover;
-  border-radius: 0.3125rem;
+  border-radius: 0.3125rem; /*5px*/
   transition: 0.2s;
 }
 
-.sales__cards--sale_one:hover {
-  transform: scale(1.09);
-  cursor: pointer;
-}
-
-.sales__cards--sale_two:hover {
-  transform: scale(1.09);
-  cursor: pointer;
-}
-
-.sales__cards--sale_three:hover {
-  transform: scale(1.09);
-  cursor: pointer;
-}
-
+.sales__cards--sale_one:hover,
+.sales__cards--sale_two:hover,
+.sales__cards--sale_three:hover,
 .sales__cards--sale_four:hover {
   transform: scale(1.09);
   cursor: pointer;
@@ -643,26 +633,26 @@ body {
 }
 
 .sales__cards--h3 {
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
+  font-size: 1rem; /*16px*/
+  margin-bottom: 0.2rem; /*3,2px*/
 }
 
 .sales__cards--p {
-  font-size: 1.125rem;
-  margin-bottom: 0.11rem;
+  font-size: 1.125rem; /*18px*/
+  margin-bottom: 0.11rem; /*1,76px*/
 }
 
 .for-margin {
-  margin-bottom: 3.125rem;
+  margin-bottom: 3.125rem; /*50px*/
 }
 
 .holidays {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 73.125rem;
+  max-width: 73.125rem; /*50px*/
   margin: 0 auto;
-  margin-bottom: 6.75rem;
+  margin-bottom: 6.75rem; /*108px*/
 }
 
 .holidays_h2 {
@@ -688,57 +678,57 @@ body {
 .holiday_item_6 {
   display: flex;
   flex-direction: column;
-  width: 10.62rem;
+  width: 10.62rem; /*50px*/
   align-content: center;
   color: black;
   transition: 0.2s;
 }
 
 .holiday_img_1 {
-  width: 6.25rem;
-  height: 7.06rem;
-  margin-left: 3.2rem;
-  margin-bottom: 0.179rem;
+  width: 6.25rem; /*100px*/
+  height: 7.06rem; /*112,96px*/
+  margin-left: 3.2rem; /*51,2px*/
+  margin-bottom: 0.179rem; /*2,864px*/
   transition: 0.2s;
 }
 
 .holiday_img_2 {
-  width: 3.85rem;
-  height: 2.96rem;
+  width: 3.85rem; /*61,6px*/
+  height: 2.96rem; /*47,36px*/
   align-self: center;
-  margin-bottom: 0.394rem;
+  margin-bottom: 0.394rem; /*6,304px*/
   transition: 0.2s;
 }
 
 .holiday_img_3 {
-  width: 3.62rem;
-  height: 2.81rem;
+  width: 3.62rem; /*57,92px*/
+  height: 2.81rem; /*44,96px*/
   align-self: center;
-  margin-bottom: 0.623rem;
+  margin-bottom: 0.623rem; /*9,968px*/
   transition: 0.2s;
 }
 
 .holiday_img_4 {
-  width: 3.23rem;
-  height: 2.47rem;
+  width: 3.23rem; /*51,68px*/
+  height: 2.47rem; /*39,52px*/
   align-self: center;
-  margin-bottom: 0.687rem;
+  margin-bottom: 0.687rem; /*11px*/
   transition: 0.2s;
 }
 
 .holiday_img_5 {
-  width: 3.85rem;
-  height: 2.96rem;
+  width: 3.85rem; /*61,6px*/
+  height: 2.96rem; /*47,36px*/
   align-self: center;
-  margin-bottom: 1.03rem;
+  margin-bottom: 1.03rem; /*16,48px*/
   transition: 0.2s;
 }
 
 .holiday_img_6 {
-  width: 3.62rem;
-  height: 2.81rem;
+  width: 3.62rem; /*57,92px*/
+  height: 2.81rem; /*44,96px*/
   align-self: center;
-  margin-bottom: 1.39rem;
+  margin-bottom: 1.39rem; /*22,24px*/
   transition: 0.2s;
 }
 
@@ -767,12 +757,12 @@ body {
 
 .holiday_text {
   display: flex;
-  width: 10.62rem;
+  width: 10.62rem; /*169px*/
   text-align: center;
   justify-content: center;
   color: black;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.875rem; /*14px*/
   font-family: "Montserrat", sans-serif;
 }
 
@@ -781,16 +771,16 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 73.125rem;
+  max-width: 73.125rem; /*1170px*/
   margin: 0 auto;
-  margin-bottom: 5.3125rem;
+  margin-bottom: 5.3125rem; /*85px*/
 }
 
 .popular-box__h2 {
   display: flex;
   justify-content: center;
   align-items: start;
-  margin-bottom: 2.625rem;
+  margin-bottom: 2.625rem; /*42px*/
   font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
@@ -800,8 +790,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.875rem;
-  margin-bottom: 2.1875rem;
+  gap: 1.875rem; /*30px*/
+  margin-bottom: 2.1875rem; /*35px*/
 }
 
 .popular-box__cards--cards_one, .popular-box__cards--cards_two, .popular-box__cards--cards_three,
@@ -810,59 +800,39 @@ body {
   flex-direction: column;
   border: 1px solid #EDEDF0;
   background-color: #FFFFFF;
-  width: 23.125rem;
-  height: 28.6875rem;
-  border-radius: 0.3125rem;
+  width: 23.125rem; /*370px*/
+  height: 28.6875rem; /*459px*/
+  border-radius: 0.3125rem; /*5px*/
   transition: 0.2s;
 }
 
-.popular-box__cards--cards_one:hover {
-  transform: scale(1.07);
-  cursor: pointer;
-}
-
-.popular-box__cards--cards_two:hover {
-  transform: scale(1.07);
-  cursor: pointer;
-}
-
-.popular-box__cards--cards_three:hover {
-  transform: scale(1.07);
-  cursor: pointer;
-}
-
-.popular-box__cards--cards_four:hover {
-  transform: scale(1.07);
-  cursor: pointer;
-}
-
-.popular-box__cards--cards_five:hover {
-  transform: scale(1.07);
-  cursor: pointer;
-}
-
+.popular-box__cards--cards_one:hover,
+.popular-box__cards--cards_two:hover,
+.popular-box__cards--cards_three:hover,
+.popular-box__cards--cards_four:hover,
+.popular-box__cards--cards_five:hover,
 .popular-box__cards--cards_six:hover {
   transform: scale(1.07);
   cursor: pointer;
 }
 
 .popular-box__image {
-  width: 23.125rem;
-  height: 18.75rem;
+  width: 23.125rem; /*370px*/
+  height: 18.75rem; /*300px*/
 }
 
 .popular-box__cards--h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.125rem; /*18px*/
   font-weight: 600;
-  margin-top: 0.85rem;
-  margin-bottom: 0.875rem;
+  margin-top: 0.85rem; /*13,6px*/
+  margin-bottom: 0.875rem; /*14px*/
 }
 
 .popular-box__cards--p {
   font-family: "ProximaNova", sans-serif;
   font-weight: 400;
-  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 0.875rem; /*14px*/
   color: #292929;
 }
 
@@ -874,22 +844,22 @@ body {
 
 .popular-box__cards--price-line_button {
   display: flex;
-  width: 6.375rem;
-  height: 1.58rem;
+  width: 6.375rem; /*102px*/
+  height: 1.58rem; /*25,28px*/
   justify-content: space-between;
   align-items: center;
   background-color: #FFFFFF;
-  margin-top: 0.7125rem;
-  margin-right: 1.5625rem;
+  margin-top: 0.7125rem; /*11,4px*/
+  margin-right: 1.5625rem; /*25px*/
 }
 
 .box-button__text {
-  margin-top: 0.3rem;
+  margin-top: 0.3rem; /*4,8px*/
 }
 
 .popular-box__cards--price-line_button-text {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.875rem; /*14px*/
   font-weight: 600;
 }
 
@@ -899,27 +869,27 @@ body {
 
 .popular-box__cards--price-line-price {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.125rem; /*18px*/
   font-weight: 600;
   color: #E7426A;
-  margin-top: 1rem;
-  margin-left: 1.3125rem;
+  margin-top: 1rem; /*16px*/
+  margin-left: 1.3125rem; /*21px*/
   background-color: #FFFFFF;
 }
 
 .also-margin {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.4rem; /*22,4px*/
 }
 
 .popular-box__cards--p, .popular-box__cards--h4 {
-  margin-left: 1.3125rem;
+  margin-left: 1.3125rem; /*21px*/
 }
 
 .popular-box__button {
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.875rem; /*14px*/
   font-weight: 600;
 }
 
@@ -927,9 +897,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5625rem;
-  margin-bottom: 1.3125rem;
-  margin-left: 0.3rem;
+  margin-top: 2.5625rem; /*41px*/
+  margin-bottom: 1.3125rem; /*21px*/
+  margin-left: 0.3rem; /*4,8px*/
 }
 
 .boxes__nav--link {
@@ -938,7 +908,7 @@ body {
   font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
   color: #292929;
   color: #8a8a8c;
-  margin-right: 0.25rem;
+  margin-right: 0.25rem; /*4px*/
 }
 
 .boxes__nav--link:hover {
@@ -962,14 +932,13 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
-  row-gap: 1.25rem;
-  margin: 0.625rem;
+  column-gap: 1.25rem; /*20px*/
+  row-gap: 1.25rem; /*20px*/
+  margin: 0.625rem; /*10px*/
 }
 .instagram__gallery2 img {
-  width: 10.625rem;
-  height: 10.625rem;
+  width: 10.625rem; /*170px*/
+  height: 10.625rem; /*170px*/
   transition: 0.2s;
 }
 
@@ -979,16 +948,16 @@ body {
 }
 
 .instagram {
-  margin-top: 5rem;
+  margin-top: 5rem; /*80px*/
 }
 .instagram h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.875rem; /*30px*/
   font-weight: 600;
   text-align: center;
 }
 .instagram .insta_icon {
-  margin-left: 1rem;
+  margin-left: 1rem; /*16px*/
 }
 
 .insta_menu {
@@ -997,28 +966,27 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 5rem; /*80px*/
   background-color: #D4E9F9;
-  margin-left: 0.625rem;
-  margin-right: 0.625rem;
+  margin-left: 0.625rem; /*10px*/
+  margin-right: 0.625rem; /*10px*/
   font-family: "ProximaNova", sans-serif;
-  font-size: 1rem;
+  font-size: 1rem; /*16px*/
   font-weight: 400;
-  row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  row-gap: 2rem; /*32px*/
+  column-gap: 2rem; /*32px*/
+  margin-top: 2rem; /*32px*/
+  margin-bottom: 2rem; /*32px*/
 }
 .insta_menu p {
-  font-size: 1.25rem;
+  font-size: 1.25rem; /*20px*/
 }
 
 .insta_menu_nav {
   /**flex-grow: 1;**/
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 1.875rem;
+  padding: 1.875rem; /*30px*/
   text-decoration: none;
   flex-wrap: wrap;
 }
@@ -1029,14 +997,14 @@ body {
 .instalogo {
   display: flex;
   align-items: center;
-  row-gap: 1rem;
+  row-gap: 1rem; /*16px*/
 }
 .instalogo p {
-  margin-left: 1rem;
+  margin-left: 1rem; /*16px*/
 }
 .instalogo img {
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 3.75rem; /*60px*/
+  height: 3.75rem; /*60px*/
 }
 
 .insta_menu ul {
@@ -1049,7 +1017,7 @@ body {
 }
 
 .insta_menu li {
-  margin-right: 1.25rem;
+  margin-right: 1.25rem; /*20px*/
 }
 
 .insta_menu li:last-child {
@@ -1061,14 +1029,13 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
-  margin: 0.625rem;
+  column-gap: 0.9375rem; /*15px*/
+  margin: 0.625rem; /*10px*/
   flex-wrap: wrap;
 }
 
 .we-care__cards_content {
-  width: 16.875rem;
+  width: 16.875rem; /*270px*/
   display: flex;
   margin: 0rem;
   padding: 0rem;
@@ -1078,7 +1045,7 @@ body {
 }
 .we-care__cards_content img {
   width: 100%;
-  padding-bottom: 1rem;
+  padding-bottom: 1rem; /*16px*/
 }
 
 .we-care__cards_content:hover {
@@ -1087,27 +1054,27 @@ body {
 }
 
 .we-care {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 5rem; /*80px*/
+  margin-bottom: 5rem; /*80px*/
 }
 .we-care h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.875rem; /*30px*/
   font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
 }
 .we-care h5 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.125rem; /*18px*/
   font-weight: 600;
 }
 .we-care p {
   font-weight: 400;
   padding-top: 0;
-  margin-top: 1rem;
+  margin-top: 1rem; /*16px*/
   font-family: "ProximaNova", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.875rem; /*14px*/
   font-weight: 400;
   padding-top: 0;
 }
@@ -1119,7 +1086,7 @@ body {
 }
 
 .footer__container {
-  height: 19.875rem; /*--318px в макете / 16px (по умолчанию в браузере)--*/
+  height: 19.875rem; /*318px*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1136,7 +1103,7 @@ body {
 .footer__ptofit {
   display: flex;
   flex-direction: row;
-  width: 23.125rem; /*--370px в макете / 16px (по умолчанию в браузере)--*/
+  width: 23.125rem; /*370px*/
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -1146,43 +1113,43 @@ body {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  width: 6.375rem; /*--102px в макете / 16px (по умолчанию в браузере)--*/
+  width: 6.375rem; /*102px*/
 }
 
 .footer__profit--item {
-  margin-top: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  margin-top: 0.875rem; /*14px*/
 }
 
 .footer__profit--icon1 {
-  width: 2.8rem; /*--44.95px в макете / 16px (по умолчанию в браузере)--*/
+  width: 2.8rem; /*44.95px*/
 }
 
 .footer__profit--icon2 {
-  width: 3.104rem; /*--49.66px в макете / 16px (по умолчанию в браузере)--*/
+  width: 3.104rem; /*49.66px*/
 }
 
 .footer__profit--icon2 {
-  width: 1.779rem; /*--28.46px в макете / 16px (по умолчанию в браузере)--*/
+  width: 1.779rem; /*28.46px*/
 }
 
 .footer__profit-text {
   text-align: center;
-  font-size: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 0.75rem; /*12px*/
   color: rgb(41, 41, 41);
   line-height: 110%;
 }
 
 .footer__add-info {
-  width: 23.125rem; /*--370px в макете / 16px (по умолчанию в браузере)--*/
-  height: 3.75rem; /*--60px в макете / 16px (по умолчанию в браузере)--*/
-  margin-top: 1.75rem; /*--28px в макете / 16px (по умолчанию в браузере)--*/
+  width: 23.125rem; /*370px*/
+  height: 3.75rem; /*60px*/
+  margin-top: 1.75rem; /*28px*/
 }
 
 .footer__add-info--text {
   color: rgb(41, 41, 41);
-  font-size: 0.75rem; /*--12px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 0.75rem; /*12px*/
   font-weight: 400;
-  line-height: 0.937rem; /*--15px в макете / 16px (по умолчанию в браузере)--*/
+  line-height: 0.937rem; /*15px*/
   text-align: left;
 }
 
@@ -1192,46 +1159,46 @@ body {
 
 .footer__nav {
   display: flex;
-  margin-left: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
+  margin-left: 1.875rem; /*30px*/
   flex-wrap: wrap;
 }
 
 .footer__header {
-  height: 1.187rem; /*--19px в макете / 16px (по умолчанию в браузере)--*/
+  height: 1.187rem; /*19px*/
   font-weight: 600;
-  font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
-  line-height: 1.187rem; /*--19px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1rem; /*16px*/
+  line-height: 1.187rem; /*19px*/
   text-align: left;
   text-transform: uppercase;
 }
 
 .footer__list {
-  width: 10.75rem; /*--172px в макете / 16px (по умолчанию в браузере)--*/
-  margin-top: 1.312rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
+  width: 10.75rem; /*172px*/
+  margin-top: 1.312rem; /*21px*/
 }
 
 .footer__list-item {
-  padding-bottom: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  padding-bottom: 1.125rem; /*18px*/
 }
 
 .footer__list--link {
   text-align: left;
   color: rgb(41, 41, 41);
-  line-height: 1.06rem; /*--17px в макете / 16px (по умолчанию в браузере)--*/
+  line-height: 1.06rem; /*17px*/
 }
 
 .footer__contacts {
   display: flex;
   flex-direction: column;
-  height: 9.625rem; /*--154px в макете / 16px (по умолчанию в браузере)--*/
-  margin-left: 3.75rem; /*--60px в макете / 16px (по умолчанию в браузере)--*/
+  height: 9.625rem; /*154px*/
+  margin-left: 3.75rem; /*60px*/
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .footer__header-contacts {
-  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
-  line-height: 1.375rem; /*--22px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.125rem; /*18px*/
+  line-height: 1.375rem; /*22px*/
   color: rgb(41, 41, 41);
   text-align: right;
 }
@@ -1239,7 +1206,7 @@ body {
 .footer-text {
   text-align: right;
   color: rgb(41, 41, 41);
-  padding-top: 0.312rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
+  padding-top: 0.312rem; /*5px*/
 }
 
 .footer__apps {
@@ -1249,7 +1216,7 @@ body {
 }
 
 .footer__apps-item {
-  width: 2.5rem; /*--40px в макете / 16px (по умолчанию в браузере)--*/
+  width: 2.5rem; /*40px*/
 }
 
 .footer__link--hover:hover {
@@ -1269,37 +1236,37 @@ body {
   background-color: #f7f7f7;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-  padding-bottom: 1rem;
+  margin-top: 3rem; /*48px*/
+  padding-bottom: 1rem; /*16px*/
 }
 .garanties h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.875rem; /*30px*/
   font-weight: 600;
   text-align: center;
   padding-top: 1rem;
 }
 .garanties h5 {
   font-family: "ProximaNova", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.125rem; /*18px*/
   font-weight: 600;
 }
 .garanties p {
   font-family: "ProximaNova", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.875rem; /*14px*/
   font-weight: 600;
   padding-top: 0;
   text-align: center;
 }
 .garanties h6 {
   font-family: "ProximaNova", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.125rem; /*18px*/
   font-weight: 400;
   padding-top: 0;
   text-align: center;
-  margin-top: 1.625rem; /*26 в макете**/
+  margin-top: 1.625rem; /*26px*/
   margin-bottom: 2rem; /*в макете 14 px но очень большое текстовое поле**/
-  width: 41rem;
+  width: 41rem; /*656px*/
   text-align: center;
 }
 
@@ -1309,14 +1276,14 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   justify-items: center;
-  margin: 0.625rem;
-  padding-bottom: 6.25rem;
+  margin: 0.625rem; /*10px*/
+  padding-bottom: 6.25rem; /*100px*/
 }
 
 .garant__cards_content {
-  width: 16.875rem;
+  width: 16.875rem; /*270px*/
   display: flex;
-  margin: 1rem;
+  margin: 1rem; /*16px*/
   padding: 0rem;
   flex-direction: column;
   position: relative;
@@ -1325,8 +1292,8 @@ body {
 }
 .garant__cards_content img {
   width: 100%;
-  height: 16.875rem;
-  padding-bottom: 1rem;
+  height: 16.875rem; /*270px*/
+  padding-bottom: 1rem; /*16px*/
   transition: 0.2s;
 }
 
@@ -1347,7 +1314,7 @@ body {
 
 .main__link {
   font-family: "ProximaNova", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.875rem; /*14px*/
   font-weight: 400;
   color: #292929;
 }
@@ -1355,7 +1322,7 @@ body {
 .garant__link {
   color: #4E9DD3;
   font-family: "ProximaNova", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.875rem; /*14px*/
   font-weight: 400;
 }
 
@@ -1374,7 +1341,7 @@ body {
 
 .wedding__block {
   width: 100%;
-  margin-top: 2.125rem; /*--34px в макете / 16px (по умолчанию в браузере)--*/
+  margin-top: 2.125rem; /*34px*/
 }
 
 .wedding__nav {
@@ -1384,8 +1351,8 @@ body {
 }
 
 .wedding__nav--link {
-  line-height: 1.0325rem; /*--17px в макете / 16px (по умолчанию в браузере)--*/
-  margin-right: 0.25rem; /*--4px в макете / 16px (по умолчанию в браузере)--*/
+  line-height: 1.0325rem; /*17px*/
+  margin-right: 0.25rem; /*4px*/
   text-align: left;
 }
 
@@ -1411,7 +1378,7 @@ body {
 }
 
 .wedding__content-image {
-  height: 33.1875rem; /*--531px в макете / 16px (по умолчанию в браузере)--*/
+  height: 33.1875rem; /*531px*/
   width: auto;
 }
 
@@ -1428,11 +1395,11 @@ body {
 .wedding__title--h1 {
   color: rgb(41, 41, 41);
   font-family: "Montserrat", sans-serif;
-  font-size: 2.625rem; /*--42px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 2.625rem; /*42px*/
   font-weight: 600;
-  line-height: 3.187rem; /*--51px в макете / 16px (по умолчанию в браузере)--*/
+  line-height: 3.187rem; /*51px*/
   text-align: center;
-  margin-top: 5.4375rem;
+  margin-top: 5.4375rem; /*87px*/
 }
 
 .wedding__text-box {
@@ -1440,8 +1407,8 @@ body {
 }
 
 .wedding__text {
-  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
-  line-height: 1.375rem;
+  font-size: 1.125rem; /*18px*/
+  line-height: 1.375rem; /*22px*/
   text-align: center;
 }
 
@@ -1502,7 +1469,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
+  gap: 1.875rem; /*30px*/
 }
 
 .wedding-kits__cards--item {
@@ -1510,9 +1477,9 @@ body {
   flex-direction: column;
   border: 1px solid #EDEDF0;
   background-color: #FFFFFF;
-  width: 23.125rem; /*--370 в макете / 16px (по умолчанию в браузере)--*/
+  width: 23.125rem; /*370px*/
   height: 28.6875rem;
-  border-radius: 0.3125rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
+  border-radius: 0.3125rem; /*5px*/
   transition: 0.2s;
   justify-content: space-between;
 }
@@ -1523,33 +1490,33 @@ body {
 }
 
 .wedding-kits__image {
-  width: 23.125rem; /*--370 в макете / 16px (по умолчанию в браузере)--*/
-  height: 18.75rem; /*--300 в макете / 16px (по умолчанию в браузере)--*/
+  width: 23.125rem; /*370px*/
+  height: 18.75rem; /*300px*/
 }
 
 .wedding-kits__card--wrap {
-  width: 23.125rem;
-  height: 25.5rem;
+  width: 23.125rem; /*370px*/
+  height: 25.5rem; /*408px*/
 }
 
 .wedding-kits__cards--h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.125rem; /*18px*/
   font-weight: 600;
-  margin-top: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
-  margin-bottom: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  margin-top: 1.3125rem; /*21px*/
+  margin-bottom: 0.875rem; /*14px*/
 }
 
 .wedding-kits__cards--p {
   font-family: "ProximaNova", sans-serif;
   font-weight: 400;
-  font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 0.875rem; /*14px*/
   color: #292929;
-  margin-bottom: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+  margin-bottom: 0.875rem; /*14px*/
 }
 
 .wedding-kits__cards--h4, .wedding-kits__cards--p {
-  margin-left: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
+  margin-left: 1.3125rem; /*21px*/
 }
 
 .wedding-kits__cards--price-line {
@@ -1602,8 +1569,7 @@ body {
   justify-content: space-between;
   justify-items: flex-start;
   flex-wrap: wrap;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   margin: 0.625rem;
   height: 38.125rem;
   background-color: #f1f1f1;
@@ -1612,8 +1578,7 @@ body {
 .container-feedback-form img {
   max-width: 38.125rem;
   height: 38.125rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .feedback-form {
@@ -1622,8 +1587,7 @@ body {
   justify-content: flex-start;
   justify-items: flex-start;
   flex-wrap: wrap;
-  -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   max-width: 88.375rem;
   height: 38.125rem;
 }
@@ -1645,7 +1609,7 @@ body {
 }
 
 .feedback-form-text {
-  width: 29.25rem; /* 468px в макете**/
+  width: 29.25rem; /* 468px**/
   text-align: left;
 }
 .feedback-form-text p {
@@ -1656,8 +1620,7 @@ body {
 .contact_feedback-form {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+  column-gap: 2.5rem;
   margin-bottom: 0rem;
 }
 .contact_feedback-form input {
@@ -1684,7 +1647,7 @@ body {
   margin-top: 1rem;
 }
 .your_idea input {
-  width: 44rem; /* 712px */
+  width: 44rem; /*712px */
   height: 12vh;
   margin-top: 1rem;
 }
@@ -1717,7 +1680,7 @@ body {
 .privacy_policy {
   width: 44.5rem; /* 712px */
   font-family: "ProximaNova", sans-serif;
-  font-size: 0.6875rem; /* 11px в макете**/
+  font-size: 0.6875rem; /* 11px*/
   margin-left: 39rem;
   margin-top: -5rem;
 }
@@ -1782,8 +1745,8 @@ body {
 
 .wedding-qa__content--item {
   background: #FFFFFF;
-  width: 23.125rem; /*--370 в макете / 16px (по умолчанию в браузере)--*/
-  border-radius: 0.3125rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
+  width: 23.125rem; /*370px*/
+  border-radius: 0.3125rem; /*5px*/
 }
 
 .wedding-qa__content--line {
@@ -1792,17 +1755,17 @@ body {
 
 .wedding-qa__content--h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.125rem; /*18px*/
   font-weight: 600;
-  margin: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
+  margin: 1.3125rem; /*21px*/
 }
 
 .wedding-qa__content--p {
   font-family: "ProximaNova", sans-serif;
   font-weight: 400;
-  font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1rem; /*16px*/
   color: #292929;
-  margin: 1.25rem 1.375rem 1.8125rem 1.3125rem; /*--20px 22 px 29px 21px в макете / 16px (по умолчанию в браузере)--*/
+  margin: 1.25rem 1.375rem 1.8125rem 1.3125rem; /*20px 22 px 29px 21px в макете*/
 }
 
 .contacts_container {
@@ -1958,9 +1921,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5625rem; /*--41px в макете / 16px (по умолчанию в браузере)--*/
-  margin-bottom: 1.3125rem; /*--21px в макете / 16px (по умолчанию в браузере)--*/
-  margin-left: 0.3rem; /*--4.8px в макете / 16px (по умолчанию в браузере)--*/
+  margin-top: 2.5625rem; /*41px*/
+  margin-bottom: 1.3125rem; /*21px*/
+  margin-left: 0.3rem; /*4.8px*/
 }
 
 .catalog__nav--link {
@@ -1969,7 +1932,7 @@ body {
   font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
   color: #292929;
   color: #8a8a8c;
-  margin-right: 0.25rem; /*--4px в макете / 16px (по умолчанию в браузере)--*/
+  margin-right: 0.25rem; /*4px*/
 }
 
 .catalog__nav--link:hover {
@@ -1990,34 +1953,34 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 73.125rem; /*--1170px в макете / 16px (по умолчанию в браузере)--*/
+  max-width: 73.125rem; /*1170px*/
   margin: 0 auto;
-  margin-bottom: 5.3125rem; /*--85px в макете / 16px (по умолчанию в браузере)--*/
+  margin-bottom: 5.3125rem; /*85px*/
 }
 
 .catalog-box__h2 {
   display: flex;
   justify-content: center;
   align-items: start;
-  margin-bottom: 2.625rem; /*-42px в макете / 16px (по умолчанию в браузере)--*/
+  margin-bottom: 2.625rem; /*42px*/
   font-family: "Montserrat", sans-serif;
-  font-size: 1.875rem; /*-30px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.875rem; /*30px*/
   font-weight: 600;
 }
 
 .catalog__container {
   width: 100%;
-  height: 24.0625rem; /*--385px в макете / 16px (по умолчанию в браузере)--*/
+  height: 24.0625rem; /*385px*/
   background: url("../images/catalog/catalog-pic.png") center no-repeat;
   background-size: contain;
-  margin-bottom: 2.625rem; /*-42px в макете / 16px (по умолчанию в браузере)--*/
+  margin-bottom: 2.625rem; /*42px*/
 }
 
 .catalog__box {
   display: flex;
   justify-content: end;
   align-items: center;
-  max-width: 67.5rem; /*--1080px в макете / 16px (по умолчанию в браузере)--*/
+  max-width: 67.5rem; /*1080px*/
 }
 
 .catalog__content {
@@ -2025,19 +1988,19 @@ body {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  max-width: 29.375rem; /*--470px в макете / 16px (по умолчанию в браузере)--*/
-  padding-top: 5.9375rem; /*--95px в макете / 16px (по умолчанию в браузере)--*/
+  max-width: 29.375rem; /*470px*/
+  padding-top: 5.9375rem; /*95px*/
 }
 
 .catalog__title {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.875rem; /*--30px в макете / 16px (по умолчанию в браузере)--*/
-  margin-bottom: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.875rem; /*30px*/
+  margin-bottom: 1rem; /*16px*/
 }
 
 .catalog__text {
   font-family: "ProximaNova", sans-serif;
-  font-size: 1.125rem; /*--18px в макете / 16px (по умолчанию в браузере)--*/
+  font-size: 1.125rem; /*18px*/
 }
 
 .catalog-box__button {
@@ -2061,7 +2024,7 @@ body {
 }
 
 .small-button {
-  width: 14.375rem; /*--230px в макете / 16px (по умолчанию в браузере)--*/
+  width: 14.375rem; /*230px*/
 }
 
 .small-button--transparent {
@@ -2094,7 +2057,7 @@ body {
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 48rem; /*--768px в макете / 16px (по умолчанию в браузере)--*/
+  max-width: 48rem; /*768px*/
   margin: 0 auto;
 }
 
@@ -2106,11 +2069,11 @@ body {
 .catalog-cards__item {
   display: flex;
   flex-direction: column;
-  width: 23.125rem; /*--370px в макете / 16px (по умолчанию в браузере)--*/
-  height: 21.25rem; /*--340px в макете / 16px (по умолчанию в браузере)--*/
+  width: 23.125rem; /*370px*/
+  height: 21.25rem; /*340px*/
   align-items: center;
   justify-content: end;
-  border-radius: 0.3125rem; /*--5px в макете / 16px (по умолчанию в браузере)--*/
+  border-radius: 0.3125rem; /*5px*/
   transition: 0.2s;
 }
 
@@ -2135,7 +2098,7 @@ body {
   font-size: 1.125rem;
   font-weight: 600;
   color: #FFFFFF;
-  padding-bottom: 2.75rem; /*--44px в макете / 16px (по умолчанию в браузере)--*/
+  padding-bottom: 2.75rem; /*44px*/
 }
 
 .catalog-box__all {
@@ -2159,6 +2122,22 @@ body {
   transition: background 0.1s linear, color 0.1s linear;
 }
 
+/*--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-*/
+@media (max-width: 64.0625em) {
+  .header__box {
+    margin-left: 0.25rem;
+    width: 26.875rem;
+  }
+  .header__image--box img {
+    max-width: 75%;
+    height: 75%;
+    object-fit: cover;
+  }
+  .header-top__phone,
+  .header__top-icons {
+    display: none;
+  }
+}
 @media (max-width: 64.0625em) {
   .navigation_cards {
     justify-content: center;
@@ -2175,23 +2154,6 @@ body {
   }
   .navigation_cards__vector {
     margin-top: 0.7rem;
-  }
-}
-/*--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-*/
-@media (max-width: 64.0625em) {
-  .header__box {
-    margin-left: 0.25rem;
-    width: 26.875rem;
-  }
-  .header__image--box img {
-    max-width: 75%;
-    height: 75%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .header-top__phone,
-  .header__top-icons {
-    display: none;
   }
 }
 @media (max-width: 64.0625em) {
@@ -2223,8 +2185,7 @@ body {
   .header__image--box img {
     max-width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
@@ -2270,8 +2231,7 @@ body {
   .header__image--box img {
     max-width: 95%;
     height: 95%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .header__mobile-menu {
     position: relative;
@@ -2485,8 +2445,7 @@ body {
   }
   .feedback-form img {
     width: 50vw;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .button_feedback__form {
     margin-left: 0;
@@ -2530,8 +2489,7 @@ body {
   .feedback-form img {
     width: 100vw;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .feedback-form .button_feedback__form {
     width: 11.875rem; /*190 px**/
@@ -2659,8 +2617,7 @@ body {
   .header__image--box img {
     max-width: 95%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .header__mobile-menu {
     position: relative;
@@ -3049,8 +3006,7 @@ body {
     margin-bottom: 0.7rem;
   }
   .instagram__gallery2 {
-    -moz-column-gap: 0.7rem;
-         column-gap: 0.7rem;
+    column-gap: 0.7rem;
     row-gap: 0.7rem;
   }
   .instagram__gallery2 div:nth-child(4),
@@ -3118,8 +3074,7 @@ body {
     flex-direction: column;
     position: relative;
     row-gap: 0.5rem;
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
   .we-care__cards_content img {
     width: 100%;
@@ -3555,8 +3510,7 @@ body {
   .feedback-form img {
     width: 25rem; /*320 px**/
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     margin-left: 1rem;
   }
   .feedback-form .button_feedback__form {
@@ -3860,14 +3814,12 @@ body {
     justify-self: center;
     align-items: center;
     row-gap: 1rem;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
     margin: 0 auto;
   }
   .we-care {
     row-gap: 1rem;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    column-gap: 1rem;
   }
   .we-care p {
     padding-bottom: 1rem;
@@ -3886,4 +3838,4 @@ body {
     margin-top: 8.5rem;
     margin-bottom: 0rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
