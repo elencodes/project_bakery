@@ -2166,7 +2166,7 @@ body {
     margin-top: 0.7rem;
   }
 }
-@media (max-width: 1025px) and (min-width: 770px) {
+@media (max-width: 1025px) {
   .sales {
     width: 55.625rem;
   }
@@ -2181,19 +2181,37 @@ body {
     height: 25rem;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 780px) {
   .sales {
-    width: 29.375rem;
+    width: 40.625rem;
   }
   .sales__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
   }
   .sales__cards--sale_one, .sales__cards--sale_two, .sales__cards--sale_three, .sales__cards--sale_four {
-    width: 22rem;
-    height: 30rem;
+    width: 17rem;
+    height: 25rem;
+  }
+}
+@media (max-width: 600px) {
+  .sales {
+    width: 30rem;
+  }
+  .sales__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .sales__cards--sale_one, .sales__cards--sale_two {
+    width: 18rem;
+    height: 27rem;
+  }
+  .sales__cards--sale_three, .sales__cards--sale_four {
+    display: none;
   }
 }
 /*--Адаптив для экранов от 769px (769px/16px=48.0625em) boxes block-*/
