@@ -2166,7 +2166,7 @@ body {
     margin-top: 0.7rem;
   }
 }
-@media (max-width: 1025px) {
+@media (max-width: 1025px) and (min-width: 770px) {
   .sales {
     width: 55.625rem;
   }
@@ -2179,6 +2179,21 @@ body {
   .sales__cards--sale_one, .sales__cards--sale_two, .sales__cards--sale_three, .sales__cards--sale_four {
     width: 18rem;
     height: 25rem;
+  }
+}
+@media (max-width: 769px) {
+  .sales {
+    width: 29.375rem;
+  }
+  .sales__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .sales__cards--sale_one, .sales__cards--sale_two, .sales__cards--sale_three, .sales__cards--sale_four {
+    width: 22rem;
+    height: 30rem;
   }
 }
 /*--Адаптив для экранов от 769px (769px/16px=48.0625em) boxes block-*/
@@ -3856,4 +3871,4 @@ body {
     margin-top: 8.5rem;
     margin-bottom: 0rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */

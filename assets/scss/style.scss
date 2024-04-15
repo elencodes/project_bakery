@@ -1676,9 +1676,9 @@ body {
 	}
 }
 
-//--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
+//--Адаптив для экранов до 1025px (1025px/16px=64.0625em) и Адаптив для экранов от 769px (769px/16px=48.0625em)-/
 //--Sales Block--/
-@media (max-width: 1025px) {
+@media (max-width: 1025px) and (min-width: 770px) {
 	.sales{
 		width:55.625rem;
 	}
@@ -1691,6 +1691,22 @@ body {
 .sales__cards--sale_one,.sales__cards--sale_two,.sales__cards--sale_three,.sales__cards--sale_four{
 	width: 18rem;
 	height: 25rem;
+}
+}
+
+@media (max-width: 769px) {
+	.sales{
+		width:29.375rem;
+	}
+	.sales__cards{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 3rem;
+}
+.sales__cards--sale_one,.sales__cards--sale_two,.sales__cards--sale_three,.sales__cards--sale_four{
+	width: 22rem;
+	height: 30rem;
 }
 }
 /*--Адаптив для экранов от 769px (769px/16px=48.0625em) boxes block-*/
