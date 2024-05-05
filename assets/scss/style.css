@@ -4256,3 +4256,15 @@ body {
     margin-top: -7.5rem;
   }
 }
+@media (max-width: 404px) {
+  .navigation_cards {
+    max-width: 17.1875rem;
+  }
+  .navigation_cards__title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation_cards__one img {
+    margin-left: 0;
+  }
+}

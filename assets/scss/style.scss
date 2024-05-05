@@ -3935,3 +3935,18 @@ body {
 		margin-top: -7.5rem;
 	}
 }
+
+//--Wedding Form Mobile Adaptive
+//--Адаптив для экранов до 404px/
+@media (max-width:404px){
+	.navigation_cards {
+		max-width: 17.1875rem; //275px
+	}
+	.navigation_cards__title {
+		display: flex;
+		justify-content: space-between;
+	}
+	.navigation_cards__one img {
+		margin-left: 0;
+	}
+}
