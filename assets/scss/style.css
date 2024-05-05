@@ -4053,7 +4053,7 @@ body {
     margin-bottom: 0.7rem;
   }
 }
-@media (max-width: 358px) {
+@media (max-width: 404px) {
   .container__content {
     height: 32rem;
   }
@@ -4085,12 +4085,12 @@ body {
     font-size: 0.75rem;
   }
 }
-@media (max-width: 358px) {
+@media (max-width: 404px) {
   .sales__cards--p {
     font-size: 1rem;
   }
 }
-@media (max-width: 358px) {
+@media (max-width: 404px) {
   .holidays_h2 {
     font-size: 1.125rem;
   }
@@ -4099,7 +4099,7 @@ body {
     font-size: 0.75rem;
   }
 }
-@media (max-width: 358px) {
+@media (max-width: 404px) {
   .insta_menu {
     height: 5rem;
   }
@@ -4118,7 +4118,7 @@ body {
     margin-top: -2.125rem;
   }
 }
-@media (max-width: 358px) {
+@media (max-width: 404px) {
   .container__we-care {
     max-width: 16.875rem;
   }
@@ -4130,7 +4130,7 @@ body {
     margin-bottom: 1.75rem;
   }
 }
-@media (max-width: 358px) {
+@media (max-width: 404px) {
   .footer__container {
     max-width: 16.875rem;
     height: 19.875rem;
@@ -4139,13 +4139,13 @@ body {
     display: none;
   }
 }
-@media (max-width: 358px) {
+@media (max-width: 404px) {
   .boxes__nav {
     margin-top: 7rem;
     margin-bottom: 1.125rem;
   }
 }
-@media (max-width: 358px) {
+@media (max-width: 404px) {
   .garanties {
     margin-top: 7rem;
     margin-bottom: 3rem;
@@ -4170,7 +4170,7 @@ body {
     height: 9.5rem;
   }
 }
-@media (max-width: 358px) {
+@media (max-width: 404px) {
   .contacts_container {
     align-items: center;
     height: 51.5rem;
