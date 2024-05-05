@@ -1658,7 +1658,7 @@ body {
 }
 .your_idea input {
   width: 44rem; /*712px */
-  height: 12vh;
+  height: 7vh;
   margin-top: 1rem;
 }
 .your_idea label {
@@ -2140,12 +2140,26 @@ body {
   }
   .header__image--box img {
     max-width: 75%;
-    height: 75%;
+    max-height: 75%;
     object-fit: cover;
+  }
+  .header__top {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .header-top__phone,
   .header__top-icons {
     display: none;
+  }
+}
+/*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
+@media (max-width: 821px) {
+  .header__top,
+  .nav {
+    font-size: 0.75rem;
+  }
+  .header-top__basket {
+    width: 9rem;
   }
 }
 @media (max-width: 1025px) {
@@ -2198,7 +2212,7 @@ body {
 }
 @media (max-width: 600px) {
   .sales {
-    width: 30rem;
+    width: 25rem;
   }
   .sales__cards {
     display: flex;
@@ -2227,7 +2241,7 @@ body {
   }
   .header__image--box img {
     max-width: 100%;
-    height: 100%;
+    max-height: 100%;
     object-fit: cover;
   }
 }
@@ -2273,7 +2287,7 @@ body {
   }
   .header__image--box img {
     max-width: 95%;
-    height: 95%;
+    max-height: 95%;
     object-fit: cover;
   }
   .header__mobile-menu {
@@ -2300,7 +2314,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 8%;
     height: 100%;
     z-index: 3;
   }
@@ -2410,7 +2424,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 892px) {
   div .holiday_item_5,
   div .holiday_item_6 {
     display: none;
@@ -2422,9 +2436,14 @@ body {
     display: none;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 783px) {
   .contacts_items {
     gap: 4.5rem;
+  }
+}
+@media (max-width: 769px) {
+  .contacts_items {
+    gap: 1rem;
   }
   .contacts_nav {
     display: flex;
@@ -2438,75 +2457,89 @@ body {
   .contacts_nav--link-active_page {
     font-size: 1.25rem;
   }
+  .contacts_header_2 {
+    font-size: 1.875rem;
+  }
+  .contacts_header_4 {
+    font-size: 1.125rem;
+  }
+  .contacts_text_part_1,
+  .contacts_text_part_2,
+  .contacts_text_part_3 {
+    font-size: 0.875rem;
+  }
+  .contacts_items {
+    height: 40rem;
+  }
+  .contacts_item_1 {
+    width: 18.68rem;
+    height: auto;
+  }
 }
 /* Адаптив планшет Форма ОС на свадебной странице**/
 @media (min-width: 770px) and (max-width: 1199px) {
   .container-feedback-form {
-    max-width: 74.937rem;
-    justify-content: center;
-    min-width: 48.125rem;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .contact_feedback-form {
-    flex-direction: column;
-  }
-  .feedback-form__content {
-    flex-direction: column;
-  }
-  .your_idea {
-    margin-bottom: 1rem;
-  }
-  .your_idea input {
-    width: 43vw;
-    height: 6.875rem;
-  }
-  .your_idea label {
-    font-size: 0.875rem;
-    margin-left: 1rem;
-  }
-  .feedback-form__content {
-    flex-wrap: wrap;
-  }
-  .feedback-form__content h2 {
-    padding-top: 0;
-    width: 95%;
-    font-size: 1.8rem;
-  }
-  .feedback-form__content p {
-    display: none;
-  }
-  .privacy_policy {
-    width: 43vw;
-    margin-top: 0;
-    font-size: 0.625rem;
-    margin-left: 0rem;
-    height: 4rem;
+    height: 21.125rem;
   }
   .feedback-form {
-    flex-direction: column;
+    max-width: 48.0625rem;
   }
-  .feedback-form img {
-    width: 50vw;
-    object-fit: cover;
+  .container-feedback-form img {
+    max-width: 26.125rem;
+    height: 21.125rem;
+  }
+  .feedback-form__content {
+    max-width: 20rem;
+  }
+  .feedback-form__content h2 {
+    font-size: 1.375rem;
+    padding-top: 0;
+  }
+  .feedback-form-text {
+    width: 25rem;
+  }
+  .contact_feedback-form__container {
+    width: 10.5rem;
+  }
+  .contact_feedback-form__container--adaptive {
+    margin-right: 1.5rem;
+  }
+  .contact_feedback-form input {
+    width: 12rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+  }
+  .your_idea input {
+    width: 26.5rem;
+    height: 4vh;
+    margin-top: 0.5rem;
   }
   .button_feedback__form {
-    margin-left: 0;
-    margin-top: 10rem;
-    margin-bottom: 1rem;
+    width: 12rem;
+    height: 2rem;
+    margin-left: 27rem;
+    margin-top: -0.5rem;
+  }
+  .privacy_policy {
+    margin-left: 27rem;
+    margin-top: -13.5rem;
+    font-size: 0.5rem;
   }
 }
-@media (min-width: 432px) and (max-width: 769px) {
+@media (min-width: 431px) and (max-width: 769px) {
+  .feedback-form__content-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .container-feedback-form {
     max-width: 48.0625rem;
-    justify-content: center;
     min-width: 27rem;
     width: 100vw;
-    height: 55rem;
+    height: 50rem;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
-    margin-top: 0;
+    margin: 0 auto;
   }
   .feedback-form {
     max-width: 48.0625rem;
@@ -2514,9 +2547,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 0;
+    margin: 0 auto;
     background-color: none;
     flex-wrap: wrap;
   }
@@ -2524,7 +2555,6 @@ body {
     font-size: 1.125rem; /* 18px**/
     text-align: center;
     /*margin-top: 3rem;/* 49px**/
-    width: 20rem;
     padding-top: 0;
     margin-bottom: 5.25rem; /* 84px**/
     margin-top: 2rem;
@@ -2553,17 +2583,16 @@ body {
     order: 3;
   }
   .your_idea {
+    width: 26.875rem;
     margin-bottom: 1rem;
   }
   .your_idea input {
-    width: 75vw;
+    width: 100%;
     height: 6.875rem;
     margin-top: 1rem;
-    margin-left: 1rem;
   }
   .your_idea label {
     font-size: 0.875rem;
-    margin-left: 1rem;
   }
   .privacy_policy {
     margin-left: 6rem;
@@ -2571,14 +2600,40 @@ body {
     width: 60vw;
   }
   .contact_feedback-form input {
-    width: 35vw; /* 228px */
+    width: 100%; /* 228px */
     height: 2.5rem; /* 40px */
     font-size: 1rem; /* 40px */
     font-weight: 400;
     padding-top: 0;
     margin-top: 0.5rem; /*6px**/
-    margin-left: 1rem;
     padding-left: 0.625rem;
+  }
+  .feedback-form-text {
+    text-align: center;
+    width: 100%;
+  }
+  .contact_feedback-form {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_feedback-form__container {
+    width: 10.5rem;
+  }
+  .container-feedback-form img {
+    margin: 0 auto;
+  }
+  .button_feedback__form--form--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feedback-form .button_feedback__form {
+    margin-left: 0;
+  }
+}
+@media (max-width: 471px) {
+  .container-feedback-form {
+    height: 45rem;
   }
 }
 /* Адаптив планшет  Гарантии вкуса**/
@@ -2594,6 +2649,33 @@ body {
   .garant__cards_content {
     height: 32vw;
     margin-bottom: 4rem;
+  }
+}
+/* Адаптив планшет  Instagram**/
+@media (max-width: 689px) {
+  .insta_menu p {
+    font-size: 1rem;
+  }
+  .insta_menu_nav {
+    padding-left: 0;
+    padding-right: 0.75rem;
+  }
+  .instalogo {
+    margin-left: 0.5rem;
+  }
+}
+/* Адаптив планшет  Instagram**/
+@media (max-width: 629px) {
+  .insta_menu p {
+    font-size: 0.75rem;
+  }
+  .insta_menu_nav {
+    padding-left: 0;
+    padding-right: 0.75rem;
+    font-size: 0.75rem;
+  }
+  .instalogo {
+    margin-left: 0.5rem;
   }
 }
 /*адаптив для планшета гарантии качества (размер 432px 820px)**/
@@ -2627,6 +2709,19 @@ body {
     margin-bottom: 4rem;
   }
 }
+@media (max-width: 595px) {
+  .holidays {
+    align-items: center;
+  }
+  .holiday_items {
+    max-width: 22.625rem;
+  }
+}
+@media (max-width: 555px) {
+  .container__content {
+    height: 40rem;
+  }
+}
 @media (max-width: 431px) {
   .header__top,
   .nav__inner,
@@ -2634,7 +2729,6 @@ body {
     display: none;
   }
   .container__content {
-    height: 40rem;
     margin: 0 0 2rem 0;
     background: none;
   }
@@ -2665,7 +2759,7 @@ body {
   }
   .header__image--box img {
     max-width: 95%;
-    height: 100%;
+    max-height: 100%;
     object-fit: cover;
   }
   .header__mobile-menu {
@@ -2692,7 +2786,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 15%;
     height: 100%;
     z-index: 3;
   }
@@ -2802,7 +2896,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 431px) {
+@media (max-width: 555px) {
   .container {
     width: 25.875rem;
   }
@@ -3032,7 +3126,7 @@ body {
     margin-left: 1.68rem;
   }
   .boxes__nav--link {
-    font-size: 0.5625rem;
+    font-size: 0.75rem;
     margin-right: 0.25rem;
   }
   .gfa-for-phone-vers {
@@ -3040,8 +3134,8 @@ body {
   }
 }
 /* Адаптив под мобильную версию Instagram**/
-@media (max-width: 431px) {
-  .container {
+@media (max-width: 555px) {
+  .instagram__container {
     width: 21.875rem;
   }
   .instagram {
@@ -3086,7 +3180,6 @@ body {
   .insta_menu {
     height: 6.5rem;
     display: flex;
-    flex-direction: column;
     font-size: 0.75rem; /*12 px в макете**/
   }
   .insta_menu p {
@@ -3097,7 +3190,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 9rem;
+    width: 12rem;
     padding: 0;
     margin-top: 27px;
     margin-left: -210px;
@@ -3110,42 +3203,13 @@ body {
     padding-top: 0.5rem;
   }
 }
-/* Адаптив по мобильную версию Мы позаботились**/
+/* Адаптив под мобильную версию Instagram**/
 @media (max-width: 431px) {
-  .container {
-    width: 21.875rem;
-  }
-  .we-care__cards_content {
-    width: 8.75rem; /*140px**/
-    display: flex;
-    margin: 0rem;
-    padding: 0rem;
+  .insta_menu {
     flex-direction: column;
-    position: relative;
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
   }
-  .we-care__cards_content img {
-    width: 100%;
-    padding-bottom: 0.2rem;
-  }
-  .we-care__cards_content h5 {
-    font-size: 0.75rem; /* 12 px***/
-  }
-  .we-care__cards_content p {
-    font-size: 0.625rem; /* 10 px***/
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-  }
-  .we-care {
-    justify-self: center;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    row-gap: 0.8rem;
-  }
-  .we-care h2 {
-    font-size: 1.125rem; /* 18 px***/
-    margin-bottom: 0.7rem;
+  .insta_menu_nav {
+    width: 9rem;
   }
 }
 @media (max-width: 431px) {
@@ -3232,7 +3296,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 821px) {
+@media (max-width: 836px) {
   .footer__list-wrap {
     display: none;
   }
@@ -3254,7 +3318,7 @@ body {
   }
 }
 /* Адаптив по мобильную версию Footer**/
-@media (max-width: 431px) {
+@media (max-width: 555px) {
   .footer__container {
     max-width: 25.875rem; /*--414px в макете / 16px (по умолчанию в браузере)--*/
     height: 27.5rem;
@@ -3307,6 +3371,13 @@ body {
   }
 }
 /* Адаптив по мобильную версию Гарантии вкуса и качества**/
+@media (max-width: 515px) {
+  .garanties h6 {
+    max-width: 31.25rem;
+    font-size: 1rem; /* 12px**/
+  }
+}
+/* Адаптив по мобильную версию Гарантии вкуса и качества**/
 @media (max-width: 431px) {
   .garanties {
     margin-top: 6.5rem;
@@ -3318,7 +3389,7 @@ body {
     margin-top: 1rem;
   }
   .garanties h6 {
-    font-size: 0.875rem; /* 14px**/
+    font-size: 0.75rem; /* 12px**/
     margin-top: 0.75rem; /*12 в макете**/
     margin-bottom: 0.75rem; /*в макете 14 px но очень большое текстовое поле**/
     width: 16.5rem;
@@ -3347,21 +3418,25 @@ body {
     font-size: 0.5625rem;
   }
   .main__link {
-    font-size: 0.5625rem; /*9px в макете**/
+    font-size: 0.75rem; /*12px**/
     text-align: left;
     margin-left: -10rem;
   }
   .garant__link {
-    font-size: 0.5625rem; /*9px в макете**/
+    font-size: 0.75rem; /*12px**/
     text-align: left;
   }
 }
-@media (max-width: 821px) {
+/* Адаптив под Планшет Свадебное предложение**/
+@media (max-width: 997px) {
+  .wedding-qa {
+    margin: 5.0625rem auto 5.3125rem auto;
+  }
   .wedding__block {
     max-width: 51.3125rem;
+    margin: 2.125rem auto 0 auto;
   }
   .wedding__nav {
-    justify-content: start;
     margin-left: 4rem;
   }
   .wedding__content {
@@ -3375,10 +3450,12 @@ body {
   }
   .wedding-kits {
     max-width: 51.3125rem;
-    margin-left: 2rem;
+    margin-left: 0;
   }
   .wedding-qa__content {
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
   }
   .wedding-qa__content--item {
@@ -3389,7 +3466,6 @@ body {
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 @media (max-width: 769px) {
   .wedding__block {
-    max-width: 48.0625rem;
     margin-top: 8.5rem;
   }
   .wedding__nav {
@@ -3400,12 +3476,6 @@ body {
   }
   .wedding-qa__content--item {
     width: 16.5rem;
-  }
-  .wedding__title--h1 {
-    margin-top: 0;
-  }
-  .wedding-kits {
-    width: 100vw;
   }
 }
 /* Адаптив под мобильную версию Свадебное предложение**/
@@ -3527,7 +3597,6 @@ body {
 @media (max-width: 431px) {
   .container-feedback-form {
     max-width: 26.9375rem; /*--394px в макете / 16px (по умолчанию в браузере)--*/
-    justify-content: center;
     min-width: 20rem;
     width: 100vw;
     background-color: #f1f1f1;
@@ -3535,18 +3604,17 @@ body {
     height: 45.25rem;
     display: flex;
     justify-content: center;
-    justify-items: center;
-    margin-top: 0;
+    align-items: center;
+    margin: 0 auto;
   }
   .feedback-form {
     max-width: 26.9375rem;
-    min-width: 20rem;
     height: 45.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    margin-top: 0;
+    margin: 0 auto;
     background-color: none;
   }
   .feedback-form h2 {
@@ -3555,13 +3623,12 @@ body {
     /*margin-top: 3rem;/* 49px**/
     width: 20rem;
     padding-top: 0;
-    margin-bottom: 5.25rem; /* 84px**/
+    margin-bottom: 2.25rem; /* 36px**/
   }
   .feedback-form img {
-    width: 25rem; /*320 px**/
+    width: 100%;
     height: auto;
     object-fit: cover;
-    margin-left: 1rem;
   }
   .feedback-form .button_feedback__form {
     width: 11.875rem; /*190 px**/
@@ -3587,7 +3654,7 @@ body {
   }
   .button_feedback__form--form--button {
     margin-top: -200px;
-    width: 40vw;
+    width: 100%;
   }
   .button_feedback__form {
     margin: 0;
@@ -3631,20 +3698,34 @@ body {
   .feedback-form p:nth-child(1) {
     display: none;
   }
+  .feedback-form-text {
+    display: flex;
+    justify-content: center;
+    width: 26.25rem;
+  }
+  .button_feedback__form--form--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feedback-form .button_feedback__form {
+    margin-left: 0;
+  }
 }
-@media (max-width: 431px) {
+@media (max-width: 555px) {
   .contacts_items {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 0.45rem;
+    margin-top: 4rem;
   }
   .contacts_container {
     display: flex;
     flex-direction: column;
     max-width: 38.75rem;
-    height: 59.5rem;
+    height: 53.5rem;
     background-color: #F7F7F7;
   }
   .contacts_header_2 {
@@ -3657,10 +3738,6 @@ body {
     margin-left: 6.25rem;
     margin-right: 6.25rem;
     margin-bottom: 2.812rem;
-  }
-  .contacts_item_2 {
-    width: 390px;
-    margin-left: 2.25rem;
   }
   .contacts_header_4 {
     font-size: 1rem; /*--16px в макете / 16px (по умолчанию в браузере)--*/
@@ -3855,6 +3932,47 @@ body {
     font-size: 1rem;
   }
 }
+@media (max-width: 403px) {
+  .container {
+    max-width: 16.875rem;
+  }
+  .catalog__nav {
+    margin-top: 7rem;
+  }
+  .catalog-box {
+    max-width: 16.875rem;
+  }
+  .catalog__content {
+    margin-right: 0;
+  }
+  .catalog__container {
+    height: 19rem;
+  }
+  .catalog__title {
+    margin-bottom: 1rem;
+  }
+  .catalog-box__button--small {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .small-button {
+    width: 10rem;
+  }
+  .catalog {
+    max-width: 16.875rem;
+  }
+  .catalog-cards__item {
+    width: 8rem;
+    height: 13rem;
+    text-align: center;
+  }
+  .catalog-cards__h3 {
+    font-size: 0.875rem;
+  }
+  .catalog-cards__h3--adaptive {
+    font-size: 0.875rem;
+  }
+}
 /*адаптив для планшета блок забота**/
 @media (min-width: 432px) and (max-width: 912px) {
   .container__we-care {
@@ -3889,4 +4007,252 @@ body {
     margin-top: 8.5rem;
     margin-bottom: 0rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* Адаптив по мобильную версию Мы позаботились**/
+@media (min-width: 912px) and (max-width: 1002px) {
+  .we-care__cards_content:last-child {
+    display: none;
+  }
+}
+/* Адаптив по мобильную версию Мы позаботились**/
+@media (max-width: 555px) {
+  .container__we-care {
+    width: 21.875rem;
+    margin: 0 auto;
+  }
+  .we-care__cards_content {
+    width: 8.75rem; /*140px**/
+    display: flex;
+    margin: 0rem;
+    padding: 0rem;
+    flex-direction: column;
+    position: relative;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+  }
+  .we-care__cards_content img {
+    width: 100%;
+    padding-bottom: 0.2rem;
+  }
+  .we-care__cards_content h5 {
+    font-size: 0.75rem; /* 12 px***/
+  }
+  .we-care__cards_content p {
+    font-size: 0.625rem; /* 10 px***/
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .we-care {
+    justify-self: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    row-gap: 0.8rem;
+  }
+  .we-care h2 {
+    font-size: 1.125rem; /* 18 px***/
+    margin-bottom: 0.7rem;
+  }
+}
+@media (max-width: 358px) {
+  .container__content {
+    height: 32rem;
+  }
+  .container {
+    max-width: 16.875rem;
+  }
+  .header__box {
+    margin-top: 7rem;
+  }
+  .header__image--box {
+    display: flex;
+    justify-content: center;
+  }
+  .header__image--box img {
+    max-width: 100%;
+  }
+  .header__logoname {
+    font-size: 1.125rem;
+  }
+  .header__title {
+    font-size: 1.25rem;
+  }
+  .header-logoname__subtitle {
+    margin-bottom: 2rem;
+  }
+  .header__text {
+    max-width: 16.875rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 358px) {
+  .sales__cards--p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 358px) {
+  .holidays_h2 {
+    font-size: 1.125rem;
+  }
+  .holiday_text {
+    width: 8rem;
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 358px) {
+  .insta_menu {
+    height: 5rem;
+  }
+  .instagram .insta_icon {
+    margin-left: 0;
+  }
+  .instalogo img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .insta_menu_nav {
+    margin-left: -9.125rem;
+  }
+  .insta_menu p {
+    font-size: 0.875rem;
+    margin-top: -2.125rem;
+  }
+}
+@media (max-width: 358px) {
+  .container__we-care {
+    max-width: 16.875rem;
+  }
+  .we-care__cards_content:nth-child(3),
+  .we-care__cards_content:nth-child(4) {
+    display: none;
+  }
+  .we-care h2 {
+    margin-bottom: 1.75rem;
+  }
+}
+@media (max-width: 358px) {
+  .footer__container {
+    max-width: 16.875rem;
+    height: 19.875rem;
+  }
+  .footer__add-info {
+    display: none;
+  }
+}
+@media (max-width: 358px) {
+  .boxes__nav {
+    margin-top: 7rem;
+    margin-bottom: 1.125rem;
+  }
+}
+@media (max-width: 358px) {
+  .garanties {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+  }
+  .nav_links {
+    justify-content: flex-start;
+  }
+  .main__link {
+    margin-left: 0;
+    font-size: 0.75rem;
+  }
+  .garant__link {
+    font-size: 0.75rem;
+  }
+  .garanties h6 {
+    font-size: 0.75rem;
+  }
+  .garant__cards {
+    max-width: 16.875rem;
+  }
+  .garant__cards_content {
+    height: 9.5rem;
+  }
+}
+@media (max-width: 358px) {
+  .contacts_container {
+    align-items: center;
+    height: 51.5rem;
+  }
+  .contacts_container--adaptive {
+    max-width: 16.875rem;
+  }
+  .contacts_nav {
+    margin-left: 0;
+    margin-bottom: 1.125rem;
+  }
+  .contacts_item_1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contacts_header_2 {
+    font-size: 1.125rem;
+    margin-bottom: 1.875rem;
+    line-height: 1.12;
+  }
+  .contacts_header_4 {
+    font-size: 0.75rem;
+  }
+  .contacts_text_part_1,
+  .contacts_text_part_2,
+  .contacts_text_part_3 {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 404px) {
+  .wedding__content {
+    max-width: 100%;
+  }
+  .wedding__block {
+    margin-top: 7rem;
+  }
+  .wedding__title--h1 {
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+  }
+  .wedding__text {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .wedding__nav--link {
+    font-size: 0.75rem;
+  }
+  .wedding__nav {
+    margin-left: 0;
+  }
+  .wedding__text-main {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 404px) {
+  .feedback-form {
+    max-width: 17.1875rem;
+  }
+  .contact_feedback-form label {
+    margin-left: 0;
+  }
+  .contact_feedback-form input {
+    margin-left: 0;
+    width: 17rem;
+  }
+  .your_idea label {
+    margin-left: 0;
+  }
+  .your_idea input {
+    margin-left: 0;
+    width: 17rem;
+  }
+  .privacy_policy {
+    margin-left: 0;
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  .feedback-form-text {
+    max-width: 17.1875rem;
+  }
+  .button_feedback__form--form--button {
+    margin-top: -7.5rem;
+  }
+}
