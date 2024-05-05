@@ -4268,3 +4268,15 @@ body {
     margin-left: 0;
   }
 }
+@media (max-width: 404px) {
+  .popular-box__cards--cards_four,
+  .popular-box__cards--cards_five,
+  .popular-box__cards--cards_six {
+    display: none;
+  }
+}
+@media (max-width: 404px) {
+  .instagram__gallery2 :nth-child(10) {
+    display: none;
+  }
+}

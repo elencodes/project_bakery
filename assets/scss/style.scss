@@ -3936,7 +3936,7 @@ body {
 	}
 }
 
-//--Wedding Form Mobile Adaptive
+//--Navigation Cards Mobile Adaptive
 //--Адаптив для экранов до 404px/
 @media (max-width:404px){
 	.navigation_cards {
@@ -3948,5 +3948,23 @@ body {
 	}
 	.navigation_cards__one img {
 		margin-left: 0;
+	}
+}
+
+//--Navigation Cards Mobile Adaptive
+//--Адаптив для экранов до 404px/
+@media (max-width:404px){
+	.popular-box__cards--cards_four,
+	.popular-box__cards--cards_five,
+	.popular-box__cards--cards_six {
+	display: none;
+	}
+}
+
+//--Instagram Cards Mobile Adaptive
+//--Адаптив для экранов до 404px/
+@media (max-width:404px){
+	.instagram__gallery2 :nth-child(10) {
+		display: none;
 	}
 }
