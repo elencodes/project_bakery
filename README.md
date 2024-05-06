@@ -1,6 +1,6 @@
 <div id="header" align="center">
   <h1> Website for the "MACARONSHOP" (dessert store)</h1>
-  <h2>:fire: Our TEAM:</h2> 
+  <h2>:fire: Development Team:</h2> 
   <div id=bages>
   <a href="https://github.com/elencodes">
     <img src="https://img.shields.io/badge/elena-%23B2FCE4?style=for-the-badge&logo=github&logoColor=%23222324">
