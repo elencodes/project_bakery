@@ -1,6 +1,6 @@
 <div id="header" align="center">
   <h1> Website for the "MACARONSHOP" (dessert store)</h1>
-  <p>A multi-page website for the "MACARONSHOP" online store for ordering macaroons and other desserts, created by a team of 6 developers.</p>
+  <p>A multi-page online store website for ordering macarons and other desserts, created by a team of 6 developers.</p>
   <h2>Website link</h2>
   <a href="https://elencodes.github.io/project_macaronshop/">MACARONSHOP</a>
   <h2>Used technologies:</h2> 
