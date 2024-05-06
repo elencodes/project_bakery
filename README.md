@@ -12,8 +12,14 @@
       <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
       <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
       <img src="https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white">
-    </div>  
-  <h2>Development Team:</h2> 
+    </div>
+  <h2>Website functionality:</h2>
+  <p>Clickable links (going to the desired page of the site) in the navigation menu.</p>
+  <p>Animation.</p>
+  <p>Adaptability to various devices.</p>
+  <img src="https://github.com/elencodes/project_macaronshop/blob/main/assets/github/burger-menu-1.png" height="380">
+  <img src="https://github.com/elencodes/project_macaronshop/blob/main/assets/github/burger-menu-2.png" height="380">
+  <h2>Development Team:</h2>
   <div id=bages>
     <a href="https://github.com/elencodes"><img src="https://img.shields.io/badge/elena-%23B2FCE4?style=for-the-badge&logo=github&logoColor=%23222324"></a>
     <a href="https://github.com/ria-helluva-boss"><img src="https://img.shields.io/badge/viktoria-%23FFDD00?style=for-the-badge&logo=github&logoColor=%23222222"></a>
