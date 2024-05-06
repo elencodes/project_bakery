@@ -2,7 +2,7 @@
   <h1> Website for the "MACARONSHOP" (dessert store)</h1>
   <p>A multi-page online store website for ordering macarons and other desserts, created by a team of 6 developers.</p>
 </div>
-<h2>Website link</h2>
+<h2>Website link:</h2>
 <a href="https://elencodes.github.io/project_macaronshop/">MACARONSHOP</a>
 <h2>Used technologies:</h2> 
   <div id=technologies>
