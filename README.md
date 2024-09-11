@@ -1,9 +1,9 @@
 <div id="header" align="center">
   <h1> Website for the "MACARONSHOP" (dessert store)</h1>
   <p>A multi-page online store website for ordering macaroons and other desserts, created by a team of 6 developers.</p>
-  <img src="https://github.com/elencodes/project_macaronshop/blob/main/assets/gif/promo.gif">
+  <img src="https://github.com/elencodes/project_bakery/blob/main/assets/gif/promo.gif">
   <h2>Website link:</h2>
-  <a href="https://elencodes.github.io/project_macaronshop/">MACARONSHOP</a>
+  <a href="https://elencodes.github.io/project_bakery/">CrispyCorner</a>
   <h2>Used technologies:</h2> 
     <div id=technologies>
       <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
@@ -17,8 +17,8 @@
   <p>Clickable links (going to the desired page of the site) in the navigation menu.</p>
   <p>Animation.</p>
   <p>Adaptability to various devices.</p>
-  <img src="https://github.com/elencodes/project_macaronshop/blob/main/assets/github/burger-menu-1.png" height="380">
-  <img src="https://github.com/elencodes/project_macaronshop/blob/main/assets/github/burger-menu-2.png" height="380">
+  <img src="https://github.com/elencodes/project_bakery/blob/main/assets/github/burger-menu-1.png" height="380">
+  <img src="https://github.com/elencodes/project_bakery/blob/main/assets/github/burger-menu-2.png" height="380">
   <h2>Development Team:</h2>
   <div id=bages>
     <a href="https://github.com/elencodes"><img src="https://img.shields.io/badge/elena-%23B2FCE4?style=for-the-badge&logo=github&logoColor=%23222324"></a>
