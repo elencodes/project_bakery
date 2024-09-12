@@ -1,43 +1,51 @@
 //Объявление миксинов
 @mixin mainFont {
 	font-family: $mainFont;
-	font-weight: 400;
-	font-size: 0.875rem; /*--14px в макете / 16px (по умолчанию в браузере)--*/
+	font-weight: 700;
+	font-size: 0.875rem;
+	/*--14px в макете / 16px (по умолчанию в браузере)--*/
 	color: $mainColor;
 }
-@mixin mainH2{
-	font-family:$secondaryFont;
-	font-size:1.875rem ;
+
+@mixin mainH2 {
+	font-family: $secondaryFont;
+	font-size: 1.875rem;
 	font-weight: 600;
 }
-@mixin mainH4{
+
+@mixin mainH4 {
 	font-family: $secondaryFont;
 	font-size: 1.125rem;
 	font-weight: 600;
 }
+
 @mixin bigButton {
-	width:18.3125rem;
-	height:3.25rem;
-	border:0.0625rem solid #4E9DD3;
-	border-radius:0.1875rem;
-	background-color:#F7F7F7;
-	color: #000000;
+	width: 18.3125rem;
+	height: 3.25rem;
+	border: 0.0625rem solid #4E9DD3;
+	border-radius: 0.1875rem;
+	background-color: #FFFAF8;
+	color: #4E9DD3;
 }
+
 @mixin buttonHover {
 	color: $accentColor;
 	border-color: $accentColor;
 	transition: border-color .1s linear, color .1s linear;
 }
+
 @mixin buttonActive {
-	color:#F7F7F7;
-	background-color:$accentColor;
+	color: #F7F7F7;
+	background-color: $accentColor;
 	transition: background .1s linear, color .1s linear;
 }
+
 @mixin linkHover {
 	text-decoration: underline;
 	text-decoration-color: $accentColor;
 	transition: color .1s linear;
 }
+
 @mixin linkActive {
 	color: $accentColor;
 	transition: color .1s linear;
