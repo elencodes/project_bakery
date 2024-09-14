@@ -1,6 +1,6 @@
 //Объявление миксинов
 @mixin mainFont {
-	font-family: $mainFont;
+	font-family: $mainFont; //BellotaText
 	font-weight: 700;
 	font-size: 0.875rem;
 	/*--14px в макете / 16px (по умолчанию в браузере)--*/
@@ -8,13 +8,13 @@
 }
 
 @mixin mainH2 {
-	font-family: $secondaryFont;
+	font-family: $secondaryFont; //Montserrat
 	font-size: 1.875rem;
 	font-weight: 600;
 }
 
 @mixin mainH4 {
-	font-family: $secondaryFont;
+	font-family: $secondaryFont; //Montserrat
 	font-size: 1.125rem;
 	font-weight: 600;
 }

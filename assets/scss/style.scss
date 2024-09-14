@@ -112,6 +112,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 43.5rem;
+	font-weight: 400;
 	/*696px*/
 }
 
@@ -120,7 +121,8 @@ body {
 }
 
 .header-top__text {
-	font-size: 1.125rem;
+	font-size: 1rem;
+	font-weight: 400;
 	/*18px*/
 }
 
@@ -128,7 +130,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 8.4375rem;
+	width: 9.0625rem;
 	/*135px*/
 }
 
@@ -138,6 +140,10 @@ body {
 	align-items: center;
 	width: 10rem;
 	/*160px*/
+}
+
+.header-top__link--basket {
+	font-weight: 400;
 }
 
 .nav__inner {
@@ -191,7 +197,7 @@ body {
 //----Header Content
 .intro {
 	width: 100vw;
-	background-color: #FFF3F5;
+	background-color: #F1F1FD;
 }
 
 .container__content {
@@ -205,21 +211,25 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	margin: 0 auto;
-	max-width: 90rem;
+	max-width: 62.5rem;
 	/*1440px*/
+}
+
+.header__image--box {
+	height: 29.6875rem;
+	padding: 1.75rem 0;
 }
 
 .header__image {
 	max-width: 40.9375rem;
 	/*655px*/
 	height: auto;
-	margin-top: 2.5rem;
 	/*40px*/
 	object-fit: cover;
 }
 
 .header__box {
-	margin-left: 4rem;
+	margin-left: 6rem;
 	/*32px*/
 }
 
@@ -234,11 +244,12 @@ body {
 }
 
 .header__logoname {
+	margin-bottom: 0.375rem;
 	font-family: $bakeryNameFont;
 	font-size: 2.1875rem;
 	/*35px*/
 	color: $introColor;
-	letter-spacing: 10%;
+	letter-spacing: 0.2rem;
 }
 
 .header-logoname__subtitle {
@@ -321,9 +332,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	font-family: $mainFont;
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: 700;
 	transition: 0.2s;
 	color: $mainColor;
 }
@@ -355,12 +365,6 @@ body {
 .navigation_cards__img {
 	width: 6.25rem;
 	height: 6.25rem;
-	margin-top: -0.2rem;
-}
-
-.navigation_cards__img2,
-.navigation_cards__img3 {
-	margin-top: -1.5rem;
 }
 
 .navigation_cards__vector {
@@ -376,10 +380,6 @@ body {
 	font-family: $secondaryFont;
 	font-size: 1.25rem;
 	color: $mainColor;
-}
-
-.navigation_cards__title p {
-	font-weight: 700;
 }
 
 .navigation_cards__link--hover:hover {
@@ -470,32 +470,23 @@ body {
 
 
 .sales__cards--h3 {
-	font-family: $mainFont;
-}
-
-.sales__cards--p {
-	font-family: $secondaryFont;
-	font-size: 1rem;
-	font-weight: 600;
-}
-
-.sales__cards--h3 {
+	@include mainFont;
 	font-size: 1rem;
 	/*16px*/
-	margin-bottom: 0.2rem;
+	margin-bottom: 0.675rem;
 	/*3,2px*/
 }
 
 .sales__cards--p {
-	font-size: 1.125rem;
-	/*18px*/
+	@include mainH4;
+	font-size: 1rem;
 	margin-bottom: 0.11rem;
 	/*1,76px*/
 }
 
 .for-margin {
-	margin-bottom: 3.125rem;
-	/*50px*/
+	margin-bottom: 2.125rem;
+	/*34px*/
 }
 
 //----HOLIDAYS BLOCK
@@ -514,6 +505,7 @@ body {
 	@include mainH2;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 3.0625rem;
 }
 
 .holiday_items {
@@ -521,6 +513,13 @@ body {
 	justify-content: space-between;
 	align-items: end;
 	flex-wrap: wrap;
+}
+
+.holiday_items--container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
 }
 
 .holiday_item_1,
@@ -531,78 +530,49 @@ body {
 .holiday_item_6 {
 	display: flex;
 	flex-direction: column;
-	width: 10.62rem;
-	/*50px*/
-	align-content: center;
-	color: black;
+	justify-content: center;
+	align-items: center;
+}
+
+.holiday_img--container {
+	margin-bottom: 1rem;
 	transition: 0.2s;
+}
+
+.holiday_img--container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .holiday_img_1 {
-	width: 6.25rem;
-	/*100px*/
-	height: 7.06rem;
-	/*112,96px*/
-	margin-left: 3.2rem;
-	/*51,2px*/
-	margin-bottom: 0.179rem;
-	/*2,864px*/
-	transition: 0.2s;
+	width: 4.25rem;
+	width: 4.25rem;
 }
 
 .holiday_img_2 {
-	width: 3.85rem;
-	/*61,6px*/
-	height: 2.96rem;
-	/*47,36px*/
-	align-self: center;
-	margin-bottom: 0.394rem;
-	/*6,304px*/
-	transition: 0.2s;
+	width: 3.75rem;
+	height: 3.75rem;
 }
 
 .holiday_img_3 {
-	width: 3.62rem;
-	/*57,92px*/
-	height: 2.81rem;
-	/*44,96px*/
-	align-self: center;
-	margin-bottom: 0.623rem;
-	/*9,968px*/
-	transition: 0.2s;
+	width: 4rem;
+	height: 4rem;
 }
 
 .holiday_img_4 {
-	width: 3.23rem;
-	/*51,68px*/
-	height: 2.47rem;
-	/*39,52px*/
-	align-self: center;
-	margin-bottom: 0.687rem;
-	/*11px*/
-	transition: 0.2s;
+	width: 3.625rem;
+	height: 3.625rem;
 }
 
 .holiday_img_5 {
-	width: 3.85rem;
-	/*61,6px*/
-	height: 2.96rem;
-	/*47,36px*/
-	align-self: center;
-	margin-bottom: 1.03rem;
-	/*16,48px*/
-	transition: 0.2s;
+	width: 3.625rem;
+	height: 3.625rem;
 }
 
 .holiday_img_6 {
-	width: 3.62rem;
-	/*57,92px*/
-	height: 2.81rem;
-	/*44,96px*/
-	align-self: center;
-	margin-bottom: 1.39rem;
-	/*22,24px*/
-	transition: 0.2s;
+	width: 3rem;
+	height: 3rem;
 }
 
 .holiday_item_1:hover,
@@ -2182,9 +2152,13 @@ body {
 /*--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-*/
 //----Header Content Tablet-Desktop Adaptive
 @media (max-width: 1025px) {
+	.nav__container {
+		padding: 1.125rem 1rem;
+	}
+
 	.header__box {
-		margin-left: 0.25rem; //4px/
-		width: 26.875rem; //430px/
+		margin-left: 3rem; //48px/
+		width: 29.875rem; //478px/
 	}
 
 	.header__image--box img {
@@ -2204,21 +2178,6 @@ body {
 	}
 }
 
-//----Header Content Tablet Adaptive
-/*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
-@media (max-width: 821px) {
-
-	.header__top,
-	.nav {
-		font-size: 0.75rem;
-	}
-
-	.header-top__basket {
-		width: 9rem;
-	}
-}
-
-
 //--Адаптив для экранов до 1025px (1025px/16px=64.0625em)-/
 //--Navigation cards Block--/
 @media(max-width:1025px) {
@@ -2226,6 +2185,10 @@ body {
 	//1025px
 	.navigation_cards {
 		justify-content: center;
+	}
+
+	.navigation_cards__title {
+		margin-bottom: 1.625rem;
 	}
 
 	.navigation_cards__one,
@@ -2239,6 +2202,7 @@ body {
 		width: 38.75rem;
 		height: 17.8rem;
 		font-size: 1.3rem;
+		font-weight: 400;
 
 		h3 {
 			font-size: 1.6rem;
@@ -2272,6 +2236,10 @@ body {
 		width: 18rem;
 		height: 25rem;
 	}
+
+	.for-margin {
+		margin-bottom: 1.375rem;
+	}
 }
 
 //--Адаптив для экранов до 780px (780px/16px=48.75em)/
@@ -2294,6 +2262,10 @@ body {
 	.sales__cards--sale_four {
 		width: 17rem;
 		height: 25rem;
+	}
+
+	.for-margin {
+		margin-bottom: 1.875rem;
 	}
 }
 
@@ -2321,6 +2293,10 @@ body {
 	.sales__cards--sale_four {
 		display: none;
 	}
+
+	.for-margin {
+		margin-bottom: 2.1875rem;
+	}
 }
 
 /*--Адаптив для экранов от 769px (769px/16px=48.0625em) boxes block-*/
@@ -2330,13 +2306,94 @@ body {
 	}
 }
 
+//---Tablet Adaptive---/
+
+/*--Адаптив для экранов до 878px*/
 //----Header Content Tablet-Desktop Adaptive
-/*--Адаптив для экранов от 769px (769px/16px=48.0625em)-*/
-@media (min-width: 769px) {
+@media (max-width: 878px) {
+	.header__image--box {
+		padding: 1.75rem 0 1.75rem 1rem;
+	}
+
+	.header__box {
+		margin-left: 2.125rem; //34px/
+		width: 26.875rem; //478px/
+	}
+
+	.header__title {
+		font-size: 2rem;
+	}
+
+	.header__text {
+		font-size: 1rem;
+	}
+}
+
+//---Tablet Adaptive---/
+
+//----Header Content Tablet Adaptive
+/*--Адаптив для экранов до 821px*/
+@media (max-width: 821px) {
+	.header__box {
+		margin-left: 1.5rem; //24px/
+		width: 26.875rem; //478px/
+	}
+
+	.header__top,
+	.nav {
+		font-size: 0.75rem;
+	}
+
+	.header-top__basket {
+		width: 9rem;
+	}
+}
+
+//---Tablet Adaptive---/
+
+//----Header Content Tablet Adaptive
+/*--Адаптив для экранов до 808px*/
+@media (max-width: 808px) {
+	.header__box {
+		margin-left: 0.5rem;
+	}
+}
+
+//---Tablet Adaptive---/
+
+//----Header Content Tablet Adaptive
+/*--Адаптив для экранов до 796px*/
+@media (max-width: 796px) {
+	.header__box {
+		margin-left: 0.5rem; //8px/
+	}
+}
+
+//---Tablet Adaptive---/
+
+//----Header Content Tablet Adaptive
+/*--Адаптив для экранов до 786px*/
+@media (max-width: 786px) {
+	.header__box {
+		margin-left: 0; //8px/
+	}
+
+	.header__image--box {
+		padding: 1.75rem 0 1.75rem 0.5rem;
+	}
+}
+
+//----Header Content Tablet-Desktop Adaptive
+/*--Адаптив для экранов от 810px*/
+@media (min-width: 810px) {
 	.header__image--box {
 		max-width: 50%;
 	}
+}
 
+//----Header Content Tablet-Desktop Adaptive
+/*--Адаптив для экранов от 769px */
+@media (min-width: 769px) {
 	.header__image--box img {
 		max-width: 100%;
 		max-height: 100%;
@@ -2345,8 +2402,8 @@ body {
 }
 
 //----Header Content Tablet Adaptive
-/*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
-@media (max-width: 769px) {
+/*--Адаптив для экранов до 772px*/
+@media (max-width: 772px) {
 
 	.header__top,
 	.nav__inner,
@@ -2359,8 +2416,8 @@ body {
 	}
 
 	.container__content {
-		height: 45rem; //720px/
-		margin: 0 0 2rem 0;
+		height: 48rem; //720px/
+		margin: 0 0 4rem 0;
 		background: none;
 	}
 
@@ -2374,12 +2431,8 @@ body {
 		margin-left: 0;
 	}
 
-	.header__content {
-		width: 20rem; // 320px/
-	}
-
 	.header-logoname__subtitle {
-		margin-bottom: 2.8125rem; //45px/
+		margin-bottom: 2.1875rem; //35px/
 	}
 
 	.header__title {
@@ -2391,9 +2444,11 @@ body {
 	}
 
 	.header__image--box {
-		overflow: hidden;
-		background: url("../images/header-background.png") no-repeat;
-		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem 0 0 0;
+		height: 27rem;
 	}
 
 	.header__image--box img {
@@ -2410,7 +2465,7 @@ body {
 		margin: 0 auto;
 		height: 4.5rem; //72px/
 		z-index: 5;
-		background-color: #FFFAF8;
+		background-color: #FFEFE7;
 	}
 
 	.header__mobile-menu--fixed {
@@ -2463,7 +2518,7 @@ body {
 		left: 0;
 		max-height: 0;
 		font-size: 0;
-		background-color: #FFFAF8;
+		background-color: #FFEFE7;
 		transform: translateY(100%);
 		overflow: hidden;
 		transition: .5s all;
@@ -2534,6 +2589,11 @@ body {
 		transform: translateX(-50%);
 	}
 
+	.header__mobile-logo img {
+		width: 3.75rem;
+		height: auto;
+	}
+
 	.header__mobile-basket {
 		position: absolute;
 		right: 2rem; //18px/
@@ -2567,18 +2627,60 @@ body {
 //---Holidays Block---/
 @media (max-width: 892px) {
 
+	.holiday_items {
+		width: 55.625rem;
+		margin: 0 auto;
+	}
+
+	.holiday_items--container-5,
+	.holiday_items--container-6 {
+		display: none;
+	}
+
 	div .holiday_item_5,
 	div .holiday_item_6 {
 		display: none;
 	}
 }
 
-//--Адаптив для экранов до 821px (821px/16px=51.3135em)-*/
-@media (max-width: 821px) {
+//--Адаптив для экранов до 769px*/
+//---Holidays Block---/
+@media (max-width: 771px) {
 
-	div .holiday_item_5,
-	div .holiday_item_6 {
-		display: none;
+	.holiday_items {
+		width: 48rem;
+	}
+}
+
+//--Адаптив для экранов до 675px*/
+//---Holidays Block---/
+@media (max-width: 675px) {
+
+	.holiday_items {
+		width: 44rem;
+	}
+}
+
+//--Адаптив для экранов до 615px*/
+//---Holidays Block---/
+@media (max-width: 615px) {
+	.holiday_items {
+		width: 40rem;
+	}
+
+	.holiday_items--container {
+		width: 10rem;
+	}
+}
+
+
+//--Адаптив для экранов до 595px*/
+//---Holidays Block---/
+@media (max-width: 595px) {
+
+	.holiday_items--container-3,
+	.holiday_items--container-4 {
+		margin-top: 2.5rem;
 	}
 }
 
@@ -2953,15 +3055,6 @@ body {
 	}
 }
 
-
-//----Header Content Mobile Adaptive
-//--Адаптив для экранов до 555px (555px/16px=26.9375em)-/
-@media (max-width:555px) {
-	.container__content {
-		height: 40rem; //640px/
-	}
-}
-
 //----Header Content Mobile Adaptive
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:431px) {
@@ -2975,6 +3068,7 @@ body {
 	.container__content {
 		margin: 0 0 2rem 0;
 		background: none;
+		height: 44rem;
 	}
 
 	.header__container {
@@ -2987,12 +3081,8 @@ body {
 		margin-left: 0;
 	}
 
-	.header__content {
-		width: 20rem; // 320px/
-	}
-
 	.header-logoname__subtitle {
-		margin-bottom: 2.8125rem; //45px/
+		margin-bottom: 2.1875rem; //35px/
 	}
 
 	.header__title {
@@ -3004,9 +3094,7 @@ body {
 	}
 
 	.header__image--box {
-		overflow: hidden;
-		background: url("../images/header-background.png") no-repeat;
-		background-size: contain;
+		height: 22rem;
 	}
 
 	.header__image--box img {
@@ -3023,7 +3111,7 @@ body {
 		margin: 0 auto;
 		height: 4.5rem; //72px/
 		z-index: 5;
-		background-color: #F7EBE5;
+		background-color: #FFEFE7;
 	}
 
 	.header__mobile-menu--fixed {
@@ -3076,7 +3164,7 @@ body {
 		left: 0;
 		max-height: 0;
 		font-size: 0;
-		background-color: #F7EBE5;
+		background-color: #FFEFE7;
 		transform: translateY(100%);
 		overflow: hidden;
 		transition: .6s all;
@@ -3205,27 +3293,27 @@ body {
 			border-bottom: 2px solid #d6d6d6;
 			padding-bottom: 1.091875rem; //17.47px
 			font-size: 0.875rem; //14px
-			width: 18rem; //288px
+			width: 20rem; //288px
 		}
 	}
 
 	.navigation_cards__one {
 		img {
-			margin-left: 9.12rem;
+			margin-left: 8.5rem;
 			margin-top: 0.27rem;
 		}
 	}
 
 	.navigation_cards__second {
 		img {
-			margin-left: 7.2rem;
+			margin-left: 9.7rem;
 			margin-top: 0.27rem;
 		}
 	}
 
 	.navigation_cards__third {
 		img {
-			margin-left: 0.4rem;
+			margin-left: 5.4rem;
 			margin-top: 0.27rem;
 		}
 	}
@@ -3248,6 +3336,22 @@ body {
 		img {
 			margin-left: 7.7rem;
 			margin-top: 0.27rem;
+		}
+	}
+}
+
+//---Navigation cards Block Adaptive---/
+//--Адаптив для экранов до 302px/
+@media (max-width:302px) {
+
+	.navigation_cards__one,
+	.navigation_cards__second,
+	.navigation_cards__third,
+	.navigation_cards__forth,
+	.navigation_cards__fifth,
+	.navigation_cards__sixth {
+		h3 {
+			width: 18rem; //288px
 		}
 	}
 }
@@ -3304,6 +3408,18 @@ body {
 //---Holidays Block Adaptive---/
 @media (max-width:431px) {
 
+	.holiday_items--container-1 {
+		margin-top: 1rem;
+	}
+
+	.holiday_items--container-3 {
+		margin-top: 0;
+	}
+
+	.holiday_items--container-4 {
+		display: none;
+	}
+
 	div .holiday_item_4,
 	div .holiday_item_5,
 	div .holiday_item_6 {
@@ -3325,7 +3441,8 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		text-align: center;
-		height: 20rem; //320px/
+		height: 18rem; //288px/
+		width: auto;
 	}
 
 	.holiday_item_1,
@@ -3348,29 +3465,16 @@ body {
 		margin: 0;
 	}
 
-	.holiday_img_1 {
-		width: 7.1rem; //124px/
-		height: 8.1rem; //134px/
-		margin-left: 0.325rem;
-		align-self: flex-end;
-	}
-
-	.holiday_img_2,
-	.holiday_img_3 {
-		width: auto;
-		height: auto;
-	}
-
 	.holiday__text-container--1 {
-		padding-bottom: 12px;
+		padding-left: 1rem; // 20px/
 	}
 
 	.holiday__text-container--2 {
-		padding-left: 1.25rem; // 20px/
+		padding-left: 1rem; // 20px/
 	}
 
 	.holiday__text-container--3 {
-		padding-left: 1.5rem; // 24px/
+		padding-left: 1rem; // 24px/
 	}
 
 	.holiday_text {
@@ -4703,7 +4807,8 @@ body {
 //--Адаптив для экранов до 404px/
 @media (max-width:404px) {
 	.container__content {
-		height: 32rem; //512px
+		height: 36rem; //608px
+		margin: 0 0 2.375rem 0;
 	}
 
 	.container {
@@ -4717,6 +4822,7 @@ body {
 	.header__image--box {
 		display: flex;
 		justify-content: center;
+		height: 17rem;
 	}
 
 	.header__image--box img {
@@ -4738,7 +4844,7 @@ body {
 	.header__text {
 		max-width: 16.875rem; //270px
 		margin-bottom: 1rem; //16px
-		font-size: 0.75rem; //12px
+		font-size: .625rem; //10px
 	}
 }
 
