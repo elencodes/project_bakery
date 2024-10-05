@@ -1337,6 +1337,8 @@ body {
 .footer__header {
   height: 1.187rem;
   /*19px*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
   font-weight: 600;
   font-size: 1rem;
   /*16px*/
@@ -1417,7 +1419,6 @@ body {
 .garanties {
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f7;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
@@ -1451,16 +1452,17 @@ body {
   font-family: "BellotaText", sans-serif;
   font-size: 1.125rem;
   /*18px*/
-  font-weight: 400;
   padding-top: 0;
   text-align: center;
   margin-top: 1.625rem;
   /*26px*/
   margin-bottom: 2rem;
-  /*в макете 14 px но очень большое текстовое поле**/
-  width: 41rem;
   /*656px*/
   text-align: center;
+}
+
+.garant_text {
+  max-width: 31.25rem;
 }
 
 .garant__cards {
@@ -3023,7 +3025,7 @@ body {
   }
 }
 /* Адаптив планшет  Гарантии вкуса**/
-@media (max-width: 769px) {
+@media (max-width: 810px) {
   .garanties {
     margin-top: 8.5rem;
     margin-bottom: 0rem;
@@ -3064,27 +3066,27 @@ body {
     margin-left: 0.5rem;
   }
 }
-/*адаптив для планшета гарантии качества (размер 432px 820px)**/
-@media (min-width: 432px) and (max-width: 820px) {
+/*адаптив для планшета гарантии качества (размер 431px 810px)**/
+@media (min-width: 431px) and (max-width: 810px) {
   .garanties {
     margin-bottom: 0rem;
   }
   .garant__cards_content {
-    height: 20vh;
+    height: 25vh;
     margin-bottom: 2.5rem;
   }
   .garant__cards {
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 }
-/*адаптив для планшета гарантии качества (размер 912 px 1200px)**/
-@media (min-width: 822px) and (max-width: 1200px) {
+/*адаптив для планшета гарантии качества (размер 810 px 1200px)**/
+@media (min-width: 810px) and (max-width: 1200px) {
   .garanties {
     margin-top: 6rem;
     margin-bottom: 0rem;
   }
   .garant__cards_content {
-    height: 20vh;
+    height: 25vh;
     padding-bottom: 0;
   }
   .garanties h2 {
@@ -3706,7 +3708,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 851px) {
+@media (max-width: 865px) {
   .footer__list-wrap {
     display: none;
   }
@@ -3717,7 +3719,7 @@ body {
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 @media (max-width: 769px) {
   .footer__container {
-    max-width: 38.75rem;
+    max-width: 39.75rem;
     justify-content: center;
   }
   .footer__list-wrap {
@@ -4451,20 +4453,6 @@ body {
   }
   .we-care p {
     padding-bottom: 1rem;
-  }
-}
-/*адаптив для планшета гарантии качечства (размер 432 px 820px)**/
-@media (min-width: 432px) and (max-width: 820px) {
-  .garant__cards_content {
-    height: 20vh;
-    margin-bottom: 2.5rem;
-  }
-  .garant__cards {
-    padding-bottom: 3rem;
-  }
-  .garanties {
-    margin-top: 8.5rem;
-    margin-bottom: 0rem;
   }
 }
 /* Адаптив по мобильную версию Мы позаботились**/
