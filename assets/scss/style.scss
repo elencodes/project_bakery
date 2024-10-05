@@ -765,6 +765,18 @@ body {
 	font-weight: 600;
 }
 
+.popular-box__link {
+	color: #4E9DD3;
+}
+
+.popular-box__link:hover {
+	color: $accentColor;
+}
+
+.popular-box__link:active {
+	color: #F7F7F7;
+}
+
 //------BOXES PAGE----
 .boxes__nav {
 	display: flex;
@@ -1043,6 +1055,10 @@ body {
 	/*102px*/
 }
 
+.footer__profit-text--box {
+	width: 7.375rem;
+}
+
 .footer__profit--item {
 	margin-top: 0.875rem;
 	/*14px*/
@@ -1070,6 +1086,10 @@ body {
 	/*12px*/
 	color: rgb(41, 41, 41);
 	line-height: 110%;
+}
+
+.footer__profit-text--margin {
+	margin-top: .625rem;
 }
 
 .footer__add-info {
@@ -3519,7 +3539,7 @@ body {
 	.popular-box__cards--cards_five,
 	.popular-box__cards--cards_six {
 		width: 11rem;
-		height: 15rem;
+		height: 16rem;
 	}
 
 	.popular-box__image {
@@ -3811,9 +3831,9 @@ body {
 	}
 }
 
-//--Адаптив для экранов до 836px/
+//--Адаптив для экранов до 851px/
 //--Footer-/
-@media (max-width: 836px) {
+@media (max-width: 851px) {
 	.footer__list-wrap {
 		display: none;
 	}
@@ -3854,6 +3874,7 @@ body {
 	.footer__ptofit {
 		flex-direction: column;
 		align-items: center;
+		width: 24.125rem;
 	}
 
 	.footer__profit--items {
@@ -3865,12 +3886,17 @@ body {
 	}
 
 	.footer__profit--item {
+		margin-top: 0;
 		width: 11.6875rem;
 		/*--187px в макете / 16px (по умолчанию в браузере)--*/
 	}
 
 	.footer__profit-text {
 		text-align: left;
+	}
+
+	.footer__profit-text--margin {
+		margin-top: 0;
 	}
 
 	.footer__list-wrap,
@@ -3886,8 +3912,8 @@ body {
 	}
 
 	.footer__add-info--text {
-		width: 10.8125rem;
-		/*--173px в макете / 16px (по умолчанию в браузере)--*/
+		width: 9.813rem;
+		/*--157px в макете / 16px (по умолчанию в браузере)--*/
 		font-size: 0.625rem;
 		/*--10px в макете / 16px (по умолчанию в браузере)--*/
 		line-height: 0.75rem;
@@ -4886,7 +4912,7 @@ body {
 	}
 
 	.insta_menu_nav {
-		margin-left: -9.125rem; //-146px
+		margin-left: -13.125rem; //-146px
 	}
 
 	.insta_menu p {
@@ -4913,8 +4939,8 @@ body {
 }
 
 //--Footer Block Mobile Adaptive
-//--Адаптив для экранов до 404px/
-@media (max-width:404px) {
+//--Адаптив для экранов до 350px/
+@media (max-width:350px) {
 	.footer__container {
 		max-width: 16.875rem; //270px
 		height: 19.875rem; //318px
