@@ -2028,7 +2028,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 41.31rem;
-  background-color: #F7F7F7;
 }
 
 .contacts_items {
@@ -2821,9 +2820,10 @@ body {
     gap: 4.5rem;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 771px) {
   .contacts_items {
     gap: 1rem;
+    height: auto;
   }
   .contacts_nav {
     display: flex;
@@ -2847,9 +2847,6 @@ body {
   .contacts_text_part_2,
   .contacts_text_part_3 {
     font-size: 0.875rem;
-  }
-  .contacts_items {
-    height: 40rem;
   }
   .contacts_item_1 {
     width: 18.68rem;
@@ -4171,13 +4168,13 @@ body {
     justify-content: center;
     gap: 0.45rem;
     margin-top: 4rem;
+    height: 40rem;
   }
   .contacts_container {
     display: flex;
     flex-direction: column;
     max-width: 38.75rem;
     height: 53.5rem;
-    background-color: #F7F7F7;
   }
   .contacts_header_2 {
     justify-content: center;

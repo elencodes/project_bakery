@@ -1833,7 +1833,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 41.31rem;
-	background-color: #F7F7F7;
 }
 
 .contacts_items {
@@ -2717,11 +2716,12 @@ body {
 	}
 }
 
-//--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
+//--Адаптив для экранов до 771px*/
 //---Contacts Page---/
-@media (max-width: 769px) {
+@media (max-width: 771px) {
 	.contacts_items {
 		gap: 1rem; //32px
+		height: auto;
 	}
 
 	.contacts_nav {
@@ -2750,10 +2750,6 @@ body {
 	.contacts_text_part_2,
 	.contacts_text_part_3 {
 		font-size: 0.875rem; //14px
-	}
-
-	.contacts_items {
-		height: 40rem;
 	}
 
 	.contacts_item_1 {
@@ -4412,6 +4408,7 @@ body {
 		justify-content: center;
 		gap: 0.45rem;
 		margin-top: 4rem;
+		height: 40rem;
 	}
 
 	.contacts_container {
@@ -4419,7 +4416,6 @@ body {
 		flex-direction: column;
 		max-width: 38.75rem; //--620px
 		height: 53.5rem;
-		background-color: #F7F7F7;
 	}
 
 	.contacts_header_2 {
