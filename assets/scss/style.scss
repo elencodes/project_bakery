@@ -2090,7 +2090,7 @@ body {
 	align-items: center;
 	width: 100%;
 	height: 100%;
-	color: $mainColor;
+	color: #4E9DD3;
 }
 
 .catalog__boxes:hover {
@@ -2131,12 +2131,12 @@ body {
 }
 
 .catalog-cards__item--bctubes {
-	background: url("../images/catalog/catalog-tubes.jpg") center no-repeat;
+	background: url("../images/catalog/catalog-shtrudels.jpg") center no-repeat;
 	background-size: contain;
 }
 
 .catalog-cards__item--bceclairs {
-	background: url("../images/catalog/catalog-eclairs.png") center no-repeat;
+	background: url("../images/catalog/catalog-cinnabons.jpg") center no-repeat;
 	background-size: contain;
 }
 
@@ -2148,18 +2148,9 @@ body {
 
 .catalog-cards__h3 {
 	@include mainH4;
-	color: $secondaryColor;
-	padding-bottom: 2.75rem;
+	padding-bottom: 1.875rem;
+	text-transform: uppercase;
 	/*44px*/
-}
-
-.catalog-box__all {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	color: $mainColor;
 }
 
 .catalog-box__all:hover {
@@ -2329,6 +2320,83 @@ body {
 		margin-top: 8.5rem;
 	}
 }
+
+/*--Адаптив для экранов до 1011px*/
+//----Catalog Page Adaptive---/
+
+@media (max-width: 1011px) {
+	.catalog__box {
+		max-width: 64.5rem;
+	}
+}
+
+/*--Адаптив для экранов до 965px*/
+//----Catalog Page Adaptive---/
+
+@media (max-width: 965px) {
+	.catalog__box {
+		max-width: 61.5rem;
+	}
+}
+
+/*--Адаптив для экранов до 905px*/
+//----Catalog Page Adaptive---/
+
+@media (max-width: 905px) {
+	.catalog__box {
+		max-width: 59.5rem;
+	}
+}
+
+
+/*--Адаптив для экранов до 870px*/
+//----Catalog Page Adaptive---/
+
+@media (max-width: 870px) {
+	.catalog__box {
+		max-width: 58.5rem;
+	}
+}
+
+
+/*--Адаптив для экранов до 840px*/
+//----Catalog Page Adaptive---/
+
+@media (max-width: 840px) {
+	.catalog__box {
+		max-width: 56.5rem;
+	}
+}
+
+
+/*--Адаптив для экранов до 815px*/
+//----Catalog Page Adaptive---/
+
+@media (max-width: 815px) {
+	.catalog__box {
+		max-width: 55.5rem;
+	}
+}
+
+/*--Адаптив для экранов до 801px*/
+//----Catalog Page Adaptive---/
+
+@media (max-width: 801px) {
+	.catalog__box {
+		max-width: 54.5rem;
+	}
+}
+
+
+/*--Адаптив для экранов до 780px*/
+//----Catalog Page Adaptive---/
+
+@media (max-width: 780px) {
+	.catalog__box {
+		max-width: 54rem;
+	}
+}
+
 
 //---Tablet Adaptive---/
 
@@ -4482,7 +4550,7 @@ body {
 /*--Адаптив для экранов до 769px (769px/16px=48.0625em)-*/
 @media (max-width: 769px) {
 	.catalog-container {
-		width: 25.875rem; // 414px
+		width: 34.875rem; // 558px
 	}
 
 	.catalog__nav {
@@ -4497,7 +4565,7 @@ body {
 	}
 
 	.catalog-box {
-		width: 25.875rem; // 414px
+		width: 34.875rem; // 558px
 		margin-bottom: 3.125rem; //50px
 	}
 
@@ -4518,7 +4586,7 @@ body {
 		align-items: center;
 		max-width: 14rem; // 155px
 		padding-top: 1.2rem; // 24px
-		margin-right: 1.5rem; // 24pх
+		margin-right: 3.5rem; // 40pх
 	}
 
 	.catalog__title {
@@ -4565,18 +4633,13 @@ body {
 	}
 
 	.catalog-cards__h3 {
-		padding-bottom: 1.2rem; // 24px
-	}
-
-	.catalog-cards__h3--adaptive {
-		padding-bottom: 1.625rem; // 26px
-		font-size: 1.25rem; // 20px
+		padding-bottom: 1.375rem; // 22px
 	}
 }
 
 //----Catalog Page Mobile Adaptive---/
-//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
-@media (max-width:431px) {
+//--Адаптив для экранов до 500px
+@media (max-width:500px) {
 	.container {
 		width: 25.875rem; // 414px
 	}
@@ -4613,7 +4676,7 @@ body {
 	.catalog__content {
 		align-items: center;
 		max-width: 14rem; // 155px
-		padding-top: 1.5rem; // 24px
+		padding-top: 2.5rem; // 24px
 		margin-right: 1.5rem; // 24pх
 	}
 
@@ -4634,7 +4697,7 @@ body {
 
 	.catalog-box__button--small {
 		height: 7rem; //112px
-		margin-top: 1rem; // 16pх
+		margin-top: 1.375rem; // 38pх
 		font-size: 1rem; // 16pх
 	}
 
@@ -4662,68 +4725,8 @@ body {
 	}
 
 	.catalog-cards__h3 {
-		padding-bottom: 1.2rem; // 24px
+		padding-bottom: 1.375rem; // 22px
 		font-size: 1rem; // 16px
-	}
-
-	.catalog-cards__h3--adaptive {
-		padding-bottom: 1.625rem; // 26px
-		font-size: 1rem; // 16px
-	}
-}
-
-//----Catalog Page Mobile Adaptive---/
-//--Адаптив для экранов до 403px/
-@media (max-width:403px) {
-	.container {
-		max-width: 16.875rem; //270px
-	}
-
-	.catalog__nav {
-		margin-top: 7rem; // 112px
-	}
-
-	.catalog-box {
-		max-width: 16.875rem; //270px
-	}
-
-	.catalog__content {
-		margin-right: 0;
-	}
-
-	.catalog__container {
-		height: 19rem; // 320px
-	}
-
-	.catalog__title {
-		margin-bottom: 1rem; // 16px
-	}
-
-	.catalog-box__button--small {
-		margin-top: 2rem; // 16pх
-		justify-content: center;
-	}
-
-	.small-button {
-		width: 10rem; // 160px
-	}
-
-	.catalog {
-		max-width: 16.875rem; //270px
-	}
-
-	.catalog-cards__item {
-		width: 8rem; //--128px
-		height: 13rem; // 208px
-		text-align: center;
-	}
-
-	.catalog-cards__h3 {
-		font-size: 0.875rem; // 14px
-	}
-
-	.catalog-cards__h3--adaptive {
-		font-size: 0.875rem; // 14px
 	}
 }
 
@@ -5099,10 +5102,10 @@ body {
 }
 
 //--Navigation Cards Mobile Adaptive
-//--Адаптив для экранов до 404px/
-@media (max-width:404px) {
+//--Адаптив для экранов до 403px/
+@media (max-width:403px) {
 	.navigation_cards {
-		max-width: 17.1875rem; //275px
+		max-width: 20.188rem; //275px
 	}
 
 	.navigation_cards__title {
@@ -5131,5 +5134,89 @@ body {
 @media (max-width:404px) {
 	.instagram__gallery2 :nth-child(10) {
 		display: none;
+	}
+}
+
+//----Catalog Page Mobile Adaptive---/
+//--Адаптив для экранов до 403px/
+@media (max-width:403px) {
+	.container {
+		max-width: 20.875rem; //334px
+	}
+
+	.catalog__nav {
+		margin-top: 7rem; // 112px
+	}
+
+	.catalog-box {
+		max-width: 20.875rem; //334px
+	}
+
+	.catalog__content {
+		padding-top: 1.5rem;
+		margin-right: 1rem;
+		max-width: 12rem;
+	}
+
+	.catalog__container {
+		height: 19rem; // 320px
+	}
+
+	.catalog__title {
+		margin-bottom: 1rem; // 16px
+	}
+
+	.catalog-box__button--small {
+		margin-top: 2rem; // 16pх
+		justify-content: center;
+	}
+
+	.small-button {
+		width: 10rem; // 160px
+	}
+
+	.catalog {
+		max-width: 20.875rem; //334px
+	}
+
+	.catalog-cards__item {
+		width: 10rem; // 160px
+		height: 13rem; // 208px
+		text-align: center;
+	}
+
+	.catalog-cards__h3 {
+		font-size: 0.875rem; // 14px
+		padding-bottom: 1rem;
+	}
+
+	.catalog-cards__h3--adaptive {
+		font-size: 0.875rem; // 14px
+	}
+}
+
+
+//----Catalog Page Mobile Adaptive---/
+//--Адаптив для экранов до 310px/
+@media (max-width:310px) {
+	.container {
+		max-width: 16.875rem; //270px
+	}
+
+	.catalog-box {
+		max-width: 16.875rem; //270px
+	}
+
+	.catalog__content {
+		margin-right: 0.5rem;
+		max-width: 12rem;
+	}
+
+	.catalog {
+		max-width: 16.875rem; //270px
+	}
+
+	.catalog-cards__item {
+		width: 8rem; // 160px
 	}
 }
