@@ -427,19 +427,19 @@ body {
 }
 
 .sales__cards--sale_one {
-	background-image: url("../images/sells/sells1.png");
+	background-image: url("../images/sells/sells1.svg");
 }
 
 .sales__cards--sale_two {
-	background-image: url("../images/sells/sells2.png");
+	background-image: url("../images/sells/sells2.svg");
 }
 
 .sales__cards--sale_three {
-	background-image: url("../images/sells/sells3.png");
+	background-image: url("../images/sells/sells3.svg");
 }
 
 .sales__cards--sale_four {
-	background-image: url("../images/sells/sells4.png");
+	background-image: url("../images/sells/sells4.svg");
 }
 
 .sales__cards--sale_one,
@@ -1336,6 +1336,16 @@ body {
 }
 
 // Свадебное предложение /
+
+.wedding__background {
+	background: url(../images/wedding_offer/back.svg) center no-repeat;
+	background-size: contain;
+}
+
+.wedding__content-image {
+	margin-top: 5.438rem;
+}
+
 .wedding__block {
 	width: 100%;
 	// background-color: #F7F7F7;
@@ -1383,8 +1393,8 @@ body {
 }
 
 .wedding__content-image {
-	height: 33.1875rem;
-	/*531px*/
+	height: 25rem;
+	/*400px*/
 	width: auto;
 }
 
@@ -1395,7 +1405,6 @@ body {
 .wedding-box {
 	display: flex;
 	flex-direction: column;
-	background: url(../images/wedding_offer/back-color.png) right 5% bottom 90% / auto no-repeat;
 }
 
 .wedding__title--h1 {
@@ -1462,6 +1471,10 @@ body {
 	line-height: 19px;
 	margin-top: 2.5625rem;
 	/*--41px в макете / 16px (по умолчанию в браузере)--*/
+}
+
+.wedding__text-main:last-child {
+	margin-top: 1.5rem;
 }
 
 //-- wedding kits --/
@@ -1539,10 +1552,9 @@ body {
 
 .wedding-kits__cards--p {
 	font-family: $mainFont;
-	font-weight: 400;
 	font-size: 0.875rem;
 	/*14px*/
-	color: $mainColor;
+	color: #545454;
 	margin-bottom: 0.875rem;
 	/*14px*/
 }
@@ -1609,7 +1621,7 @@ body {
 	column-gap: 0.9375rem;
 	margin: 0.625rem;
 	height: 38.125rem;
-	background-color: #f1f1f1;
+	background-color: #FEE9E7;
 	margin-top: 5rem;
 
 	img {
@@ -1647,6 +1659,7 @@ body {
 	}
 
 	margin-bottom: 0;
+	margin-left: 3rem;
 }
 
 .feedback-form-text {
@@ -1683,7 +1696,6 @@ body {
 		width: 20.0625vw;
 		font-family: $mainFont;
 		font-size: 0.875rem;
-		font-weight: 400;
 		padding-top: 0;
 		margin-top: 1rem;
 	}
@@ -1691,7 +1703,7 @@ body {
 
 .your_idea {
 	input {
-		width: 44rem;
+		width: 45rem;
 		/*712px */
 		height: 7vh;
 		margin-top: 1rem;
@@ -1717,13 +1729,10 @@ body {
 }
 
 .button_feedback__form {
-	width: 18.3125rem;
-	height: 3.25rem;
+	@include bigButton;
 	border: 0.0625rem solid #4E9DD3;
-	border-radius: 0.1875rem;
-	background-color: #F7F7F7;
-	color: #000000;
-	margin-left: 39rem;
+	margin-left: 42rem;
+	font-weight: 700;
 }
 
 .button_feedback__form--form--button {
@@ -1736,7 +1745,7 @@ body {
 	font-family: $mainFont;
 	font-size: 0.6875rem;
 	/* 11px*/
-	margin-left: 39rem;
+	margin-left: 42rem;
 	margin-top: -5rem;
 }
 
@@ -2016,7 +2025,7 @@ body {
 	width: 100%;
 	height: 24.0625rem;
 	/*385px*/
-	background: url("../images/catalog/catalog-pic.png") center no-repeat;
+	background: url("../images/catalog/catalog-pic.svg") center no-repeat;
 	background-size: contain;
 	margin-bottom: 2.625rem;
 	/*42px*/
@@ -2131,12 +2140,12 @@ body {
 }
 
 .catalog-cards__item--bctubes {
-	background: url("../images/catalog/catalog-shtrudels.jpg") center no-repeat;
+	background: url("../images/catalog/catalog-shtrudels.svg") center no-repeat;
 	background-size: contain;
 }
 
 .catalog-cards__item--bceclairs {
-	background: url("../images/catalog/catalog-cinnabons.jpg") center no-repeat;
+	background: url("../images/catalog/catalog-cinnabons.svg") center no-repeat;
 	background-size: contain;
 }
 
@@ -2828,7 +2837,7 @@ body {
 
 /* Адаптив планшет Форма ОС на свадебной странице**/
 //--Адаптив для экранов от 770px (48.125em) до 1199px (74.9375)-/
-@media (min-width:770px) and (max-width:1199px) {
+@media (min-width:770px) and (max-width:1024px) {
 	.container-feedback-form {
 		height: 21.125rem;
 	}
@@ -2878,12 +2887,12 @@ body {
 	.button_feedback__form {
 		width: 12rem;
 		height: 2rem;
-		margin-left: 27rem;
+		margin-left: 26rem;
 		margin-top: -0.5rem;
 	}
 
 	.privacy_policy {
-		margin-left: 27rem;
+		margin-left: 26rem;
 		margin-top: -13.5rem;
 		font-size: 0.5rem;
 	}
@@ -2891,6 +2900,11 @@ body {
 
 //--Адаптив для экранов от 432 до 769px /
 @media (min-width:431px) and (max-width:769px) {
+
+	.feedback-form__content {
+		margin-left: 0;
+	}
+
 	.feedback-form__content-form {
 		display: flex;
 		flex-direction: column;
@@ -2901,7 +2915,7 @@ body {
 		max-width: 48.0625rem;
 		min-width: 27rem;
 		width: 100vw;
-		height: 50rem;
+		height: 45rem;
 		display: flex;
 		align-items: flex-start;
 		margin: 0 auto;
@@ -3015,6 +3029,7 @@ body {
 
 	.container-feedback-form img {
 		margin: 0 auto;
+		height: 23rem;
 	}
 
 	.button_feedback__form--form--button {
@@ -3823,7 +3838,7 @@ body {
 	.catalog__container {
 		margin-bottom: 1rem; //16px
 		height: 18rem; // 288px
-		background: url("../images/catalog/catalog-pic.png") center no-repeat;
+		background: url("../images/catalog/catalog-pic.svg") center no-repeat;
 		background-size: cover;
 		border-radius: 0.3125rem;
 	}
@@ -4093,6 +4108,11 @@ body {
 /* Адаптив под Планшет Свадебное предложение**/
 //--Адаптив для экранов до 996px
 @media (max-width: 997px) {
+
+	.wedding-box {
+		margin-top: 2rem;
+	}
+
 	.wedding-qa {
 		margin: 5.0625rem auto 5.3125rem auto;
 	}
@@ -4110,7 +4130,20 @@ body {
 		justify-content: center;
 	}
 
+	.wedding__mobile-img--box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.wedding__content-image {
+		display: none;
+		margin-top: 2.5rem;
+	}
+
+	.image__mobail-only {
+		display: block;
 		height: 30rem;
 	}
 
@@ -4119,7 +4152,6 @@ body {
 	}
 
 	.wedding-kits {
-		max-width: 51.3125rem;
 		margin-left: 0;
 	}
 
@@ -4155,9 +4187,30 @@ body {
 	}
 }
 
+/* Адаптив под Планшет Свадебное предложение**/
+//--Адаптив для экранов до 600px
+@media (max-width: 600px) {
+	.wedding__title--h1 {
+		font-size: 1.875rem; //30px
+	}
+
+	.wedding__text-box {
+		margin: 0.8125rem auto 0 auto;
+		width: 23.25rem; //372px
+	}
+
+	.wedding__text {
+		font-size: 1rem;
+	}
+
+	.wedding__text-main--box {
+		width: 30.875rem;
+	}
+}
+
 /* Адаптив под мобильную версию Свадебное предложение**/
-//--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
-@media (max-width:431px) {
+//--Адаптив для экранов до 445px/
+@media (max-width:445px) {
 	.container {
 		width: 25.875rem; // 414px
 	}
@@ -4189,13 +4242,13 @@ body {
 	.wedding-box {
 		width: 100%;
 		align-items: center;
-
+		margin-top: 0;
 	}
 
 	.image__mobail-only {
 		display: block;
 		height: 19.5rem; //312px
-		margin-top: 0.75rem; //12px
+		margin-top: 1.5rem; //12px
 	}
 
 	.wedding__title--h1 {
@@ -4206,7 +4259,7 @@ body {
 	}
 
 	.wedding__text-box {
-		width: 14.5625rem; //265 px
+		width: 20.5625rem; //329 px
 	}
 
 	.wedding__text {
@@ -4261,7 +4314,6 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background: url(../images/wedding_offer/wedding-back-mob.png) center no-repeat;
 	}
 
 	.wedding-kits__image--box {
@@ -4308,12 +4360,16 @@ body {
 /* Адаптив по мобильную версию Форма ОС на свадебной странице**/
 //--Адаптив для экранов до 431px (431px/16px=26.9375em)-/
 @media (max-width:431px) {
+
+	.feedback-form__content {
+		margin-left: 0;
+	}
+
 	.container-feedback-form {
 		max-width: 26.9375rem;
 		/*--394px в макете / 16px (по умолчанию в браузере)--*/
 		min-width: 20rem;
 		width: 100vw;
-		background-color: #f1f1f1;
 		margin-bottom: 2rem;
 		height: 45.25rem;
 
@@ -4417,7 +4473,6 @@ body {
 			width: 18rem;
 			font-size: 0.75rem;
 			/* 12px**/
-			font-weight: 400;
 			padding-top: 0;
 			margin-top: 1rem;
 			margin-left: 1rem;
@@ -4577,7 +4632,7 @@ body {
 	.catalog__container {
 		margin-bottom: 1rem; //16px
 		height: 18rem; // 288px
-		background: url("../images/catalog/catalog-pic.png") center no-repeat;
+		background: url("../images/catalog/catalog-pic.svg") center no-repeat;
 		background-size: cover;
 		border-radius: 0.3125rem;
 	}
@@ -4668,7 +4723,7 @@ body {
 	.catalog__container {
 		margin-bottom: 1rem; //16px
 		height: 18rem; // 288px
-		background: url("../images/catalog/catalog-pic.png") center no-repeat;
+		background: url("../images/catalog/catalog-pic.svg") center no-repeat;
 		background-size: cover;
 		border-radius: 0.3125rem;
 	}
@@ -5036,6 +5091,14 @@ body {
 		font-size: 1.125rem;
 	}
 
+	.image__mobail-only {
+		margin-top: 0;
+	}
+
+	.wedding__text-box {
+		width: 17.563rem;
+	}
+
 	.wedding__text {
 		font-size: 0.75rem;
 		margin-bottom: 1.5rem;
@@ -5061,8 +5124,8 @@ body {
 }
 
 //--Wedding Form Mobile Adaptive
-//--Адаптив для экранов до 404px/
-@media (max-width:404px) {
+//--Адаптив для экранов до 431px/
+@media (max-width:431px) {
 	.feedback-form {
 		max-width: 17.1875rem; //275px
 	}
@@ -5218,5 +5281,21 @@ body {
 
 	.catalog-cards__item {
 		width: 8rem; // 160px
+	}
+}
+
+//--Wedding Block Mobile Adaptive
+//--Адаптив для экранов до 300px/
+@media (max-width:300px) {
+	.wedding__text-box {
+		width: 15.563rem;
+	}
+
+	.wedding__text {
+		font-size: 0.675rem;
+	}
+
+	.image__mobail-only {
+		height: 16.5rem;
 	}
 }
